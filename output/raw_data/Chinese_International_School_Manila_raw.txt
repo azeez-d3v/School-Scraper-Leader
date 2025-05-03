@@ -1,0 +1,34 @@
+School: Chinese International School Manila
+Main URL: 
+================================================================================
+
+MAIN PAGE CONTENT:
+Error: Failed to initialize Playwright for . This school website requires JavaScript handling.
+
+====================PAGE====================
+
+SCHOOL_FEE PAGE CONTENT (https://cismanila.org/admissions/fee-structure):
+Error: Failed to initialize Playwright for https://cismanila.org/admissions/fee-structure. This school website requires JavaScript handling.
+
+====================PAGE====================
+
+PROGRAM PAGE CONTENT (https://cismanila.org/learning/curriculum/):
+Error: Failed to initialize Playwright for https://cismanila.org/learning/curriculum/. This school website requires JavaScript handling.
+
+====================PAGE====================
+
+ENROLLMENT PAGE CONTENT (https://cismanila.org/admissions/admissions-policy):
+Error: Failed to initialize Playwright for https://cismanila.org/admissions/admissions-policy. This school website requires JavaScript handling.
+
+====================PAGE====================
+
+SCHOLARSHIPS PAGE CONTENT (https://cismanila.org/scholarships):
+Error: Failed to initialize Playwright for https://cismanila.org/scholarships. This school website requires JavaScript handling.
+
+====================PAGE====================
+
+CONTACT PAGE CONTENT (https://cismanila.org/contact-us):
+Error: Failed to initialize Playwright for https://cismanila.org/contact-us. This school website requires JavaScript handling.
+
+====================PAGE====================
+

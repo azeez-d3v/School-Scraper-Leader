@@ -1,0 +1,163 @@
+{
+  "name": "Faith Academy",
+  "link": "",
+  "school_fee": {
+    "tuition_by_level": {
+      "Pre-K": {
+        "annual": "$2,825",
+        "semester1": "$1,413",
+        "semester2": null
+      },
+      "Elementary (K-5)": {
+        "annual": "$15,810",
+        "semester1": "$7,905",
+        "semester2": null
+      },
+      "Middle School (6-8)": {
+        "annual": "$17,015",
+        "semester1": "$8,508",
+        "semester2": null
+      },
+      "High School (9-12)": {
+        "annual": "$18,195",
+        "semester1": "$9,098",
+        "semester2": null
+      }
+    },
+    "other_fees": [
+      {
+        "name": "Application Fee (New Students)",
+        "amount": "$150",
+        "description": "Until February 17"
+      },
+      {
+        "name": "Application Fee (New Students)",
+        "amount": "$200",
+        "description": "February 18- March 31"
+      },
+      {
+        "name": "Application Fee (New Students)",
+        "amount": "$250",
+        "description": "April 01 onwards**"
+      },
+      {
+        "name": "Application Fee (Returning Students)",
+        "amount": "$50",
+        "description": "Until February 07"
+      },
+      {
+        "name": "Application Fee (Returning Students)",
+        "amount": "$100",
+        "description": "February 08- March 07"
+      },
+      {
+        "name": "Application Fee (Returning Students)",
+        "amount": "$150",
+        "description": "March 08 onwards**"
+      },
+      {
+        "name": "Facility/Technology Fee (Pre-K)",
+        "amount": "$975",
+        "description": "Annual"
+      },
+      {
+        "name": "Facility/Technology Fee (Elementary K-5)",
+        "amount": "$1,485",
+        "description": "Annual"
+      },
+      {
+        "name": "Facility/Technology Fee (Middle School 6-8)",
+        "amount": "$1,485",
+        "description": "Annual"
+      },
+      {
+        "name": "Facility/Technology Fee (High School 9-12)",
+        "amount": "$1,485",
+        "description": "Annual"
+      },
+      {
+        "name": "Seat Deposit",
+        "amount": "$300",
+        "description": "Required upon acceptance. Credited to tuition."
+      },
+      {
+        "name": "Boarding Registration Fee (New Students)",
+        "amount": "$100",
+        "description": "Upon Acceptance"
+      },
+      {
+        "name": "Boarding Registration Fee (Returning Students)",
+        "amount": "$100",
+        "description": "By Apr 15"
+      },
+      {
+        "name": "Boarding Registration Fee (Returning Students)",
+        "amount": "$150",
+        "description": "After Apr 15"
+      },
+      {
+        "name": "Room & Board (7-Day Rate)",
+        "amount": "$6600",
+        "description": null
+      },
+      {
+        "name": "Boarding Facility/Technology Fee",
+        "amount": "75% of the Academic Facility/Technology Fees",
+        "description": "For major Boarding Home repairs or improvements"
+      }
+    ]
+  },
+  "programs": [
+    {
+      "name": "Elementary",
+      "grade_level": "K-5",
+      "description": null
+    },
+    {
+      "name": "Middle School",
+      "grade_level": "6-8",
+      "description": null
+    },
+    {
+      "name": "High School",
+      "grade_level": "9-12",
+      "description": null
+    },
+    {
+      "name": "Boarding",
+      "grade_level": null,
+      "description": null
+    }
+  ],
+  "enrollment": {
+    "process_steps": [
+      {
+        "step": "1",
+        "description": "Prepare: Gather necessary documents (checklist available)"
+      },
+      {
+        "step": "2",
+        "description": "Apply: Start the application process online and pay application fees."
+      },
+      {
+        "step": "3",
+        "description": "Enroll: Complete steps provided by the Registrar after application acceptance."
+      }
+    ]
+  },
+  "events": "No information available",
+  "scholarships": "No information available",
+  "contact": {
+    "address": "Penny Lane Street, Valley Golf Subd., San Juan, Cainta, Rizal 1900 Philippines",
+    "phone_numbers": [
+      "+63 2-8651-7100"
+    ],
+    "email": "vanguard@faith.edu.ph",
+    "social_media": {
+      "facebook": "https://www.facebook.com/",
+      "twitter": null,
+      "instagram": "https://www.instagram.com/"
+    }
+  },
+  "notes": "School Hours: Mon-Fri 7:10AM-2:30PM"
+}

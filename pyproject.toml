@@ -1,0 +1,23 @@
+[project]
+name = "ai-web-scraper-main"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "beautifulsoup4>=4.13.4",
+    "curl-cffi>=0.10.0",
+    "html5lib>=1.1",
+    "langchain>=0.3.24",
+    "langchain-community>=0.3.23",
+    "langchain-google-genai>=2.1.4",
+    "langchain-ollama>=0.3.2",
+    "lxml>=5.4.0",
+    "openpyxl>=3.1.5",
+    "pandas>=2.2.3",
+    "playwright>=1.52.0",
+    "pypdf>=5.4.0",
+    "python-dotenv>=1.1.0",
+    "selenium>=4.31.0",
+    "streamlit>=1.45.0",
+]

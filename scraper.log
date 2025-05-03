@@ -1,0 +1,1111 @@
+2025-05-02 16:14:11,225 - __main__ - INFO - Starting school data scraping process
+2025-05-02 16:14:11,225 - __main__ - INFO - Processing school: International School Manila
+2025-05-02 16:14:11,713 - __main__ - WARNING - No content extracted from https://www.ismanila.org
+2025-05-02 16:14:11,714 - __main__ - INFO - Extracting school_fee data from https://www.ismanila.org/admissions/school-fees
+2025-05-02 16:14:11,849 - __main__ - WARNING - No content extracted from https://www.ismanila.org/admissions/school-fees
+2025-05-02 16:14:12,852 - __main__ - INFO - Extracting program data from https://www.ismanila.org/elementary-school/academic-program
+2025-05-02 16:14:13,357 - __main__ - WARNING - No content extracted from https://www.ismanila.org/elementary-school/academic-program
+2025-05-02 16:14:14,372 - __main__ - INFO - Extracting program data from https://www.ismanila.org/middle-school/academic-program
+2025-05-02 16:14:14,885 - __main__ - WARNING - No content extracted from https://www.ismanila.org/middle-school/academic-program
+2025-05-02 16:14:15,887 - __main__ - INFO - Extracting program data from https://www.ismanila.org/high-school/academic-program
+2025-05-02 16:14:16,433 - __main__ - WARNING - No content extracted from https://www.ismanila.org/high-school/academic-program
+2025-05-02 16:14:17,454 - __main__ - INFO - Extracting enrollment data from https://www.ismanila.org/admissions/admissions-process
+2025-05-02 16:14:17,600 - __main__ - WARNING - No content extracted from https://www.ismanila.org/admissions/admissions-process
+2025-05-02 16:14:18,611 - __main__ - INFO - Extracting enrollment data from https://www.ismanila.org/admissions/application-file-forms-requirements
+2025-05-02 16:14:19,160 - __main__ - WARNING - No content extracted from https://www.ismanila.org/admissions/application-file-forms-requirements
+2025-05-02 16:14:20,161 - __main__ - INFO - Extracting scholarships data from https://www.ismanila.org/admissions/scholarships
+2025-05-02 16:14:20,714 - __main__ - WARNING - No content extracted from https://www.ismanila.org/admissions/scholarships
+2025-05-02 16:14:21,726 - __main__ - INFO - Extracting contact data from https://www.ismanila.org/contact-us
+2025-05-02 16:14:22,256 - __main__ - WARNING - No content extracted from https://www.ismanila.org/contact-us
+2025-05-02 16:14:23,261 - __main__ - INFO - Completed raw data extraction for International School Manila
+2025-05-02 16:14:23,261 - __main__ - INFO - Processing school: Brent International School
+2025-05-02 16:14:23,682 - __main__ - WARNING - No content extracted from https://www.brent.edu.ph
+2025-05-02 16:14:23,682 - __main__ - INFO - Extracting school_fee data from https://brent.edu.ph/wp-content/uploads/2024/02/school-fees-2024-2025.pdf
+2025-05-02 16:14:30,859 - __main__ - WARNING - No content extracted from https://brent.edu.ph/wp-content/uploads/2024/02/school-fees-2024-2025.pdf
+2025-05-02 16:14:31,869 - __main__ - INFO - Extracting school_fee data from http://brent.edu.ph/wp-content/uploads/2025/02/school-fees-SY2025-2026-feb-19.pdf
+2025-05-02 16:17:15,864 - __main__ - INFO - Starting school data scraping process
+2025-05-02 16:17:15,864 - __main__ - INFO - Processing school: International School Manila
+2025-05-02 16:17:15,865 - __main__ - INFO - Extracting content from URL: https://www.ismanila.org using method: Request
+2025-05-02 16:17:15,865 - __main__ - INFO - Using RequestSession for URL: https://www.ismanila.org
+2025-05-02 16:17:17,092 - __main__ - INFO - Successfully got content from https://www.ismanila.org (221296 bytes)
+2025-05-02 16:17:17,709 - __main__ - INFO - Successfully extracted and cleaned content from https://www.ismanila.org (3802 bytes)
+2025-05-02 16:17:17,709 - __main__ - INFO - Extracting school_fee data from https://www.ismanila.org/admissions/school-fees
+2025-05-02 16:17:17,710 - __main__ - INFO - Extracting content from URL: https://www.ismanila.org/admissions/school-fees using method: Request
+2025-05-02 16:17:17,710 - __main__ - INFO - Using RequestSession for URL: https://www.ismanila.org/admissions/school-fees
+2025-05-02 16:17:18,283 - __main__ - INFO - Successfully got content from https://www.ismanila.org/admissions/school-fees (98128 bytes)
+2025-05-02 16:17:18,480 - __main__ - INFO - Successfully extracted and cleaned content from https://www.ismanila.org/admissions/school-fees (2475 bytes)
+2025-05-02 16:17:19,477 - __main__ - INFO - Extracting program data from https://www.ismanila.org/elementary-school/academic-program
+2025-05-02 16:17:19,477 - __main__ - INFO - Extracting content from URL: https://www.ismanila.org/elementary-school/academic-program using method: Request
+2025-05-02 16:17:19,478 - __main__ - INFO - Using RequestSession for URL: https://www.ismanila.org/elementary-school/academic-program
+2025-05-02 16:17:20,061 - __main__ - INFO - Successfully got content from https://www.ismanila.org/elementary-school/academic-program (82541 bytes)
+2025-05-02 16:17:20,143 - __main__ - INFO - Successfully extracted and cleaned content from https://www.ismanila.org/elementary-school/academic-program (1925 bytes)
+2025-05-02 16:17:21,154 - __main__ - INFO - Extracting program data from https://www.ismanila.org/middle-school/academic-program
+2025-05-02 16:17:21,154 - __main__ - INFO - Extracting content from URL: https://www.ismanila.org/middle-school/academic-program using method: Request
+2025-05-02 16:17:21,154 - __main__ - INFO - Using RequestSession for URL: https://www.ismanila.org/middle-school/academic-program
+2025-05-02 16:17:21,324 - __main__ - INFO - Successfully got content from https://www.ismanila.org/middle-school/academic-program (82875 bytes)
+2025-05-02 16:17:21,402 - __main__ - INFO - Successfully extracted and cleaned content from https://www.ismanila.org/middle-school/academic-program (1924 bytes)
+2025-05-02 16:17:22,405 - __main__ - INFO - Extracting program data from https://www.ismanila.org/high-school/academic-program
+2025-05-02 16:17:22,406 - __main__ - INFO - Extracting content from URL: https://www.ismanila.org/high-school/academic-program using method: Request
+2025-05-02 16:17:22,406 - __main__ - INFO - Using RequestSession for URL: https://www.ismanila.org/high-school/academic-program
+2025-05-02 16:17:23,015 - __main__ - INFO - Successfully got content from https://www.ismanila.org/high-school/academic-program (79797 bytes)
+2025-05-02 16:17:23,103 - __main__ - INFO - Successfully extracted and cleaned content from https://www.ismanila.org/high-school/academic-program (2089 bytes)
+2025-05-02 16:17:24,117 - __main__ - INFO - Extracting enrollment data from https://www.ismanila.org/admissions/admissions-process
+2025-05-02 16:17:24,117 - __main__ - INFO - Extracting content from URL: https://www.ismanila.org/admissions/admissions-process using method: Request
+2025-05-02 16:17:24,118 - __main__ - INFO - Using RequestSession for URL: https://www.ismanila.org/admissions/admissions-process
+2025-05-02 16:17:24,331 - __main__ - INFO - Successfully got content from https://www.ismanila.org/admissions/admissions-process (99105 bytes)
+2025-05-02 16:17:24,553 - __main__ - INFO - Successfully extracted and cleaned content from https://www.ismanila.org/admissions/admissions-process (10537 bytes)
+2025-05-02 16:17:25,570 - __main__ - INFO - Extracting enrollment data from https://www.ismanila.org/admissions/application-file-forms-requirements
+2025-05-02 16:17:25,570 - __main__ - INFO - Extracting content from URL: https://www.ismanila.org/admissions/application-file-forms-requirements using method: Request
+2025-05-02 16:17:25,570 - __main__ - INFO - Using RequestSession for URL: https://www.ismanila.org/admissions/application-file-forms-requirements
+2025-05-02 16:17:26,144 - __main__ - INFO - Successfully got content from https://www.ismanila.org/admissions/application-file-forms-requirements (100310 bytes)
+2025-05-02 16:17:26,337 - __main__ - INFO - Successfully extracted and cleaned content from https://www.ismanila.org/admissions/application-file-forms-requirements (15979 bytes)
+2025-05-02 16:17:27,350 - __main__ - INFO - Extracting scholarships data from https://www.ismanila.org/admissions/scholarships
+2025-05-02 16:17:27,350 - __main__ - INFO - Extracting content from URL: https://www.ismanila.org/admissions/scholarships using method: Request
+2025-05-02 16:17:27,351 - __main__ - INFO - Using RequestSession for URL: https://www.ismanila.org/admissions/scholarships
+2025-05-02 16:17:27,603 - __main__ - INFO - Successfully got content from https://www.ismanila.org/admissions/scholarships (89869 bytes)
+2025-05-02 16:17:27,788 - __main__ - INFO - Successfully extracted and cleaned content from https://www.ismanila.org/admissions/scholarships (7486 bytes)
+2025-05-02 16:17:28,811 - __main__ - INFO - Extracting contact data from https://www.ismanila.org/contact-us
+2025-05-02 16:17:28,811 - __main__ - INFO - Extracting content from URL: https://www.ismanila.org/contact-us using method: Request
+2025-05-02 16:17:28,811 - __main__ - INFO - Using RequestSession for URL: https://www.ismanila.org/contact-us
+2025-05-02 16:17:29,005 - __main__ - INFO - Successfully got content from https://www.ismanila.org/contact-us (77602 bytes)
+2025-05-02 16:17:29,099 - __main__ - INFO - Successfully extracted and cleaned content from https://www.ismanila.org/contact-us (1010 bytes)
+2025-05-02 16:17:30,114 - __main__ - INFO - Completed raw data extraction for International School Manila
+2025-05-02 16:17:30,114 - __main__ - INFO - Processing school: Brent International School
+2025-05-02 16:17:30,115 - __main__ - INFO - Extracting content from URL: https://www.brent.edu.ph using method: Request
+2025-05-02 16:17:30,115 - __main__ - INFO - Using RequestSession for URL: https://www.brent.edu.ph
+2025-05-02 16:17:30,363 - __main__ - INFO - Successfully got content from https://www.brent.edu.ph (1686 bytes)
+2025-05-02 16:17:30,367 - __main__ - INFO - Successfully extracted and cleaned content from https://www.brent.edu.ph (37 bytes)
+2025-05-02 16:17:30,368 - __main__ - INFO - Extracting school_fee data from https://brent.edu.ph/wp-content/uploads/2024/02/school-fees-2024-2025.pdf
+2025-05-02 16:17:30,368 - __main__ - INFO - Extracting content from URL: https://brent.edu.ph/wp-content/uploads/2024/02/school-fees-2024-2025.pdf using method: Request
+2025-05-02 16:17:30,369 - __main__ - INFO - Using RequestSession for URL: https://brent.edu.ph/wp-content/uploads/2024/02/school-fees-2024-2025.pdf
+2025-05-02 16:17:30,641 - __main__ - INFO - Successfully got content from https://brent.edu.ph/wp-content/uploads/2024/02/school-fees-2024-2025.pdf (1686 bytes)
+2025-05-02 16:17:30,644 - __main__ - INFO - Successfully extracted and cleaned content from https://brent.edu.ph/wp-content/uploads/2024/02/school-fees-2024-2025.pdf (37 bytes)
+2025-05-02 16:17:31,636 - __main__ - INFO - Extracting school_fee data from http://brent.edu.ph/wp-content/uploads/2025/02/school-fees-SY2025-2026-feb-19.pdf
+2025-05-02 16:17:31,636 - __main__ - INFO - Extracting content from URL: http://brent.edu.ph/wp-content/uploads/2025/02/school-fees-SY2025-2026-feb-19.pdf using method: Request
+2025-05-02 16:17:31,637 - __main__ - INFO - Using RequestSession for URL: http://brent.edu.ph/wp-content/uploads/2025/02/school-fees-SY2025-2026-feb-19.pdf
+2025-05-02 16:17:32,181 - __main__ - WARNING - HTTP error 500 for http://brent.edu.ph/wp-content/uploads/2025/02/school-fees-SY2025-2026-feb-19.pdf
+2025-05-02 16:17:33,189 - __main__ - INFO - Extracting program data from https://brent.edu.ph/academics/early-learning-center/
+2025-05-02 16:17:33,189 - __main__ - INFO - Extracting content from URL: https://brent.edu.ph/academics/early-learning-center/ using method: Request
+2025-05-02 16:17:33,190 - __main__ - INFO - Using RequestSession for URL: https://brent.edu.ph/academics/early-learning-center/
+2025-05-02 16:17:33,432 - __main__ - WARNING - HTTP error 500 for https://brent.edu.ph/academics/early-learning-center/
+2025-05-02 16:17:34,441 - __main__ - INFO - Extracting program data from https://brent.edu.ph/academics/lower-school/
+2025-05-02 16:17:34,441 - __main__ - INFO - Extracting content from URL: https://brent.edu.ph/academics/lower-school/ using method: Request
+2025-05-02 16:17:34,442 - __main__ - INFO - Using RequestSession for URL: https://brent.edu.ph/academics/lower-school/
+2025-05-02 16:17:34,612 - __main__ - WARNING - HTTP error 500 for https://brent.edu.ph/academics/lower-school/
+2025-05-02 16:17:35,614 - __main__ - INFO - Extracting program data from https://brent.edu.ph/academics/middle-school/
+2025-05-02 16:17:35,614 - __main__ - INFO - Extracting content from URL: https://brent.edu.ph/academics/middle-school/ using method: Request
+2025-05-02 16:17:35,615 - __main__ - INFO - Using RequestSession for URL: https://brent.edu.ph/academics/middle-school/
+2025-05-02 16:17:35,857 - __main__ - WARNING - HTTP error 500 for https://brent.edu.ph/academics/middle-school/
+2025-05-02 16:17:36,868 - __main__ - INFO - Extracting program data from https://brent.edu.ph/academics/high-school/
+2025-05-02 16:17:36,868 - __main__ - INFO - Extracting content from URL: https://brent.edu.ph/academics/high-school/ using method: Request
+2025-05-02 16:17:36,868 - __main__ - INFO - Using RequestSession for URL: https://brent.edu.ph/academics/high-school/
+2025-05-02 16:17:37,054 - __main__ - WARNING - HTTP error 500 for https://brent.edu.ph/academics/high-school/
+2025-05-02 16:17:38,061 - __main__ - INFO - Extracting program data from https://brent.edu.ph/academics/upper-school/
+2025-05-02 16:17:38,061 - __main__ - INFO - Extracting content from URL: https://brent.edu.ph/academics/upper-school/ using method: Request
+2025-05-02 16:17:38,061 - __main__ - INFO - Using RequestSession for URL: https://brent.edu.ph/academics/upper-school/
+2025-05-02 16:17:38,307 - __main__ - WARNING - HTTP error 500 for https://brent.edu.ph/academics/upper-school/
+2025-05-02 16:17:39,313 - __main__ - INFO - Extracting program data from https://brent.edu.ph/academics/international-baccalaureate/
+2025-05-02 16:17:39,314 - __main__ - INFO - Extracting content from URL: https://brent.edu.ph/academics/international-baccalaureate/ using method: Request
+2025-05-02 16:17:39,314 - __main__ - INFO - Using RequestSession for URL: https://brent.edu.ph/academics/international-baccalaureate/
+2025-05-02 16:17:39,472 - __main__ - WARNING - HTTP error 500 for https://brent.edu.ph/academics/international-baccalaureate/
+2025-05-02 16:17:40,473 - __main__ - INFO - Extracting program data from https://brent.edu.ph/academics/esl/
+2025-05-02 16:17:40,473 - __main__ - INFO - Extracting content from URL: https://brent.edu.ph/academics/esl/ using method: Request
+2025-05-02 16:17:40,474 - __main__ - INFO - Using RequestSession for URL: https://brent.edu.ph/academics/esl/
+2025-05-02 16:17:40,650 - __main__ - WARNING - HTTP error 500 for https://brent.edu.ph/academics/esl/
+2025-05-02 16:17:41,665 - __main__ - INFO - Extracting enrollment data from https://brent.edu.ph/admissions/application-process/
+2025-05-02 16:17:41,666 - __main__ - INFO - Extracting content from URL: https://brent.edu.ph/admissions/application-process/ using method: Request
+2025-05-02 16:17:41,666 - __main__ - INFO - Using RequestSession for URL: https://brent.edu.ph/admissions/application-process/
+2025-05-02 16:17:41,841 - __main__ - WARNING - HTTP error 500 for https://brent.edu.ph/admissions/application-process/
+2025-05-02 16:17:42,855 - __main__ - INFO - Extracting enrollment data from https://brent.edu.ph/admissions/enrollment-process/
+2025-05-02 16:17:42,855 - __main__ - INFO - Extracting content from URL: https://brent.edu.ph/admissions/enrollment-process/ using method: Request
+2025-05-02 16:17:42,856 - __main__ - INFO - Using RequestSession for URL: https://brent.edu.ph/admissions/enrollment-process/
+2025-05-02 16:17:43,102 - __main__ - WARNING - HTTP error 500 for https://brent.edu.ph/admissions/enrollment-process/
+2025-05-02 16:17:44,108 - __main__ - INFO - Extracting enrollment data from https://brent.edu.ph/admissions/admissions-criteria/
+2025-05-02 16:17:44,108 - __main__ - INFO - Extracting content from URL: https://brent.edu.ph/admissions/admissions-criteria/ using method: Request
+2025-05-02 16:17:44,108 - __main__ - INFO - Using RequestSession for URL: https://brent.edu.ph/admissions/admissions-criteria/
+2025-05-02 16:17:44,358 - __main__ - WARNING - HTTP error 500 for https://brent.edu.ph/admissions/admissions-criteria/
+2025-05-02 16:17:45,373 - __main__ - INFO - Extracting contact data from https://brent.edu.ph/about/contact-us/
+2025-05-02 16:17:45,373 - __main__ - INFO - Extracting content from URL: https://brent.edu.ph/about/contact-us/ using method: Request
+2025-05-02 16:17:45,374 - __main__ - INFO - Using RequestSession for URL: https://brent.edu.ph/about/contact-us/
+2025-05-02 16:17:45,539 - __main__ - WARNING - HTTP error 500 for https://brent.edu.ph/about/contact-us/
+2025-05-02 16:17:46,551 - __main__ - INFO - Completed raw data extraction for Brent International School
+2025-05-02 16:17:46,552 - __main__ - INFO - Processing school: British School Manila
+2025-05-02 16:17:46,554 - __main__ - INFO - Extracting content from URL: https://www.britishschoolmanila.org using method: Request
+2025-05-02 16:17:46,555 - __main__ - INFO - Using RequestSession for URL: https://www.britishschoolmanila.org
+2025-05-02 16:17:47,043 - __main__ - INFO - Successfully got content from https://www.britishschoolmanila.org (71886 bytes)
+2025-05-02 16:17:47,391 - __main__ - INFO - Successfully extracted and cleaned content from https://www.britishschoolmanila.org (3668 bytes)
+2025-05-02 16:17:47,392 - __main__ - INFO - Extracting program data from https://www.britishschoolmanila.org/academics/the-key-stages
+2025-05-02 16:17:47,392 - __main__ - INFO - Extracting content from URL: https://www.britishschoolmanila.org/academics/the-key-stages using method: Request
+2025-05-02 16:17:47,392 - __main__ - INFO - Using RequestSession for URL: https://www.britishschoolmanila.org/academics/the-key-stages
+2025-05-02 16:17:48,381 - __main__ - INFO - Successfully got content from https://www.britishschoolmanila.org/academics/the-key-stages (50198 bytes)
+2025-05-02 16:17:48,540 - __main__ - INFO - Successfully extracted and cleaned content from https://www.britishschoolmanila.org/academics/the-key-stages (6694 bytes)
+2025-05-02 16:17:49,551 - __main__ - INFO - Extracting enrollment data from https://www.britishschoolmanila.org/admissions/how-to-apply
+2025-05-02 16:17:49,551 - __main__ - INFO - Extracting content from URL: https://www.britishschoolmanila.org/admissions/how-to-apply using method: Request
+2025-05-02 16:17:49,551 - __main__ - INFO - Using RequestSession for URL: https://www.britishschoolmanila.org/admissions/how-to-apply
+2025-05-02 16:17:50,381 - __main__ - INFO - Successfully got content from https://www.britishschoolmanila.org/admissions/how-to-apply (45399 bytes)
+2025-05-02 16:17:50,586 - __main__ - INFO - Successfully extracted and cleaned content from https://www.britishschoolmanila.org/admissions/how-to-apply (3116 bytes)
+2025-05-02 16:17:51,600 - __main__ - INFO - Extracting scholarships data from https://www.britishschoolmanila.org/community/bsm-taguig-scholarship-programme
+2025-05-02 16:17:51,600 - __main__ - INFO - Extracting content from URL: https://www.britishschoolmanila.org/community/bsm-taguig-scholarship-programme using method: Request
+2025-05-02 16:17:51,601 - __main__ - INFO - Using RequestSession for URL: https://www.britishschoolmanila.org/community/bsm-taguig-scholarship-programme
+2025-05-02 16:17:52,618 - __main__ - INFO - Successfully got content from https://www.britishschoolmanila.org/community/bsm-taguig-scholarship-programme (42009 bytes)
+2025-05-02 16:17:52,726 - __main__ - INFO - Successfully extracted and cleaned content from https://www.britishschoolmanila.org/community/bsm-taguig-scholarship-programme (1298 bytes)
+2025-05-02 16:17:53,741 - __main__ - INFO - Extracting contact data from https://www.britishschoolmanila.org/contact
+2025-05-02 16:17:53,742 - __main__ - INFO - Extracting content from URL: https://www.britishschoolmanila.org/contact using method: Request
+2025-05-02 16:17:53,742 - __main__ - INFO - Using RequestSession for URL: https://www.britishschoolmanila.org/contact
+2025-05-02 16:17:53,984 - __main__ - INFO - Successfully got content from https://www.britishschoolmanila.org/contact (38475 bytes)
+2025-05-02 16:17:54,067 - __main__ - INFO - Successfully extracted and cleaned content from https://www.britishschoolmanila.org/contact (836 bytes)
+2025-05-02 16:17:55,084 - __main__ - INFO - Completed raw data extraction for British School Manila
+2025-05-02 16:17:55,085 - __main__ - INFO - Processing school: German European School Manila (GESM)
+2025-05-02 16:17:55,086 - __main__ - INFO - Extracting content from URL: https://gesm.org using method: Playwright
+2025-05-02 16:17:55,086 - __main__ - INFO - Using Playwright for URL: https://gesm.org
+2025-05-02 16:17:58,073 - services.playwright_manager - INFO - Playwright browser initialized
+2025-05-02 16:18:12,780 - __main__ - INFO - Successfully extracted and cleaned content from https://gesm.org (2105 bytes)
+2025-05-02 16:18:12,782 - __main__ - INFO - Extracting school_fee data from https://www.gesm.org/school-fees
+2025-05-02 16:18:12,782 - __main__ - INFO - Extracting content from URL: https://www.gesm.org/school-fees using method: Playwright
+2025-05-02 16:18:12,782 - __main__ - INFO - Using Playwright for URL: https://www.gesm.org/school-fees
+2025-05-02 16:18:22,598 - __main__ - INFO - Successfully extracted and cleaned content from https://www.gesm.org/school-fees (2705 bytes)
+2025-05-02 16:18:23,607 - __main__ - INFO - Extracting program data from https://www.gesm.org/curriculum
+2025-05-02 16:18:23,608 - __main__ - INFO - Extracting content from URL: https://www.gesm.org/curriculum using method: Playwright
+2025-05-02 16:18:23,609 - __main__ - INFO - Using Playwright for URL: https://www.gesm.org/curriculum
+2025-05-02 16:18:32,326 - __main__ - INFO - Successfully extracted and cleaned content from https://www.gesm.org/curriculum (1909 bytes)
+2025-05-02 16:18:33,332 - __main__ - INFO - Extracting program data from https://www.gesm.org/german-section
+2025-05-02 16:18:33,334 - __main__ - INFO - Extracting content from URL: https://www.gesm.org/german-section using method: Playwright
+2025-05-02 16:18:33,334 - __main__ - INFO - Using Playwright for URL: https://www.gesm.org/german-section
+2025-05-02 16:18:42,571 - __main__ - INFO - Successfully extracted and cleaned content from https://www.gesm.org/german-section (2260 bytes)
+2025-05-02 16:18:43,584 - __main__ - INFO - Extracting program data from https://www.gesm.org/senior-years-programmes
+2025-05-02 16:18:43,584 - __main__ - INFO - Extracting content from URL: https://www.gesm.org/senior-years-programmes using method: Playwright
+2025-05-02 16:18:43,585 - __main__ - INFO - Using Playwright for URL: https://www.gesm.org/senior-years-programmes
+2025-05-02 16:18:50,611 - __main__ - INFO - Successfully extracted and cleaned content from https://www.gesm.org/senior-years-programmes (1870 bytes)
+2025-05-02 16:18:51,623 - __main__ - INFO - Extracting enrollment data from https://www.gesm.org/admission-process
+2025-05-02 16:18:51,623 - __main__ - INFO - Extracting content from URL: https://www.gesm.org/admission-process using method: Playwright
+2025-05-02 16:18:51,623 - __main__ - INFO - Using Playwright for URL: https://www.gesm.org/admission-process
+2025-05-02 16:18:58,108 - __main__ - INFO - Successfully extracted and cleaned content from https://www.gesm.org/admission-process (5052 bytes)
+2025-05-02 16:18:59,113 - __main__ - INFO - Extracting contact data from https://www.gesm.org/contact-us
+2025-05-02 16:18:59,113 - __main__ - INFO - Extracting content from URL: https://www.gesm.org/contact-us using method: Playwright
+2025-05-02 16:18:59,114 - __main__ - INFO - Using Playwright for URL: https://www.gesm.org/contact-us
+2025-05-02 16:19:29,518 - services.playwright_manager - ERROR - Error fetching page with Playwright: https://www.gesm.org/contact-us, error: Page.goto: Timeout 30000ms exceeded.
+Call log:
+  - navigating to "https://www.gesm.org/contact-us", waiting until "networkidle"
+
+2025-05-02 16:19:29,518 - __main__ - ERROR - Error extracting content from https://www.gesm.org/contact-us: Page.goto: Timeout 30000ms exceeded.
+Call log:
+  - navigating to "https://www.gesm.org/contact-us", waiting until "networkidle"
+Traceback (most recent call last):
+  File "c:\Users\Aziz\Downloads\Compressed\AI-Web-Scraper-main\app.py", line 51, in extract_content_from_url
+    content = await self.playwright_manager.get_page_content(url)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Aziz\Downloads\Compressed\AI-Web-Scraper-main\services\playwright_manager.py", line 51, in get_page_content
+    await page.goto(url, wait_until="networkidle")
+  File "C:\Users\Aziz\Downloads\Compressed\AI-Web-Scraper-main\.venv\Lib\site-packages\playwright\async_api\_generated.py", line 8991, in goto
+    await self._impl_obj.goto(
+  File "C:\Users\Aziz\Downloads\Compressed\AI-Web-Scraper-main\.venv\Lib\site-packages\playwright\_impl\_page.py", line 552, in goto
+    return await self._main_frame.goto(**locals_to_params(locals()))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Aziz\Downloads\Compressed\AI-Web-Scraper-main\.venv\Lib\site-packages\playwright\_impl\_frame.py", line 145, in goto
+    await self._channel.send("goto", locals_to_params(locals()))
+  File "C:\Users\Aziz\Downloads\Compressed\AI-Web-Scraper-main\.venv\Lib\site-packages\playwright\_impl\_connection.py", line 61, in send
+    return await self._connection.wrap_api_call(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Aziz\Downloads\Compressed\AI-Web-Scraper-main\.venv\Lib\site-packages\playwright\_impl\_connection.py", line 528, in wrap_api_call
+    raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+playwright._impl._errors.TimeoutError: Page.goto: Timeout 30000ms exceeded.
+Call log:
+  - navigating to "https://www.gesm.org/contact-us", waiting until "networkidle"
+
+2025-05-02 16:19:30,544 - __main__ - INFO - Completed raw data extraction for German European School Manila (GESM)
+2025-05-02 16:19:30,544 - __main__ - INFO - Processing school: Reedley International School
+2025-05-02 16:19:30,546 - __main__ - INFO - Extracting content from URL: https://reedleyschool.edu.ph using method: Request
+2025-05-02 16:19:30,549 - __main__ - INFO - Using RequestSession for URL: https://reedleyschool.edu.ph
+2025-05-02 16:19:31,104 - __main__ - INFO - Successfully got content from https://reedleyschool.edu.ph (249666 bytes)
+2025-05-02 16:19:33,171 - __main__ - INFO - Successfully extracted and cleaned content from https://reedleyschool.edu.ph (13610 bytes)
+2025-05-02 16:19:33,173 - __main__ - INFO - Extracting program data from https://reedleyschool.edu.ph/acad-programs/
+2025-05-02 16:19:33,173 - __main__ - INFO - Extracting content from URL: https://reedleyschool.edu.ph/acad-programs/ using method: Request
+2025-05-02 16:19:33,174 - __main__ - INFO - Using RequestSession for URL: https://reedleyschool.edu.ph/acad-programs/
+2025-05-02 16:19:33,415 - __main__ - INFO - Successfully got content from https://reedleyschool.edu.ph/acad-programs/ (172194 bytes)
+2025-05-02 16:19:34,057 - __main__ - INFO - Successfully extracted and cleaned content from https://reedleyschool.edu.ph/acad-programs/ (11541 bytes)
+2025-05-02 16:19:35,060 - __main__ - INFO - Extracting enrollment data from https://reedleyschool.edu.ph/apply/#procedureId
+2025-05-02 16:19:35,060 - __main__ - INFO - Extracting content from URL: https://reedleyschool.edu.ph/apply/#procedureId using method: Request
+2025-05-02 16:19:35,061 - __main__ - INFO - Using RequestSession for URL: https://reedleyschool.edu.ph/apply/#procedureId
+2025-05-02 16:19:35,290 - __main__ - INFO - Successfully got content from https://reedleyschool.edu.ph/apply/#procedureId (157604 bytes)
+2025-05-02 16:19:35,860 - __main__ - INFO - Successfully extracted and cleaned content from https://reedleyschool.edu.ph/apply/#procedureId (5886 bytes)
+2025-05-02 16:19:36,868 - __main__ - INFO - Extracting scholarships data from https://reedleyschool.edu.ph/faq/
+2025-05-02 16:19:36,868 - __main__ - INFO - Extracting content from URL: https://reedleyschool.edu.ph/faq/ using method: Request
+2025-05-02 16:19:36,868 - __main__ - INFO - Using RequestSession for URL: https://reedleyschool.edu.ph/faq/
+2025-05-02 16:19:37,093 - __main__ - INFO - Successfully got content from https://reedleyschool.edu.ph/faq/ (128864 bytes)
+2025-05-02 16:19:37,447 - __main__ - INFO - Successfully extracted and cleaned content from https://reedleyschool.edu.ph/faq/ (11462 bytes)
+2025-05-02 16:19:38,450 - __main__ - INFO - Extracting contact data from https://reedleyschool.edu.ph/contact/
+2025-05-02 16:19:38,451 - __main__ - INFO - Extracting content from URL: https://reedleyschool.edu.ph/contact/ using method: Request
+2025-05-02 16:19:38,451 - __main__ - INFO - Using RequestSession for URL: https://reedleyschool.edu.ph/contact/
+2025-05-02 16:19:38,697 - __main__ - INFO - Successfully got content from https://reedleyschool.edu.ph/contact/ (128342 bytes)
+2025-05-02 16:19:38,997 - __main__ - INFO - Successfully extracted and cleaned content from https://reedleyschool.edu.ph/contact/ (2806 bytes)
+2025-05-02 16:19:40,006 - __main__ - INFO - Completed raw data extraction for Reedley International School
+2025-05-02 16:19:40,007 - __main__ - INFO - Processing school: Southville International School and Colleges
+2025-05-02 16:19:40,008 - __main__ - INFO - Extracting content from URL: https://www.southville.edu.ph using method: Request
+2025-05-02 16:19:40,009 - __main__ - INFO - Using RequestSession for URL: https://www.southville.edu.ph
+2025-05-02 16:19:41,066 - __main__ - INFO - Successfully got content from https://www.southville.edu.ph (158287 bytes)
+2025-05-02 16:19:41,978 - __main__ - INFO - Successfully extracted and cleaned content from https://www.southville.edu.ph (10056 bytes)
+2025-05-02 16:19:41,980 - __main__ - INFO - Extracting program data from https://www.southville.edu.ph/preschool/
+2025-05-02 16:19:41,981 - __main__ - INFO - Extracting content from URL: https://www.southville.edu.ph/preschool/ using method: Request
+2025-05-02 16:19:41,981 - __main__ - INFO - Using RequestSession for URL: https://www.southville.edu.ph/preschool/
+2025-05-02 16:19:43,058 - __main__ - INFO - Successfully got content from https://www.southville.edu.ph/preschool/ (115591 bytes)
+2025-05-02 16:19:43,561 - __main__ - INFO - Successfully extracted and cleaned content from https://www.southville.edu.ph/preschool/ (9245 bytes)
+2025-05-02 16:19:44,566 - __main__ - INFO - Extracting program data from https://www.southville.edu.ph/elementary-school-programs/
+2025-05-02 16:19:44,566 - __main__ - INFO - Extracting content from URL: https://www.southville.edu.ph/elementary-school-programs/ using method: Request
+2025-05-02 16:19:44,566 - __main__ - INFO - Using RequestSession for URL: https://www.southville.edu.ph/elementary-school-programs/
+2025-05-02 16:19:45,612 - __main__ - INFO - Successfully got content from https://www.southville.edu.ph/elementary-school-programs/ (111427 bytes)
+2025-05-02 16:19:46,398 - __main__ - INFO - Successfully extracted and cleaned content from https://www.southville.edu.ph/elementary-school-programs/ (9014 bytes)
+2025-05-02 16:19:47,416 - __main__ - INFO - Extracting program data from https://www.southville.edu.ph/elementary-school-programs/
+2025-05-02 16:19:47,416 - __main__ - INFO - Extracting content from URL: https://www.southville.edu.ph/elementary-school-programs/ using method: Request
+2025-05-02 16:19:47,416 - __main__ - INFO - Using RequestSession for URL: https://www.southville.edu.ph/elementary-school-programs/
+2025-05-02 16:19:48,308 - __main__ - INFO - Successfully got content from https://www.southville.edu.ph/elementary-school-programs/ (111427 bytes)
+2025-05-02 16:19:48,970 - __main__ - INFO - Successfully extracted and cleaned content from https://www.southville.edu.ph/elementary-school-programs/ (9014 bytes)
+2025-05-02 16:19:49,970 - __main__ - INFO - Extracting program data from https://www.southville.edu.ph/international-baccalaureate-philippines/
+2025-05-02 16:19:49,971 - __main__ - INFO - Extracting content from URL: https://www.southville.edu.ph/international-baccalaureate-philippines/ using method: Request
+2025-05-02 16:19:49,972 - __main__ - INFO - Using RequestSession for URL: https://www.southville.edu.ph/international-baccalaureate-philippines/
+2025-05-02 16:19:50,982 - __main__ - INFO - Successfully got content from https://www.southville.edu.ph/international-baccalaureate-philippines/ (113748 bytes)
+2025-05-02 16:19:51,470 - __main__ - INFO - Successfully extracted and cleaned content from https://www.southville.edu.ph/international-baccalaureate-philippines/ (10352 bytes)
+2025-05-02 16:19:52,459 - __main__ - INFO - Extracting program data from https://www.southville.edu.ph/college-degree-programs-philippines/
+2025-05-02 16:19:52,459 - __main__ - INFO - Extracting content from URL: https://www.southville.edu.ph/college-degree-programs-philippines/ using method: Request
+2025-05-02 16:19:52,459 - __main__ - INFO - Using RequestSession for URL: https://www.southville.edu.ph/college-degree-programs-philippines/
+2025-05-02 16:19:53,478 - __main__ - INFO - Successfully got content from https://www.southville.edu.ph/college-degree-programs-philippines/ (110298 bytes)
+2025-05-02 16:19:54,020 - __main__ - INFO - Successfully extracted and cleaned content from https://www.southville.edu.ph/college-degree-programs-philippines/ (4964 bytes)
+2025-05-02 16:19:55,025 - __main__ - INFO - Extracting program data from https://www.southville.edu.ph/graduate-programs/
+2025-05-02 16:19:55,026 - __main__ - INFO - Extracting content from URL: https://www.southville.edu.ph/graduate-programs/ using method: Request
+2025-05-02 16:19:55,026 - __main__ - INFO - Using RequestSession for URL: https://www.southville.edu.ph/graduate-programs/
+2025-05-02 16:19:56,025 - __main__ - INFO - Successfully got content from https://www.southville.edu.ph/graduate-programs/ (97996 bytes)
+2025-05-02 16:19:56,323 - __main__ - INFO - Successfully extracted and cleaned content from https://www.southville.edu.ph/graduate-programs/ (3748 bytes)
+2025-05-02 16:19:57,337 - __main__ - INFO - Extracting program data from https://www.southville.edu.ph/online-programs/
+2025-05-02 16:19:57,338 - __main__ - INFO - Extracting content from URL: https://www.southville.edu.ph/online-programs/ using method: Request
+2025-05-02 16:19:57,338 - __main__ - INFO - Using RequestSession for URL: https://www.southville.edu.ph/online-programs/
+2025-05-02 16:19:58,365 - __main__ - INFO - Successfully got content from https://www.southville.edu.ph/online-programs/ (112679 bytes)
+2025-05-02 16:19:58,898 - __main__ - INFO - Successfully extracted and cleaned content from https://www.southville.edu.ph/online-programs/ (7026 bytes)
+2025-05-02 16:19:59,902 - __main__ - INFO - Extracting program data from https://www.southville.edu.ph/virtual-online-school/
+2025-05-02 16:19:59,902 - __main__ - INFO - Extracting content from URL: https://www.southville.edu.ph/virtual-online-school/ using method: Request
+2025-05-02 16:19:59,903 - __main__ - INFO - Using RequestSession for URL: https://www.southville.edu.ph/virtual-online-school/
+2025-05-02 16:20:00,807 - __main__ - INFO - Successfully got content from https://www.southville.edu.ph/virtual-online-school/ (98224 bytes)
+2025-05-02 16:20:01,146 - __main__ - INFO - Successfully extracted and cleaned content from https://www.southville.edu.ph/virtual-online-school/ (4050 bytes)
+2025-05-02 16:20:02,153 - __main__ - INFO - Extracting enrollment data from https://www.southville.edu.ph/admissions-basic-ed-requirements/
+2025-05-02 16:20:02,153 - __main__ - INFO - Extracting content from URL: https://www.southville.edu.ph/admissions-basic-ed-requirements/ using method: Request
+2025-05-02 16:20:02,154 - __main__ - INFO - Using RequestSession for URL: https://www.southville.edu.ph/admissions-basic-ed-requirements/
+2025-05-02 16:20:03,160 - __main__ - INFO - Successfully got content from https://www.southville.edu.ph/admissions-basic-ed-requirements/ (98758 bytes)
+2025-05-02 16:20:03,499 - __main__ - INFO - Successfully extracted and cleaned content from https://www.southville.edu.ph/admissions-basic-ed-requirements/ (4518 bytes)
+2025-05-02 16:20:04,509 - __main__ - INFO - Extracting enrollment data from https://www.southville.edu.ph/college-admissions-requirements/
+2025-05-02 16:20:04,510 - __main__ - INFO - Extracting content from URL: https://www.southville.edu.ph/college-admissions-requirements/ using method: Request
+2025-05-02 16:20:04,510 - __main__ - INFO - Using RequestSession for URL: https://www.southville.edu.ph/college-admissions-requirements/
+2025-05-02 16:20:05,490 - __main__ - INFO - Successfully got content from https://www.southville.edu.ph/college-admissions-requirements/ (98532 bytes)
+2025-05-02 16:20:05,828 - __main__ - INFO - Successfully extracted and cleaned content from https://www.southville.edu.ph/college-admissions-requirements/ (4430 bytes)
+2025-05-02 16:20:06,839 - __main__ - INFO - Extracting enrollment data from https://www.southville.edu.ph/online-summer-enrollment/
+2025-05-02 16:20:06,839 - __main__ - INFO - Extracting content from URL: https://www.southville.edu.ph/online-summer-enrollment/ using method: Request
+2025-05-02 16:20:06,839 - __main__ - INFO - Using RequestSession for URL: https://www.southville.edu.ph/online-summer-enrollment/
+2025-05-02 16:20:07,820 - __main__ - INFO - Successfully got content from https://www.southville.edu.ph/online-summer-enrollment/ (101147 bytes)
+2025-05-02 16:20:08,189 - __main__ - INFO - Successfully extracted and cleaned content from https://www.southville.edu.ph/online-summer-enrollment/ (5225 bytes)
+2025-05-02 16:20:09,202 - __main__ - INFO - Extracting enrollment data from https://www.southville.edu.ph/online-enrollment-for-k-12-ib-new-students/
+2025-05-02 16:20:09,203 - __main__ - INFO - Extracting content from URL: https://www.southville.edu.ph/online-enrollment-for-k-12-ib-new-students/ using method: Request
+2025-05-02 16:20:09,203 - __main__ - INFO - Using RequestSession for URL: https://www.southville.edu.ph/online-enrollment-for-k-12-ib-new-students/
+2025-05-02 16:20:10,214 - __main__ - INFO - Successfully got content from https://www.southville.edu.ph/online-enrollment-for-k-12-ib-new-students/ (101878 bytes)
+2025-05-02 16:20:10,595 - __main__ - INFO - Successfully extracted and cleaned content from https://www.southville.edu.ph/online-enrollment-for-k-12-ib-new-students/ (5923 bytes)
+2025-05-02 16:20:11,611 - __main__ - INFO - Extracting enrollment data from https://www.southville.edu.ph/online-enrollment-for-k-12-ib-continuing-students/
+2025-05-02 16:20:11,611 - __main__ - INFO - Extracting content from URL: https://www.southville.edu.ph/online-enrollment-for-k-12-ib-continuing-students/ using method: Request
+2025-05-02 16:20:11,611 - __main__ - INFO - Using RequestSession for URL: https://www.southville.edu.ph/online-enrollment-for-k-12-ib-continuing-students/
+2025-05-02 16:20:12,564 - __main__ - INFO - Successfully got content from https://www.southville.edu.ph/online-enrollment-for-k-12-ib-continuing-students/ (97464 bytes)
+2025-05-02 16:20:12,881 - __main__ - INFO - Successfully extracted and cleaned content from https://www.southville.edu.ph/online-enrollment-for-k-12-ib-continuing-students/ (4512 bytes)
+2025-05-02 16:20:13,891 - __main__ - INFO - Extracting enrollment data from https://www.southville.edu.ph/online-enrollment-for-college-higher-education-new-students/
+2025-05-02 16:20:13,892 - __main__ - INFO - Extracting content from URL: https://www.southville.edu.ph/online-enrollment-for-college-higher-education-new-students/ using method: Request
+2025-05-02 16:20:13,892 - __main__ - INFO - Using RequestSession for URL: https://www.southville.edu.ph/online-enrollment-for-college-higher-education-new-students/
+2025-05-02 16:20:14,840 - __main__ - INFO - Successfully got content from https://www.southville.edu.ph/online-enrollment-for-college-higher-education-new-students/ (108004 bytes)
+2025-05-02 16:20:15,331 - __main__ - INFO - Successfully extracted and cleaned content from https://www.southville.edu.ph/online-enrollment-for-college-higher-education-new-students/ (6924 bytes)
+2025-05-02 16:20:16,329 - __main__ - INFO - Extracting enrollment data from https://www.southville.edu.ph/online-enrollment-for-college-higher-education-continuing-students/
+2025-05-02 16:20:16,329 - __main__ - INFO - Extracting content from URL: https://www.southville.edu.ph/online-enrollment-for-college-higher-education-continuing-students/ using method: Request
+2025-05-02 16:20:16,329 - __main__ - INFO - Using RequestSession for URL: https://www.southville.edu.ph/online-enrollment-for-college-higher-education-continuing-students/
+2025-05-02 16:20:17,300 - __main__ - INFO - Successfully got content from https://www.southville.edu.ph/online-enrollment-for-college-higher-education-continuing-students/ (105631 bytes)
+2025-05-02 16:20:17,757 - __main__ - INFO - Successfully extracted and cleaned content from https://www.southville.edu.ph/online-enrollment-for-college-higher-education-continuing-students/ (6451 bytes)
+2025-05-02 16:20:18,769 - __main__ - INFO - Extracting scholarships data from https://www.southville.edu.ph/college-scholarship/
+2025-05-02 16:20:18,770 - __main__ - INFO - Extracting content from URL: https://www.southville.edu.ph/college-scholarship/ using method: Request
+2025-05-02 16:20:18,770 - __main__ - INFO - Using RequestSession for URL: https://www.southville.edu.ph/college-scholarship/
+2025-05-02 16:20:19,784 - __main__ - INFO - Successfully got content from https://www.southville.edu.ph/college-scholarship/ (110583 bytes)
+2025-05-02 16:20:20,233 - __main__ - INFO - Successfully extracted and cleaned content from https://www.southville.edu.ph/college-scholarship/ (9217 bytes)
+2025-05-02 16:20:21,242 - __main__ - INFO - Extracting contact data from https://www.southville.edu.ph/contact-us/#contact-details
+2025-05-02 16:20:21,243 - __main__ - INFO - Extracting content from URL: https://www.southville.edu.ph/contact-us/#contact-details using method: Request
+2025-05-02 16:20:21,243 - __main__ - INFO - Using RequestSession for URL: https://www.southville.edu.ph/contact-us/#contact-details
+2025-05-02 16:20:22,229 - __main__ - INFO - Successfully got content from https://www.southville.edu.ph/contact-us/#contact-details (97412 bytes)
+2025-05-02 16:20:22,570 - __main__ - INFO - Successfully extracted and cleaned content from https://www.southville.edu.ph/contact-us/#contact-details (4588 bytes)
+2025-05-02 16:20:23,573 - __main__ - INFO - Completed raw data extraction for Southville International School and Colleges
+2025-05-02 16:20:23,574 - __main__ - INFO - Processing school: Singapore School Manila
+2025-05-02 16:20:23,575 - __main__ - INFO - Extracting content from URL: https://www.singaporeschoolmanila.com using method: Request
+2025-05-02 16:20:23,575 - __main__ - INFO - Using RequestSession for URL: https://www.singaporeschoolmanila.com
+2025-05-02 16:20:23,674 - __main__ - WARNING - HTTP error 500 for https://www.singaporeschoolmanila.com
+2025-05-02 16:20:23,674 - __main__ - INFO - Extracting school_fee data from https://singaporeschools.ph/admission/
+2025-05-02 16:20:23,674 - __main__ - INFO - Extracting content from URL: https://singaporeschools.ph/admission/ using method: Request
+2025-05-02 16:20:23,675 - __main__ - INFO - Using RequestSession for URL: https://singaporeschools.ph/admission/
+2025-05-02 16:20:24,077 - __main__ - INFO - Successfully got content from https://singaporeschools.ph/admission/ (155559 bytes)
+2025-05-02 16:20:24,482 - __main__ - INFO - Successfully extracted and cleaned content from https://singaporeschools.ph/admission/ (3469 bytes)
+2025-05-02 16:20:25,489 - __main__ - INFO - Extracting program data from https://e9m.2af.myftpupload.com/admission/
+2025-05-02 16:20:25,490 - __main__ - INFO - Extracting content from URL: https://e9m.2af.myftpupload.com/admission/ using method: Request
+2025-05-02 16:20:25,490 - __main__ - INFO - Using RequestSession for URL: https://e9m.2af.myftpupload.com/admission/
+2025-05-02 16:20:26,442 - __main__ - INFO - Successfully got content from https://e9m.2af.myftpupload.com/admission/ (155617 bytes)
+2025-05-02 16:20:26,823 - __main__ - INFO - Successfully extracted and cleaned content from https://e9m.2af.myftpupload.com/admission/ (3469 bytes)
+2025-05-02 16:20:27,825 - __main__ - INFO - Extracting enrollment data from https://singaporeschools.ph/admission/
+2025-05-02 16:20:27,825 - __main__ - INFO - Extracting content from URL: https://singaporeschools.ph/admission/ using method: Request
+2025-05-02 16:20:27,825 - __main__ - INFO - Using RequestSession for URL: https://singaporeschools.ph/admission/
+2025-05-02 16:20:28,030 - __main__ - INFO - Successfully got content from https://singaporeschools.ph/admission/ (155559 bytes)
+2025-05-02 16:20:28,419 - __main__ - INFO - Successfully extracted and cleaned content from https://singaporeschools.ph/admission/ (3469 bytes)
+2025-05-02 16:20:29,427 - __main__ - INFO - Extracting contact data from https://singaporeschools.ph/contact-us/
+2025-05-02 16:20:29,427 - __main__ - INFO - Extracting content from URL: https://singaporeschools.ph/contact-us/ using method: Request
+2025-05-02 16:20:29,427 - __main__ - INFO - Using RequestSession for URL: https://singaporeschools.ph/contact-us/
+2025-05-02 16:20:29,636 - __main__ - INFO - Successfully got content from https://singaporeschools.ph/contact-us/ (156167 bytes)
+2025-05-02 16:20:29,795 - __main__ - INFO - Successfully extracted and cleaned content from https://singaporeschools.ph/contact-us/ (2384 bytes)
+2025-05-02 16:20:30,804 - __main__ - INFO - Completed raw data extraction for Singapore School Manila
+2025-05-02 16:20:30,804 - __main__ - INFO - Processing school: Faith Academy
+2025-05-02 16:20:30,805 - __main__ - INFO - Extracting content from URL: https://faith.edu.ph using method: Request
+2025-05-02 16:20:30,806 - __main__ - INFO - Using RequestSession for URL: https://faith.edu.ph
+2025-05-02 16:20:31,111 - __main__ - INFO - Successfully got content from https://faith.edu.ph (398515 bytes)
+2025-05-02 16:20:32,481 - __main__ - INFO - Successfully extracted and cleaned content from https://faith.edu.ph (1390 bytes)
+2025-05-02 16:20:32,481 - __main__ - INFO - Extracting school_fee data from https://faith.edu.ph/admissions/finances/
+2025-05-02 16:20:32,482 - __main__ - INFO - Extracting content from URL: https://faith.edu.ph/admissions/finances/ using method: Request
+2025-05-02 16:20:32,482 - __main__ - INFO - Using RequestSession for URL: https://faith.edu.ph/admissions/finances/
+2025-05-02 16:20:32,717 - __main__ - INFO - Successfully got content from https://faith.edu.ph/admissions/finances/ (166273 bytes)
+2025-05-02 16:20:33,252 - __main__ - INFO - Successfully extracted and cleaned content from https://faith.edu.ph/admissions/finances/ (3153 bytes)
+2025-05-02 16:20:34,265 - __main__ - INFO - Extracting program data from https://faith.edu.ph/school-life/
+2025-05-02 16:20:34,265 - __main__ - INFO - Extracting content from URL: https://faith.edu.ph/school-life/ using method: Request
+2025-05-02 16:20:34,265 - __main__ - INFO - Using RequestSession for URL: https://faith.edu.ph/school-life/
+2025-05-02 16:20:34,485 - __main__ - INFO - Successfully got content from https://faith.edu.ph/school-life/ (157669 bytes)
+2025-05-02 16:20:34,846 - __main__ - INFO - Successfully extracted and cleaned content from https://faith.edu.ph/school-life/ (1832 bytes)
+2025-05-02 16:20:35,848 - __main__ - INFO - Extracting enrollment data from https://faith.edu.ph/admissions/apply/
+2025-05-02 16:20:35,848 - __main__ - INFO - Extracting content from URL: https://faith.edu.ph/admissions/apply/ using method: Request
+2025-05-02 16:20:35,848 - __main__ - INFO - Using RequestSession for URL: https://faith.edu.ph/admissions/apply/
+2025-05-02 16:20:36,074 - __main__ - INFO - Successfully got content from https://faith.edu.ph/admissions/apply/ (144649 bytes)
+2025-05-02 16:20:36,377 - __main__ - INFO - Successfully extracted and cleaned content from https://faith.edu.ph/admissions/apply/ (1320 bytes)
+2025-05-02 16:20:37,382 - __main__ - INFO - Extracting contact data from https://faith.edu.ph/contact/
+2025-05-02 16:20:37,382 - __main__ - INFO - Extracting content from URL: https://faith.edu.ph/contact/ using method: Request
+2025-05-02 16:20:37,382 - __main__ - INFO - Using RequestSession for URL: https://faith.edu.ph/contact/
+2025-05-02 16:20:37,596 - __main__ - INFO - Successfully got content from https://faith.edu.ph/contact/ (172505 bytes)
+2025-05-02 16:20:37,943 - __main__ - INFO - Successfully extracted and cleaned content from https://faith.edu.ph/contact/ (987 bytes)
+2025-05-02 16:20:38,965 - __main__ - INFO - Completed raw data extraction for Faith Academy
+2025-05-02 16:20:38,966 - __main__ - INFO - Processing school: Jubilee Christian Academy
+2025-05-02 16:20:38,967 - __main__ - INFO - Extracting content from URL: https://www.jca.edu.ph using method: Request
+2025-05-02 16:20:38,967 - __main__ - INFO - Using RequestSession for URL: https://www.jca.edu.ph
+2025-05-02 16:20:40,786 - __main__ - INFO - Successfully got content from https://www.jca.edu.ph (105100 bytes)
+2025-05-02 16:20:41,022 - __main__ - INFO - Successfully extracted and cleaned content from https://www.jca.edu.ph (2275 bytes)
+2025-05-02 16:20:41,022 - __main__ - INFO - Extracting enrollment data from https://www.jca.edu.ph/be-a-jubilean/admission/
+2025-05-02 16:20:41,023 - __main__ - INFO - Extracting content from URL: https://www.jca.edu.ph/be-a-jubilean/admission/ using method: Request
+2025-05-02 16:20:41,023 - __main__ - INFO - Using RequestSession for URL: https://www.jca.edu.ph/be-a-jubilean/admission/
+2025-05-02 16:20:45,967 - __main__ - INFO - Successfully got content from https://www.jca.edu.ph/be-a-jubilean/admission/ (97563 bytes)
+2025-05-02 16:20:46,178 - __main__ - INFO - Successfully extracted and cleaned content from https://www.jca.edu.ph/be-a-jubilean/admission/ (4066 bytes)
+2025-05-02 16:20:47,190 - __main__ - INFO - Extracting enrollment data from https://www.jca.edu.ph/wp-content/uploads/2024/09/P-Admissions-Information.pdf
+2025-05-02 16:20:47,191 - __main__ - INFO - Extracting content from URL: https://www.jca.edu.ph/wp-content/uploads/2024/09/P-Admissions-Information.pdf using method: Request
+2025-05-02 16:20:47,191 - __main__ - INFO - Using RequestSession for URL: https://www.jca.edu.ph/wp-content/uploads/2024/09/P-Admissions-Information.pdf
+2025-05-02 16:20:51,999 - __main__ - INFO - Successfully got content from https://www.jca.edu.ph/wp-content/uploads/2024/09/P-Admissions-Information.pdf (1216922 bytes)
+2025-05-02 16:20:52,027 - __main__ - WARNING - Could not extract body content from https://www.jca.edu.ph/wp-content/uploads/2024/09/P-Admissions-Information.pdf
+2025-05-02 16:20:53,033 - __main__ - INFO - Extracting enrollment data from https://www.jca.edu.ph/wp-content/uploads/2024/09/E-ADMISSIONS-INFORMATION.pdf
+2025-05-02 16:20:53,033 - __main__ - INFO - Extracting content from URL: https://www.jca.edu.ph/wp-content/uploads/2024/09/E-ADMISSIONS-INFORMATION.pdf using method: Request
+2025-05-02 16:20:53,034 - __main__ - INFO - Using RequestSession for URL: https://www.jca.edu.ph/wp-content/uploads/2024/09/E-ADMISSIONS-INFORMATION.pdf
+2025-05-02 16:20:56,898 - __main__ - INFO - Successfully got content from https://www.jca.edu.ph/wp-content/uploads/2024/09/E-ADMISSIONS-INFORMATION.pdf (357522 bytes)
+2025-05-02 16:20:56,905 - __main__ - WARNING - Could not extract body content from https://www.jca.edu.ph/wp-content/uploads/2024/09/E-ADMISSIONS-INFORMATION.pdf
+2025-05-02 16:20:57,917 - __main__ - INFO - Extracting enrollment data from https://www.jca.edu.ph/wp-content/uploads/2024/09/Junior-HS-ADMISSIONS-INFORMATION.pdf
+2025-05-02 16:20:57,917 - __main__ - INFO - Extracting content from URL: https://www.jca.edu.ph/wp-content/uploads/2024/09/Junior-HS-ADMISSIONS-INFORMATION.pdf using method: Request
+2025-05-02 16:20:57,917 - __main__ - INFO - Using RequestSession for URL: https://www.jca.edu.ph/wp-content/uploads/2024/09/Junior-HS-ADMISSIONS-INFORMATION.pdf
+2025-05-02 16:21:00,001 - __main__ - INFO - Successfully got content from https://www.jca.edu.ph/wp-content/uploads/2024/09/Junior-HS-ADMISSIONS-INFORMATION.pdf (173664 bytes)
+2025-05-02 16:21:00,013 - __main__ - WARNING - Could not extract body content from https://www.jca.edu.ph/wp-content/uploads/2024/09/Junior-HS-ADMISSIONS-INFORMATION.pdf
+2025-05-02 16:21:01,021 - __main__ - INFO - Extracting enrollment data from https://www.jca.edu.ph/wp-content/uploads/2024/09/S-HS-ADMISSIONS-INFORMATION.pdf
+2025-05-02 16:21:01,022 - __main__ - INFO - Extracting content from URL: https://www.jca.edu.ph/wp-content/uploads/2024/09/S-HS-ADMISSIONS-INFORMATION.pdf using method: Request
+2025-05-02 16:21:01,022 - __main__ - INFO - Using RequestSession for URL: https://www.jca.edu.ph/wp-content/uploads/2024/09/S-HS-ADMISSIONS-INFORMATION.pdf
+2025-05-02 16:21:03,836 - __main__ - INFO - Successfully got content from https://www.jca.edu.ph/wp-content/uploads/2024/09/S-HS-ADMISSIONS-INFORMATION.pdf (330085 bytes)
+2025-05-02 16:21:03,846 - __main__ - WARNING - Could not extract body content from https://www.jca.edu.ph/wp-content/uploads/2024/09/S-HS-ADMISSIONS-INFORMATION.pdf
+2025-05-02 16:21:04,854 - __main__ - INFO - Extracting contact data from https://www.jca.edu.ph/contact-us/
+2025-05-02 16:21:04,854 - __main__ - INFO - Extracting content from URL: https://www.jca.edu.ph/contact-us/ using method: Request
+2025-05-02 16:21:04,854 - __main__ - INFO - Using RequestSession for URL: https://www.jca.edu.ph/contact-us/
+2025-05-02 16:21:06,246 - __main__ - INFO - Successfully got content from https://www.jca.edu.ph/contact-us/ (106905 bytes)
+2025-05-02 16:21:06,374 - __main__ - INFO - Successfully extracted and cleaned content from https://www.jca.edu.ph/contact-us/ (950 bytes)
+2025-05-02 16:21:07,375 - __main__ - INFO - Completed raw data extraction for Jubilee Christian Academy
+2025-05-02 16:21:07,376 - __main__ - INFO - Parsing data for International School Manila
+2025-05-02 16:21:07,379 - lib.parse - INFO - Parsing 11 content chunks
+2025-05-02 16:21:08,147 - httpx - INFO - HTTP Request: POST https://ollama.molodetz.nl/api/chat "HTTP/1.1 200 OK"
+2025-05-02 16:21:08,150 - httpx - INFO - HTTP Request: POST https://ollama.molodetz.nl/api/chat "HTTP/1.1 200 OK"
+2025-05-02 16:21:08,156 - httpx - INFO - HTTP Request: POST https://ollama.molodetz.nl/api/chat "HTTP/1.1 200 OK"
+2025-05-02 16:22:22,992 - httpx - INFO - HTTP Request: POST https://ollama.molodetz.nl/api/chat "HTTP/1.1 200 OK"
+2025-05-02 16:22:25,035 - httpx - INFO - HTTP Request: POST https://ollama.molodetz.nl/api/chat "HTTP/1.1 200 OK"
+2025-05-02 16:22:54,240 - httpx - INFO - HTTP Request: POST https://ollama.molodetz.nl/api/chat "HTTP/1.1 200 OK"
+2025-05-02 16:23:20,391 - httpx - INFO - HTTP Request: POST https://ollama.molodetz.nl/api/chat "HTTP/1.1 200 OK"
+2025-05-02 16:24:07,457 - httpx - INFO - HTTP Request: POST https://ollama.molodetz.nl/api/chat "HTTP/1.1 200 OK"
+2025-05-02 16:24:07,464 - httpx - INFO - HTTP Request: POST https://ollama.molodetz.nl/api/chat "HTTP/1.1 200 OK"
+2025-05-02 16:25:09,385 - httpx - INFO - HTTP Request: POST https://ollama.molodetz.nl/api/chat "HTTP/1.1 200 OK"
+2025-05-02 16:25:47,774 - httpx - INFO - HTTP Request: POST https://ollama.molodetz.nl/api/chat "HTTP/1.1 200 OK"
+2025-05-02 16:27:06,956 - __main__ - INFO - Completed parsing data for International School Manila
+2025-05-02 16:27:06,956 - __main__ - INFO - Parsing data for Brent International School
+2025-05-02 16:27:06,957 - lib.parse - INFO - Parsing 1 content chunks
+2025-05-02 16:27:07,184 - httpx - INFO - HTTP Request: POST https://ollama.molodetz.nl/api/chat "HTTP/1.1 200 OK"
+2025-05-02 16:27:35,504 - __main__ - INFO - Completed parsing data for Brent International School
+2025-05-02 16:27:35,505 - __main__ - INFO - Parsing data for British School Manila
+2025-05-02 16:27:35,506 - lib.parse - INFO - Parsing 3 content chunks
+2025-05-02 16:27:35,734 - httpx - INFO - HTTP Request: POST https://ollama.molodetz.nl/api/chat "HTTP/1.1 200 OK"
+2025-05-02 16:27:36,147 - httpx - INFO - HTTP Request: POST https://ollama.molodetz.nl/api/chat "HTTP/1.1 200 OK"
+2025-05-02 16:27:36,151 - httpx - INFO - HTTP Request: POST https://ollama.molodetz.nl/api/chat "HTTP/1.1 200 OK"
+2025-05-02 16:29:09,642 - __main__ - INFO - Completed parsing data for British School Manila
+2025-05-02 16:29:09,642 - __main__ - INFO - Parsing data for German European School Manila (GESM)
+2025-05-02 16:29:09,643 - lib.parse - INFO - Parsing 3 content chunks
+2025-05-02 16:29:09,860 - httpx - INFO - HTTP Request: POST https://ollama.molodetz.nl/api/chat "HTTP/1.1 200 OK"
+2025-05-02 16:29:09,871 - httpx - INFO - HTTP Request: POST https://ollama.molodetz.nl/api/chat "HTTP/1.1 200 OK"
+2025-05-02 16:29:10,293 - httpx - INFO - HTTP Request: POST https://ollama.molodetz.nl/api/chat "HTTP/1.1 200 OK"
+2025-05-02 16:31:02,891 - __main__ - INFO - Completed parsing data for German European School Manila (GESM)
+2025-05-02 16:31:02,892 - __main__ - INFO - Parsing data for Reedley International School
+2025-05-02 16:31:02,893 - lib.parse - INFO - Parsing 11 content chunks
+2025-05-02 16:31:03,109 - httpx - INFO - HTTP Request: POST https://ollama.molodetz.nl/api/chat "HTTP/1.1 200 OK"
+2025-05-02 16:31:03,533 - httpx - INFO - HTTP Request: POST https://ollama.molodetz.nl/api/chat "HTTP/1.1 200 OK"
+2025-05-02 16:31:03,570 - httpx - INFO - HTTP Request: POST https://ollama.molodetz.nl/api/chat "HTTP/1.1 200 OK"
+2025-05-02 16:31:59,586 - httpx - INFO - HTTP Request: POST https://ollama.molodetz.nl/api/chat "HTTP/1.1 200 OK"
+2025-05-02 16:32:25,683 - httpx - INFO - HTTP Request: POST https://ollama.molodetz.nl/api/chat "HTTP/1.1 200 OK"
+2025-05-02 16:32:26,965 - httpx - INFO - HTTP Request: POST https://ollama.molodetz.nl/api/chat "HTTP/1.1 200 OK"
+2025-05-02 16:32:53,360 - httpx - INFO - HTTP Request: POST https://ollama.molodetz.nl/api/chat "HTTP/1.1 200 OK"
+2025-05-02 16:36:32,009 - __main__ - INFO - Starting school data scraping process
+2025-05-02 16:36:32,009 - __main__ - INFO - Processing school: International School Manila
+2025-05-02 16:36:32,010 - __main__ - INFO - Extracting content from URL: https://www.ismanila.org using method: Request
+2025-05-02 16:36:32,010 - __main__ - INFO - Using RequestSession for URL: https://www.ismanila.org
+2025-05-02 16:36:32,407 - __main__ - INFO - Successfully got content from https://www.ismanila.org (221296 bytes)
+2025-05-02 16:36:33,041 - __main__ - INFO - Successfully extracted and cleaned content from https://www.ismanila.org (3802 bytes)
+2025-05-02 16:36:33,041 - __main__ - INFO - Extracting school_fee data from https://www.ismanila.org/admissions/school-fees
+2025-05-02 16:36:33,041 - __main__ - INFO - Extracting content from URL: https://www.ismanila.org/admissions/school-fees using method: Request
+2025-05-02 16:36:33,042 - __main__ - INFO - Using RequestSession for URL: https://www.ismanila.org/admissions/school-fees
+2025-05-02 16:36:33,604 - __main__ - INFO - Successfully got content from https://www.ismanila.org/admissions/school-fees (98128 bytes)
+2025-05-02 16:36:33,817 - __main__ - INFO - Successfully extracted and cleaned content from https://www.ismanila.org/admissions/school-fees (2475 bytes)
+2025-05-02 16:36:34,823 - __main__ - INFO - Extracting program data from https://www.ismanila.org/elementary-school/academic-program
+2025-05-02 16:36:34,823 - __main__ - INFO - Extracting content from URL: https://www.ismanila.org/elementary-school/academic-program using method: Request
+2025-05-02 16:36:34,823 - __main__ - INFO - Using RequestSession for URL: https://www.ismanila.org/elementary-school/academic-program
+2025-05-02 16:36:35,375 - __main__ - INFO - Successfully got content from https://www.ismanila.org/elementary-school/academic-program (82541 bytes)
+2025-05-02 16:36:35,454 - __main__ - INFO - Successfully extracted and cleaned content from https://www.ismanila.org/elementary-school/academic-program (1925 bytes)
+2025-05-02 16:36:36,457 - __main__ - INFO - Extracting program data from https://www.ismanila.org/middle-school/academic-program
+2025-05-02 16:36:36,457 - __main__ - INFO - Extracting content from URL: https://www.ismanila.org/middle-school/academic-program using method: Request
+2025-05-02 16:36:36,457 - __main__ - INFO - Using RequestSession for URL: https://www.ismanila.org/middle-school/academic-program
+2025-05-02 16:36:36,987 - __main__ - INFO - Successfully got content from https://www.ismanila.org/middle-school/academic-program (82875 bytes)
+2025-05-02 16:36:37,063 - __main__ - INFO - Successfully extracted and cleaned content from https://www.ismanila.org/middle-school/academic-program (1924 bytes)
+2025-05-02 16:36:38,075 - __main__ - INFO - Extracting program data from https://www.ismanila.org/high-school/academic-program
+2025-05-02 16:36:38,075 - __main__ - INFO - Extracting content from URL: https://www.ismanila.org/high-school/academic-program using method: Request
+2025-05-02 16:36:38,075 - __main__ - INFO - Using RequestSession for URL: https://www.ismanila.org/high-school/academic-program
+2025-05-02 16:36:38,716 - __main__ - INFO - Successfully got content from https://www.ismanila.org/high-school/academic-program (79797 bytes)
+2025-05-02 16:36:38,803 - __main__ - INFO - Successfully extracted and cleaned content from https://www.ismanila.org/high-school/academic-program (2089 bytes)
+2025-05-02 16:36:39,815 - __main__ - INFO - Extracting enrollment data from https://www.ismanila.org/admissions/admissions-process
+2025-05-02 16:36:39,815 - __main__ - INFO - Extracting content from URL: https://www.ismanila.org/admissions/admissions-process using method: Request
+2025-05-02 16:36:39,815 - __main__ - INFO - Using RequestSession for URL: https://www.ismanila.org/admissions/admissions-process
+2025-05-02 16:36:40,384 - __main__ - INFO - Successfully got content from https://www.ismanila.org/admissions/admissions-process (99105 bytes)
+2025-05-02 16:36:40,607 - __main__ - INFO - Successfully extracted and cleaned content from https://www.ismanila.org/admissions/admissions-process (10537 bytes)
+2025-05-02 16:36:41,618 - __main__ - INFO - Extracting enrollment data from https://www.ismanila.org/admissions/application-file-forms-requirements
+2025-05-02 16:36:41,619 - __main__ - INFO - Extracting content from URL: https://www.ismanila.org/admissions/application-file-forms-requirements using method: Request
+2025-05-02 16:36:41,619 - __main__ - INFO - Using RequestSession for URL: https://www.ismanila.org/admissions/application-file-forms-requirements
+2025-05-02 16:36:42,144 - __main__ - INFO - Successfully got content from https://www.ismanila.org/admissions/application-file-forms-requirements (100310 bytes)
+2025-05-02 16:36:42,340 - __main__ - INFO - Successfully extracted and cleaned content from https://www.ismanila.org/admissions/application-file-forms-requirements (15979 bytes)
+2025-05-02 16:36:43,345 - __main__ - INFO - Extracting scholarships data from https://www.ismanila.org/admissions/scholarships
+2025-05-02 16:36:43,345 - __main__ - INFO - Extracting content from URL: https://www.ismanila.org/admissions/scholarships using method: Request
+2025-05-02 16:36:43,346 - __main__ - INFO - Using RequestSession for URL: https://www.ismanila.org/admissions/scholarships
+2025-05-02 16:36:43,893 - __main__ - INFO - Successfully got content from https://www.ismanila.org/admissions/scholarships (89869 bytes)
+2025-05-02 16:36:44,060 - __main__ - INFO - Successfully extracted and cleaned content from https://www.ismanila.org/admissions/scholarships (7486 bytes)
+2025-05-02 16:36:45,069 - __main__ - INFO - Extracting contact data from https://www.ismanila.org/contact-us
+2025-05-02 16:36:45,069 - __main__ - INFO - Extracting content from URL: https://www.ismanila.org/contact-us using method: Request
+2025-05-02 16:36:45,069 - __main__ - INFO - Using RequestSession for URL: https://www.ismanila.org/contact-us
+2025-05-02 16:36:45,682 - __main__ - INFO - Successfully got content from https://www.ismanila.org/contact-us (77602 bytes)
+2025-05-02 16:36:45,783 - __main__ - INFO - Successfully extracted and cleaned content from https://www.ismanila.org/contact-us (1010 bytes)
+2025-05-02 16:36:46,796 - __main__ - INFO - Completed raw data extraction for International School Manila
+2025-05-02 16:36:46,797 - __main__ - INFO - Parsing data for International School Manila
+2025-05-02 16:36:46,817 - lib.parse - INFO - Parsing 11 content chunks
+2025-05-02 16:36:47,460 - httpx - INFO - HTTP Request: POST https://ollama.molodetz.nl/api/chat "HTTP/1.1 200 OK"
+2025-05-02 16:36:47,475 - httpx - INFO - HTTP Request: POST https://ollama.molodetz.nl/api/chat "HTTP/1.1 200 OK"
+2025-05-02 16:36:47,485 - httpx - INFO - HTTP Request: POST https://ollama.molodetz.nl/api/chat "HTTP/1.1 200 OK"
+2025-05-02 16:37:59,564 - httpx - INFO - HTTP Request: POST https://ollama.molodetz.nl/api/chat "HTTP/1.1 200 OK"
+2025-05-02 16:38:14,263 - httpx - INFO - HTTP Request: POST https://ollama.molodetz.nl/api/chat "HTTP/1.1 200 OK"
+2025-05-02 16:42:29,173 - httpx - INFO - HTTP Request: POST https://ollama.molodetz.nl/api/chat "HTTP/1.1 200 OK"
+2025-05-02 16:42:55,701 - httpx - INFO - HTTP Request: POST https://ollama.molodetz.nl/api/chat "HTTP/1.1 200 OK"
+2025-05-02 16:43:25,030 - httpx - INFO - HTTP Request: POST https://ollama.molodetz.nl/api/chat "HTTP/1.1 200 OK"
+2025-05-02 16:43:27,338 - httpx - INFO - HTTP Request: POST https://ollama.molodetz.nl/api/chat "HTTP/1.1 200 OK"
+2025-05-02 16:44:00,710 - httpx - INFO - HTTP Request: POST https://ollama.molodetz.nl/api/chat "HTTP/1.1 200 OK"
+2025-05-02 16:44:47,742 - httpx - INFO - HTTP Request: POST https://ollama.molodetz.nl/api/chat "HTTP/1.1 200 OK"
+2025-05-02 16:51:19,798 - __main__ - INFO - Starting school data scraping process
+2025-05-02 16:51:19,798 - __main__ - INFO - Processing school: International School Manila
+2025-05-02 16:51:19,799 - __main__ - INFO - Extracting content from URL: https://www.ismanila.org using method: Request
+2025-05-02 16:51:19,799 - __main__ - INFO - Using RequestSession for URL: https://www.ismanila.org
+2025-05-02 16:51:20,202 - __main__ - INFO - Successfully got content from https://www.ismanila.org (221296 bytes)
+2025-05-02 16:51:20,879 - __main__ - INFO - Successfully extracted and cleaned content from https://www.ismanila.org (3802 bytes)
+2025-05-02 16:51:20,879 - __main__ - INFO - Extracting school_fee data from https://www.ismanila.org/admissions/school-fees
+2025-05-02 16:51:20,879 - __main__ - INFO - Extracting content from URL: https://www.ismanila.org/admissions/school-fees using method: Request
+2025-05-02 16:51:20,880 - __main__ - INFO - Using RequestSession for URL: https://www.ismanila.org/admissions/school-fees
+2025-05-02 16:51:21,404 - __main__ - INFO - Successfully got content from https://www.ismanila.org/admissions/school-fees (98128 bytes)
+2025-05-02 16:51:21,665 - __main__ - INFO - Successfully extracted and cleaned content from https://www.ismanila.org/admissions/school-fees (2475 bytes)
+2025-05-02 16:51:22,678 - __main__ - INFO - Extracting program data from https://www.ismanila.org/elementary-school/academic-program
+2025-05-02 16:51:22,678 - __main__ - INFO - Extracting content from URL: https://www.ismanila.org/elementary-school/academic-program using method: Request
+2025-05-02 16:51:22,679 - __main__ - INFO - Using RequestSession for URL: https://www.ismanila.org/elementary-school/academic-program
+2025-05-02 16:51:23,204 - __main__ - INFO - Successfully got content from https://www.ismanila.org/elementary-school/academic-program (82541 bytes)
+2025-05-02 16:51:23,294 - __main__ - INFO - Successfully extracted and cleaned content from https://www.ismanila.org/elementary-school/academic-program (1925 bytes)
+2025-05-02 16:51:24,308 - __main__ - INFO - Extracting program data from https://www.ismanila.org/middle-school/academic-program
+2025-05-02 16:51:24,309 - __main__ - INFO - Extracting content from URL: https://www.ismanila.org/middle-school/academic-program using method: Request
+2025-05-02 16:51:24,309 - __main__ - INFO - Using RequestSession for URL: https://www.ismanila.org/middle-school/academic-program
+2025-05-02 16:51:24,857 - __main__ - INFO - Successfully got content from https://www.ismanila.org/middle-school/academic-program (82875 bytes)
+2025-05-02 16:51:24,932 - __main__ - INFO - Successfully extracted and cleaned content from https://www.ismanila.org/middle-school/academic-program (1924 bytes)
+2025-05-02 16:51:25,938 - __main__ - INFO - Extracting program data from https://www.ismanila.org/high-school/academic-program
+2025-05-02 16:51:25,938 - __main__ - INFO - Extracting content from URL: https://www.ismanila.org/high-school/academic-program using method: Request
+2025-05-02 16:51:25,939 - __main__ - INFO - Using RequestSession for URL: https://www.ismanila.org/high-school/academic-program
+2025-05-02 16:51:26,486 - __main__ - INFO - Successfully got content from https://www.ismanila.org/high-school/academic-program (79797 bytes)
+2025-05-02 16:51:26,572 - __main__ - INFO - Successfully extracted and cleaned content from https://www.ismanila.org/high-school/academic-program (2089 bytes)
+2025-05-02 16:51:27,586 - __main__ - INFO - Extracting enrollment data from https://www.ismanila.org/admissions/admissions-process
+2025-05-02 16:51:27,586 - __main__ - INFO - Extracting content from URL: https://www.ismanila.org/admissions/admissions-process using method: Request
+2025-05-02 16:51:27,586 - __main__ - INFO - Using RequestSession for URL: https://www.ismanila.org/admissions/admissions-process
+2025-05-02 16:51:28,151 - __main__ - INFO - Successfully got content from https://www.ismanila.org/admissions/admissions-process (99105 bytes)
+2025-05-02 16:51:28,334 - __main__ - INFO - Successfully extracted and cleaned content from https://www.ismanila.org/admissions/admissions-process (10537 bytes)
+2025-05-02 16:51:29,355 - __main__ - INFO - Extracting enrollment data from https://www.ismanila.org/admissions/application-file-forms-requirements
+2025-05-02 16:51:29,355 - __main__ - INFO - Extracting content from URL: https://www.ismanila.org/admissions/application-file-forms-requirements using method: Request
+2025-05-02 16:51:29,356 - __main__ - INFO - Using RequestSession for URL: https://www.ismanila.org/admissions/application-file-forms-requirements
+2025-05-02 16:51:29,939 - __main__ - INFO - Successfully got content from https://www.ismanila.org/admissions/application-file-forms-requirements (100310 bytes)
+2025-05-02 16:51:30,141 - __main__ - INFO - Successfully extracted and cleaned content from https://www.ismanila.org/admissions/application-file-forms-requirements (15979 bytes)
+2025-05-02 16:51:31,143 - __main__ - INFO - Extracting scholarships data from https://www.ismanila.org/admissions/scholarships
+2025-05-02 16:51:31,144 - __main__ - INFO - Extracting content from URL: https://www.ismanila.org/admissions/scholarships using method: Request
+2025-05-02 16:51:31,144 - __main__ - INFO - Using RequestSession for URL: https://www.ismanila.org/admissions/scholarships
+2025-05-02 16:51:31,705 - __main__ - INFO - Successfully got content from https://www.ismanila.org/admissions/scholarships (89869 bytes)
+2025-05-02 16:51:31,855 - __main__ - INFO - Successfully extracted and cleaned content from https://www.ismanila.org/admissions/scholarships (7486 bytes)
+2025-05-02 16:51:32,868 - __main__ - INFO - Extracting contact data from https://www.ismanila.org/contact-us
+2025-05-02 16:51:32,869 - __main__ - INFO - Extracting content from URL: https://www.ismanila.org/contact-us using method: Request
+2025-05-02 16:51:32,869 - __main__ - INFO - Using RequestSession for URL: https://www.ismanila.org/contact-us
+2025-05-02 16:51:33,382 - __main__ - INFO - Successfully got content from https://www.ismanila.org/contact-us (77602 bytes)
+2025-05-02 16:51:33,474 - __main__ - INFO - Successfully extracted and cleaned content from https://www.ismanila.org/contact-us (1010 bytes)
+2025-05-02 16:51:34,495 - __main__ - INFO - Completed raw data extraction for International School Manila
+2025-05-02 16:51:34,496 - __main__ - INFO - Parsing data for International School Manila
+2025-05-02 16:51:34,507 - lib.parse - INFO - Parsing 11 content chunks
+2025-05-02 16:51:35,164 - httpx - INFO - HTTP Request: POST https://ollama.molodetz.nl/api/chat "HTTP/1.1 200 OK"
+2025-05-02 16:51:35,179 - httpx - INFO - HTTP Request: POST https://ollama.molodetz.nl/api/chat "HTTP/1.1 200 OK"
+2025-05-02 16:51:35,199 - httpx - INFO - HTTP Request: POST https://ollama.molodetz.nl/api/chat "HTTP/1.1 200 OK"
+2025-05-02 16:52:12,707 - httpx - INFO - HTTP Request: POST https://ollama.molodetz.nl/api/chat "HTTP/1.1 200 OK"
+2025-05-02 16:52:44,811 - httpx - INFO - HTTP Request: POST https://ollama.molodetz.nl/api/chat "HTTP/1.1 200 OK"
+2025-05-02 16:53:06,764 - httpx - INFO - HTTP Request: POST https://ollama.molodetz.nl/api/chat "HTTP/1.1 200 OK"
+2025-05-02 16:53:30,807 - httpx - INFO - HTTP Request: POST https://ollama.molodetz.nl/api/chat "HTTP/1.1 200 OK"
+2025-05-02 16:54:01,686 - httpx - INFO - HTTP Request: POST https://ollama.molodetz.nl/api/chat "HTTP/1.1 200 OK"
+2025-05-02 17:14:31,454 - __main__ - INFO - Starting school data scraping process
+2025-05-02 17:14:31,455 - __main__ - INFO - Processing school: International School Manila
+2025-05-02 17:14:31,455 - __main__ - INFO - Extracting content from URL: https://www.ismanila.org using method: Request
+2025-05-02 17:14:31,456 - __main__ - INFO - Using RequestSession for URL: https://www.ismanila.org
+2025-05-02 17:14:32,364 - __main__ - INFO - Successfully got content from https://www.ismanila.org (221296 bytes)
+2025-05-02 17:14:33,019 - __main__ - INFO - Successfully extracted and cleaned content from https://www.ismanila.org (3802 bytes)
+2025-05-02 17:14:33,019 - __main__ - INFO - Extracting school_fee data from https://www.ismanila.org/admissions/school-fees
+2025-05-02 17:14:33,020 - __main__ - INFO - Extracting content from URL: https://www.ismanila.org/admissions/school-fees using method: Request
+2025-05-02 17:14:33,020 - __main__ - INFO - Using RequestSession for URL: https://www.ismanila.org/admissions/school-fees
+2025-05-02 17:14:33,555 - __main__ - INFO - Successfully got content from https://www.ismanila.org/admissions/school-fees (98128 bytes)
+2025-05-02 17:14:33,747 - __main__ - INFO - Successfully extracted and cleaned content from https://www.ismanila.org/admissions/school-fees (2475 bytes)
+2025-05-02 17:14:34,763 - __main__ - INFO - Extracting program data from https://www.ismanila.org/elementary-school/academic-program
+2025-05-02 17:14:34,764 - __main__ - INFO - Extracting content from URL: https://www.ismanila.org/elementary-school/academic-program using method: Request
+2025-05-02 17:14:34,764 - __main__ - INFO - Using RequestSession for URL: https://www.ismanila.org/elementary-school/academic-program
+2025-05-02 17:14:35,309 - __main__ - INFO - Successfully got content from https://www.ismanila.org/elementary-school/academic-program (82541 bytes)
+2025-05-02 17:14:35,406 - __main__ - INFO - Successfully extracted and cleaned content from https://www.ismanila.org/elementary-school/academic-program (1925 bytes)
+2025-05-02 17:14:36,409 - __main__ - INFO - Extracting program data from https://www.ismanila.org/middle-school/academic-program
+2025-05-02 17:14:36,409 - __main__ - INFO - Extracting content from URL: https://www.ismanila.org/middle-school/academic-program using method: Request
+2025-05-02 17:14:36,410 - __main__ - INFO - Using RequestSession for URL: https://www.ismanila.org/middle-school/academic-program
+2025-05-02 17:14:36,909 - __main__ - INFO - Successfully got content from https://www.ismanila.org/middle-school/academic-program (82875 bytes)
+2025-05-02 17:14:37,026 - __main__ - INFO - Successfully extracted and cleaned content from https://www.ismanila.org/middle-school/academic-program (1924 bytes)
+2025-05-02 17:14:38,038 - __main__ - INFO - Extracting program data from https://www.ismanila.org/high-school/academic-program
+2025-05-02 17:14:38,038 - __main__ - INFO - Extracting content from URL: https://www.ismanila.org/high-school/academic-program using method: Request
+2025-05-02 17:14:38,038 - __main__ - INFO - Using RequestSession for URL: https://www.ismanila.org/high-school/academic-program
+2025-05-02 17:14:38,614 - __main__ - INFO - Successfully got content from https://www.ismanila.org/high-school/academic-program (79797 bytes)
+2025-05-02 17:14:38,797 - __main__ - INFO - Successfully extracted and cleaned content from https://www.ismanila.org/high-school/academic-program (2089 bytes)
+2025-05-02 17:14:39,811 - __main__ - INFO - Extracting enrollment data from https://www.ismanila.org/admissions/admissions-process
+2025-05-02 17:14:39,811 - __main__ - INFO - Extracting content from URL: https://www.ismanila.org/admissions/admissions-process using method: Request
+2025-05-02 17:14:39,811 - __main__ - INFO - Using RequestSession for URL: https://www.ismanila.org/admissions/admissions-process
+2025-05-02 17:14:40,379 - __main__ - INFO - Successfully got content from https://www.ismanila.org/admissions/admissions-process (99105 bytes)
+2025-05-02 17:14:40,568 - __main__ - INFO - Successfully extracted and cleaned content from https://www.ismanila.org/admissions/admissions-process (10537 bytes)
+2025-05-02 17:14:41,584 - __main__ - INFO - Extracting enrollment data from https://www.ismanila.org/admissions/application-file-forms-requirements
+2025-05-02 17:14:41,584 - __main__ - INFO - Extracting content from URL: https://www.ismanila.org/admissions/application-file-forms-requirements using method: Request
+2025-05-02 17:14:41,585 - __main__ - INFO - Using RequestSession for URL: https://www.ismanila.org/admissions/application-file-forms-requirements
+2025-05-02 17:14:42,167 - __main__ - INFO - Successfully got content from https://www.ismanila.org/admissions/application-file-forms-requirements (100310 bytes)
+2025-05-02 17:14:42,373 - __main__ - INFO - Successfully extracted and cleaned content from https://www.ismanila.org/admissions/application-file-forms-requirements (15979 bytes)
+2025-05-02 17:14:43,374 - __main__ - INFO - Extracting scholarships data from https://www.ismanila.org/admissions/scholarships
+2025-05-02 17:14:43,374 - __main__ - INFO - Extracting content from URL: https://www.ismanila.org/admissions/scholarships using method: Request
+2025-05-02 17:14:43,375 - __main__ - INFO - Using RequestSession for URL: https://www.ismanila.org/admissions/scholarships
+2025-05-02 17:14:43,925 - __main__ - INFO - Successfully got content from https://www.ismanila.org/admissions/scholarships (89869 bytes)
+2025-05-02 17:14:44,101 - __main__ - INFO - Successfully extracted and cleaned content from https://www.ismanila.org/admissions/scholarships (7486 bytes)
+2025-05-02 17:14:45,102 - __main__ - INFO - Extracting contact data from https://www.ismanila.org/contact-us
+2025-05-02 17:14:45,102 - __main__ - INFO - Extracting content from URL: https://www.ismanila.org/contact-us using method: Request
+2025-05-02 17:14:45,102 - __main__ - INFO - Using RequestSession for URL: https://www.ismanila.org/contact-us
+2025-05-02 17:14:45,652 - __main__ - INFO - Successfully got content from https://www.ismanila.org/contact-us (77602 bytes)
+2025-05-02 17:14:45,761 - __main__ - INFO - Successfully extracted and cleaned content from https://www.ismanila.org/contact-us (1010 bytes)
+2025-05-02 17:14:46,783 - __main__ - INFO - Completed raw data extraction for International School Manila
+2025-05-02 17:14:46,784 - __main__ - INFO - Parsing data for International School Manila
+2025-05-02 17:14:46,800 - lib.parse - INFO - Processing content without chunking
+2025-05-02 17:14:47,896 - httpx - INFO - HTTP Request: POST https://ollama.molodetz.nl/api/chat "HTTP/1.1 200 OK"
+2025-05-02 17:15:10,589 - __main__ - INFO - Completed parsing data for International School Manila
+2025-05-02 17:15:10,590 - __main__ - INFO - Summary report generated at output\school_data_summary.md
+2025-05-02 17:15:10,591 - __main__ - INFO - Scraping process completed successfully
+2025-05-02 17:15:10,591 - __main__ - INFO - School data scraping process completed
+2025-05-02 17:21:40,114 - __main__ - INFO - Starting school data scraping process
+2025-05-02 17:21:40,114 - __main__ - INFO - Processing school: International School Manila
+2025-05-02 17:21:40,115 - __main__ - INFO - Extracting content from URL: https://www.ismanila.org using method: Request
+2025-05-02 17:21:40,115 - __main__ - INFO - Using RequestSession for URL: https://www.ismanila.org
+2025-05-02 17:21:40,789 - __main__ - INFO - Successfully got content from https://www.ismanila.org (221296 bytes)
+2025-05-02 17:21:41,410 - __main__ - INFO - Successfully extracted and cleaned content from https://www.ismanila.org (3802 bytes)
+2025-05-02 17:21:41,410 - __main__ - INFO - Extracting school_fee data from https://www.ismanila.org/admissions/school-fees
+2025-05-02 17:21:41,411 - __main__ - INFO - Extracting content from URL: https://www.ismanila.org/admissions/school-fees using method: Request
+2025-05-02 17:21:41,411 - __main__ - INFO - Using RequestSession for URL: https://www.ismanila.org/admissions/school-fees
+2025-05-02 17:21:41,554 - __main__ - INFO - Successfully got content from https://www.ismanila.org/admissions/school-fees (98128 bytes)
+2025-05-02 17:21:41,747 - __main__ - INFO - Successfully extracted and cleaned content from https://www.ismanila.org/admissions/school-fees (2475 bytes)
+2025-05-02 17:21:42,748 - __main__ - INFO - Extracting program data from https://www.ismanila.org/elementary-school/academic-program
+2025-05-02 17:21:42,748 - __main__ - INFO - Extracting content from URL: https://www.ismanila.org/elementary-school/academic-program using method: Request
+2025-05-02 17:21:42,749 - __main__ - INFO - Using RequestSession for URL: https://www.ismanila.org/elementary-school/academic-program
+2025-05-02 17:21:42,876 - __main__ - INFO - Successfully got content from https://www.ismanila.org/elementary-school/academic-program (82541 bytes)
+2025-05-02 17:21:42,955 - __main__ - INFO - Successfully extracted and cleaned content from https://www.ismanila.org/elementary-school/academic-program (1925 bytes)
+2025-05-02 17:21:43,939 - __main__ - INFO - Extracting program data from https://www.ismanila.org/middle-school/academic-program
+2025-05-02 17:21:43,940 - __main__ - INFO - Extracting content from URL: https://www.ismanila.org/middle-school/academic-program using method: Request
+2025-05-02 17:21:43,940 - __main__ - INFO - Using RequestSession for URL: https://www.ismanila.org/middle-school/academic-program
+2025-05-02 17:21:44,078 - __main__ - INFO - Successfully got content from https://www.ismanila.org/middle-school/academic-program (82875 bytes)
+2025-05-02 17:21:44,154 - __main__ - INFO - Successfully extracted and cleaned content from https://www.ismanila.org/middle-school/academic-program (1924 bytes)
+2025-05-02 17:21:45,155 - __main__ - INFO - Extracting program data from https://www.ismanila.org/high-school/academic-program
+2025-05-02 17:21:45,156 - __main__ - INFO - Extracting content from URL: https://www.ismanila.org/high-school/academic-program using method: Request
+2025-05-02 17:21:45,156 - __main__ - INFO - Using RequestSession for URL: https://www.ismanila.org/high-school/academic-program
+2025-05-02 17:21:45,309 - __main__ - INFO - Successfully got content from https://www.ismanila.org/high-school/academic-program (79797 bytes)
+2025-05-02 17:21:45,393 - __main__ - INFO - Successfully extracted and cleaned content from https://www.ismanila.org/high-school/academic-program (2089 bytes)
+2025-05-02 17:21:46,407 - __main__ - INFO - Extracting enrollment data from https://www.ismanila.org/admissions/admissions-process
+2025-05-02 17:21:46,407 - __main__ - INFO - Extracting content from URL: https://www.ismanila.org/admissions/admissions-process using method: Request
+2025-05-02 17:21:46,407 - __main__ - INFO - Using RequestSession for URL: https://www.ismanila.org/admissions/admissions-process
+2025-05-02 17:21:46,562 - __main__ - INFO - Successfully got content from https://www.ismanila.org/admissions/admissions-process (99105 bytes)
+2025-05-02 17:21:46,843 - __main__ - INFO - Successfully extracted and cleaned content from https://www.ismanila.org/admissions/admissions-process (10537 bytes)
+2025-05-02 17:21:47,850 - __main__ - INFO - Extracting enrollment data from https://www.ismanila.org/admissions/application-file-forms-requirements
+2025-05-02 17:21:47,850 - __main__ - INFO - Extracting content from URL: https://www.ismanila.org/admissions/application-file-forms-requirements using method: Request
+2025-05-02 17:21:47,850 - __main__ - INFO - Using RequestSession for URL: https://www.ismanila.org/admissions/application-file-forms-requirements
+2025-05-02 17:21:47,995 - __main__ - INFO - Successfully got content from https://www.ismanila.org/admissions/application-file-forms-requirements (100310 bytes)
+2025-05-02 17:21:48,192 - __main__ - INFO - Successfully extracted and cleaned content from https://www.ismanila.org/admissions/application-file-forms-requirements (15979 bytes)
+2025-05-02 17:21:49,199 - __main__ - INFO - Extracting scholarships data from https://www.ismanila.org/admissions/scholarships
+2025-05-02 17:21:49,199 - __main__ - INFO - Extracting content from URL: https://www.ismanila.org/admissions/scholarships using method: Request
+2025-05-02 17:21:49,200 - __main__ - INFO - Using RequestSession for URL: https://www.ismanila.org/admissions/scholarships
+2025-05-02 17:21:49,348 - __main__ - INFO - Successfully got content from https://www.ismanila.org/admissions/scholarships (89869 bytes)
+2025-05-02 17:21:49,505 - __main__ - INFO - Successfully extracted and cleaned content from https://www.ismanila.org/admissions/scholarships (7486 bytes)
+2025-05-02 17:21:50,512 - __main__ - INFO - Extracting contact data from https://www.ismanila.org/contact-us
+2025-05-02 17:21:50,512 - __main__ - INFO - Extracting content from URL: https://www.ismanila.org/contact-us using method: Request
+2025-05-02 17:21:50,512 - __main__ - INFO - Using RequestSession for URL: https://www.ismanila.org/contact-us
+2025-05-02 17:21:50,678 - __main__ - INFO - Successfully got content from https://www.ismanila.org/contact-us (77602 bytes)
+2025-05-02 17:21:50,812 - __main__ - INFO - Successfully extracted and cleaned content from https://www.ismanila.org/contact-us (1010 bytes)
+2025-05-02 17:21:51,815 - __main__ - INFO - Completed raw data extraction for International School Manila
+2025-05-02 17:21:51,815 - __main__ - INFO - Parsing data for International School Manila
+2025-05-02 17:21:51,831 - lib.parse - INFO - Processing content without chunking
+2025-05-02 17:21:52,923 - httpx - INFO - HTTP Request: POST https://ollama.molodetz.nl/api/chat "HTTP/1.1 200 OK"
+2025-05-02 17:23:41,097 - __main__ - INFO - Completed parsing data for International School Manila
+2025-05-02 17:23:41,098 - __main__ - INFO - Summary report generated at output\school_data_summary.md
+2025-05-02 17:23:41,098 - __main__ - INFO - Scraping process completed successfully
+2025-05-02 17:23:41,099 - __main__ - INFO - School data scraping process completed
+2025-05-02 17:28:44,525 - __main__ - INFO - Starting school data scraping process
+2025-05-02 17:28:44,525 - __main__ - INFO - Processing school: International School Manila
+2025-05-02 17:28:44,526 - __main__ - INFO - Extracting content from URL: https://www.ismanila.org using method: Request
+2025-05-02 17:28:44,526 - __main__ - INFO - Using RequestSession for URL: https://www.ismanila.org
+2025-05-02 17:28:45,921 - __main__ - INFO - Successfully got content from https://www.ismanila.org (221296 bytes)
+2025-05-02 17:28:46,724 - __main__ - INFO - Successfully extracted and cleaned content from https://www.ismanila.org (3802 bytes)
+2025-05-02 17:28:46,724 - __main__ - INFO - Extracting school_fee data from https://www.ismanila.org/admissions/school-fees
+2025-05-02 17:28:46,725 - __main__ - INFO - Extracting content from URL: https://www.ismanila.org/admissions/school-fees using method: Request
+2025-05-02 17:28:46,725 - __main__ - INFO - Using RequestSession for URL: https://www.ismanila.org/admissions/school-fees
+2025-05-02 17:28:47,322 - __main__ - INFO - Successfully got content from https://www.ismanila.org/admissions/school-fees (98128 bytes)
+2025-05-02 17:28:47,621 - __main__ - INFO - Successfully extracted and cleaned content from https://www.ismanila.org/admissions/school-fees (2475 bytes)
+2025-05-02 17:28:48,632 - __main__ - INFO - Extracting program data from https://www.ismanila.org/elementary-school/academic-program
+2025-05-02 17:28:48,632 - __main__ - INFO - Extracting content from URL: https://www.ismanila.org/elementary-school/academic-program using method: Request
+2025-05-02 17:28:48,632 - __main__ - INFO - Using RequestSession for URL: https://www.ismanila.org/elementary-school/academic-program
+2025-05-02 17:28:49,175 - __main__ - INFO - Successfully got content from https://www.ismanila.org/elementary-school/academic-program (82541 bytes)
+2025-05-02 17:28:49,271 - __main__ - INFO - Successfully extracted and cleaned content from https://www.ismanila.org/elementary-school/academic-program (1925 bytes)
+2025-05-02 17:28:50,281 - __main__ - INFO - Extracting program data from https://www.ismanila.org/middle-school/academic-program
+2025-05-02 17:28:50,282 - __main__ - INFO - Extracting content from URL: https://www.ismanila.org/middle-school/academic-program using method: Request
+2025-05-02 17:28:50,282 - __main__ - INFO - Using RequestSession for URL: https://www.ismanila.org/middle-school/academic-program
+2025-05-02 17:28:50,793 - __main__ - INFO - Successfully got content from https://www.ismanila.org/middle-school/academic-program (82875 bytes)
+2025-05-02 17:28:50,892 - __main__ - INFO - Successfully extracted and cleaned content from https://www.ismanila.org/middle-school/academic-program (1924 bytes)
+2025-05-02 17:28:51,905 - __main__ - INFO - Extracting program data from https://www.ismanila.org/high-school/academic-program
+2025-05-02 17:28:51,905 - __main__ - INFO - Extracting content from URL: https://www.ismanila.org/high-school/academic-program using method: Request
+2025-05-02 17:28:51,905 - __main__ - INFO - Using RequestSession for URL: https://www.ismanila.org/high-school/academic-program
+2025-05-02 17:28:52,421 - __main__ - INFO - Successfully got content from https://www.ismanila.org/high-school/academic-program (79797 bytes)
+2025-05-02 17:28:52,511 - __main__ - INFO - Successfully extracted and cleaned content from https://www.ismanila.org/high-school/academic-program (2089 bytes)
+2025-05-02 17:28:53,525 - __main__ - INFO - Extracting enrollment data from https://www.ismanila.org/admissions/admissions-process
+2025-05-02 17:28:53,525 - __main__ - INFO - Extracting content from URL: https://www.ismanila.org/admissions/admissions-process using method: Request
+2025-05-02 17:28:53,525 - __main__ - INFO - Using RequestSession for URL: https://www.ismanila.org/admissions/admissions-process
+2025-05-02 17:28:54,092 - __main__ - INFO - Successfully got content from https://www.ismanila.org/admissions/admissions-process (99105 bytes)
+2025-05-02 17:28:54,331 - __main__ - INFO - Successfully extracted and cleaned content from https://www.ismanila.org/admissions/admissions-process (10537 bytes)
+2025-05-02 17:28:55,346 - __main__ - INFO - Extracting enrollment data from https://www.ismanila.org/admissions/application-file-forms-requirements
+2025-05-02 17:28:55,346 - __main__ - INFO - Extracting content from URL: https://www.ismanila.org/admissions/application-file-forms-requirements using method: Request
+2025-05-02 17:28:55,347 - __main__ - INFO - Using RequestSession for URL: https://www.ismanila.org/admissions/application-file-forms-requirements
+2025-05-02 17:28:55,859 - __main__ - INFO - Successfully got content from https://www.ismanila.org/admissions/application-file-forms-requirements (100310 bytes)
+2025-05-02 17:28:56,062 - __main__ - INFO - Successfully extracted and cleaned content from https://www.ismanila.org/admissions/application-file-forms-requirements (15979 bytes)
+2025-05-02 17:28:57,077 - __main__ - INFO - Extracting scholarships data from https://www.ismanila.org/admissions/scholarships
+2025-05-02 17:28:57,077 - __main__ - INFO - Extracting content from URL: https://www.ismanila.org/admissions/scholarships using method: Request
+2025-05-02 17:28:57,077 - __main__ - INFO - Using RequestSession for URL: https://www.ismanila.org/admissions/scholarships
+2025-05-02 17:28:57,656 - __main__ - INFO - Successfully got content from https://www.ismanila.org/admissions/scholarships (89869 bytes)
+2025-05-02 17:28:57,823 - __main__ - INFO - Successfully extracted and cleaned content from https://www.ismanila.org/admissions/scholarships (7486 bytes)
+2025-05-02 17:28:58,839 - __main__ - INFO - Extracting contact data from https://www.ismanila.org/contact-us
+2025-05-02 17:28:58,840 - __main__ - INFO - Extracting content from URL: https://www.ismanila.org/contact-us using method: Request
+2025-05-02 17:28:58,841 - __main__ - INFO - Using RequestSession for URL: https://www.ismanila.org/contact-us
+2025-05-02 17:28:59,375 - __main__ - INFO - Successfully got content from https://www.ismanila.org/contact-us (77602 bytes)
+2025-05-02 17:28:59,474 - __main__ - INFO - Successfully extracted and cleaned content from https://www.ismanila.org/contact-us (1010 bytes)
+2025-05-02 17:29:00,490 - __main__ - INFO - Completed raw data extraction for International School Manila
+2025-05-02 17:29:00,491 - __main__ - INFO - Parsing data for International School Manila
+2025-05-02 17:29:00,506 - lib.parse - INFO - Content is large (48467 chars), using optimized chunking
+2025-05-02 17:29:00,510 - lib.parse - INFO - Created 6 optimized chunks
+2025-05-02 17:29:00,510 - lib.parse - INFO - Parsing 6 content chunks
+2025-05-02 17:29:01,158 - httpx - INFO - HTTP Request: POST https://ollama.molodetz.nl/api/chat "HTTP/1.1 200 OK"
+2025-05-02 17:29:01,166 - lib.parse - WARNING - Error parsing chunk (attempt 1/3): 1 validation error for ChatResponse
+message
+  Field required [type=missing, input_value={'error': 'No server with...created': 1743724800}]}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.11/v/missing
+2025-05-02 17:29:01,169 - httpx - INFO - HTTP Request: POST https://ollama.molodetz.nl/api/chat "HTTP/1.1 200 OK"
+2025-05-02 17:29:01,170 - lib.parse - WARNING - Error parsing chunk (attempt 1/3): 1 validation error for ChatResponse
+message
+  Field required [type=missing, input_value={'error': 'No server with...created': 1743724800}]}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.11/v/missing
+2025-05-02 17:29:01,178 - httpx - INFO - HTTP Request: POST https://ollama.molodetz.nl/api/chat "HTTP/1.1 200 OK"
+2025-05-02 17:29:01,180 - lib.parse - WARNING - Error parsing chunk (attempt 1/3): 1 validation error for ChatResponse
+message
+  Field required [type=missing, input_value={'error': 'No server with...created': 1743724800}]}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.11/v/missing
+2025-05-02 17:29:03,385 - httpx - INFO - HTTP Request: POST https://ollama.molodetz.nl/api/chat "HTTP/1.1 200 OK"
+2025-05-02 17:29:03,386 - lib.parse - WARNING - Error parsing chunk (attempt 2/3): 1 validation error for ChatResponse
+message
+  Field required [type=missing, input_value={'error': 'No server with...created': 1743724800}]}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.11/v/missing
+2025-05-02 17:29:03,393 - httpx - INFO - HTTP Request: POST https://ollama.molodetz.nl/api/chat "HTTP/1.1 200 OK"
+2025-05-02 17:29:03,394 - lib.parse - WARNING - Error parsing chunk (attempt 2/3): 1 validation error for ChatResponse
+message
+  Field required [type=missing, input_value={'error': 'No server with...created': 1743724800}]}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.11/v/missing
+2025-05-02 17:29:03,402 - httpx - INFO - HTTP Request: POST https://ollama.molodetz.nl/api/chat "HTTP/1.1 200 OK"
+2025-05-02 17:29:03,403 - lib.parse - WARNING - Error parsing chunk (attempt 2/3): 1 validation error for ChatResponse
+message
+  Field required [type=missing, input_value={'error': 'No server with...created': 1743724800}]}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.11/v/missing
+2025-05-02 17:29:05,600 - httpx - INFO - HTTP Request: POST https://ollama.molodetz.nl/api/chat "HTTP/1.1 200 OK"
+2025-05-02 17:29:05,600 - lib.parse - WARNING - Error parsing chunk (attempt 3/3): 1 validation error for ChatResponse
+message
+  Field required [type=missing, input_value={'error': 'No server with...created': 1743724800}]}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.11/v/missing
+2025-05-02 17:29:05,615 - httpx - INFO - HTTP Request: POST https://ollama.molodetz.nl/api/chat "HTTP/1.1 200 OK"
+2025-05-02 17:29:05,616 - lib.parse - WARNING - Error parsing chunk (attempt 3/3): 1 validation error for ChatResponse
+message
+  Field required [type=missing, input_value={'error': 'No server with...created': 1743724800}]}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.11/v/missing
+2025-05-02 17:29:05,623 - httpx - INFO - HTTP Request: POST https://ollama.molodetz.nl/api/chat "HTTP/1.1 200 OK"
+2025-05-02 17:29:05,625 - lib.parse - WARNING - Error parsing chunk (attempt 3/3): 1 validation error for ChatResponse
+message
+  Field required [type=missing, input_value={'error': 'No server with...created': 1743724800}]}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.11/v/missing
+2025-05-02 17:29:05,815 - httpx - INFO - HTTP Request: POST https://ollama.molodetz.nl/api/chat "HTTP/1.1 200 OK"
+2025-05-02 17:29:05,816 - lib.parse - WARNING - Error parsing chunk (attempt 1/3): 1 validation error for ChatResponse
+message
+  Field required [type=missing, input_value={'error': 'No server with...created': 1743724800}]}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.11/v/missing
+2025-05-02 17:29:05,835 - httpx - INFO - HTTP Request: POST https://ollama.molodetz.nl/api/chat "HTTP/1.1 200 OK"
+2025-05-02 17:29:05,836 - lib.parse - WARNING - Error parsing chunk (attempt 1/3): 1 validation error for ChatResponse
+message
+  Field required [type=missing, input_value={'error': 'No server with...created': 1743724800}]}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.11/v/missing
+2025-05-02 17:29:05,847 - httpx - INFO - HTTP Request: POST https://ollama.molodetz.nl/api/chat "HTTP/1.1 200 OK"
+2025-05-02 17:29:05,848 - lib.parse - WARNING - Error parsing chunk (attempt 1/3): 1 validation error for ChatResponse
+message
+  Field required [type=missing, input_value={'error': 'No server with...created': 1743724800}]}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.11/v/missing
+2025-05-02 17:29:08,040 - httpx - INFO - HTTP Request: POST https://ollama.molodetz.nl/api/chat "HTTP/1.1 200 OK"
+2025-05-02 17:29:08,041 - lib.parse - WARNING - Error parsing chunk (attempt 2/3): 1 validation error for ChatResponse
+message
+  Field required [type=missing, input_value={'error': 'No server with...created': 1743724800}]}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.11/v/missing
+2025-05-02 17:29:08,053 - httpx - INFO - HTTP Request: POST https://ollama.molodetz.nl/api/chat "HTTP/1.1 200 OK"
+2025-05-02 17:29:08,054 - lib.parse - WARNING - Error parsing chunk (attempt 2/3): 1 validation error for ChatResponse
+message
+  Field required [type=missing, input_value={'error': 'No server with...created': 1743724800}]}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.11/v/missing
+2025-05-02 17:29:08,068 - httpx - INFO - HTTP Request: POST https://ollama.molodetz.nl/api/chat "HTTP/1.1 200 OK"
+2025-05-02 17:29:08,069 - lib.parse - WARNING - Error parsing chunk (attempt 2/3): 1 validation error for ChatResponse
+message
+  Field required [type=missing, input_value={'error': 'No server with...created': 1743724800}]}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.11/v/missing
+2025-05-02 17:29:10,265 - httpx - INFO - HTTP Request: POST https://ollama.molodetz.nl/api/chat "HTTP/1.1 200 OK"
+2025-05-02 17:29:10,266 - lib.parse - WARNING - Error parsing chunk (attempt 3/3): 1 validation error for ChatResponse
+message
+  Field required [type=missing, input_value={'error': 'No server with...created': 1743724800}]}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.11/v/missing
+2025-05-02 17:29:10,272 - httpx - INFO - HTTP Request: POST https://ollama.molodetz.nl/api/chat "HTTP/1.1 200 OK"
+2025-05-02 17:29:10,273 - lib.parse - WARNING - Error parsing chunk (attempt 3/3): 1 validation error for ChatResponse
+message
+  Field required [type=missing, input_value={'error': 'No server with...created': 1743724800}]}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.11/v/missing
+2025-05-02 17:29:10,297 - httpx - INFO - HTTP Request: POST https://ollama.molodetz.nl/api/chat "HTTP/1.1 200 OK"
+2025-05-02 17:29:10,298 - lib.parse - WARNING - Error parsing chunk (attempt 3/3): 1 validation error for ChatResponse
+message
+  Field required [type=missing, input_value={'error': 'No server with...created': 1743724800}]}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.11/v/missing
+2025-05-02 17:29:10,301 - __main__ - INFO - Completed parsing data for International School Manila
+2025-05-02 17:29:10,302 - __main__ - INFO - Summary report generated at output\school_data_summary.md
+2025-05-02 17:29:10,303 - __main__ - INFO - Scraping process completed successfully
+2025-05-02 17:29:10,304 - __main__ - INFO - School data scraping process completed
+2025-05-02 17:30:35,345 - __main__ - INFO - Starting school data scraping process
+2025-05-02 17:30:35,345 - __main__ - INFO - Processing school: International School Manila
+2025-05-02 17:30:35,346 - __main__ - INFO - Extracting content from URL: https://www.ismanila.org using method: Request
+2025-05-02 17:30:35,346 - __main__ - INFO - Using RequestSession for URL: https://www.ismanila.org
+2025-05-02 17:30:35,671 - __main__ - INFO - Successfully got content from https://www.ismanila.org (221296 bytes)
+2025-05-02 17:30:36,317 - __main__ - INFO - Successfully extracted and cleaned content from https://www.ismanila.org (3802 bytes)
+2025-05-02 17:30:36,317 - __main__ - INFO - Extracting school_fee data from https://www.ismanila.org/admissions/school-fees
+2025-05-02 17:30:36,317 - __main__ - INFO - Extracting content from URL: https://www.ismanila.org/admissions/school-fees using method: Request
+2025-05-02 17:30:36,318 - __main__ - INFO - Using RequestSession for URL: https://www.ismanila.org/admissions/school-fees
+2025-05-02 17:30:36,462 - __main__ - INFO - Successfully got content from https://www.ismanila.org/admissions/school-fees (98128 bytes)
+2025-05-02 17:30:36,659 - __main__ - INFO - Successfully extracted and cleaned content from https://www.ismanila.org/admissions/school-fees (2475 bytes)
+2025-05-02 17:30:37,669 - __main__ - INFO - Extracting program data from https://www.ismanila.org/elementary-school/academic-program
+2025-05-02 17:30:37,669 - __main__ - INFO - Extracting content from URL: https://www.ismanila.org/elementary-school/academic-program using method: Request
+2025-05-02 17:30:37,670 - __main__ - INFO - Using RequestSession for URL: https://www.ismanila.org/elementary-school/academic-program
+2025-05-02 17:30:37,794 - __main__ - INFO - Successfully got content from https://www.ismanila.org/elementary-school/academic-program (82541 bytes)
+2025-05-02 17:30:37,868 - __main__ - INFO - Successfully extracted and cleaned content from https://www.ismanila.org/elementary-school/academic-program (1925 bytes)
+2025-05-02 17:30:38,892 - __main__ - INFO - Extracting program data from https://www.ismanila.org/middle-school/academic-program
+2025-05-02 17:30:38,892 - __main__ - INFO - Extracting content from URL: https://www.ismanila.org/middle-school/academic-program using method: Request
+2025-05-02 17:30:38,892 - __main__ - INFO - Using RequestSession for URL: https://www.ismanila.org/middle-school/academic-program
+2025-05-02 17:30:39,056 - __main__ - INFO - Successfully got content from https://www.ismanila.org/middle-school/academic-program (82875 bytes)
+2025-05-02 17:30:39,134 - __main__ - INFO - Successfully extracted and cleaned content from https://www.ismanila.org/middle-school/academic-program (1924 bytes)
+2025-05-02 17:30:40,142 - __main__ - INFO - Extracting program data from https://www.ismanila.org/high-school/academic-program
+2025-05-02 17:30:40,142 - __main__ - INFO - Extracting content from URL: https://www.ismanila.org/high-school/academic-program using method: Request
+2025-05-02 17:30:40,142 - __main__ - INFO - Using RequestSession for URL: https://www.ismanila.org/high-school/academic-program
+2025-05-02 17:30:40,308 - __main__ - INFO - Successfully got content from https://www.ismanila.org/high-school/academic-program (79797 bytes)
+2025-05-02 17:30:40,395 - __main__ - INFO - Successfully extracted and cleaned content from https://www.ismanila.org/high-school/academic-program (2089 bytes)
+2025-05-02 17:30:41,397 - __main__ - INFO - Extracting enrollment data from https://www.ismanila.org/admissions/admissions-process
+2025-05-02 17:30:41,398 - __main__ - INFO - Extracting content from URL: https://www.ismanila.org/admissions/admissions-process using method: Request
+2025-05-02 17:30:41,399 - __main__ - INFO - Using RequestSession for URL: https://www.ismanila.org/admissions/admissions-process
+2025-05-02 17:30:41,556 - __main__ - INFO - Successfully got content from https://www.ismanila.org/admissions/admissions-process (99105 bytes)
+2025-05-02 17:30:41,739 - __main__ - INFO - Successfully extracted and cleaned content from https://www.ismanila.org/admissions/admissions-process (10537 bytes)
+2025-05-02 17:30:42,749 - __main__ - INFO - Extracting enrollment data from https://www.ismanila.org/admissions/application-file-forms-requirements
+2025-05-02 17:30:42,749 - __main__ - INFO - Extracting content from URL: https://www.ismanila.org/admissions/application-file-forms-requirements using method: Request
+2025-05-02 17:30:42,749 - __main__ - INFO - Using RequestSession for URL: https://www.ismanila.org/admissions/application-file-forms-requirements
+2025-05-02 17:30:42,896 - __main__ - INFO - Successfully got content from https://www.ismanila.org/admissions/application-file-forms-requirements (100310 bytes)
+2025-05-02 17:30:43,092 - __main__ - INFO - Successfully extracted and cleaned content from https://www.ismanila.org/admissions/application-file-forms-requirements (15979 bytes)
+2025-05-02 17:30:44,096 - __main__ - INFO - Extracting scholarships data from https://www.ismanila.org/admissions/scholarships
+2025-05-02 17:30:44,096 - __main__ - INFO - Extracting content from URL: https://www.ismanila.org/admissions/scholarships using method: Request
+2025-05-02 17:30:44,097 - __main__ - INFO - Using RequestSession for URL: https://www.ismanila.org/admissions/scholarships
+2025-05-02 17:30:44,233 - __main__ - INFO - Successfully got content from https://www.ismanila.org/admissions/scholarships (89869 bytes)
+2025-05-02 17:30:44,388 - __main__ - INFO - Successfully extracted and cleaned content from https://www.ismanila.org/admissions/scholarships (7486 bytes)
+2025-05-02 17:30:45,381 - __main__ - INFO - Extracting contact data from https://www.ismanila.org/contact-us
+2025-05-02 17:30:45,382 - __main__ - INFO - Extracting content from URL: https://www.ismanila.org/contact-us using method: Request
+2025-05-02 17:30:45,382 - __main__ - INFO - Using RequestSession for URL: https://www.ismanila.org/contact-us
+2025-05-02 17:30:45,532 - __main__ - INFO - Successfully got content from https://www.ismanila.org/contact-us (77602 bytes)
+2025-05-02 17:30:45,626 - __main__ - INFO - Successfully extracted and cleaned content from https://www.ismanila.org/contact-us (1010 bytes)
+2025-05-02 17:30:46,617 - __main__ - INFO - Completed raw data extraction for International School Manila
+2025-05-02 17:30:46,618 - __main__ - INFO - Parsing data for International School Manila
+2025-05-02 17:30:46,633 - lib.parse - INFO - Content is large (48467 chars), using optimized chunking
+2025-05-02 17:30:46,634 - lib.parse - INFO - Created 6 optimized chunks
+2025-05-02 17:30:46,634 - lib.parse - INFO - Parsing 6 content chunks
+2025-05-02 17:30:47,272 - httpx - INFO - HTTP Request: POST https://ollama.molodetz.nl/api/chat "HTTP/1.1 200 OK"
+2025-05-02 17:30:47,295 - httpx - INFO - HTTP Request: POST https://ollama.molodetz.nl/api/chat "HTTP/1.1 200 OK"
+2025-05-02 17:30:47,318 - httpx - INFO - HTTP Request: POST https://ollama.molodetz.nl/api/chat "HTTP/1.1 200 OK"
+2025-05-02 17:32:28,401 - httpx - INFO - HTTP Request: POST https://ollama.molodetz.nl/api/chat "HTTP/1.1 200 OK"
+2025-05-02 17:33:22,550 - httpx - INFO - HTTP Request: POST https://ollama.molodetz.nl/api/chat "HTTP/1.1 200 OK"
+2025-05-02 17:34:19,190 - httpx - INFO - HTTP Request: POST https://ollama.molodetz.nl/api/chat "HTTP/1.1 200 OK"
+2025-05-02 17:37:14,141 - __main__ - INFO - Starting school data scraping process
+2025-05-02 17:37:14,141 - __main__ - INFO - Processing school: International School Manila
+2025-05-02 17:37:14,142 - __main__ - INFO - Extracting content from URL: https://www.ismanila.org using method: Request
+2025-05-02 17:37:14,142 - __main__ - INFO - Using RequestSession for URL: https://www.ismanila.org
+2025-05-02 17:37:14,634 - __main__ - INFO - Successfully got content from https://www.ismanila.org (221296 bytes)
+2025-05-02 17:37:15,340 - __main__ - INFO - Successfully extracted and cleaned content from https://www.ismanila.org (3802 bytes)
+2025-05-02 17:37:15,340 - __main__ - INFO - Extracting school_fee data from https://www.ismanila.org/admissions/school-fees
+2025-05-02 17:37:15,340 - __main__ - INFO - Extracting content from URL: https://www.ismanila.org/admissions/school-fees using method: Request
+2025-05-02 17:37:15,341 - __main__ - INFO - Using RequestSession for URL: https://www.ismanila.org/admissions/school-fees
+2025-05-02 17:37:15,482 - __main__ - INFO - Successfully got content from https://www.ismanila.org/admissions/school-fees (98128 bytes)
+2025-05-02 17:37:15,677 - __main__ - INFO - Successfully extracted and cleaned content from https://www.ismanila.org/admissions/school-fees (2475 bytes)
+2025-05-02 17:37:16,681 - __main__ - INFO - Extracting program data from https://www.ismanila.org/elementary-school/academic-program
+2025-05-02 17:37:16,681 - __main__ - INFO - Extracting content from URL: https://www.ismanila.org/elementary-school/academic-program using method: Request
+2025-05-02 17:37:16,681 - __main__ - INFO - Using RequestSession for URL: https://www.ismanila.org/elementary-school/academic-program
+2025-05-02 17:37:16,822 - __main__ - INFO - Successfully got content from https://www.ismanila.org/elementary-school/academic-program (82541 bytes)
+2025-05-02 17:37:16,912 - __main__ - INFO - Successfully extracted and cleaned content from https://www.ismanila.org/elementary-school/academic-program (1925 bytes)
+2025-05-02 17:37:17,930 - __main__ - INFO - Extracting program data from https://www.ismanila.org/middle-school/academic-program
+2025-05-02 17:37:17,931 - __main__ - INFO - Extracting content from URL: https://www.ismanila.org/middle-school/academic-program using method: Request
+2025-05-02 17:37:17,931 - __main__ - INFO - Using RequestSession for URL: https://www.ismanila.org/middle-school/academic-program
+2025-05-02 17:37:18,053 - __main__ - INFO - Successfully got content from https://www.ismanila.org/middle-school/academic-program (82875 bytes)
+2025-05-02 17:37:18,134 - __main__ - INFO - Successfully extracted and cleaned content from https://www.ismanila.org/middle-school/academic-program (1924 bytes)
+2025-05-02 17:37:19,144 - __main__ - INFO - Extracting program data from https://www.ismanila.org/high-school/academic-program
+2025-05-02 17:37:19,145 - __main__ - INFO - Extracting content from URL: https://www.ismanila.org/high-school/academic-program using method: Request
+2025-05-02 17:37:19,146 - __main__ - INFO - Using RequestSession for URL: https://www.ismanila.org/high-school/academic-program
+2025-05-02 17:37:19,275 - __main__ - INFO - Successfully got content from https://www.ismanila.org/high-school/academic-program (79797 bytes)
+2025-05-02 17:37:19,365 - __main__ - INFO - Successfully extracted and cleaned content from https://www.ismanila.org/high-school/academic-program (2089 bytes)
+2025-05-02 17:37:20,378 - __main__ - INFO - Extracting enrollment data from https://www.ismanila.org/admissions/admissions-process
+2025-05-02 17:37:20,379 - __main__ - INFO - Extracting content from URL: https://www.ismanila.org/admissions/admissions-process using method: Request
+2025-05-02 17:37:20,380 - __main__ - INFO - Using RequestSession for URL: https://www.ismanila.org/admissions/admissions-process
+2025-05-02 17:37:20,517 - __main__ - INFO - Successfully got content from https://www.ismanila.org/admissions/admissions-process (99105 bytes)
+2025-05-02 17:37:20,707 - __main__ - INFO - Successfully extracted and cleaned content from https://www.ismanila.org/admissions/admissions-process (10537 bytes)
+2025-05-02 17:37:21,708 - __main__ - INFO - Extracting enrollment data from https://www.ismanila.org/admissions/application-file-forms-requirements
+2025-05-02 17:37:21,708 - __main__ - INFO - Extracting content from URL: https://www.ismanila.org/admissions/application-file-forms-requirements using method: Request
+2025-05-02 17:37:21,708 - __main__ - INFO - Using RequestSession for URL: https://www.ismanila.org/admissions/application-file-forms-requirements
+2025-05-02 17:37:21,837 - __main__ - INFO - Successfully got content from https://www.ismanila.org/admissions/application-file-forms-requirements (100310 bytes)
+2025-05-02 17:37:22,036 - __main__ - INFO - Successfully extracted and cleaned content from https://www.ismanila.org/admissions/application-file-forms-requirements (15979 bytes)
+2025-05-02 17:37:23,040 - __main__ - INFO - Extracting scholarships data from https://www.ismanila.org/admissions/scholarships
+2025-05-02 17:37:23,041 - __main__ - INFO - Extracting content from URL: https://www.ismanila.org/admissions/scholarships using method: Request
+2025-05-02 17:37:23,041 - __main__ - INFO - Using RequestSession for URL: https://www.ismanila.org/admissions/scholarships
+2025-05-02 17:37:23,210 - __main__ - INFO - Successfully got content from https://www.ismanila.org/admissions/scholarships (89869 bytes)
+2025-05-02 17:37:23,369 - __main__ - INFO - Successfully extracted and cleaned content from https://www.ismanila.org/admissions/scholarships (7486 bytes)
+2025-05-02 17:37:24,374 - __main__ - INFO - Extracting contact data from https://www.ismanila.org/contact-us
+2025-05-02 17:37:24,374 - __main__ - INFO - Extracting content from URL: https://www.ismanila.org/contact-us using method: Request
+2025-05-02 17:37:24,374 - __main__ - INFO - Using RequestSession for URL: https://www.ismanila.org/contact-us
+2025-05-02 17:37:24,495 - __main__ - INFO - Successfully got content from https://www.ismanila.org/contact-us (77602 bytes)
+2025-05-02 17:37:24,590 - __main__ - INFO - Successfully extracted and cleaned content from https://www.ismanila.org/contact-us (1010 bytes)
+2025-05-02 17:37:25,591 - __main__ - INFO - Completed raw data extraction for International School Manila
+2025-05-02 17:37:25,591 - __main__ - INFO - Parsing data for International School Manila
+2025-05-02 17:37:25,606 - lib.parse - INFO - Content is large (48467 chars), using optimized chunking
+2025-05-02 17:37:25,607 - lib.parse - INFO - Created 6 optimized chunks
+2025-05-02 17:37:25,608 - lib.parse - INFO - Parsing 6 content chunks
+2025-05-02 17:37:26,257 - httpx - INFO - HTTP Request: POST https://ollama.molodetz.nl/api/chat "HTTP/1.1 200 OK"
+2025-05-02 17:37:26,295 - httpx - INFO - HTTP Request: POST https://ollama.molodetz.nl/api/chat "HTTP/1.1 200 OK"
+2025-05-02 17:37:26,333 - httpx - INFO - HTTP Request: POST https://ollama.molodetz.nl/api/chat "HTTP/1.1 200 OK"
+2025-05-02 17:41:27,758 - __main__ - INFO - Starting school data scraping process
+2025-05-02 17:41:27,759 - __main__ - INFO - Processing school: International School Manila
+2025-05-02 17:41:27,759 - __main__ - INFO - Extracting content from URL: https://www.ismanila.org using method: Request
+2025-05-02 17:41:27,760 - __main__ - INFO - Using RequestSession for URL: https://www.ismanila.org
+2025-05-02 17:41:28,660 - __main__ - INFO - Successfully got content from https://www.ismanila.org (221296 bytes)
+2025-05-02 17:41:29,319 - __main__ - INFO - Successfully extracted and cleaned content from https://www.ismanila.org (3802 bytes)
+2025-05-02 17:41:29,320 - __main__ - INFO - Extracting school_fee data from https://www.ismanila.org/admissions/school-fees
+2025-05-02 17:41:29,320 - __main__ - INFO - Extracting content from URL: https://www.ismanila.org/admissions/school-fees using method: Request
+2025-05-02 17:41:29,320 - __main__ - INFO - Using RequestSession for URL: https://www.ismanila.org/admissions/school-fees
+2025-05-02 17:41:29,838 - __main__ - INFO - Successfully got content from https://www.ismanila.org/admissions/school-fees (98128 bytes)
+2025-05-02 17:41:30,040 - __main__ - INFO - Successfully extracted and cleaned content from https://www.ismanila.org/admissions/school-fees (2475 bytes)
+2025-05-02 17:41:31,058 - __main__ - INFO - Extracting program data from https://www.ismanila.org/elementary-school/academic-program
+2025-05-02 17:41:31,058 - __main__ - INFO - Extracting content from URL: https://www.ismanila.org/elementary-school/academic-program using method: Request
+2025-05-02 17:41:31,059 - __main__ - INFO - Using RequestSession for URL: https://www.ismanila.org/elementary-school/academic-program
+2025-05-02 17:41:31,582 - __main__ - INFO - Successfully got content from https://www.ismanila.org/elementary-school/academic-program (82541 bytes)
+2025-05-02 17:41:31,656 - __main__ - INFO - Successfully extracted and cleaned content from https://www.ismanila.org/elementary-school/academic-program (1925 bytes)
+2025-05-02 17:41:32,657 - __main__ - INFO - Extracting program data from https://www.ismanila.org/middle-school/academic-program
+2025-05-02 17:41:32,658 - __main__ - INFO - Extracting content from URL: https://www.ismanila.org/middle-school/academic-program using method: Request
+2025-05-02 17:41:32,658 - __main__ - INFO - Using RequestSession for URL: https://www.ismanila.org/middle-school/academic-program
+2025-05-02 17:41:33,189 - __main__ - INFO - Successfully got content from https://www.ismanila.org/middle-school/academic-program (82875 bytes)
+2025-05-02 17:41:33,266 - __main__ - INFO - Successfully extracted and cleaned content from https://www.ismanila.org/middle-school/academic-program (1924 bytes)
+2025-05-02 17:41:34,275 - __main__ - INFO - Extracting program data from https://www.ismanila.org/high-school/academic-program
+2025-05-02 17:41:34,275 - __main__ - INFO - Extracting content from URL: https://www.ismanila.org/high-school/academic-program using method: Request
+2025-05-02 17:41:34,275 - __main__ - INFO - Using RequestSession for URL: https://www.ismanila.org/high-school/academic-program
+2025-05-02 17:41:34,852 - __main__ - INFO - Successfully got content from https://www.ismanila.org/high-school/academic-program (79797 bytes)
+2025-05-02 17:41:34,954 - __main__ - INFO - Successfully extracted and cleaned content from https://www.ismanila.org/high-school/academic-program (2089 bytes)
+2025-05-02 17:41:35,961 - __main__ - INFO - Extracting enrollment data from https://www.ismanila.org/admissions/admissions-process
+2025-05-02 17:41:35,961 - __main__ - INFO - Extracting content from URL: https://www.ismanila.org/admissions/admissions-process using method: Request
+2025-05-02 17:41:35,962 - __main__ - INFO - Using RequestSession for URL: https://www.ismanila.org/admissions/admissions-process
+2025-05-02 17:41:36,552 - __main__ - INFO - Successfully got content from https://www.ismanila.org/admissions/admissions-process (99105 bytes)
+2025-05-02 17:41:36,748 - __main__ - INFO - Successfully extracted and cleaned content from https://www.ismanila.org/admissions/admissions-process (10537 bytes)
+2025-05-02 17:41:37,765 - __main__ - INFO - Extracting enrollment data from https://www.ismanila.org/admissions/application-file-forms-requirements
+2025-05-02 17:41:37,765 - __main__ - INFO - Extracting content from URL: https://www.ismanila.org/admissions/application-file-forms-requirements using method: Request
+2025-05-02 17:41:37,766 - __main__ - INFO - Using RequestSession for URL: https://www.ismanila.org/admissions/application-file-forms-requirements
+2025-05-02 17:41:38,306 - __main__ - INFO - Successfully got content from https://www.ismanila.org/admissions/application-file-forms-requirements (100310 bytes)
+2025-05-02 17:41:38,516 - __main__ - INFO - Successfully extracted and cleaned content from https://www.ismanila.org/admissions/application-file-forms-requirements (15979 bytes)
+2025-05-02 17:41:39,532 - __main__ - INFO - Extracting scholarships data from https://www.ismanila.org/admissions/scholarships
+2025-05-02 17:41:39,532 - __main__ - INFO - Extracting content from URL: https://www.ismanila.org/admissions/scholarships using method: Request
+2025-05-02 17:41:39,532 - __main__ - INFO - Using RequestSession for URL: https://www.ismanila.org/admissions/scholarships
+2025-05-02 17:41:40,079 - __main__ - INFO - Successfully got content from https://www.ismanila.org/admissions/scholarships (89869 bytes)
+2025-05-02 17:41:40,278 - __main__ - INFO - Successfully extracted and cleaned content from https://www.ismanila.org/admissions/scholarships (7486 bytes)
+2025-05-02 17:41:41,289 - __main__ - INFO - Extracting contact data from https://www.ismanila.org/contact-us
+2025-05-02 17:41:41,290 - __main__ - INFO - Extracting content from URL: https://www.ismanila.org/contact-us using method: Request
+2025-05-02 17:41:41,290 - __main__ - INFO - Using RequestSession for URL: https://www.ismanila.org/contact-us
+2025-05-02 17:41:41,818 - __main__ - INFO - Successfully got content from https://www.ismanila.org/contact-us (77602 bytes)
+2025-05-02 17:41:41,914 - __main__ - INFO - Successfully extracted and cleaned content from https://www.ismanila.org/contact-us (1010 bytes)
+2025-05-02 17:41:42,937 - __main__ - INFO - Completed raw data extraction for International School Manila
+2025-05-02 17:41:42,937 - __main__ - INFO - Parsing data for International School Manila
+2025-05-02 17:41:42,953 - lib.parse - INFO - Processing entire content without chunking for International School Manila
+2025-05-02 17:41:42,954 - lib.parse - INFO - Content is very large (48467 chars), extracting key sections first
+2025-05-02 17:41:42,955 - lib.parse - INFO - Processed content to 20000 chars
+2025-05-02 17:41:43,813 - httpx - INFO - HTTP Request: POST https://ollama.molodetz.nl/api/chat "HTTP/1.1 200 OK"
+2025-05-02 17:44:55,211 - __main__ - INFO - Starting school data scraping process
+2025-05-02 17:44:55,212 - __main__ - INFO - Processing school: International School Manila
+2025-05-02 17:44:55,212 - __main__ - INFO - Extracting content from URL: https://www.ismanila.org using method: Request
+2025-05-02 17:44:55,213 - __main__ - INFO - Using RequestSession for URL: https://www.ismanila.org
+2025-05-02 17:44:55,488 - __main__ - INFO - Successfully got content from https://www.ismanila.org (221296 bytes)
+2025-05-02 17:44:56,100 - __main__ - INFO - Successfully extracted and cleaned content from https://www.ismanila.org (3802 bytes)
+2025-05-02 17:44:56,100 - __main__ - INFO - Extracting school_fee data from https://www.ismanila.org/admissions/school-fees
+2025-05-02 17:44:56,101 - __main__ - INFO - Extracting content from URL: https://www.ismanila.org/admissions/school-fees using method: Request
+2025-05-02 17:44:56,101 - __main__ - INFO - Using RequestSession for URL: https://www.ismanila.org/admissions/school-fees
+2025-05-02 17:44:56,239 - __main__ - INFO - Successfully got content from https://www.ismanila.org/admissions/school-fees (98128 bytes)
+2025-05-02 17:44:56,444 - __main__ - INFO - Successfully extracted and cleaned content from https://www.ismanila.org/admissions/school-fees (2475 bytes)
+2025-05-02 17:44:57,454 - __main__ - INFO - Extracting program data from https://www.ismanila.org/elementary-school/academic-program
+2025-05-02 17:44:57,455 - __main__ - INFO - Extracting content from URL: https://www.ismanila.org/elementary-school/academic-program using method: Request
+2025-05-02 17:44:57,455 - __main__ - INFO - Using RequestSession for URL: https://www.ismanila.org/elementary-school/academic-program
+2025-05-02 17:44:57,602 - __main__ - INFO - Successfully got content from https://www.ismanila.org/elementary-school/academic-program (82541 bytes)
+2025-05-02 17:44:57,675 - __main__ - INFO - Successfully extracted and cleaned content from https://www.ismanila.org/elementary-school/academic-program (1925 bytes)
+2025-05-02 17:44:58,684 - __main__ - INFO - Extracting program data from https://www.ismanila.org/middle-school/academic-program
+2025-05-02 17:44:58,684 - __main__ - INFO - Extracting content from URL: https://www.ismanila.org/middle-school/academic-program using method: Request
+2025-05-02 17:44:58,684 - __main__ - INFO - Using RequestSession for URL: https://www.ismanila.org/middle-school/academic-program
+2025-05-02 17:44:58,838 - __main__ - INFO - Successfully got content from https://www.ismanila.org/middle-school/academic-program (82875 bytes)
+2025-05-02 17:44:58,918 - __main__ - INFO - Successfully extracted and cleaned content from https://www.ismanila.org/middle-school/academic-program (1924 bytes)
+2025-05-02 17:44:59,928 - __main__ - INFO - Extracting program data from https://www.ismanila.org/high-school/academic-program
+2025-05-02 17:44:59,928 - __main__ - INFO - Extracting content from URL: https://www.ismanila.org/high-school/academic-program using method: Request
+2025-05-02 17:44:59,929 - __main__ - INFO - Using RequestSession for URL: https://www.ismanila.org/high-school/academic-program
+2025-05-02 17:45:00,079 - __main__ - INFO - Successfully got content from https://www.ismanila.org/high-school/academic-program (79797 bytes)
+2025-05-02 17:45:00,168 - __main__ - INFO - Successfully extracted and cleaned content from https://www.ismanila.org/high-school/academic-program (2089 bytes)
+2025-05-02 17:45:01,174 - __main__ - INFO - Extracting enrollment data from https://www.ismanila.org/admissions/admissions-process
+2025-05-02 17:45:01,175 - __main__ - INFO - Extracting content from URL: https://www.ismanila.org/admissions/admissions-process using method: Request
+2025-05-02 17:45:01,175 - __main__ - INFO - Using RequestSession for URL: https://www.ismanila.org/admissions/admissions-process
+2025-05-02 17:45:01,313 - __main__ - INFO - Successfully got content from https://www.ismanila.org/admissions/admissions-process (99105 bytes)
+2025-05-02 17:45:01,511 - __main__ - INFO - Successfully extracted and cleaned content from https://www.ismanila.org/admissions/admissions-process (10537 bytes)
+2025-05-02 17:45:02,520 - __main__ - INFO - Extracting enrollment data from https://www.ismanila.org/admissions/application-file-forms-requirements
+2025-05-02 17:45:02,521 - __main__ - INFO - Extracting content from URL: https://www.ismanila.org/admissions/application-file-forms-requirements using method: Request
+2025-05-02 17:45:02,521 - __main__ - INFO - Using RequestSession for URL: https://www.ismanila.org/admissions/application-file-forms-requirements
+2025-05-02 17:45:02,682 - __main__ - INFO - Successfully got content from https://www.ismanila.org/admissions/application-file-forms-requirements (100310 bytes)
+2025-05-02 17:45:02,884 - __main__ - INFO - Successfully extracted and cleaned content from https://www.ismanila.org/admissions/application-file-forms-requirements (15979 bytes)
+2025-05-02 17:45:03,885 - __main__ - INFO - Extracting scholarships data from https://www.ismanila.org/admissions/scholarships
+2025-05-02 17:45:03,885 - __main__ - INFO - Extracting content from URL: https://www.ismanila.org/admissions/scholarships using method: Request
+2025-05-02 17:45:03,885 - __main__ - INFO - Using RequestSession for URL: https://www.ismanila.org/admissions/scholarships
+2025-05-02 17:45:04,048 - __main__ - INFO - Successfully got content from https://www.ismanila.org/admissions/scholarships (89869 bytes)
+2025-05-02 17:45:04,200 - __main__ - INFO - Successfully extracted and cleaned content from https://www.ismanila.org/admissions/scholarships (7486 bytes)
+2025-05-02 17:45:05,209 - __main__ - INFO - Extracting contact data from https://www.ismanila.org/contact-us
+2025-05-02 17:45:05,209 - __main__ - INFO - Extracting content from URL: https://www.ismanila.org/contact-us using method: Request
+2025-05-02 17:45:05,209 - __main__ - INFO - Using RequestSession for URL: https://www.ismanila.org/contact-us
+2025-05-02 17:45:05,352 - __main__ - INFO - Successfully got content from https://www.ismanila.org/contact-us (77602 bytes)
+2025-05-02 17:45:05,444 - __main__ - INFO - Successfully extracted and cleaned content from https://www.ismanila.org/contact-us (1010 bytes)
+2025-05-02 17:45:06,444 - __main__ - INFO - Completed raw data extraction for International School Manila
+2025-05-02 17:45:06,445 - __main__ - INFO - Parsing data for International School Manila
+2025-05-02 17:45:06,456 - lib.parse - INFO - Processing entire content without chunking for International School Manila
+2025-05-02 17:45:07,570 - httpx - INFO - HTTP Request: POST https://ollama.molodetz.nl/api/chat "HTTP/1.1 200 OK"
+2025-05-02 17:46:28,303 - __main__ - INFO - Extracted school fee: 24 chars
+2025-05-02 17:46:28,303 - __main__ - INFO - Extracted program: 24 chars
+2025-05-02 17:46:28,304 - __main__ - INFO - Extracted enrollment: 24 chars
+2025-05-02 17:46:28,304 - __main__ - INFO - Extracted scholarships: 24 chars
+2025-05-02 17:46:28,304 - __main__ - INFO - Extracted contact: 24 chars
+2025-05-02 17:46:28,305 - __main__ - INFO - Completed parsing data for International School Manila
+2025-05-02 17:46:28,306 - __main__ - INFO - Summary report generated at output\school_data_summary.md
+2025-05-02 17:46:28,307 - __main__ - INFO - Scraping process completed successfully
+2025-05-02 17:46:28,307 - __main__ - INFO - School data scraping process completed
+2025-05-02 19:25:27,610 - __main__ - INFO - Starting school data scraping process
+2025-05-02 19:25:27,610 - __main__ - INFO - Processing school: International School Manila
+2025-05-02 19:25:27,611 - __main__ - INFO - Extracting content from URL: https://www.ismanila.org using method: Request
+2025-05-02 19:25:27,611 - __main__ - INFO - Using RequestSession for URL: https://www.ismanila.org
+2025-05-02 19:25:28,191 - __main__ - INFO - Successfully got content from https://www.ismanila.org (221296 bytes)
+2025-05-02 19:25:28,953 - __main__ - INFO - Successfully extracted and cleaned content from https://www.ismanila.org (3802 bytes)
+2025-05-02 19:25:28,954 - __main__ - INFO - Extracting school_fee data from https://www.ismanila.org/admissions/school-fees
+2025-05-02 19:25:28,954 - __main__ - INFO - Extracting content from URL: https://www.ismanila.org/admissions/school-fees using method: Request
+2025-05-02 19:25:28,954 - __main__ - INFO - Using RequestSession for URL: https://www.ismanila.org/admissions/school-fees
+2025-05-02 19:25:29,485 - __main__ - INFO - Successfully got content from https://www.ismanila.org/admissions/school-fees (98128 bytes)
+2025-05-02 19:25:29,703 - __main__ - INFO - Successfully extracted and cleaned content from https://www.ismanila.org/admissions/school-fees (2475 bytes)
+2025-05-02 19:25:30,716 - __main__ - INFO - Extracting program data from https://www.ismanila.org/elementary-school/academic-program
+2025-05-02 19:25:30,716 - __main__ - INFO - Extracting content from URL: https://www.ismanila.org/elementary-school/academic-program using method: Request
+2025-05-02 19:25:30,717 - __main__ - INFO - Using RequestSession for URL: https://www.ismanila.org/elementary-school/academic-program
+2025-05-02 19:25:31,234 - __main__ - INFO - Successfully got content from https://www.ismanila.org/elementary-school/academic-program (82541 bytes)
+2025-05-02 19:25:31,308 - __main__ - INFO - Successfully extracted and cleaned content from https://www.ismanila.org/elementary-school/academic-program (1925 bytes)
+2025-05-02 19:25:32,317 - __main__ - INFO - Extracting program data from https://www.ismanila.org/middle-school/academic-program
+2025-05-02 19:25:32,317 - __main__ - INFO - Extracting content from URL: https://www.ismanila.org/middle-school/academic-program using method: Request
+2025-05-02 19:25:32,318 - __main__ - INFO - Using RequestSession for URL: https://www.ismanila.org/middle-school/academic-program
+2025-05-02 19:25:32,864 - __main__ - INFO - Successfully got content from https://www.ismanila.org/middle-school/academic-program (82875 bytes)
+2025-05-02 19:25:32,969 - __main__ - INFO - Successfully extracted and cleaned content from https://www.ismanila.org/middle-school/academic-program (1924 bytes)
+2025-05-02 19:25:33,985 - __main__ - INFO - Extracting program data from https://www.ismanila.org/high-school/academic-program
+2025-05-02 19:25:33,986 - __main__ - INFO - Extracting content from URL: https://www.ismanila.org/high-school/academic-program using method: Request
+2025-05-02 19:25:33,987 - __main__ - INFO - Using RequestSession for URL: https://www.ismanila.org/high-school/academic-program
+2025-05-02 19:25:34,538 - __main__ - INFO - Successfully got content from https://www.ismanila.org/high-school/academic-program (79797 bytes)
+2025-05-02 19:25:34,783 - __main__ - INFO - Successfully extracted and cleaned content from https://www.ismanila.org/high-school/academic-program (2089 bytes)
+2025-05-02 19:25:35,802 - __main__ - INFO - Extracting enrollment data from https://www.ismanila.org/admissions/admissions-process
+2025-05-02 19:25:35,803 - __main__ - INFO - Extracting content from URL: https://www.ismanila.org/admissions/admissions-process using method: Request
+2025-05-02 19:25:35,803 - __main__ - INFO - Using RequestSession for URL: https://www.ismanila.org/admissions/admissions-process
+2025-05-02 19:25:36,338 - __main__ - INFO - Successfully got content from https://www.ismanila.org/admissions/admissions-process (99105 bytes)
+2025-05-02 19:25:36,574 - __main__ - INFO - Successfully extracted and cleaned content from https://www.ismanila.org/admissions/admissions-process (10537 bytes)
+2025-05-02 19:25:37,581 - __main__ - INFO - Extracting enrollment data from https://www.ismanila.org/admissions/application-file-forms-requirements
+2025-05-02 19:25:37,581 - __main__ - INFO - Extracting content from URL: https://www.ismanila.org/admissions/application-file-forms-requirements using method: Request
+2025-05-02 19:25:37,582 - __main__ - INFO - Using RequestSession for URL: https://www.ismanila.org/admissions/application-file-forms-requirements
+2025-05-02 19:25:38,075 - __main__ - INFO - Successfully got content from https://www.ismanila.org/admissions/application-file-forms-requirements (100310 bytes)
+2025-05-02 19:25:38,276 - __main__ - INFO - Successfully extracted and cleaned content from https://www.ismanila.org/admissions/application-file-forms-requirements (15979 bytes)
+2025-05-02 19:25:39,290 - __main__ - INFO - Extracting scholarships data from https://www.ismanila.org/admissions/scholarships
+2025-05-02 19:25:39,290 - __main__ - INFO - Extracting content from URL: https://www.ismanila.org/admissions/scholarships using method: Request
+2025-05-02 19:25:39,290 - __main__ - INFO - Using RequestSession for URL: https://www.ismanila.org/admissions/scholarships
+2025-05-02 19:25:39,850 - __main__ - INFO - Successfully got content from https://www.ismanila.org/admissions/scholarships (89869 bytes)
+2025-05-02 19:25:40,038 - __main__ - INFO - Successfully extracted and cleaned content from https://www.ismanila.org/admissions/scholarships (7486 bytes)
+2025-05-02 19:25:41,062 - __main__ - INFO - Extracting contact data from https://www.ismanila.org/contact-us
+2025-05-02 19:25:41,063 - __main__ - INFO - Extracting content from URL: https://www.ismanila.org/contact-us using method: Request
+2025-05-02 19:25:41,063 - __main__ - INFO - Using RequestSession for URL: https://www.ismanila.org/contact-us
+2025-05-02 19:25:41,573 - __main__ - INFO - Successfully got content from https://www.ismanila.org/contact-us (77602 bytes)
+2025-05-02 19:25:41,669 - __main__ - INFO - Successfully extracted and cleaned content from https://www.ismanila.org/contact-us (1010 bytes)
+2025-05-02 19:25:42,677 - __main__ - INFO - Completed raw data extraction for International School Manila
+2025-05-02 19:25:42,677 - __main__ - INFO - Parsing data for International School Manila
+2025-05-02 19:25:50,769 - lib.parse - INFO - Processing content for International School Manila
+2025-05-02 19:25:50,769 - lib.parse - INFO - Sending request to ollama model for International School Manila
+2025-05-02 19:25:51,433 - httpx - INFO - HTTP Request: POST https://ollama.molodetz.nl/api/chat "HTTP/1.1 200 OK"
+2025-05-02 19:26:45,109 - lib.parse - INFO - Received response from ollama, length: 2942
+2025-05-02 19:26:45,112 - __main__ - INFO - Extracted school fee: 24 chars
+2025-05-02 19:26:45,113 - __main__ - INFO - Extracted program: 78 chars
+2025-05-02 19:26:45,113 - __main__ - INFO - Extracted enrollment: 192 chars
+2025-05-02 19:26:45,113 - __main__ - INFO - Extracted scholarships: 24 chars
+2025-05-02 19:26:45,114 - __main__ - INFO - Extracted contact: 92 chars
+2025-05-02 19:26:45,115 - __main__ - INFO - Completed parsing data for International School Manila
+2025-05-02 19:26:45,116 - __main__ - INFO - Summary report generated at output\school_data_summary.md
+2025-05-02 19:26:45,116 - __main__ - INFO - Scraping process completed successfully
+2025-05-02 19:26:45,117 - __main__ - INFO - School data scraping process completed

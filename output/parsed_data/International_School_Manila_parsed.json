@@ -1,0 +1,236 @@
+{
+  "name": "International School Manila",
+  "link": "",
+  "school_fee": {
+    "academic_year": "SY 2025-2026",
+    "tuition_by_level": {
+      "Preschool 3 to Preschool 4": {
+        "annual": "$9,420 plus PhP297,400",
+        "semester1": "$4,710 plus PhP148,700",
+        "semester2": "$4,710 plus PhP148,700"
+      },
+      "Elementary School (Kindergarten-Grade 4)": {
+        "annual": "$14,700 plus PhP465,600",
+        "semester1": "$7,350 plus PhP232,800",
+        "semester2": "$7,350 plus PhP232,800"
+      },
+      "Middle School (Grades 5-8)": {
+        "annual": "$16,020 plus PhP509,300",
+        "semester1": "$8,010 plus PhP254,650",
+        "semester2": "$8,010 plus PhP254,650"
+      },
+      "High School (Grades 9-10)": {
+        "annual": "$17,100 plus PhP542,100",
+        "semester1": "$8,550 plus PhP271,050",
+        "semester2": "$8,550 plus PhP271,050"
+      },
+      "High School (Grades 11-12)": {
+        "annual": "$19,080 plus PhP605,600",
+        "semester1": "$9,540 plus PhP302,800",
+        "semester2": "$9,540 plus PhP302,800"
+      },
+      "Preschool 3-4 (Specialized Learning Support Program)": {
+        "annual": "$30,140",
+        "semester1": "$15,070",
+        "semester2": "$15,070"
+      },
+      "Kindergarten-Grade 12 (Specialized Learning Support Program)": {
+        "annual": "$46,810",
+        "semester1": "$23,405",
+        "semester2": "$23,405"
+      }
+    },
+    "other_fees": [
+      {
+        "name": "Matriculation Fee",
+        "amount": "$4,500 USD",
+        "description": ""
+      },
+      {
+        "name": "Facilities Enhancement Fee",
+        "amount": "$4,500 USD",
+        "description": ""
+      },
+      {
+        "name": "Application Fee",
+        "amount": "$600 USD",
+        "description": ""
+      },
+      {
+        "name": "English as an Additional Language (EAL) Fee",
+        "amount": "$1,625 USD per semester (Year 1), $1,100 USD per semester (Year 2)",
+        "description": ""
+      },
+      {
+        "name": "Learning Support Services (LSS) Fee",
+        "amount": "$840 USD per semester (Level 1 Support), $1,890 USD per semester (Level 2 Support), $2,940 USD per semester (Level 3 Support)",
+        "description": ""
+      },
+      {
+        "name": "Speech Language Program",
+        "amount": "$575 USD per semester (Level 1 Support), $1,200 USD per semester (Level 2 Support)",
+        "description": ""
+      },
+      {
+        "name": "Educational Assistance Fee",
+        "amount": "$4,600 USD per semester",
+        "description": ""
+      },
+      {
+        "name": "Full Psychological Educational Evaluation Fee",
+        "amount": "$1,300",
+        "description": ""
+      },
+      {
+        "name": "Psychological Educational Re-Evaluation Fee",
+        "amount": "$700",
+        "description": ""
+      },
+      {
+        "name": "Speech-Language Evaluation Fee",
+        "amount": "$250",
+        "description": ""
+      },
+      {
+        "name": "Musical Instrument Rental",
+        "amount": "$160 USD per instrument",
+        "description": ""
+      },
+      {
+        "name": "Car Stickers",
+        "amount": "PhP 100 per additional sticker (2nd to 4th), PhP 500 per additional sticker (5th and above)",
+        "description": "The first car sticker is provided for free."
+      },
+      {
+        "name": "ID",
+        "amount": "PhP 100 per piece",
+        "description": "Initial student, 2-parent, 1-driver, 1-house help ID provided for free"
+      }
+    ],
+    "due_dates": [
+      {
+        "period": "1st Quarter",
+        "date": "11 July 2025"
+      },
+      {
+        "period": "3rd Quarter",
+        "date": "12 December 2025"
+      }
+    ]
+  },
+  "programs": [
+    {
+      "name": "Elementary School Program",
+      "grade_level": "Preschool (covering two years), Kindergarten and Grades 1 to 4",
+      "description": "Integrated inquiry approach as curricular framework."
+    },
+    {
+      "name": "Middle School Program",
+      "grade_level": "Grades 5-8",
+      "description": "Students take English, Social Studies, Mathematics, Science, Modern Language, Physical Education, Wellness and individual Elective options."
+    },
+    {
+      "name": "High School Program",
+      "grade_level": "Grades 9, 10, 11 and 12",
+      "description": "Offers the International Baccalaureate (IB) Diploma and Advanced Placement (AP) classes."
+    },
+    {
+      "name": "Specialized Learning Support Program",
+      "grade_level": "Preschool 3-4, Kindergarten-Grade 12",
+      "description": "Curriculum completely modified to meet the needs of students."
+    },
+    {
+      "name": "English as an Additional Language (EAL)",
+      "grade_level": "All Elementary School Levels",
+      "description": "English language support is provided by a team of qualified EAL teachers and teaching assistants."
+    },
+    {
+      "name": "Learning Support Program",
+      "grade_level": "All Elementary School Levels",
+      "description": "Students who need additional learning support are assisted by our Learning Support program, which incorporates both a Speech and Language Pathologist and Occupational Therapist (full time consultant to ISM)."
+    }
+  ],
+  "enrollment": {
+    "requirements": [
+      "Ability to demonstrate the ability to benefit from IS Manila\u2019s academic program, as determined by interviews, tests and past records.",
+      "No unresolved disciplinary or emotional problems in their previous schools.",
+      "Reside with their parent(s) in the Philippines. Any exception must be approved by the School prior to commencing the admission process.",
+      "Age cut-off date is September 1st as per our Age Placement Policy. High School students should graduate no later than the age of 20.",
+      "Students who complete a particular grade level after the start of the IS Manila first semester will be placed in that same grade level for the remainder of the school year.",
+      "Students who are admitted after the middle of a given quarter may not receive grades for that semester. In the High School, 80% attendance is required for credit purposes. Attendance at a previous school can be applied towards the 80% attendance rule."
+    ],
+    "documents": [
+      "Passport of child",
+      "Birth Certificate of child",
+      "Passport of parents",
+      "Previous and current academic records",
+      "Teacher recommendations",
+      "Learning support documentation (if applicable)",
+      "Certificate of Undertaking (if applicable)",
+      "Certificate of Employment or Letter of Guarantee (if applicable)",
+      "Official transfer document from current school (for transferring students)"
+    ],
+    "process_steps": [
+      {
+        "step": "1",
+        "description": "Review Admissions Guidelines"
+      },
+      {
+        "step": "2",
+        "description": "PowerSchool Registration"
+      },
+      {
+        "step": "3",
+        "description": "Online Application Requirements"
+      },
+      {
+        "step": "4",
+        "description": "Confirmation of a Seat"
+      },
+      {
+        "step": "5",
+        "description": "Enrollment Process"
+      },
+      {
+        "step": "6",
+        "description": "Testing"
+      },
+      {
+        "step": "7",
+        "description": "Interview"
+      },
+      {
+        "step": "Enrollment Process",
+        "description": "Submission of the Student Health Card and Physical Examination Record directly to the School Health Clinic to obtain a clearance signature on the Enrollment Clearance Form. Payment of Tuition and all other school-related fees. Submission of the signed Parent and School Shared Agreement form to the Admissions Office. Purchase school uniforms at the Uniform Shop. School photo IDs may be obtained at the Security Office. Applications for car sticker(s) are also available at the Security Office. Sign up for the bus service at the Transportation Office (optional). Sign up for the snack and/or lunch option at the Elementary School Canteen for Kindergarten - Grade 4 students (optional). Submission of a signed General Proxy for the Board of Trustees Form to the Admissions Office (optional)."
+      }
+    ]
+  },
+  "events": "No information available",
+  "scholarships": [
+    {
+      "name": "ISM Filipino Scholarship",
+      "eligibility": "Filipino citizenship, completed Grade 7, 13 years old by September 01, 2025, high academic achievement (no grade lower than 85% or its equivalent in any subject), demonstrate financial need, meet all regular ISM entrance requirements, excellent command of oral and written English, high personal standards and be in good health. Only one sibling per family shall be considered for the scholarship program. Dual citizens are not eligible for the scholarship program.",
+      "amount": "Tuition fee, matriculation fee, and book rental. A participation fee may be required from the parents to cover a portion of the school fees.",
+      "description": "For students entering Grade 8. Applications for SY 2025-2026 now closed. The scholarships may be enjoyed for five years provided the awardees maintain the appropriate scholastic level and abide by the school rules and regulations set by the Philippine Scholarship Committee."
+    },
+    {
+      "name": "Victoria SyCip Herrera Scholarship",
+      "eligibility": "Not specified",
+      "amount": "Not specified",
+      "description": "Not specified"
+    }
+  ],
+  "contact": {
+    "address": "University Parkway, Fort Bonifacio Global City, Taguig City 1634, Philippines",
+    "phone_numbers": [
+      "(632) 8840.8400"
+    ],
+    "email": "superintendent@ismanila.org",
+    "social_media": {
+      "facebook": "",
+      "twitter": "",
+      "instagram": ""
+    }
+  },
+  "notes": "Applications for SY 2025-2026 scholarships are closed. Campus Office Hours: Monday-Friday, 7:00AM-4:00PM (Cashier closes at 3:15PM). Campus Operating Hours: Monday-Friday, 7:00AM-5:00PM. Saturday, as per events calendar. Sunday, Campus CLOSED."
+}

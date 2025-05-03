@@ -1,0 +1,203 @@
+{
+  "name": "Singapore School Manila",
+  "link": "",
+  "school_fee": {
+    "academic_year": "2024-2025",
+    "other_fees": [
+      {
+        "name": "Application and Testing Fee",
+        "amount": "6,000.00",
+        "description": "Non-refundable"
+      },
+      {
+        "name": "School Development Fee",
+        "amount": "125,000.00",
+        "description": "One time, no refund"
+      },
+      {
+        "name": "Slot Reservation Fee",
+        "amount": "50,000",
+        "description": "Will be deducted from tuition upon enrolment"
+      },
+      {
+        "name": "School Deposit",
+        "amount": "50,000",
+        "description": "One time payment; to be refunded without interest when the student graduates or withdraws"
+      }
+    ]
+  },
+  "programs": "No information available",
+  "enrollment": {
+    "requirements": [
+      "Copy of latest report card for incoming K to Secondary 4 students",
+      "Transcript of records (TOR) for incoming Pre-University students",
+      "1 x 1 photo (coloured, 3 pcs.)",
+      "Accomplished application form",
+      "Birth certificate",
+      "Copy of passport, ACR I-Card and visa of child and parents (for foreign students)",
+      "Non-refundable processing fee of Php 6,000.00",
+      "Letter of recommendation from previous school (downloadable)"
+    ],
+    "process_steps": [
+      {
+        "step": "1",
+        "description": "Parents/ Guardians of applicants must submit the required documents."
+      },
+      {
+        "step": "2",
+        "description": "Upon submission of all requirements, the child will be given a schedule for admission test and interview."
+      },
+      {
+        "step": "3",
+        "description": "The parents or guardians will be given a schedule for INTERVIEW with the School Administrator and/or Managing Director."
+      },
+      {
+        "step": "4",
+        "description": "Upon acceptance, SCHOOL DEVELOPMENT FEE and RESERVATION FEE must be settled."
+      }
+    ]
+  },
+  "events": [
+    {
+      "name": "Start of Term 1",
+      "date": "August 12, 2024",
+      "description": ""
+    },
+    {
+      "name": "Term 1 Test",
+      "date": "November 13-15",
+      "description": ""
+    },
+    {
+      "name": "Term 1 Break",
+      "date": "November 18-22",
+      "description": ""
+    },
+    {
+      "name": "Parent - Teacher Conference",
+      "date": "December 6",
+      "description": ""
+    },
+    {
+      "name": "Start of Term 2",
+      "date": "November 25, 2024",
+      "description": ""
+    },
+    {
+      "name": "Christmas Break",
+      "date": "Dec 21-Jan 5, 2025",
+      "description": ""
+    },
+    {
+      "name": "Term 2 Test",
+      "date": "March 19-21",
+      "description": ""
+    },
+    {
+      "name": "Term 2 Break",
+      "date": "March 24-28",
+      "description": ""
+    },
+    {
+      "name": "Parent - Teacher Conference",
+      "date": "April 11",
+      "description": ""
+    },
+    {
+      "name": "Start of Term 3",
+      "date": "March 31, 2025",
+      "description": ""
+    },
+    {
+      "name": "Term 3 Test",
+      "date": "June 9-11",
+      "description": ""
+    },
+    {
+      "name": "Graduation",
+      "date": "June 14",
+      "description": ""
+    },
+    {
+      "name": "Parent - Teacher Conference",
+      "date": "June 20",
+      "description": ""
+    },
+    {
+      "name": "Start of Term 1",
+      "date": "August 11, 2025",
+      "description": ""
+    },
+    {
+      "name": "Term 1 Test",
+      "date": "October 27-29",
+      "description": ""
+    },
+    {
+      "name": "Term 1 Break",
+      "date": "November 3-7",
+      "description": ""
+    },
+    {
+      "name": "Parent - Teacher Conference",
+      "date": "November 28",
+      "description": ""
+    },
+    {
+      "name": "Start of Term 2",
+      "date": "November 10, 2025",
+      "description": ""
+    },
+    {
+      "name": "Christmas Break",
+      "date": "Dec 20-Jan 4,2026",
+      "description": ""
+    },
+    {
+      "name": "Term 2 Test",
+      "date": "March 25-27",
+      "description": ""
+    },
+    {
+      "name": "Term 2 Break",
+      "date": "March 30-April 3",
+      "description": ""
+    },
+    {
+      "name": "Parent - Teacher Conference",
+      "date": "April 17",
+      "description": ""
+    },
+    {
+      "name": "Start of Term 3",
+      "date": "April 6, 2026",
+      "description": ""
+    },
+    {
+      "name": "Term 3 Test",
+      "date": "June 9-11",
+      "description": ""
+    },
+    {
+      "name": "Graduation",
+      "date": "June 13",
+      "description": ""
+    },
+    {
+      "name": "Parent - Teacher Conference",
+      "date": "June 20",
+      "description": ""
+    }
+  ],
+  "scholarships": "No information available",
+  "contact": {
+    "address": "Paseo de Magallanes, Makati City, Philippines",
+    "phone_numbers": [
+      "+632 79669315",
+      "+632 75004672",
+      "+632 75053952"
+    ],
+    "email": "[email\u00a0protected]"
+  },
+  "notes": "SSM, SSCL and SSMGC have a NO REFUND POLICY."
+}

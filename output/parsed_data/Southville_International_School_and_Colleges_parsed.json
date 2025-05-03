@@ -1,0 +1,289 @@
+{
+  "name": "Southville International School and Colleges",
+  "link": "",
+  "school_fee": {
+    "tuition_by_level": {
+      "Preschool": {
+        "annual": null,
+        "semester1": null,
+        "semester2": null
+      },
+      "Elementary School": {
+        "annual": null,
+        "semester1": null,
+        "semester2": null
+      },
+      "Junior High School": {
+        "annual": null,
+        "semester1": null,
+        "semester2": null
+      },
+      "Senior High School": {
+        "annual": null,
+        "semester1": null,
+        "semester2": null
+      },
+      "International Baccalaureate Diploma Programme": {
+        "annual": null,
+        "semester1": null,
+        "semester2": null
+      },
+      "College": {
+        "annual": null,
+        "semester1": null,
+        "semester2": null
+      },
+      "Graduate": {
+        "annual": null,
+        "semester1": null,
+        "semester2": null
+      }
+    }
+  },
+  "programs": [
+    {
+      "name": "Preschool Program",
+      "grade_level": "Preschool",
+      "description": "Focuses on Early Literacy, Character Building, and Executive Function Skills"
+    },
+    {
+      "name": "Elementary School Programs",
+      "grade_level": "Elementary School",
+      "description": "Strengthens students\u2019 emotional and mental well-being and hones their social skills."
+    },
+    {
+      "name": "Junior and Senior High School Programs",
+      "grade_level": "Junior and Senior High School",
+      "description": null
+    },
+    {
+      "name": "International Baccalaureate Diploma Programme",
+      "grade_level": "Senior High School",
+      "description": "Provides a challenging, internationally focused, broad, and balanced educational experience for students aged 16 to 19."
+    },
+    {
+      "name": "College Degree Programs",
+      "grade_level": "College",
+      "description": null
+    },
+    {
+      "name": "Graduate Programs",
+      "grade_level": "Graduate",
+      "description": null
+    },
+    {
+      "name": "Online Programs",
+      "grade_level": "College/Graduate",
+      "description": "Offers various online programs including MBA, BS Psychology, BS Information Technology, BA Business Management, BA Accounting and Finance, BA Human Resource Management, BA Marketing, BA Entrepreneurship and Small Business Management, BSBA in Marketing Management, and BS Real Estate Management."
+    },
+    {
+      "name": "Virtual Online School",
+      "grade_level": "Preschool to Senior High School",
+      "description": "Offers online programs for Preschool, Elementary School, Junior High School, and Senior High School."
+    }
+  ],
+  "enrollment": {
+    "requirements": [
+      "2 pcs. 2x2 pictures",
+      "Clear copy of Birth Certificate",
+      "Photocopy of Report Card / Transcript of Records (authenticated and red-ribboned)",
+      "Certificate of Good Moral Character (Grade 1- 12)",
+      "Original Hard Copy of Report Card and/or Original/Authenticated Hard Copy of Transcript for students who studied abroad",
+      "Medical Certificate (Pre-school to Grade 6 only)",
+      "Medical Exam and Drug Test Results from SISC\u2019s affiliated clinic/hospital (Grade 7 to 12 only)",
+      "Clear Photocopy of Applicant\u2019s passport and VISA (For Foreigners)",
+      "Parents pictures (For Foreigners)",
+      "Special Study Permit (SSP) / Alien Certificate of Registration (ACR) or any other type of valid visa (For Foreigners)",
+      "For students coming from Foreign Schools Abroad, the Report Card and/or Transcript of Records must be authenticated or red-ribboned by the Philippine Embassy or Consulate from the country of origin"
+    ],
+    "documents": [
+      "Report Card",
+      "Transcript of Records",
+      "Birth Certificate",
+      "Certificate of Good Moral Character",
+      "Passport and VISA (For Foreigners)",
+      "Special Study Permit (SSP) / Alien Certificate of Registration (ACR) or any other type of valid visa (For Foreigners)"
+    ],
+    "process_steps": [
+      {
+        "step": "1",
+        "description": "Register in the Online Admission and Registration Form by clicking the provided link and upload your latest report card. You may write Not Applicable (NA) for information that is not available or you may fill it out later. (New K-12 and IB Students)"
+      },
+      {
+        "step": "2",
+        "description": "After successful evaluation of your documents, you will be asked to pay the admission fee. (New K-12 and IB Students)"
+      },
+      {
+        "step": "3",
+        "description": "You will be coordinated by the PR office on the schedule of admission test and interview by the academic head. The interview is either face-to-face or online. (New K-12 and IB Students)"
+      },
+      {
+        "step": "4",
+        "description": "After successfully passing the interview, you will receive an email from the office of the Registrar on the enrollment steps and a conditional letter of acceptance. Please choose from the schemes available. (New K-12 and IB Students)"
+      },
+      {
+        "step": "5",
+        "description": "The official Billing statement will be sent to your email by the Accounting office. You may pay the tuition fee via the Bank of the Philippine Islands (BPI) or alternatively, you may visit Payment Details for other options. (New K-12 and IB Students)"
+      },
+      {
+        "step": "6",
+        "description": "After paying the tuition fee, the accounting department will acknowledge the payment. (New K-12 and IB Students)"
+      },
+      {
+        "step": "7",
+        "description": "Once the payment has been verified, the cashier will issue the official receipt. (New K-12 and IB Students)"
+      },
+      {
+        "step": "8",
+        "description": "The student will receive the following once officially enrolled: 1. Welcome letter (\u2105 Registration Department) 2. SGEN Login Credentials (\u2105 MIS Department) 3. Class Schedule and Links (\u2105 Academic Team) (New K-12 and IB Students)"
+      },
+      {
+        "step": "9",
+        "description": "The parent may already purchase the books and uniforms onsite/accomplish the Google form below for online transactions: Student Material Request Form (New K-12 and IB Students)"
+      },
+      {
+        "step": "1",
+        "description": "Update the student\u2019s information online (Continuing K-12 and IB Students)"
+      },
+      {
+        "step": "2",
+        "description": "Registration to validate if the students have completed the requirements (Continuing K-12 and IB Students)"
+      },
+      {
+        "step": "3",
+        "description": "Fill out the online enrollment and assessment form. Kindly take note that the Registration will be validated if the student does not have any academic deficiencies before receiving the official assessment of fees. (Continuing K-12 and IB Students)"
+      },
+      {
+        "step": "4",
+        "description": "After paying the tuition fee, the accounting department will acknowledge the payment. (Continuing K-12 and IB Students)"
+      },
+      {
+        "step": "5",
+        "description": "Once the payment has been verified, the cashier will issue the official receipt. (Continuing K-12 and IB Students)"
+      },
+      {
+        "step": "6",
+        "description": "The student/parent will receive the following: Welcome letter (\u2105 Registration Department) SGEN Login Credentials (\u2105 MIS Department) Class Schedule and Links (\u2105 Academic Team) (Continuing K-12 and IB Students)"
+      },
+      {
+        "step": "7",
+        "description": "The parent may already purchase the books and uniforms onsite/accomplish the Google form below for online transactions: Student Material Request Form (Continuing K-12 and IB Students)"
+      },
+      {
+        "step": "1",
+        "description": "Register in the Online Admission and Registration Form. You may write Not Applicable (NA) for information that is not available or you may fill it out later. (New College/Higher Education Students)"
+      },
+      {
+        "step": "2",
+        "description": "After successful evaluation of your documents, you will be asked to pay the admission fee. (New College/Higher Education Students)"
+      },
+      {
+        "step": "3",
+        "description": "You will be coordinated by the PR office on the schedule of admission test and interview by the academic head. The interview is either face-to-face or online. (New College/Higher Education Students)"
+      },
+      {
+        "step": "4",
+        "description": "The Dean will give the subjects and the registration staff will encode the subjects approved by the Dean. (New College/Higher Education Students)"
+      },
+      {
+        "step": "5",
+        "description": "Registration to forward to Accounting staff the approved assessed subjects. Accounting to forward to PR the final assessment of fees. (New College/Higher Education Students)"
+      },
+      {
+        "step": "6",
+        "description": "You will receive an email from PR with the available payment schemes for the final assessment of fees. Please choose from the schemes available. (New College/Higher Education Students)"
+      },
+      {
+        "step": "7",
+        "description": "You may pay the tuition fee via the Bank of the Philippine Islands (BPI) or you may visit Payment Details for other payment options. (New College/Higher Education Students)"
+      },
+      {
+        "step": "8",
+        "description": "Accounting team to Acknowledge the payment. (New College/Higher Education Students)"
+      },
+      {
+        "step": "9",
+        "description": "Accounting to issue an official receipt. (New College/Higher Education Students)"
+      },
+      {
+        "step": "10",
+        "description": "After paying the tuition fee, you will be receiving an official e-registration form from the Office of the Registrar. The student will be receiving the student number and their SGEN email account and pinnacle account. (New College/Higher Education Students)"
+      },
+      {
+        "step": "11",
+        "description": "You may already buy your uniforms online through Southville Stuffshop. And request the ID online through ______________________ (New College/Higher Education Students)"
+      },
+      {
+        "step": "1",
+        "description": "Students to consult their respective Deans for the advising of subjects (Continuing College/Higher Education Students)"
+      },
+      {
+        "step": "2",
+        "description": "Visit Monarchs AIMS to register for your subjects or the registration people will help encode the subjects. If you have forgotten your password, please email Office of the Registrar with your student ID and we will resend to you the reset password. Alternatively, go to this link \u2013 Forgot Password. For detailed instructions on how to choose your subjects, please click the Online Enrollment Process. (Continuing College/Higher Education Students)"
+      },
+      {
+        "step": "3",
+        "description": "Download the subjects from the pinnacle and email Office of the Registrar (Continuing College/Higher Education Students)"
+      },
+      {
+        "step": "4",
+        "description": "Wait for the billing to be sent to you by the Accounting office. Once received, you may pay the tuition fee via Bank of the Philippine Islands (BPI) (Continuing College/Higher Education Students)"
+      },
+      {
+        "step": "5",
+        "description": "After paying the tuition fee, via online, kindly send the proof of payment to accounting@southville.edu.ph (Continuing College/Higher Education Students)"
+      },
+      {
+        "step": "6",
+        "description": "Accounting team to Acknowledge the payment (Continuing College/Higher Education Students)"
+      },
+      {
+        "step": "7",
+        "description": "Accounting to issue an official receipt (Continuing College/Higher Education Students)"
+      },
+      {
+        "step": "8",
+        "description": "Issuance of the official registration form. (Continuing College/Higher Education Students)"
+      }
+    ]
+  },
+  "events": "No information available",
+  "scholarships": [
+    {
+      "name": "Top Outstanding Performing Students",
+      "eligibility": "Graduating public and private high school students",
+      "amount": "Scholarships in the SGEN schools",
+      "description": "Annual Search for T.O.P.S. (Top Outstanding Performing Students) Program"
+    },
+    {
+      "name": "Athletics Scholarship",
+      "eligibility": "Exceptional student-athletes",
+      "amount": "Up to 75% discount on their tuition fee",
+      "description": "Awarded to exceptional student-athletes."
+    },
+    {
+      "name": "Founder Scholarship Program",
+      "eligibility": "Students who demonstrate exceptional promise and financial need",
+      "amount": "Full Coverage: 100% Tuition Fee Waiver, 100% Direct Cost Coverage, 100% Miscellaneous Expenses, Semester Allowance, Weekly Allowance, Dormitory Accommodation",
+      "description": "Designed for students who demonstrate exceptional promise and financial need."
+    }
+  ],
+  "contact": {
+    "address": "STAR Campus: 136 Elizalde St., BF Homes, Para\u00f1aque City, Philippines 1700\nMunich Campus: Munich St. corner Tropical Avenue, B.F. Homes International, Las Pi\u00f1as City, Philippines 1740\nTropical Campus: 1281 Tropical Ave. corner Luxembourg St., B.F. Homes International, Las Pi\u00f1as City, Philippines 1740\nLuxembourg Campus: Luxembourg St. corner Tropical Ave., B.F. Homes International, Las Pi\u00f1as City, Philippines 1740",
+    "phone_numbers": [
+      "(632) 842-8811",
+      "(632) 807-5537",
+      "(632) 807-5548",
+      "(632) 825-6374",
+      "(632) 820-8702 to 03",
+      "(+63) 917-853-2450"
+    ],
+    "email": "pr@southville.edu.ph",
+    "social_media": {
+      "facebook": null,
+      "twitter": null,
+      "instagram": null
+    }
+  },
+  "notes": "Application for TOP Outstanding Performing Students AY 2025-2026 Intake is November 10, 2024 (First Batch). Exam is on November 16, 2024."
+}
