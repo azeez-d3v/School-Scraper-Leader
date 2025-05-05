@@ -1,0 +1,90 @@
+{
+  "name": "Brent International School",
+  "link": "",
+  "school_fee": {
+    "academic_year": "2024-2025"
+  },
+  "programs": [
+    {
+      "name": "Early Learning Center",
+      "grade_level": "Nursery - Grade 2",
+      "description": "Educational programs and processes involve students developing a high standard of academic excellence, a strong character founded on Christian values, and an international or global perspective."
+    },
+    {
+      "name": "Lower School",
+      "grade_level": "Grades 3 \u2013 5",
+      "description": "Educational programs and processes involve students developing a high standard of academic excellence, a strong character founded on Christian values, and an international or global perspective."
+    },
+    {
+      "name": "Middle School",
+      "grade_level": "Grades 6 \u2013 8",
+      "description": "Goal is to not only aim for academic excellence, but to create responsible global citizens."
+    },
+    {
+      "name": "Upper School",
+      "grade_level": "Grades 9 \u2013 12",
+      "description": "Offers a student centered and academically rigorous curriculum that addresses the intellectual, social and emotional needs of each child."
+    },
+    {
+      "name": "International Baccalaureate Diploma Programme (IBDP)",
+      "grade_level": "Grades 11 and 12",
+      "description": "A challenging and rigorous college preparatory curriculum designed for the last two years in high school."
+    },
+    {
+      "name": "English as a Second Language (ESL)",
+      "grade_level": "Grades 1-8",
+      "description": "Offers English as Second Language (ESL) to non-native speakers of English in grades 1-8 whose English Language competency is insufficient for them to be successful in our regular academic program."
+    }
+  ],
+  "enrollment": {
+    "requirements": [
+      "Passing grades",
+      "History of good behavior at school",
+      "Entrance test results",
+      "Report cards from the current / recent school",
+      "Confidential Evaluations from the current / recent school",
+      "English language proficiency",
+      "Interviews with the applicant. At least one parent is required to accompany the applicant."
+    ],
+    "documents": [
+      "Report cards from the current / recent school",
+      "Confidential Evaluations from the current / recent school",
+      "High School transcripts for grades 9, 10, and 11 (for IB DP applicants)",
+      "Detailed list of topics covered in each grade 11 IB DP class (for IB DP applicants)",
+      "Copy of the initial draft of Extended Essay (EE) (for IB DP applicants)",
+      "Progress on CAS requirements (for IB DP applicants)",
+      "Progress in TOK (for IB DP applicants)",
+      "Brent\u2019s Resource Teacher Form (for students with special needs)",
+      "Documentation that provided the diagnoses (for students with special needs)",
+      "Official evaluations and assessment reports (Speech, OT, Psych Ed reports, etc.) (for students with special needs)",
+      "Individual Educational Plan (IEP) (for students with special needs)",
+      "Learning Plan (LP) (for students with special needs)",
+      "Relevant medical reports (for students with special needs)"
+    ],
+    "process_steps": [
+      {
+        "step": "1",
+        "description": "Click on the red circle labeled \u201cClick Here to Apply\u201d to create an account and complete an online application per child."
+      },
+      {
+        "step": "2",
+        "description": "After completing an application and uploading the needed documents on the Requirements page, email admissionssecretary@brent.edu.ph to share that you are ready to proceed with the next step."
+      },
+      {
+        "step": "3",
+        "description": "The official decision from Brent\u2019s Admissions Committee is shared after the appointments, usually within a few business days. If Brent offers an acceptance, the accompanying fee is paid within five business days."
+      }
+    ]
+  },
+  "events": "No information available",
+  "scholarships": "No information available",
+  "contact": {
+    "address": "Brentville Subdivision, Barangay Mamplasan, Bi\u00f1an, Laguna, 4024 Philippines",
+    "phone_numbers": [
+      "+63 (2) 8779-5140 to 45"
+    ],
+    "email": "bism@brent.edu.ph",
+    "website": "https://brent.edu.ph/"
+  },
+  "notes": "School fees for 2024-2025 and 2025-2026 were not accessible.  The school year begins early August.  Classes begin on Thursday at 8:40 am instead of the regular 8:00 am start."
+}

@@ -1,0 +1,156 @@
+{
+  "name": "Reedley International School",
+  "link": "",
+  "school_fee": {
+    "academic_year": "SY 2025 - 2026",
+    "tuition_by_level": {
+      "Pre-K and Kinder": {
+        "annual": null,
+        "semester1": null,
+        "semester2": null
+      },
+      "Grades 1 to 3": {
+        "annual": null,
+        "semester1": null,
+        "semester2": null
+      },
+      "Grades 4 to 6": {
+        "annual": null,
+        "semester1": null,
+        "semester2": null
+      },
+      "Grades 7 to 10": {
+        "annual": null,
+        "semester1": null,
+        "semester2": null
+      },
+      "Grades 11 to 12": {
+        "annual": null,
+        "semester1": null,
+        "semester2": null
+      }
+    }
+  },
+  "programs": [
+    {
+      "name": "Kindergarten",
+      "grade_level": "Pre-K and Kinder",
+      "description": "The RKS uses a theme-based curriculum that is grounded on international standards, well-established early childhood educational philosophies, and a holistic multi-disciplinary approach."
+    },
+    {
+      "name": "Basic Education Curriculum (BEC)",
+      "grade_level": "Grades 1 to 12",
+      "description": "Mathematics, English Language Arts, Science, Social Studies, Life Skills, Physical Education, Arts and Music, Information Technology, and Filipino as a Foreign Language."
+    },
+    {
+      "name": "Advanced Placement (AP) Program",
+      "grade_level": "Grades 11-12",
+      "description": "Offers high school students college-level courses to prepare for top universities worldwide."
+    },
+    {
+      "name": "Accountancy, Business Management (ABM)",
+      "grade_level": "Grades 11-12",
+      "description": "Students in the ABM strand take Strand Specific Subjects that concentrate on preparing students to major in business and entrepreneurship."
+    },
+    {
+      "name": "General Academics (GAS)",
+      "grade_level": "Grades 11-12",
+      "description": "Students in General Academic Strand take a survey of strand specific subjects that allows students more flexibility in choosing a university degree."
+    },
+    {
+      "name": "Humanities and Social Studies (HUMSS)",
+      "grade_level": "Grades 11-12",
+      "description": "Students in the HUMSS strand take Strand Specific Subjects in writing, anthropology, and philosophy."
+    },
+    {
+      "name": "Science, Technology, Engineering and Mathematics (STEM)",
+      "grade_level": "Grades 11-12",
+      "description": "Students in the STEM strand take Strand Specific Subjects in the sciences, specifically in Biology, Chemistry, and Physics as well as higher Math such as Pre-Calculus and Calculus."
+    },
+    {
+      "name": "Center for Individualized Academic Programs (CIAP)",
+      "grade_level": "Lower School 1 until Middle School 6",
+      "description": "A specialized learning support program."
+    },
+    {
+      "name": "Late Students Program",
+      "grade_level": "All",
+      "description": "Academic catch-up sessions for our students who come in 6 weeks after official classes have started."
+    },
+    {
+      "name": "English as a Second Language (ESL)",
+      "grade_level": "All",
+      "description": "An academic supplementary program that meets the communicative needs for cognitive learning of second language learners whose English proficiency level falls below grade level."
+    }
+  ],
+  "enrollment": {
+    "requirements": [
+      "RIS Student Application Form",
+      "RIS Student Recommendation Form",
+      "Previous School Year\u2019s Report Card",
+      "Current School Year\u2019s Report Card",
+      "Birth Certificate",
+      "2x2 Recent Photo",
+      "Photocopy of Passport and Philippine VISA (for Foreign/Dual Citizen Applicants only)",
+      "Recent Developmental Pediatricians Report (for CIAP and PGLP applicants with diagnosis)",
+      "Certificate of Ranking per Section and per Batch (for incoming Gr. 10)",
+      "Certificate of Ranking per Strand and per Batch (for incoming Gr. 11 and 12)",
+      "Grade Equivalent for Foreign Students"
+    ],
+    "documents": [
+      "RIS Student Application Form",
+      "RIS Student Recommendation Form",
+      "Previous School Year\u2019s Report Card",
+      "Current School Year\u2019s Report Card",
+      "Birth Certificate",
+      "2x2 Recent Photo",
+      "Photocopy of Passport and Philippine VISA (for Foreign/Dual Citizen Applicants only)",
+      "Recent Developmental Pediatricians Report (for CIAP and PGLP applicants with diagnosis)",
+      "Certificate of Ranking per Section and per Batch (for incoming Gr. 10)",
+      "Certificate of Ranking per Strand and per Batch (for incoming Gr. 11 and 12)",
+      "Grade Equivalent for Foreign Students"
+    ],
+    "process_steps": [
+      {
+        "step": "1",
+        "description": "Admissions Requirements: ACCOMPLISH Online Application Form, DOWNLOAD Application Form, DOWNLOAD Recommendation Form. Submit scanned copies of these requirements to ris@reedleyschool.com"
+      },
+      {
+        "step": "2",
+        "description": "Admissions Processing Fee: Kindly pay the Admissions Processing Fee directly at the bank. Contact us at (+63)917 507 9306 for our bank details."
+      },
+      {
+        "step": "3",
+        "description": "Admissions Test & Screening: Schedule an admissions test with our Admissions Team."
+      }
+    ]
+  },
+  "events": "No information available",
+  "scholarships": [
+    {
+      "name": "Sibling Discount",
+      "eligibility": "Two or more siblings enrolled in the school",
+      "amount": "Discount",
+      "description": "Discounts are available for families with multiple children enrolled."
+    }
+  ],
+  "contact": {
+    "address": "J. Cruz St., Barangay Ugong Pasig City, Metro Manila Philippines 1604",
+    "phone_numbers": [
+      "(+63)917 507 9306",
+      "7718-4483",
+      "(+63)917 589 8714",
+      "(+63)917 634 1704",
+      "(+63)917 565 7390",
+      "(+63)917 565 7401",
+      "+(63) 917 174 7370"
+    ],
+    "email": "ris@reedleyschool.com",
+    "social_media": {
+      "facebook": null,
+      "twitter": null,
+      "instagram": null
+    }
+  },
+  "notes": "Admissions for SY 2025 - 2026 NOW OPEN"
+}

@@ -3232,3 +3232,536 @@ Traceback (most recent call last):
   File "C:\Users\Aziz\AppData\Roaming\uv\python\cpython-3.12.3-windows-x86_64-none\Lib\asyncio\base_events.py", line 524, in _make_subprocess_transport
     raise NotImplementedError
 NotImplementedError
+2025-05-05 09:05:36,527 - __main__ - INFO - Processing school: Reedley International School
+2025-05-05 09:05:36,530 - __main__ - INFO - Extracting content from URL:  using method: Request
+2025-05-05 09:05:36,531 - __main__ - INFO - Using RequestSession for URL: 
+2025-05-05 09:05:36,541 - __main__ - WARNING - HTTP error 500 for 
+2025-05-05 09:05:36,542 - __main__ - INFO - Extracting program data from https://reedleyschool.edu.ph/acad-programs/ using method: Request
+2025-05-05 09:05:36,542 - __main__ - INFO - Extracting content from URL: https://reedleyschool.edu.ph/acad-programs/ using method: Request
+2025-05-05 09:05:36,543 - __main__ - INFO - Using RequestSession for URL: https://reedleyschool.edu.ph/acad-programs/
+2025-05-05 09:05:37,477 - __main__ - INFO - Successfully got content from https://reedleyschool.edu.ph/acad-programs/ (172192 bytes)
+2025-05-05 09:05:38,163 - __main__ - INFO - Successfully extracted and cleaned content from https://reedleyschool.edu.ph/acad-programs/ (11541 bytes)
+2025-05-05 09:05:39,176 - __main__ - INFO - Extracting enrollment data from https://reedleyschool.edu.ph/apply/#procedureId using method: Request
+2025-05-05 09:05:39,177 - __main__ - INFO - Extracting content from URL: https://reedleyschool.edu.ph/apply/#procedureId using method: Request
+2025-05-05 09:05:39,178 - __main__ - INFO - Using RequestSession for URL: https://reedleyschool.edu.ph/apply/#procedureId
+2025-05-05 09:05:39,899 - __main__ - INFO - Successfully got content from https://reedleyschool.edu.ph/apply/#procedureId (157604 bytes)
+2025-05-05 09:05:40,426 - __main__ - INFO - Successfully extracted and cleaned content from https://reedleyschool.edu.ph/apply/#procedureId (5886 bytes)
+2025-05-05 09:05:41,441 - __main__ - INFO - Extracting scholarships data from https://reedleyschool.edu.ph/faq/ using method: Request
+2025-05-05 09:05:41,442 - __main__ - INFO - Extracting content from URL: https://reedleyschool.edu.ph/faq/ using method: Request
+2025-05-05 09:05:41,443 - __main__ - INFO - Using RequestSession for URL: https://reedleyschool.edu.ph/faq/
+2025-05-05 09:05:42,242 - __main__ - INFO - Successfully got content from https://reedleyschool.edu.ph/faq/ (128864 bytes)
+2025-05-05 09:05:42,563 - __main__ - INFO - Successfully extracted and cleaned content from https://reedleyschool.edu.ph/faq/ (11462 bytes)
+2025-05-05 09:05:43,570 - __main__ - INFO - Extracting contact data from https://reedleyschool.edu.ph/contact/ using method: Request
+2025-05-05 09:05:43,570 - __main__ - INFO - Extracting content from URL: https://reedleyschool.edu.ph/contact/ using method: Request
+2025-05-05 09:05:43,571 - __main__ - INFO - Using RequestSession for URL: https://reedleyschool.edu.ph/contact/
+2025-05-05 09:05:43,974 - __main__ - INFO - Successfully got content from https://reedleyschool.edu.ph/contact/ (128342 bytes)
+2025-05-05 09:05:44,280 - __main__ - INFO - Successfully extracted and cleaned content from https://reedleyschool.edu.ph/contact/ (2806 bytes)
+2025-05-05 09:05:45,287 - __main__ - INFO - Completed raw data extraction for Reedley International School
+2025-05-05 09:05:45,289 - __main__ - INFO - Parsing data for Reedley International School
+2025-05-05 09:05:45,476 - lib.parse - INFO - Processing content for Reedley International School
+2025-05-05 09:05:45,480 - lib.parse - INFO - Sending request to Google Generative AI for Reedley International School
+2025-05-05 09:05:56,387 - lib.parse - INFO - Received response from Google Generative AI, length: 6079
+2025-05-05 09:05:56,388 - __main__ - INFO - Completed parsing data for Reedley International School
+2025-05-05 12:22:42,062 - __main__ - INFO - Processing school: German European School Manila (GESM)
+2025-05-05 12:22:42,067 - __main__ - INFO - Extracting content from URL:  using method: Playwright
+2025-05-05 12:22:42,069 - asyncio - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-2196' coro=<Connection.run() done, defined at C:\Users\Aziz\Downloads\Compressed\AI-Web-Scraper-main\.venv\Lib\site-packages\playwright\_impl\_connection.py:272> exception=NotImplementedError()>
+Traceback (most recent call last):
+  File "C:\Users\Aziz\Downloads\Compressed\AI-Web-Scraper-main\.venv\Lib\site-packages\playwright\_impl\_connection.py", line 279, in run
+    await self._transport.connect()
+  File "C:\Users\Aziz\Downloads\Compressed\AI-Web-Scraper-main\.venv\Lib\site-packages\playwright\_impl\_transport.py", line 133, in connect
+    raise exc
+  File "C:\Users\Aziz\Downloads\Compressed\AI-Web-Scraper-main\.venv\Lib\site-packages\playwright\_impl\_transport.py", line 120, in connect
+    self._proc = await asyncio.create_subprocess_exec(
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Aziz\AppData\Roaming\uv\python\cpython-3.12.3-windows-x86_64-none\Lib\asyncio\subprocess.py", line 224, in create_subprocess_exec
+    transport, protocol = await loop.subprocess_exec(
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Aziz\AppData\Roaming\uv\python\cpython-3.12.3-windows-x86_64-none\Lib\asyncio\base_events.py", line 1744, in subprocess_exec
+    transport = await self._make_subprocess_transport(
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Aziz\AppData\Roaming\uv\python\cpython-3.12.3-windows-x86_64-none\Lib\asyncio\base_events.py", line 524, in _make_subprocess_transport
+    raise NotImplementedError
+NotImplementedError
+2025-05-05 12:22:42,163 - services.playwright_manager - ERROR - Failed to initialize Playwright browser: 
+2025-05-05 12:22:42,170 - __main__ - ERROR - Failed to initialize Playwright. Using session_manager as fallback: 
+2025-05-05 12:22:42,172 - __main__ - INFO - Using Playwright for URL: 
+2025-05-05 12:22:42,174 - asyncio - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-2206' coro=<Connection.run() done, defined at C:\Users\Aziz\Downloads\Compressed\AI-Web-Scraper-main\.venv\Lib\site-packages\playwright\_impl\_connection.py:272> exception=NotImplementedError()>
+Traceback (most recent call last):
+  File "C:\Users\Aziz\Downloads\Compressed\AI-Web-Scraper-main\.venv\Lib\site-packages\playwright\_impl\_connection.py", line 279, in run
+    await self._transport.connect()
+  File "C:\Users\Aziz\Downloads\Compressed\AI-Web-Scraper-main\.venv\Lib\site-packages\playwright\_impl\_transport.py", line 133, in connect
+    raise exc
+  File "C:\Users\Aziz\Downloads\Compressed\AI-Web-Scraper-main\.venv\Lib\site-packages\playwright\_impl\_transport.py", line 120, in connect
+    self._proc = await asyncio.create_subprocess_exec(
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Aziz\AppData\Roaming\uv\python\cpython-3.12.3-windows-x86_64-none\Lib\asyncio\subprocess.py", line 224, in create_subprocess_exec
+    transport, protocol = await loop.subprocess_exec(
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Aziz\AppData\Roaming\uv\python\cpython-3.12.3-windows-x86_64-none\Lib\asyncio\base_events.py", line 1744, in subprocess_exec
+    transport = await self._make_subprocess_transport(
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Aziz\AppData\Roaming\uv\python\cpython-3.12.3-windows-x86_64-none\Lib\asyncio\base_events.py", line 524, in _make_subprocess_transport
+    raise NotImplementedError
+NotImplementedError
+2025-05-05 12:22:42,176 - services.playwright_manager - ERROR - Failed to initialize Playwright browser: 
+2025-05-05 12:22:42,177 - __main__ - ERROR - Error extracting content from : 
+Traceback (most recent call last):
+  File "C:\Users\Aziz\Downloads\Compressed\AI-Web-Scraper-main\main.py", line 130, in extract_content_from_url
+    content = await self.playwright_manager.get_page_content(url)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Aziz\Downloads\Compressed\AI-Web-Scraper-main\services\playwright_manager.py", line 45, in get_page_content
+    await self.initialize()
+  File "C:\Users\Aziz\Downloads\Compressed\AI-Web-Scraper-main\services\playwright_manager.py", line 24, in initialize
+    self.playwright = await async_playwright().start()
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Aziz\Downloads\Compressed\AI-Web-Scraper-main\.venv\Lib\site-packages\playwright\async_api\_context_manager.py", line 51, in start
+    return await self.__aenter__()
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Aziz\Downloads\Compressed\AI-Web-Scraper-main\.venv\Lib\site-packages\playwright\async_api\_context_manager.py", line 46, in __aenter__
+    playwright = AsyncPlaywright(next(iter(done)).result())
+                                 ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Aziz\Downloads\Compressed\AI-Web-Scraper-main\.venv\Lib\site-packages\playwright\_impl\_transport.py", line 120, in connect
+    self._proc = await asyncio.create_subprocess_exec(
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Aziz\AppData\Roaming\uv\python\cpython-3.12.3-windows-x86_64-none\Lib\asyncio\subprocess.py", line 224, in create_subprocess_exec
+    transport, protocol = await loop.subprocess_exec(
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Aziz\AppData\Roaming\uv\python\cpython-3.12.3-windows-x86_64-none\Lib\asyncio\base_events.py", line 1744, in subprocess_exec
+    transport = await self._make_subprocess_transport(
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Aziz\AppData\Roaming\uv\python\cpython-3.12.3-windows-x86_64-none\Lib\asyncio\base_events.py", line 524, in _make_subprocess_transport
+    raise NotImplementedError
+NotImplementedError
+2025-05-05 12:22:42,185 - __main__ - INFO - Extracting school_fee data from https://www.gesm.org/school-fees using method: Playwright
+2025-05-05 12:22:42,185 - __main__ - INFO - Extracting content from URL: https://www.gesm.org/school-fees using method: Playwright
+2025-05-05 12:22:42,186 - __main__ - INFO - Using Playwright for URL: https://www.gesm.org/school-fees
+2025-05-05 12:22:42,189 - asyncio - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-2207' coro=<Connection.run() done, defined at C:\Users\Aziz\Downloads\Compressed\AI-Web-Scraper-main\.venv\Lib\site-packages\playwright\_impl\_connection.py:272> exception=NotImplementedError()>
+Traceback (most recent call last):
+  File "C:\Users\Aziz\Downloads\Compressed\AI-Web-Scraper-main\.venv\Lib\site-packages\playwright\_impl\_connection.py", line 279, in run
+    await self._transport.connect()
+  File "C:\Users\Aziz\Downloads\Compressed\AI-Web-Scraper-main\.venv\Lib\site-packages\playwright\_impl\_transport.py", line 133, in connect
+    raise exc
+  File "C:\Users\Aziz\Downloads\Compressed\AI-Web-Scraper-main\.venv\Lib\site-packages\playwright\_impl\_transport.py", line 120, in connect
+    self._proc = await asyncio.create_subprocess_exec(
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Aziz\AppData\Roaming\uv\python\cpython-3.12.3-windows-x86_64-none\Lib\asyncio\subprocess.py", line 224, in create_subprocess_exec
+    transport, protocol = await loop.subprocess_exec(
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Aziz\AppData\Roaming\uv\python\cpython-3.12.3-windows-x86_64-none\Lib\asyncio\base_events.py", line 1744, in subprocess_exec
+    transport = await self._make_subprocess_transport(
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Aziz\AppData\Roaming\uv\python\cpython-3.12.3-windows-x86_64-none\Lib\asyncio\base_events.py", line 524, in _make_subprocess_transport
+    raise NotImplementedError
+NotImplementedError
+2025-05-05 12:22:42,193 - services.playwright_manager - ERROR - Failed to initialize Playwright browser: 
+2025-05-05 12:22:42,193 - __main__ - ERROR - Error extracting content from https://www.gesm.org/school-fees: 
+Traceback (most recent call last):
+  File "C:\Users\Aziz\Downloads\Compressed\AI-Web-Scraper-main\main.py", line 130, in extract_content_from_url
+    content = await self.playwright_manager.get_page_content(url)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Aziz\Downloads\Compressed\AI-Web-Scraper-main\services\playwright_manager.py", line 45, in get_page_content
+    await self.initialize()
+  File "C:\Users\Aziz\Downloads\Compressed\AI-Web-Scraper-main\services\playwright_manager.py", line 24, in initialize
+    self.playwright = await async_playwright().start()
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Aziz\Downloads\Compressed\AI-Web-Scraper-main\.venv\Lib\site-packages\playwright\async_api\_context_manager.py", line 51, in start
+    return await self.__aenter__()
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Aziz\Downloads\Compressed\AI-Web-Scraper-main\.venv\Lib\site-packages\playwright\async_api\_context_manager.py", line 46, in __aenter__
+    playwright = AsyncPlaywright(next(iter(done)).result())
+                                 ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Aziz\Downloads\Compressed\AI-Web-Scraper-main\.venv\Lib\site-packages\playwright\_impl\_transport.py", line 120, in connect
+    self._proc = await asyncio.create_subprocess_exec(
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Aziz\AppData\Roaming\uv\python\cpython-3.12.3-windows-x86_64-none\Lib\asyncio\subprocess.py", line 224, in create_subprocess_exec
+    transport, protocol = await loop.subprocess_exec(
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Aziz\AppData\Roaming\uv\python\cpython-3.12.3-windows-x86_64-none\Lib\asyncio\base_events.py", line 1744, in subprocess_exec
+    transport = await self._make_subprocess_transport(
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Aziz\AppData\Roaming\uv\python\cpython-3.12.3-windows-x86_64-none\Lib\asyncio\base_events.py", line 524, in _make_subprocess_transport
+    raise NotImplementedError
+NotImplementedError
+2025-05-05 12:22:43,212 - __main__ - INFO - Extracting program data from https://www.gesm.org/curriculum using method: Playwright
+2025-05-05 12:22:43,212 - __main__ - INFO - Extracting content from URL: https://www.gesm.org/curriculum using method: Playwright
+2025-05-05 12:22:43,213 - __main__ - INFO - Using Playwright for URL: https://www.gesm.org/curriculum
+2025-05-05 12:22:43,214 - asyncio - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-2218' coro=<Connection.run() done, defined at C:\Users\Aziz\Downloads\Compressed\AI-Web-Scraper-main\.venv\Lib\site-packages\playwright\_impl\_connection.py:272> exception=NotImplementedError()>
+Traceback (most recent call last):
+  File "C:\Users\Aziz\Downloads\Compressed\AI-Web-Scraper-main\.venv\Lib\site-packages\playwright\_impl\_connection.py", line 279, in run
+    await self._transport.connect()
+  File "C:\Users\Aziz\Downloads\Compressed\AI-Web-Scraper-main\.venv\Lib\site-packages\playwright\_impl\_transport.py", line 133, in connect
+    raise exc
+  File "C:\Users\Aziz\Downloads\Compressed\AI-Web-Scraper-main\.venv\Lib\site-packages\playwright\_impl\_transport.py", line 120, in connect
+    self._proc = await asyncio.create_subprocess_exec(
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Aziz\AppData\Roaming\uv\python\cpython-3.12.3-windows-x86_64-none\Lib\asyncio\subprocess.py", line 224, in create_subprocess_exec
+    transport, protocol = await loop.subprocess_exec(
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Aziz\AppData\Roaming\uv\python\cpython-3.12.3-windows-x86_64-none\Lib\asyncio\base_events.py", line 1744, in subprocess_exec
+    transport = await self._make_subprocess_transport(
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Aziz\AppData\Roaming\uv\python\cpython-3.12.3-windows-x86_64-none\Lib\asyncio\base_events.py", line 524, in _make_subprocess_transport
+    raise NotImplementedError
+NotImplementedError
+2025-05-05 12:22:43,215 - services.playwright_manager - ERROR - Failed to initialize Playwright browser: 
+2025-05-05 12:22:43,216 - __main__ - ERROR - Error extracting content from https://www.gesm.org/curriculum: 
+Traceback (most recent call last):
+  File "C:\Users\Aziz\Downloads\Compressed\AI-Web-Scraper-main\main.py", line 130, in extract_content_from_url
+    content = await self.playwright_manager.get_page_content(url)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Aziz\Downloads\Compressed\AI-Web-Scraper-main\services\playwright_manager.py", line 45, in get_page_content
+    await self.initialize()
+  File "C:\Users\Aziz\Downloads\Compressed\AI-Web-Scraper-main\services\playwright_manager.py", line 24, in initialize
+    self.playwright = await async_playwright().start()
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Aziz\Downloads\Compressed\AI-Web-Scraper-main\.venv\Lib\site-packages\playwright\async_api\_context_manager.py", line 51, in start
+    return await self.__aenter__()
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Aziz\Downloads\Compressed\AI-Web-Scraper-main\.venv\Lib\site-packages\playwright\async_api\_context_manager.py", line 46, in __aenter__
+    playwright = AsyncPlaywright(next(iter(done)).result())
+                                 ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Aziz\Downloads\Compressed\AI-Web-Scraper-main\.venv\Lib\site-packages\playwright\_impl\_transport.py", line 120, in connect
+    self._proc = await asyncio.create_subprocess_exec(
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Aziz\AppData\Roaming\uv\python\cpython-3.12.3-windows-x86_64-none\Lib\asyncio\subprocess.py", line 224, in create_subprocess_exec
+    transport, protocol = await loop.subprocess_exec(
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Aziz\AppData\Roaming\uv\python\cpython-3.12.3-windows-x86_64-none\Lib\asyncio\base_events.py", line 1744, in subprocess_exec
+    transport = await self._make_subprocess_transport(
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Aziz\AppData\Roaming\uv\python\cpython-3.12.3-windows-x86_64-none\Lib\asyncio\base_events.py", line 524, in _make_subprocess_transport
+    raise NotImplementedError
+NotImplementedError
+2025-05-05 12:22:44,227 - __main__ - INFO - Extracting program data from https://www.gesm.org/german-section using method: Playwright
+2025-05-05 12:22:44,227 - __main__ - INFO - Extracting content from URL: https://www.gesm.org/german-section using method: Playwright
+2025-05-05 12:22:44,229 - __main__ - INFO - Using Playwright for URL: https://www.gesm.org/german-section
+2025-05-05 12:22:44,231 - asyncio - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-2226' coro=<Connection.run() done, defined at C:\Users\Aziz\Downloads\Compressed\AI-Web-Scraper-main\.venv\Lib\site-packages\playwright\_impl\_connection.py:272> exception=NotImplementedError()>
+Traceback (most recent call last):
+  File "C:\Users\Aziz\Downloads\Compressed\AI-Web-Scraper-main\.venv\Lib\site-packages\playwright\_impl\_connection.py", line 279, in run
+    await self._transport.connect()
+  File "C:\Users\Aziz\Downloads\Compressed\AI-Web-Scraper-main\.venv\Lib\site-packages\playwright\_impl\_transport.py", line 133, in connect
+    raise exc
+  File "C:\Users\Aziz\Downloads\Compressed\AI-Web-Scraper-main\.venv\Lib\site-packages\playwright\_impl\_transport.py", line 120, in connect
+    self._proc = await asyncio.create_subprocess_exec(
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Aziz\AppData\Roaming\uv\python\cpython-3.12.3-windows-x86_64-none\Lib\asyncio\subprocess.py", line 224, in create_subprocess_exec
+    transport, protocol = await loop.subprocess_exec(
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Aziz\AppData\Roaming\uv\python\cpython-3.12.3-windows-x86_64-none\Lib\asyncio\base_events.py", line 1744, in subprocess_exec
+    transport = await self._make_subprocess_transport(
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Aziz\AppData\Roaming\uv\python\cpython-3.12.3-windows-x86_64-none\Lib\asyncio\base_events.py", line 524, in _make_subprocess_transport
+    raise NotImplementedError
+NotImplementedError
+2025-05-05 12:22:44,233 - services.playwright_manager - ERROR - Failed to initialize Playwright browser: 
+2025-05-05 12:22:44,234 - __main__ - ERROR - Error extracting content from https://www.gesm.org/german-section: 
+Traceback (most recent call last):
+  File "C:\Users\Aziz\Downloads\Compressed\AI-Web-Scraper-main\main.py", line 130, in extract_content_from_url
+    content = await self.playwright_manager.get_page_content(url)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Aziz\Downloads\Compressed\AI-Web-Scraper-main\services\playwright_manager.py", line 45, in get_page_content
+    await self.initialize()
+  File "C:\Users\Aziz\Downloads\Compressed\AI-Web-Scraper-main\services\playwright_manager.py", line 24, in initialize
+    self.playwright = await async_playwright().start()
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Aziz\Downloads\Compressed\AI-Web-Scraper-main\.venv\Lib\site-packages\playwright\async_api\_context_manager.py", line 51, in start
+    return await self.__aenter__()
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Aziz\Downloads\Compressed\AI-Web-Scraper-main\.venv\Lib\site-packages\playwright\async_api\_context_manager.py", line 46, in __aenter__
+    playwright = AsyncPlaywright(next(iter(done)).result())
+                                 ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Aziz\Downloads\Compressed\AI-Web-Scraper-main\.venv\Lib\site-packages\playwright\_impl\_transport.py", line 120, in connect
+    self._proc = await asyncio.create_subprocess_exec(
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Aziz\AppData\Roaming\uv\python\cpython-3.12.3-windows-x86_64-none\Lib\asyncio\subprocess.py", line 224, in create_subprocess_exec
+    transport, protocol = await loop.subprocess_exec(
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Aziz\AppData\Roaming\uv\python\cpython-3.12.3-windows-x86_64-none\Lib\asyncio\base_events.py", line 1744, in subprocess_exec
+    transport = await self._make_subprocess_transport(
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Aziz\AppData\Roaming\uv\python\cpython-3.12.3-windows-x86_64-none\Lib\asyncio\base_events.py", line 524, in _make_subprocess_transport
+    raise NotImplementedError
+NotImplementedError
+2025-05-05 12:22:45,240 - __main__ - INFO - Extracting program data from https://www.gesm.org/senior-years-programmes using method: Playwright
+2025-05-05 12:22:45,241 - __main__ - INFO - Extracting content from URL: https://www.gesm.org/senior-years-programmes using method: Playwright
+2025-05-05 12:22:45,242 - __main__ - INFO - Using Playwright for URL: https://www.gesm.org/senior-years-programmes
+2025-05-05 12:22:45,245 - asyncio - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-2234' coro=<Connection.run() done, defined at C:\Users\Aziz\Downloads\Compressed\AI-Web-Scraper-main\.venv\Lib\site-packages\playwright\_impl\_connection.py:272> exception=NotImplementedError()>
+Traceback (most recent call last):
+  File "C:\Users\Aziz\Downloads\Compressed\AI-Web-Scraper-main\.venv\Lib\site-packages\playwright\_impl\_connection.py", line 279, in run
+    await self._transport.connect()
+  File "C:\Users\Aziz\Downloads\Compressed\AI-Web-Scraper-main\.venv\Lib\site-packages\playwright\_impl\_transport.py", line 133, in connect
+    raise exc
+  File "C:\Users\Aziz\Downloads\Compressed\AI-Web-Scraper-main\.venv\Lib\site-packages\playwright\_impl\_transport.py", line 120, in connect
+    self._proc = await asyncio.create_subprocess_exec(
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Aziz\AppData\Roaming\uv\python\cpython-3.12.3-windows-x86_64-none\Lib\asyncio\subprocess.py", line 224, in create_subprocess_exec
+    transport, protocol = await loop.subprocess_exec(
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Aziz\AppData\Roaming\uv\python\cpython-3.12.3-windows-x86_64-none\Lib\asyncio\base_events.py", line 1744, in subprocess_exec
+    transport = await self._make_subprocess_transport(
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Aziz\AppData\Roaming\uv\python\cpython-3.12.3-windows-x86_64-none\Lib\asyncio\base_events.py", line 524, in _make_subprocess_transport
+    raise NotImplementedError
+NotImplementedError
+2025-05-05 12:22:45,246 - services.playwright_manager - ERROR - Failed to initialize Playwright browser: 
+2025-05-05 12:22:45,247 - __main__ - ERROR - Error extracting content from https://www.gesm.org/senior-years-programmes: 
+Traceback (most recent call last):
+  File "C:\Users\Aziz\Downloads\Compressed\AI-Web-Scraper-main\main.py", line 130, in extract_content_from_url
+    content = await self.playwright_manager.get_page_content(url)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Aziz\Downloads\Compressed\AI-Web-Scraper-main\services\playwright_manager.py", line 45, in get_page_content
+    await self.initialize()
+  File "C:\Users\Aziz\Downloads\Compressed\AI-Web-Scraper-main\services\playwright_manager.py", line 24, in initialize
+    self.playwright = await async_playwright().start()
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Aziz\Downloads\Compressed\AI-Web-Scraper-main\.venv\Lib\site-packages\playwright\async_api\_context_manager.py", line 51, in start
+    return await self.__aenter__()
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Aziz\Downloads\Compressed\AI-Web-Scraper-main\.venv\Lib\site-packages\playwright\async_api\_context_manager.py", line 46, in __aenter__
+    playwright = AsyncPlaywright(next(iter(done)).result())
+                                 ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Aziz\Downloads\Compressed\AI-Web-Scraper-main\.venv\Lib\site-packages\playwright\_impl\_transport.py", line 120, in connect
+    self._proc = await asyncio.create_subprocess_exec(
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Aziz\AppData\Roaming\uv\python\cpython-3.12.3-windows-x86_64-none\Lib\asyncio\subprocess.py", line 224, in create_subprocess_exec
+    transport, protocol = await loop.subprocess_exec(
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Aziz\AppData\Roaming\uv\python\cpython-3.12.3-windows-x86_64-none\Lib\asyncio\base_events.py", line 1744, in subprocess_exec
+    transport = await self._make_subprocess_transport(
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Aziz\AppData\Roaming\uv\python\cpython-3.12.3-windows-x86_64-none\Lib\asyncio\base_events.py", line 524, in _make_subprocess_transport
+    raise NotImplementedError
+NotImplementedError
+2025-05-05 12:22:46,264 - __main__ - INFO - Extracting enrollment data from https://www.gesm.org/admission-process using method: Playwright
+2025-05-05 12:22:46,265 - __main__ - INFO - Extracting content from URL: https://www.gesm.org/admission-process using method: Playwright
+2025-05-05 12:22:46,268 - __main__ - INFO - Using Playwright for URL: https://www.gesm.org/admission-process
+2025-05-05 12:22:46,269 - asyncio - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-2242' coro=<Connection.run() done, defined at C:\Users\Aziz\Downloads\Compressed\AI-Web-Scraper-main\.venv\Lib\site-packages\playwright\_impl\_connection.py:272> exception=NotImplementedError()>
+Traceback (most recent call last):
+  File "C:\Users\Aziz\Downloads\Compressed\AI-Web-Scraper-main\.venv\Lib\site-packages\playwright\_impl\_connection.py", line 279, in run
+    await self._transport.connect()
+  File "C:\Users\Aziz\Downloads\Compressed\AI-Web-Scraper-main\.venv\Lib\site-packages\playwright\_impl\_transport.py", line 133, in connect
+    raise exc
+  File "C:\Users\Aziz\Downloads\Compressed\AI-Web-Scraper-main\.venv\Lib\site-packages\playwright\_impl\_transport.py", line 120, in connect
+    self._proc = await asyncio.create_subprocess_exec(
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Aziz\AppData\Roaming\uv\python\cpython-3.12.3-windows-x86_64-none\Lib\asyncio\subprocess.py", line 224, in create_subprocess_exec
+    transport, protocol = await loop.subprocess_exec(
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Aziz\AppData\Roaming\uv\python\cpython-3.12.3-windows-x86_64-none\Lib\asyncio\base_events.py", line 1744, in subprocess_exec
+    transport = await self._make_subprocess_transport(
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Aziz\AppData\Roaming\uv\python\cpython-3.12.3-windows-x86_64-none\Lib\asyncio\base_events.py", line 524, in _make_subprocess_transport
+    raise NotImplementedError
+NotImplementedError
+2025-05-05 12:22:46,271 - services.playwright_manager - ERROR - Failed to initialize Playwright browser: 
+2025-05-05 12:22:46,271 - __main__ - ERROR - Error extracting content from https://www.gesm.org/admission-process: 
+Traceback (most recent call last):
+  File "C:\Users\Aziz\Downloads\Compressed\AI-Web-Scraper-main\main.py", line 130, in extract_content_from_url
+    content = await self.playwright_manager.get_page_content(url)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Aziz\Downloads\Compressed\AI-Web-Scraper-main\services\playwright_manager.py", line 45, in get_page_content
+    await self.initialize()
+  File "C:\Users\Aziz\Downloads\Compressed\AI-Web-Scraper-main\services\playwright_manager.py", line 24, in initialize
+    self.playwright = await async_playwright().start()
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Aziz\Downloads\Compressed\AI-Web-Scraper-main\.venv\Lib\site-packages\playwright\async_api\_context_manager.py", line 51, in start
+    return await self.__aenter__()
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Aziz\Downloads\Compressed\AI-Web-Scraper-main\.venv\Lib\site-packages\playwright\async_api\_context_manager.py", line 46, in __aenter__
+    playwright = AsyncPlaywright(next(iter(done)).result())
+                                 ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Aziz\Downloads\Compressed\AI-Web-Scraper-main\.venv\Lib\site-packages\playwright\_impl\_transport.py", line 120, in connect
+    self._proc = await asyncio.create_subprocess_exec(
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Aziz\AppData\Roaming\uv\python\cpython-3.12.3-windows-x86_64-none\Lib\asyncio\subprocess.py", line 224, in create_subprocess_exec
+    transport, protocol = await loop.subprocess_exec(
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Aziz\AppData\Roaming\uv\python\cpython-3.12.3-windows-x86_64-none\Lib\asyncio\base_events.py", line 1744, in subprocess_exec
+    transport = await self._make_subprocess_transport(
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Aziz\AppData\Roaming\uv\python\cpython-3.12.3-windows-x86_64-none\Lib\asyncio\base_events.py", line 524, in _make_subprocess_transport
+    raise NotImplementedError
+NotImplementedError
+2025-05-05 12:22:47,278 - __main__ - INFO - Extracting contact data from https://www.gesm.org/contact-us using method: Playwright
+2025-05-05 12:22:47,279 - __main__ - INFO - Extracting content from URL: https://www.gesm.org/contact-us using method: Playwright
+2025-05-05 12:22:47,280 - __main__ - INFO - Using Playwright for URL: https://www.gesm.org/contact-us
+2025-05-05 12:22:47,283 - asyncio - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-2250' coro=<Connection.run() done, defined at C:\Users\Aziz\Downloads\Compressed\AI-Web-Scraper-main\.venv\Lib\site-packages\playwright\_impl\_connection.py:272> exception=NotImplementedError()>
+Traceback (most recent call last):
+  File "C:\Users\Aziz\Downloads\Compressed\AI-Web-Scraper-main\.venv\Lib\site-packages\playwright\_impl\_connection.py", line 279, in run
+    await self._transport.connect()
+  File "C:\Users\Aziz\Downloads\Compressed\AI-Web-Scraper-main\.venv\Lib\site-packages\playwright\_impl\_transport.py", line 133, in connect
+    raise exc
+  File "C:\Users\Aziz\Downloads\Compressed\AI-Web-Scraper-main\.venv\Lib\site-packages\playwright\_impl\_transport.py", line 120, in connect
+    self._proc = await asyncio.create_subprocess_exec(
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Aziz\AppData\Roaming\uv\python\cpython-3.12.3-windows-x86_64-none\Lib\asyncio\subprocess.py", line 224, in create_subprocess_exec
+    transport, protocol = await loop.subprocess_exec(
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Aziz\AppData\Roaming\uv\python\cpython-3.12.3-windows-x86_64-none\Lib\asyncio\base_events.py", line 1744, in subprocess_exec
+    transport = await self._make_subprocess_transport(
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Aziz\AppData\Roaming\uv\python\cpython-3.12.3-windows-x86_64-none\Lib\asyncio\base_events.py", line 524, in _make_subprocess_transport
+    raise NotImplementedError
+NotImplementedError
+2025-05-05 12:22:47,285 - services.playwright_manager - ERROR - Failed to initialize Playwright browser: 
+2025-05-05 12:22:47,285 - __main__ - ERROR - Error extracting content from https://www.gesm.org/contact-us: 
+Traceback (most recent call last):
+  File "C:\Users\Aziz\Downloads\Compressed\AI-Web-Scraper-main\main.py", line 130, in extract_content_from_url
+    content = await self.playwright_manager.get_page_content(url)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Aziz\Downloads\Compressed\AI-Web-Scraper-main\services\playwright_manager.py", line 45, in get_page_content
+    await self.initialize()
+  File "C:\Users\Aziz\Downloads\Compressed\AI-Web-Scraper-main\services\playwright_manager.py", line 24, in initialize
+    self.playwright = await async_playwright().start()
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Aziz\Downloads\Compressed\AI-Web-Scraper-main\.venv\Lib\site-packages\playwright\async_api\_context_manager.py", line 51, in start
+    return await self.__aenter__()
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Aziz\Downloads\Compressed\AI-Web-Scraper-main\.venv\Lib\site-packages\playwright\async_api\_context_manager.py", line 46, in __aenter__
+    playwright = AsyncPlaywright(next(iter(done)).result())
+                                 ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Aziz\Downloads\Compressed\AI-Web-Scraper-main\.venv\Lib\site-packages\playwright\_impl\_transport.py", line 120, in connect
+    self._proc = await asyncio.create_subprocess_exec(
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Aziz\AppData\Roaming\uv\python\cpython-3.12.3-windows-x86_64-none\Lib\asyncio\subprocess.py", line 224, in create_subprocess_exec
+    transport, protocol = await loop.subprocess_exec(
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Aziz\AppData\Roaming\uv\python\cpython-3.12.3-windows-x86_64-none\Lib\asyncio\base_events.py", line 1744, in subprocess_exec
+    transport = await self._make_subprocess_transport(
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Aziz\AppData\Roaming\uv\python\cpython-3.12.3-windows-x86_64-none\Lib\asyncio\base_events.py", line 524, in _make_subprocess_transport
+    raise NotImplementedError
+NotImplementedError
+2025-05-05 12:22:48,291 - __main__ - INFO - Completed raw data extraction for German European School Manila (GESM)
+2025-05-05 12:22:48,293 - __main__ - INFO - Parsing data for German European School Manila (GESM)
+2025-05-05 12:22:48,303 - lib.parse - INFO - Processing content for German European School Manila (GESM)
+2025-05-05 12:22:48,315 - lib.parse - INFO - Sending request to Google Generative AI for German European School Manila (GESM)
+2025-05-05 12:22:51,539 - lib.parse - INFO - Received response from Google Generative AI, length: 415
+2025-05-05 12:22:51,540 - __main__ - INFO - Completed parsing data for German European School Manila (GESM)
+2025-05-05 12:44:36,712 - __main__ - INFO - Processing school: Brent International School
+2025-05-05 12:44:36,716 - __main__ - INFO - Extracting content from URL:  using method: Request
+2025-05-05 12:44:36,716 - __main__ - INFO - Using RequestSession for URL: 
+2025-05-05 12:44:36,791 - __main__ - WARNING - HTTP error 500 for 
+2025-05-05 12:44:36,793 - __main__ - INFO - Extracting school_fee data from https://brent.edu.ph/wp-content/uploads/2024/02/school-fees-2024-2025.pdf using method: Request
+2025-05-05 12:44:36,795 - __main__ - INFO - Extracting content from URL: https://brent.edu.ph/wp-content/uploads/2024/02/school-fees-2024-2025.pdf using method: Request
+2025-05-05 12:44:36,797 - __main__ - INFO - Detected PDF URL: https://brent.edu.ph/wp-content/uploads/2024/02/school-fees-2024-2025.pdf
+2025-05-05 12:44:37,552 - __main__ - INFO - PDF downloaded to temporary file: C:\Users\Aziz\AppData\Local\Temp\tmpfyhcimxu.pdf
+2025-05-05 12:44:39,441 - pypdf._reader - WARNING - Ignoring wrong pointing object 6 0 (offset 0)
+2025-05-05 12:44:39,441 - pypdf._reader - WARNING - Ignoring wrong pointing object 9 0 (offset 0)
+2025-05-05 12:44:39,443 - pypdf._reader - WARNING - Ignoring wrong pointing object 11 0 (offset 0)
+2025-05-05 12:44:39,445 - pypdf._reader - WARNING - Ignoring wrong pointing object 14 0 (offset 0)
+2025-05-05 12:44:39,446 - pypdf._reader - WARNING - Ignoring wrong pointing object 16 0 (offset 0)
+2025-05-05 12:44:39,446 - pypdf._reader - WARNING - Ignoring wrong pointing object 18 0 (offset 0)
+2025-05-05 12:44:39,447 - pypdf._reader - WARNING - Ignoring wrong pointing object 20 0 (offset 0)
+2025-05-05 12:44:39,447 - pypdf._reader - WARNING - Ignoring wrong pointing object 22 0 (offset 0)
+2025-05-05 12:44:39,448 - pypdf._reader - WARNING - Ignoring wrong pointing object 24 0 (offset 0)
+2025-05-05 12:44:39,448 - pypdf._reader - WARNING - Ignoring wrong pointing object 26 0 (offset 0)
+2025-05-05 12:44:39,449 - pypdf._reader - WARNING - Ignoring wrong pointing object 28 0 (offset 0)
+2025-05-05 12:44:39,449 - pypdf._reader - WARNING - Ignoring wrong pointing object 30 0 (offset 0)
+2025-05-05 12:44:39,450 - pypdf._reader - WARNING - Ignoring wrong pointing object 34 0 (offset 0)
+2025-05-05 12:44:39,450 - pypdf._reader - WARNING - Ignoring wrong pointing object 40 0 (offset 0)
+2025-05-05 12:44:39,451 - pypdf._reader - WARNING - Ignoring wrong pointing object 42 0 (offset 0)
+2025-05-05 12:44:39,451 - pypdf._reader - WARNING - Ignoring wrong pointing object 44 0 (offset 0)
+2025-05-05 12:44:39,452 - pypdf._reader - WARNING - Ignoring wrong pointing object 46 0 (offset 0)
+2025-05-05 12:44:39,666 - __main__ - INFO - Successfully extracted text from PDF, length: 5172 characters
+2025-05-05 12:44:39,678 - __main__ - ERROR - Error processing PDF https://brent.edu.ph/wp-content/uploads/2024/02/school-fees-2024-2025.pdf: [WinError 32] The process cannot access the file because it is being used by another process: 'C:\\Users\\Aziz\\AppData\\Local\\Temp\\tmpfyhcimxu.pdf'
+Traceback (most recent call last):
+  File "C:\Users\Aziz\Downloads\Compressed\AI-Web-Scraper-main\main.py", line 110, in extract_content_from_url
+    os.unlink(temp_pdf_path)
+PermissionError: [WinError 32] The process cannot access the file because it is being used by another process: 'C:\\Users\\Aziz\\AppData\\Local\\Temp\\tmpfyhcimxu.pdf'
+2025-05-05 12:44:40,694 - __main__ - INFO - Extracting school_fee data from http://brent.edu.ph/wp-content/uploads/2025/02/school-fees-SY2025-2026-feb-19.pdf using method: Request
+2025-05-05 12:44:40,694 - __main__ - INFO - Extracting content from URL: http://brent.edu.ph/wp-content/uploads/2025/02/school-fees-SY2025-2026-feb-19.pdf using method: Request
+2025-05-05 12:44:40,696 - __main__ - INFO - Detected PDF URL: http://brent.edu.ph/wp-content/uploads/2025/02/school-fees-SY2025-2026-feb-19.pdf
+2025-05-05 12:44:41,345 - __main__ - INFO - PDF downloaded to temporary file: C:\Users\Aziz\AppData\Local\Temp\tmpfdk8d9tu.pdf
+2025-05-05 12:44:41,359 - pypdf._reader - WARNING - Ignoring wrong pointing object 6 0 (offset 0)
+2025-05-05 12:44:41,359 - pypdf._reader - WARNING - Ignoring wrong pointing object 9 0 (offset 0)
+2025-05-05 12:44:41,360 - pypdf._reader - WARNING - Ignoring wrong pointing object 11 0 (offset 0)
+2025-05-05 12:44:41,361 - pypdf._reader - WARNING - Ignoring wrong pointing object 14 0 (offset 0)
+2025-05-05 12:44:41,361 - pypdf._reader - WARNING - Ignoring wrong pointing object 16 0 (offset 0)
+2025-05-05 12:44:41,362 - pypdf._reader - WARNING - Ignoring wrong pointing object 18 0 (offset 0)
+2025-05-05 12:44:41,363 - pypdf._reader - WARNING - Ignoring wrong pointing object 20 0 (offset 0)
+2025-05-05 12:44:41,363 - pypdf._reader - WARNING - Ignoring wrong pointing object 22 0 (offset 0)
+2025-05-05 12:44:41,364 - pypdf._reader - WARNING - Ignoring wrong pointing object 24 0 (offset 0)
+2025-05-05 12:44:41,364 - pypdf._reader - WARNING - Ignoring wrong pointing object 26 0 (offset 0)
+2025-05-05 12:44:41,364 - pypdf._reader - WARNING - Ignoring wrong pointing object 28 0 (offset 0)
+2025-05-05 12:44:41,365 - pypdf._reader - WARNING - Ignoring wrong pointing object 30 0 (offset 0)
+2025-05-05 12:44:41,366 - pypdf._reader - WARNING - Ignoring wrong pointing object 32 0 (offset 0)
+2025-05-05 12:44:41,366 - pypdf._reader - WARNING - Ignoring wrong pointing object 37 0 (offset 0)
+2025-05-05 12:44:41,367 - pypdf._reader - WARNING - Ignoring wrong pointing object 44 0 (offset 0)
+2025-05-05 12:44:41,367 - pypdf._reader - WARNING - Ignoring wrong pointing object 46 0 (offset 0)
+2025-05-05 12:44:41,368 - pypdf._reader - WARNING - Ignoring wrong pointing object 48 0 (offset 0)
+2025-05-05 12:44:41,368 - pypdf._reader - WARNING - Ignoring wrong pointing object 50 0 (offset 0)
+2025-05-05 12:44:41,594 - __main__ - INFO - Successfully extracted text from PDF, length: 5833 characters
+2025-05-05 12:44:41,595 - __main__ - ERROR - Error processing PDF http://brent.edu.ph/wp-content/uploads/2025/02/school-fees-SY2025-2026-feb-19.pdf: [WinError 32] The process cannot access the file because it is being used by another process: 'C:\\Users\\Aziz\\AppData\\Local\\Temp\\tmpfdk8d9tu.pdf'
+Traceback (most recent call last):
+  File "C:\Users\Aziz\Downloads\Compressed\AI-Web-Scraper-main\main.py", line 110, in extract_content_from_url
+    os.unlink(temp_pdf_path)
+PermissionError: [WinError 32] The process cannot access the file because it is being used by another process: 'C:\\Users\\Aziz\\AppData\\Local\\Temp\\tmpfdk8d9tu.pdf'
+2025-05-05 12:44:42,618 - __main__ - INFO - Extracting program data from https://brent.edu.ph/academics/early-learning-center/ using method: Request
+2025-05-05 12:44:42,619 - __main__ - INFO - Extracting content from URL: https://brent.edu.ph/academics/early-learning-center/ using method: Request
+2025-05-05 12:44:42,620 - __main__ - INFO - Using RequestSession for URL: https://brent.edu.ph/academics/early-learning-center/
+2025-05-05 12:44:43,200 - __main__ - INFO - Successfully got content from https://brent.edu.ph/academics/early-learning-center/ (110802 bytes)
+2025-05-05 12:44:43,346 - __main__ - INFO - Successfully extracted and cleaned content from https://brent.edu.ph/academics/early-learning-center/ (2184 bytes)
+2025-05-05 12:44:44,358 - __main__ - INFO - Extracting program data from https://brent.edu.ph/academics/lower-school/ using method: Request
+2025-05-05 12:44:44,359 - __main__ - INFO - Extracting content from URL: https://brent.edu.ph/academics/lower-school/ using method: Request
+2025-05-05 12:44:44,360 - __main__ - INFO - Using RequestSession for URL: https://brent.edu.ph/academics/lower-school/
+2025-05-05 12:44:44,870 - __main__ - INFO - Successfully got content from https://brent.edu.ph/academics/lower-school/ (111310 bytes)
+2025-05-05 12:44:45,010 - __main__ - INFO - Successfully extracted and cleaned content from https://brent.edu.ph/academics/lower-school/ (2139 bytes)
+2025-05-05 12:44:46,012 - __main__ - INFO - Extracting program data from https://brent.edu.ph/academics/middle-school/ using method: Request
+2025-05-05 12:44:46,013 - __main__ - INFO - Extracting content from URL: https://brent.edu.ph/academics/middle-school/ using method: Request
+2025-05-05 12:44:46,014 - __main__ - INFO - Using RequestSession for URL: https://brent.edu.ph/academics/middle-school/
+2025-05-05 12:44:46,549 - __main__ - INFO - Successfully got content from https://brent.edu.ph/academics/middle-school/ (108435 bytes)
+2025-05-05 12:44:46,651 - __main__ - INFO - Successfully extracted and cleaned content from https://brent.edu.ph/academics/middle-school/ (1372 bytes)
+2025-05-05 12:44:47,659 - __main__ - INFO - Extracting program data from https://brent.edu.ph/academics/high-school/ using method: Request
+2025-05-05 12:44:47,659 - __main__ - INFO - Extracting content from URL: https://brent.edu.ph/academics/high-school/ using method: Request
+2025-05-05 12:44:47,661 - __main__ - INFO - Using RequestSession for URL: https://brent.edu.ph/academics/high-school/
+2025-05-05 12:44:48,086 - __main__ - WARNING - HTTP error 404 for https://brent.edu.ph/academics/high-school/
+2025-05-05 12:44:49,100 - __main__ - INFO - Extracting program data from https://brent.edu.ph/academics/upper-school/ using method: Request
+2025-05-05 12:44:49,101 - __main__ - INFO - Extracting content from URL: https://brent.edu.ph/academics/upper-school/ using method: Request
+2025-05-05 12:44:49,103 - __main__ - INFO - Using RequestSession for URL: https://brent.edu.ph/academics/upper-school/
+2025-05-05 12:44:49,632 - __main__ - INFO - Successfully got content from https://brent.edu.ph/academics/upper-school/ (112466 bytes)
+2025-05-05 12:44:49,731 - __main__ - INFO - Successfully extracted and cleaned content from https://brent.edu.ph/academics/upper-school/ (2490 bytes)
+2025-05-05 12:44:50,744 - __main__ - INFO - Extracting program data from https://brent.edu.ph/academics/international-baccalaureate/ using method: Request
+2025-05-05 12:44:50,745 - __main__ - INFO - Extracting content from URL: https://brent.edu.ph/academics/international-baccalaureate/ using method: Request
+2025-05-05 12:44:50,746 - __main__ - INFO - Using RequestSession for URL: https://brent.edu.ph/academics/international-baccalaureate/
+2025-05-05 12:44:51,232 - __main__ - INFO - Successfully got content from https://brent.edu.ph/academics/international-baccalaureate/ (107535 bytes)
+2025-05-05 12:44:51,316 - __main__ - INFO - Successfully extracted and cleaned content from https://brent.edu.ph/academics/international-baccalaureate/ (1456 bytes)
+2025-05-05 12:44:52,325 - __main__ - INFO - Extracting program data from https://brent.edu.ph/academics/esl/ using method: Request
+2025-05-05 12:44:52,325 - __main__ - INFO - Extracting content from URL: https://brent.edu.ph/academics/esl/ using method: Request
+2025-05-05 12:44:52,327 - __main__ - INFO - Using RequestSession for URL: https://brent.edu.ph/academics/esl/
+2025-05-05 12:44:52,832 - __main__ - INFO - Successfully got content from https://brent.edu.ph/academics/esl/ (106871 bytes)
+2025-05-05 12:44:52,917 - __main__ - INFO - Successfully extracted and cleaned content from https://brent.edu.ph/academics/esl/ (3688 bytes)
+2025-05-05 12:44:53,921 - __main__ - INFO - Extracting enrollment data from https://brent.edu.ph/admissions/application-process/ using method: Request
+2025-05-05 12:44:53,922 - __main__ - INFO - Extracting content from URL: https://brent.edu.ph/admissions/application-process/ using method: Request
+2025-05-05 12:44:53,924 - __main__ - INFO - Using RequestSession for URL: https://brent.edu.ph/admissions/application-process/
+2025-05-05 12:44:54,406 - __main__ - INFO - Successfully got content from https://brent.edu.ph/admissions/application-process/ (104010 bytes)
+2025-05-05 12:44:54,509 - __main__ - INFO - Successfully extracted and cleaned content from https://brent.edu.ph/admissions/application-process/ (3670 bytes)
+2025-05-05 12:44:55,511 - __main__ - INFO - Extracting enrollment data from https://brent.edu.ph/admissions/enrollment-process/ using method: Request
+2025-05-05 12:44:55,512 - __main__ - INFO - Extracting content from URL: https://brent.edu.ph/admissions/enrollment-process/ using method: Request
+2025-05-05 12:44:55,513 - __main__ - INFO - Using RequestSession for URL: https://brent.edu.ph/admissions/enrollment-process/
+2025-05-05 12:44:56,017 - __main__ - INFO - Successfully got content from https://brent.edu.ph/admissions/enrollment-process/ (102272 bytes)
+2025-05-05 12:44:56,103 - __main__ - INFO - Successfully extracted and cleaned content from https://brent.edu.ph/admissions/enrollment-process/ (5951 bytes)
+2025-05-05 12:44:57,116 - __main__ - INFO - Extracting enrollment data from https://brent.edu.ph/admissions/admissions-criteria/ using method: Request
+2025-05-05 12:44:57,116 - __main__ - INFO - Extracting content from URL: https://brent.edu.ph/admissions/admissions-criteria/ using method: Request
+2025-05-05 12:44:57,117 - __main__ - INFO - Using RequestSession for URL: https://brent.edu.ph/admissions/admissions-criteria/
+2025-05-05 12:44:57,624 - __main__ - INFO - Successfully got content from https://brent.edu.ph/admissions/admissions-criteria/ (106768 bytes)
+2025-05-05 12:44:57,737 - __main__ - INFO - Successfully extracted and cleaned content from https://brent.edu.ph/admissions/admissions-criteria/ (5818 bytes)
+2025-05-05 12:44:58,746 - __main__ - INFO - Extracting contact data from https://brent.edu.ph/about/contact-us/ using method: Request
+2025-05-05 12:44:58,747 - __main__ - INFO - Extracting content from URL: https://brent.edu.ph/about/contact-us/ using method: Request
+2025-05-05 12:44:58,748 - __main__ - INFO - Using RequestSession for URL: https://brent.edu.ph/about/contact-us/
+2025-05-05 12:44:59,224 - __main__ - INFO - Successfully got content from https://brent.edu.ph/about/contact-us/ (119743 bytes)
+2025-05-05 12:44:59,396 - __main__ - INFO - Successfully extracted and cleaned content from https://brent.edu.ph/about/contact-us/ (3065 bytes)
+2025-05-05 12:45:00,407 - __main__ - INFO - Completed raw data extraction for Brent International School
+2025-05-05 12:45:00,408 - __main__ - INFO - Parsing data for Brent International School
+2025-05-05 12:45:00,421 - lib.parse - INFO - Processing content for Brent International School
+2025-05-05 12:45:00,421 - lib.parse - INFO - Sending request to Google Generative AI for Brent International School
+2025-05-05 12:45:08,208 - lib.parse - INFO - Received response from Google Generative AI, length: 4431
+2025-05-05 12:45:08,210 - __main__ - INFO - Completed parsing data for Brent International School

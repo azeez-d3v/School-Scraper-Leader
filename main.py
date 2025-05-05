@@ -467,7 +467,7 @@ def main():
     The process involves:
     1. Fetching HTML content from school websites
     2. Saving the content as text files
-    3. Using Ollama (a local AI model) to extract structured information
+    3. Using Gemini AI to parse structured information
     """)
     
     # Initialize the scraper on first run
