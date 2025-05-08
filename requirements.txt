@@ -10,5 +10,4 @@ html5lib
 python-dotenv
 ollama
 curl-cffi
-playwright
 pypdf

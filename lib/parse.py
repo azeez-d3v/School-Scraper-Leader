@@ -21,6 +21,56 @@ if not api_key:
 
 model = ChatGoogleGenerativeAI(model="gemini-2.0-flash-lite", temperature=0)
 
+# Comprehensive analysis prompt for summarizing all schools together
+comprehensive_analysis_template = (
+    "You are an educational consultant tasked with creating a comprehensive market analysis of multiple schools. "
+    "You have been provided with data about several different schools that has been scraped and processed. "
+    "Your task is to analyze this data holistically and create a comparative summary that highlights similarities, "
+    "differences, and key insights across all schools.\n\n"
+    
+    "FORMAT YOUR RESPONSE WITH THE FOLLOWING SECTIONS:\n\n"
+    
+    "## MARKET OVERVIEW\n"
+    "- Provide a high-level summary of the school landscape represented in the data\n"
+    "- Identify common themes, educational philosophies, or positioning across schools\n\n"
+    
+    "## TUITION ANALYSIS\n"
+    "- Compare tuition ranges across all schools\n"
+    "- Identify pricing tiers and what differentiates schools in different price brackets\n"
+    "- Note any unusual or distinctive fee structures\n\n"
+    
+    "## ACADEMIC PROGRAMS\n"
+    "- Identify common academic programs and curricula\n"
+    "- Highlight unique or specialized programs offered by specific schools\n"
+    "- Compare grade level offerings and educational approaches\n\n"
+    
+    "## ADMISSIONS LANDSCAPE\n"
+    "- Summarize typical admission requirements and processes\n"
+    "- Note differences in selectivity or admission criteria\n"
+    "- Highlight any unique enrollment approaches\n\n"
+    
+    "## SCHOLARSHIP OPPORTUNITIES\n"
+    "- Compare financial aid and scholarship availability\n"
+    "- Identify which schools offer the most generous or accessible scholarships\n\n"
+    
+    "## COMPARATIVE STRENGTHS\n"
+    "- For each school, identify its distinctive features or competitive advantages\n"
+    "- Suggest which types of students might be best suited for each school\n\n"
+    
+    "## RECOMMENDATIONS\n"
+    "- Provide specific recommendations for different types of families/students\n"
+    "- Example: \"Families seeking [X] should consider [School Y] because...\"\n\n"
+    
+    "IMPORTANT GUIDELINES:\n"
+    "1. Focus on factual analysis based on the provided data\n"
+    "2. Make direct comparisons between schools where appropriate\n"
+    "3. Use clear, professional language\n"
+    "4. If information for certain schools is limited, acknowledge this rather than making assumptions\n"
+    "5. Format with clear section headings, bullet points, and tables where appropriate\n\n"
+    
+    "SCHOOLS DATA TO ANALYZE:\n{combined_schools_data}"
+)
+
 # Enhanced prompt template with clear instruction to structure output in key-value format
 template = (
     "You are a data extraction expert. Your task is to extract structured information from school website content.\n\n"

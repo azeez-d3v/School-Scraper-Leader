@@ -1,6 +1,6 @@
 # Python-generated files
 __pycache__/
-*.py[oc]
+*.py[cod]
 build/
 dist/
 wheels/
@@ -8,5 +8,35 @@ wheels/
 
 # Virtual environments
 .venv
+venv/
+env/
 
+# Environment variables
 .env
+
+# Output directories and files
+output/
+parsed_data/
+raw_data/
+
+# Log files
+*.log
+scraper.log
+streamlit_scraper.log
+
+# Editor and IDE files
+.idea/
+.vscode/
+*.swp
+*.swo
+.DS_Store
+
+# Package files
+uv.lock
+
+# Temporary files
+*.tmp
+*.bak
+.coverage
+htmlcov/
+

@@ -76,42 +76,42 @@ class SchoolData:
                     "https://www.britishschoolmanila.org/contact"
                 ]
             },
-            {
-                "method": "Playwright",
-                "name": "German European School Manila (GESM)",
-                "school_fee": "https://www.gesm.org/school-fees",
-                "program": [
-                    "https://www.gesm.org/curriculum",
-                    "https://www.gesm.org/german-section",
-                    "https://www.gesm.org/senior-years-programmes"
-                ],
-                "Enrollment Process and Requirements": [
-                    "https://www.gesm.org/admission-process"
-                ],
-                "Upcoming Events": [],
-                "Discounts and Scholarship": [],
-                "Contact Information ": [
-                    "https://www.gesm.org/contact-us"
-                ]
-            },
-            {
-                "method": "Playwright",
-                "name": "Chinese International School Manila",
-                "school_fee": "https://cismanila.org/admissions/fee-structure",
-                "program": [
-                    "https://cismanila.org/learning/curriculum/"
-                ],
-                "Enrollment Process and Requirements": [
-                    "https://cismanila.org/admissions/admissions-policy"
-                ],
-                "Upcoming Events": [],
-                "Discounts and Scholarship": [
-                    "https://cismanila.org/scholarships"
-                ],
-                "Contact Information ": [
-                    "https://cismanila.org/contact-us"
-                ]
-            },
+            # {
+            #     "method": "Playwright",
+            #     "name": "German European School Manila (GESM)",
+            #     "school_fee": "https://www.gesm.org/school-fees",
+            #     "program": [
+            #         "https://www.gesm.org/curriculum",
+            #         "https://www.gesm.org/german-section",
+            #         "https://www.gesm.org/senior-years-programmes"
+            #     ],
+            #     "Enrollment Process and Requirements": [
+            #         "https://www.gesm.org/admission-process"
+            #     ],
+            #     "Upcoming Events": [],
+            #     "Discounts and Scholarship": [],
+            #     "Contact Information ": [
+            #         "https://www.gesm.org/contact-us"
+            #     ]
+            # },
+            # {
+            #     "method": "Request",
+            #     "name": "Chinese International School Manila",
+            #     "school_fee": "https://cismanila.org/admissions/fee-structure",
+            #     "program": [
+            #         "https://cismanila.org/learning/curriculum/"
+            #     ],
+            #     "Enrollment Process and Requirements": [
+            #         "https://cismanila.org/admissions/admissions-policy"
+            #     ],
+            #     "Upcoming Events": [],
+            #     "Discounts and Scholarship": [
+            #         "https://cismanila.org/scholarships"
+            #     ],
+            #     "Contact Information ": [
+            #         "https://cismanila.org/contact-us"
+            #     ]
+            # },
             {
                 "method": "Request",
                 "name": "Reedley International School",
