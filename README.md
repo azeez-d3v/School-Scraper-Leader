@@ -53,7 +53,7 @@ After installation is complete, simply:
 
 1. Click on the "Scrape Schools" tab
 2. Select the schools you want to learn about
-3. Click "Start Scraping"
+3. Click "Start Scraping" 
 4. Wait for the process to complete (you'll see a progress bar)
 
 ### Viewing School Information
