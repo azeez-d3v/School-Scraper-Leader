@@ -41,3 +41,6 @@ uv.lock
 htmlcov/
 
 test.py
+.python-version
+pyproject.toml
+uv.lock

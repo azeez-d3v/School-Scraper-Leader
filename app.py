@@ -537,9 +537,6 @@ def main():
                             comparison_df = pd.DataFrame(comparison_data)
                             st.dataframe(comparison_df, use_container_width=True)
                             
-
-                            # Option to download all data as a zip file
-                            st.text("Download all school data as a single zip file (feature to be implemented)")
                         else:
                             st.info("Please select at least one field to compare")
                     else:
