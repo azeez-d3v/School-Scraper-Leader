@@ -762,7 +762,6 @@ def main():
         4. Download data and reports as needed
         
         ### Notes:
-        - Ensure you have the necessary permissions to scrape and use the data from school websites.
         - The AI summaries are generated based on the scraped data and may not reflect the most current information.
         """)
     
