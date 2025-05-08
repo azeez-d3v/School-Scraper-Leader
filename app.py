@@ -13,6 +13,7 @@ import plotly.graph_objects as go
 from pathlib import Path
 from langchain_core.prompts import ChatPromptTemplate
 from langchain_google_genai import ChatGoogleGenerativeAI
+import io
 
 # Local imports
 from lib.scraper import SchoolScraper, RAW_DATA_DIR, PARSED_DATA_DIR
@@ -71,7 +72,7 @@ def main():
     schools_data = st.session_state.scraper.schools_data
     
     # Create main tabs for app sections
-    main_tabs = st.tabs(["Home", "Scrape Schools", "Results", "Summary", "About"])
+    main_tabs = st.tabs(["Home", "Scrape Schools", "Results", "Summary", "Export Data", "About"])
     
     # Home Tab
     with main_tabs[0]:
@@ -663,8 +664,85 @@ def main():
                     else:
                         st.warning(f"Raw data file not found for {selected_school}. Please ensure the school has been scraped completely.")
     
-    # About Tab
+    # Export Data Tab
     with main_tabs[4]:
+        st.header("Export Scraped Data")
+        st.markdown("""
+        In this section, you can export the data that has been scraped and processed by the AI.
+        
+        Available export options:
+        - **Excel Report:** A comprehensive Excel report containing all scraped school data.
+        - **JSON Files:** Individual JSON files for each school containing the raw and parsed data.
+        
+        The exports automatically include ALL schools that have been scraped, not just selected ones.
+        """)
+        
+        # Auto-generate Excel data on tab load
+        with st.spinner("Preparing Excel export..."):
+            excel_data = export_results_to_excel(all_results)
+            if excel_data:
+                timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
+                st.download_button(
+                    label="📥 Download Excel Report (All Schools)",
+                    data=excel_data,
+                    file_name=f"all_schools_data_{timestamp}.xlsx",
+                    mime="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+                    key="download_all_excel",
+                    type="primary"
+                )
+            else:
+                st.error("Failed to generate Excel file. Please check logs for details.")
+        
+        # JSON export section
+        st.subheader("Download All School Data")
+        
+        # Create a combined JSON containing all school data
+        if all_results:
+            combined_json = json.dumps(all_results, indent=2)
+            st.download_button(
+                label="📥 Download All Schools as Combined JSON",
+                data=combined_json,
+                file_name=f"all_schools_combined_{datetime.now().strftime('%Y%m%d_%H%M%S')}.json",
+                mime="application/json",
+                key="download_combined_json"
+            )
+            
+            # Individual school downloads
+            with st.expander("Individual School Data Downloads"):
+                st.info("Expand to see download options for individual schools")
+                for result in all_results:
+                    school_name = result["name"]
+                    json_data = json.dumps(result, indent=2)
+                    
+                    st.markdown(f"### {school_name}")
+                    col1, col2 = st.columns(2)
+                    
+                    # Parsed data download
+                    with col1:
+                        st.download_button(
+                            label=f"Download Parsed Data",
+                            data=json_data,
+                            file_name=f"{school_name.replace(' ', '_')}_data.json",
+                            mime="application/json",
+                            key=f"download_parsed_{school_name}"
+                        )
+                    
+                    # Raw data download
+                    raw_file_path = RAW_DATA_DIR / f"{school_name.replace(' ', '_')}_raw.txt"
+                    if raw_file_path.exists():
+                        with col2:
+                            st.download_button(
+                                label=f"Download Raw Data",
+                                data=open(raw_file_path, "r", encoding="utf-8").read(),
+                                file_name=f"{school_name.replace(' ', '_')}_raw_data.json",
+                                mime="application/json",
+                                key=f"download_raw_{school_name}"
+                            )
+        else:
+            st.info("No data available to export. Please scrape schools first in the 'Scrape Schools' tab.")
+    
+    # About Tab
+    with main_tabs[5]:
         st.header("About This App")
         st.markdown("""
         This is an AI-powered school web scraper that collects and analyzes data from various school websites.
@@ -1008,6 +1086,144 @@ def generate_combined_school_summary(all_results):
     except Exception as e:
         logger.error(f"Error generating combined school summary: {e}")
         return f"Unable to generate comprehensive summary: {str(e)}"
+
+
+def export_results_to_excel(all_results):
+    """Export the scraped school results to an Excel file.
+    
+    This function creates an Excel file with all schools in a single sheet,
+    with each row representing one school and all their key data.
+    
+    Args:
+        all_results: List of school data dictionaries
+        
+    Returns:
+        BytesIO stream of the Excel file for download
+    """
+    try:
+        # Create a Pandas Excel writer using openpyxl as the engine
+        output = io.BytesIO()
+        with pd.ExcelWriter(output, engine='openpyxl') as writer:
+            # Create a single comprehensive sheet with all schools
+            all_schools_data = []
+            
+            for result in all_results:
+                # Extract basic school info
+                school_data = {
+                    "School Name": result.get("name", ""),
+                    "Website": result.get("link", ""),
+                }
+                
+                # Extract contact information
+                if isinstance(result.get("contact"), dict):
+                    contact = result.get("contact", {})
+                    school_data["Email"] = contact.get("email", "")
+                    school_data["Phone"] = ", ".join(str(p) for p in contact.get("phone_numbers", [])) if isinstance(contact.get("phone_numbers"), list) else ""
+                    school_data["Address"] = contact.get("address", "")
+                
+                # Extract tuition fee information
+                if isinstance(result.get("school_fee"), dict):
+                    fee_data = result.get("school_fee", {})
+                    school_data["Academic Year"] = fee_data.get("academic_year", "")
+                    
+                    # Combine tuition levels into a single field
+                    if "tuition_by_level" in fee_data and isinstance(fee_data["tuition_by_level"], dict):
+                        tuition_summary = []
+                        for level, details in fee_data["tuition_by_level"].items():
+                            if isinstance(details, dict):
+                                fee_text = f"{level}: "
+                                if "annual" in details:
+                                    fee_text += f"Annual: {details['annual']} "
+                                tuition_summary.append(fee_text)
+                            elif isinstance(details, str):
+                                tuition_summary.append(f"{level}: {details}")
+                        
+                        school_data["Tuition Summary"] = "; ".join(tuition_summary)
+                
+                # Extract programs
+                if isinstance(result.get("programs"), list):
+                    programs = result.get("programs", [])
+                    program_summary = []
+                    for program in programs:
+                        if isinstance(program, dict):
+                            program_text = program.get("name", "")
+                            if "grade_level" in program:
+                                program_text += f" ({program.get('grade_level', '')})"
+                            program_summary.append(program_text)
+                        elif isinstance(program, str):
+                            program_summary.append(program)
+                    
+                    school_data["Programs"] = "; ".join(program_summary)
+                
+                # Extract enrollment information
+                if isinstance(result.get("enrollment"), dict):
+                    enrollment = result.get("enrollment", {})
+                    
+                    # Requirements
+                    if "requirements" in enrollment and enrollment["requirements"]:
+                        if isinstance(enrollment["requirements"], list):
+                            school_data["Enrollment Requirements"] = "; ".join(enrollment["requirements"])
+                        else:
+                            school_data["Enrollment Requirements"] = str(enrollment["requirements"])
+                
+                # Extract events
+                if isinstance(result.get("events"), list):
+                    events = result.get("events", [])
+                    event_summary = []
+                    for event in events:
+                        if isinstance(event, dict):
+                            event_text = event.get("name", "")
+                            if "date" in event:
+                                event_text += f" ({event.get('date', '')})"
+                            event_summary.append(event_text)
+                        elif isinstance(event, str):
+                            event_summary.append(event)
+                    
+                    school_data["Events"] = "; ".join(event_summary)
+                
+                # Extract scholarships
+                if isinstance(result.get("scholarships"), list):
+                    scholarships = result.get("scholarships", [])
+                    scholarship_summary = []
+                    for scholarship in scholarships:
+                        if isinstance(scholarship, dict):
+                            scholarship_text = scholarship.get("name", "")
+                            if "amount" in scholarship:
+                                scholarship_text += f" ({scholarship.get('amount', '')})"
+                            scholarship_summary.append(scholarship_text)
+                        elif isinstance(scholarship, str):
+                            scholarship_summary.append(scholarship)
+                    
+                    school_data["Scholarships"] = "; ".join(scholarship_summary)
+                
+                # Add notes as the last column
+                school_data["Notes"] = result.get("notes", "")
+                
+                all_schools_data.append(school_data)
+            
+            # Convert to DataFrame and write to Excel
+            if all_schools_data:
+                all_schools_df = pd.DataFrame(all_schools_data)
+                all_schools_df.to_excel(writer, sheet_name="All Schools Data", index=False)
+            
+            # Create a second sheet with details about what was included
+            metadata = {
+                "Export Date": datetime.now().strftime("%Y-%m-%d %H:%M:%S"),
+                "Number of Schools": len(all_results),
+                "School Names": ", ".join([result.get("name", "") for result in all_results]),
+                "Export Format": "All schools in one sheet, one row per school"
+            }
+            
+            metadata_df = pd.DataFrame([metadata])
+            metadata_df.to_excel(writer, sheet_name="Export Info", index=False)
+        
+        # Seek to the beginning of the stream before reading
+        output.seek(0)
+        
+        return output
+    except Exception as e:
+        logger.error(f"Error exporting results to Excel: {e}", exc_info=True)
+        return None
 
 
 if __name__ == "__main__":

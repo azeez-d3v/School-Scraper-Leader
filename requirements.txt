@@ -11,3 +11,4 @@ python-dotenv
 ollama
 curl-cffi
 pypdf
+openpyxl

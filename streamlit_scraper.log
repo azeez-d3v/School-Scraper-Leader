@@ -7621,3 +7621,6 @@ pypdf.errors.EmptyFileError: Cannot read an empty file
 2025-05-09 05:52:52,010 - lib.parse - INFO - Successfully processed 4 PDF content sections for Jubilee Christian Academy
 2025-05-09 05:52:52,010 - lib.parse - INFO - Extracted structured data from PDFs for Jubilee Christian Academy
 2025-05-09 05:52:52,018 - lib.scraper - INFO - Completed parsing data for Jubilee Christian Academy
+2025-05-09 06:11:07,763 - app - ERROR - Error exporting results to Excel: No module named 'xlsxwriter'
+2025-05-09 06:34:54,861 - app - INFO - Processing chunk 1 of 2 for combined school summary
+2025-05-09 06:35:02,445 - app - INFO - Processing chunk 2 of 2 for combined school summary
