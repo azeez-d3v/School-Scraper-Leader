@@ -61,23 +61,43 @@ class SchoolScraper:
                             logger.warning(f"Could not access binary content for PDF {url}")
                             return "Error: Could not download PDF content"
                         
+                        # Check if the PDF content is empty
+                        if not pdf_content or len(pdf_content) < 100:  # Consider very small files (< 100 bytes) as potentially empty
+                            logger.warning(f"Empty or very small PDF content detected for {url} ({len(pdf_content) if pdf_content else 0} bytes)")
+                            return f"PDF appears to be empty or unavailable: {url}"
+                        
                         # Write the PDF content to the temporary file
                         temp_pdf.write(pdf_content)
                         temp_pdf_path = temp_pdf.name
                         
                         logger.info(f"PDF downloaded to temporary file: {temp_pdf_path}")
                         
-                        # Use PyPDFLoader to extract text from the PDF
-                        loader = PyPDFLoader(temp_pdf_path)
-                        pages = loader.load_and_split()
-                        
-                        # Combine all pages' text content
-                        pdf_text = "\n\n".join([page.page_content for page in pages])
-                        
-                        logger.info(f"Successfully extracted text from PDF, length: {len(pdf_text)} characters")
-                        
-                        # Return the extracted text with PDF metadata
-                        extracted_content = f"[PDF CONTENT FROM: {url}]\n\n{pdf_text}"
+                        try:
+                            # Use PyPDFLoader to extract text from the PDF
+                            loader = PyPDFLoader(temp_pdf_path)
+                            pages = loader.load_and_split()
+                            
+                            # Combine all pages' text content
+                            pdf_text = "\n\n".join([page.page_content for page in pages])
+                            
+                            # Check if the extracted text is empty
+                            if not pdf_text or len(pdf_text.strip()) == 0:
+                                logger.warning(f"No text content extracted from PDF {url}")
+                                return f"PDF found but no text content could be extracted: {url}"
+                                
+                            logger.info(f"Successfully extracted text from PDF, length: {len(pdf_text)} characters")
+                            
+                            # Return the extracted text with PDF metadata
+                            extracted_content = f"[PDF CONTENT FROM: {url}]\n\n{pdf_text}"
+                            
+                        except Exception as pdf_error:
+                            # Handle specifically the EmptyFileError
+                            if "Cannot read an empty file" in str(pdf_error):
+                                logger.warning(f"PDF file is empty: {url}")
+                                return f"Error processing PDF: File is empty or corrupted"
+                            else:
+                                # Re-raise the exception to be caught by the outer exception handler
+                                raise pdf_error
                         
                         # Update progress if callback provided
                         if progress_callback:
@@ -249,8 +269,15 @@ class SchoolScraper:
                     content = await self.extract_content_from_url(link, method)
                     
                     if content:
+                        # Write content to the raw data file, including PDF content
                         f.write(f"{category.upper()} PAGE CONTENT ({link}):\n")
-                        f.write(content)
+                        # Check if this is PDF content and ensure it's written correctly
+                        if content.startswith("[PDF CONTENT FROM:"):
+                            # Ensure PDF content is correctly written as is
+                            logger.info(f"Writing PDF content for {link} to raw data file")
+                            f.write(content)
+                        else:
+                            f.write(content)
                         f.write("\n\n" + "=" * 20 + "PAGE" + "=" * 20 + "\n\n")
                     
                     # Update progress
@@ -263,6 +290,8 @@ class SchoolScraper:
                     
                 except Exception as e:
                     logger.error(f"Error processing {category} link {link} for {school_name}: {e}")
+                    # Write error information to the raw data file for troubleshooting
+                    f.write(f"ERROR processing {category} link {link}: {str(e)}\n\n")
         
         logger.info(f"Completed raw data extraction for {school_name}")
         if status_text:

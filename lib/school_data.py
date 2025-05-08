@@ -29,33 +29,33 @@ class SchoolData:
                     "https://www.ismanila.org/contact-us"
                 ]
             },
-            {
-                "method": "Request",
-                "name": "Brent International School",
-                "school_fee": [
-                    "https://brent.edu.ph/wp-content/uploads/2024/02/school-fees-2024-2025.pdf",
-                    "http://brent.edu.ph/wp-content/uploads/2025/02/school-fees-SY2025-2026-feb-19.pdf",
-                ],
-                "program": [
-                    "https://brent.edu.ph/academics/early-learning-center/",
-                    "https://brent.edu.ph/academics/lower-school/",
-                    "https://brent.edu.ph/academics/middle-school/",
-                    "https://brent.edu.ph/academics/high-school/",
-                    "https://brent.edu.ph/academics/upper-school/",
-                    "https://brent.edu.ph/academics/international-baccalaureate/",
-                    "https://brent.edu.ph/academics/esl/",
-                ],
-                "Enrollment Process and Requirements": [
-                    "https://brent.edu.ph/admissions/application-process/",
-                    "https://brent.edu.ph/admissions/enrollment-process/",
-                    "https://brent.edu.ph/admissions/admissions-criteria/"
-                ],
-                "Upcoming Events": [],
-                "Discounts and Scholarship": [],
-                "Contact Information ": [
-                    "https://brent.edu.ph/about/contact-us/"
-                ]
-            },
+            # {
+            #     "method": "Request",
+            #     "name": "Brent International School",
+            #     "school_fee": [
+            #         "https://brent.edu.ph/wp-content/uploads/2024/02/school-fees-2024-2025.pdf",
+            #         "http://brent.edu.ph/wp-content/uploads/2025/02/school-fees-SY2025-2026-feb-19.pdf",
+            #     ],
+            #     "program": [
+            #         "https://brent.edu.ph/academics/early-learning-center/",
+            #         "https://brent.edu.ph/academics/lower-school/",
+            #         "https://brent.edu.ph/academics/middle-school/",
+            #         "https://brent.edu.ph/academics/high-school/",
+            #         "https://brent.edu.ph/academics/upper-school/",
+            #         "https://brent.edu.ph/academics/international-baccalaureate/",
+            #         "https://brent.edu.ph/academics/esl/",
+            #     ],
+            #     "Enrollment Process and Requirements": [
+            #         "https://brent.edu.ph/admissions/application-process/",
+            #         "https://brent.edu.ph/admissions/enrollment-process/",
+            #         "https://brent.edu.ph/admissions/admissions-criteria/"
+            #     ],
+            #     "Upcoming Events": [],
+            #     "Discounts and Scholarship": [],
+            #     "Contact Information ": [
+            #         "https://brent.edu.ph/about/contact-us/"
+            #     ]
+            # },
             {
                 "method": "Request",
                 "name": "British School Manila",

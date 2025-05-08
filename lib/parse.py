@@ -170,6 +170,11 @@ def parse_with_langchain(dom_content, parse_description, school_name=""):
     
     logger.info(f"Processing content for {school_name}")
     
+    # Check if content contains PDF data and log it
+    pdf_content_count = dom_content.count("[PDF CONTENT FROM:")
+    if pdf_content_count > 0:
+        logger.info(f"Found {pdf_content_count} PDF content sections in data for {school_name}")
+    
     try:
         # Format the prompt template with instructions for structured output
         structured_template = (
@@ -273,7 +278,8 @@ def parse_with_langchain(dom_content, parse_description, school_name=""):
             "3. Include specific details, dates, amounts, and requirements when available\n"
             "4. For tuition, separate by grade levels and include pricing details for different payment periods\n"
             "5. For enrollment, separate requirements from required documents and provide step-by-step process\n"
-            "6. Remove any JSON comments (lines with // ) in your final output\n\n"
+            "6. Remove any JSON comments (lines with // ) in your final output\n"
+            "7. Pay special attention to PDF content sections marked with [PDF CONTENT FROM: url] as these may contain important structured information\n\n"
             "Here's the content to analyze:\n\n{dom_content}"
         )
         
@@ -297,6 +303,14 @@ def parse_with_langchain(dom_content, parse_description, school_name=""):
         if not json_data:
             logger.warning(f"No valid JSON found in response for {school_name}, falling back to legacy format")
             return handle_legacy_format(result, school_name)
+        
+        # Log successful parsing of PDF content
+        if pdf_content_count > 0:
+            logger.info(f"Successfully processed {pdf_content_count} PDF content sections for {school_name}")
+            
+            # Check if the extracted data contains information likely from PDFs
+            if "tuition" in json_data or "enrollment" in json_data:
+                logger.info(f"Extracted structured data from PDFs for {school_name}")
         
         # Convert the JSON data to a SchoolInfo object
         school_info = create_school_info_from_json(json_data, school_name)

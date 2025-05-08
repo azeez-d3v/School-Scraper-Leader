@@ -40,3 +40,4 @@ uv.lock
 .coverage
 htmlcov/
 
+test.py

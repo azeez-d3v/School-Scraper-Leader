@@ -75,7 +75,7 @@ class SessionManager:
             Response object with html content
         """
         try:
-            async with AsyncSession(impersonate="chrome131", timeout=(5.0, 120)) as session:
+            async with AsyncSession(impersonate="chrome131", timeout=120) as session:
                 combined_headers = {**self.default_headers}
                 
                 if headers:

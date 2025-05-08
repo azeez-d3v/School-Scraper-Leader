@@ -7074,3 +7074,550 @@ PermissionError: [WinError 32] The process cannot access the file because it is 
 2025-05-08 22:08:56,452 - lib.parse - INFO - Sending request to Google Generative AI for Jubilee Christian Academy
 2025-05-08 22:09:03,392 - lib.parse - INFO - Received response from Google Generative AI, length: 4286
 2025-05-08 22:09:03,417 - lib.scraper - INFO - Completed parsing data for Jubilee Christian Academy
+2025-05-09 05:39:22,521 - lib.scraper - INFO - Processing school: Jubilee Christian Academy
+2025-05-09 05:39:22,523 - lib.scraper - INFO - Extracting content from URL: 
+2025-05-09 05:39:22,524 - lib.scraper - INFO - Using RequestSession for URL: 
+2025-05-09 05:39:22,529 - lib.scraper - WARNING - HTTP error 500 for 
+2025-05-09 05:39:22,530 - lib.scraper - INFO - Extracting enrollment data from https://www.jca.edu.ph/be-a-jubilean/admission/ using method: Request
+2025-05-09 05:39:22,531 - lib.scraper - INFO - Extracting content from URL: https://www.jca.edu.ph/be-a-jubilean/admission/
+2025-05-09 05:39:22,531 - lib.scraper - INFO - Using RequestSession for URL: https://www.jca.edu.ph/be-a-jubilean/admission/
+2025-05-09 05:39:26,909 - lib.scraper - INFO - Successfully got content from https://www.jca.edu.ph/be-a-jubilean/admission/ (97563 bytes)
+2025-05-09 05:39:27,126 - lib.scraper - INFO - Successfully extracted and cleaned content from https://www.jca.edu.ph/be-a-jubilean/admission/ (4066 bytes)
+2025-05-09 05:39:28,134 - lib.scraper - INFO - Extracting enrollment data from https://www.jca.edu.ph/wp-content/uploads/2024/09/P-Admissions-Information.pdf using method: Request
+2025-05-09 05:39:28,134 - lib.scraper - INFO - Extracting content from URL: https://www.jca.edu.ph/wp-content/uploads/2024/09/P-Admissions-Information.pdf
+2025-05-09 05:39:28,134 - lib.scraper - INFO - Detected PDF URL: https://www.jca.edu.ph/wp-content/uploads/2024/09/P-Admissions-Information.pdf
+2025-05-09 05:39:30,698 - lib.scraper - INFO - PDF downloaded to temporary file: C:\Users\Azeeeez\AppData\Local\Temp\tmpfqc_5dsk.pdf
+2025-05-09 05:39:32,200 - lib.scraper - INFO - Successfully extracted text from PDF, length: 2054 characters
+2025-05-09 05:39:32,200 - lib.scraper - WARNING - Could not delete temporary PDF file C:\Users\Azeeeez\AppData\Local\Temp\tmpfqc_5dsk.pdf: [WinError 32] The process cannot access the file because it is being used by another process: 'C:\\Users\\Azeeeez\\AppData\\Local\\Temp\\tmpfqc_5dsk.pdf'
+2025-05-09 05:39:33,209 - lib.scraper - INFO - Extracting enrollment data from https://www.jca.edu.ph/wp-content/uploads/2024/09/E-ADMISSIONS-INFORMATION.pdf using method: Request
+2025-05-09 05:39:33,209 - lib.scraper - INFO - Extracting content from URL: https://www.jca.edu.ph/wp-content/uploads/2024/09/E-ADMISSIONS-INFORMATION.pdf
+2025-05-09 05:39:33,209 - lib.scraper - INFO - Detected PDF URL: https://www.jca.edu.ph/wp-content/uploads/2024/09/E-ADMISSIONS-INFORMATION.pdf
+2025-05-09 05:39:34,537 - lib.scraper - INFO - PDF downloaded to temporary file: C:\Users\Azeeeez\AppData\Local\Temp\tmp32nsq5jd.pdf
+2025-05-09 05:39:34,783 - lib.scraper - INFO - Successfully extracted text from PDF, length: 2252 characters
+2025-05-09 05:39:34,783 - lib.scraper - WARNING - Could not delete temporary PDF file C:\Users\Azeeeez\AppData\Local\Temp\tmp32nsq5jd.pdf: [WinError 32] The process cannot access the file because it is being used by another process: 'C:\\Users\\Azeeeez\\AppData\\Local\\Temp\\tmp32nsq5jd.pdf'
+2025-05-09 05:39:35,789 - lib.scraper - INFO - Extracting enrollment data from https://www.jca.edu.ph/wp-content/uploads/2024/09/Junior-HS-ADMISSIONS-INFORMATION.pdf using method: Request
+2025-05-09 05:39:35,789 - lib.scraper - INFO - Extracting content from URL: https://www.jca.edu.ph/wp-content/uploads/2024/09/Junior-HS-ADMISSIONS-INFORMATION.pdf
+2025-05-09 05:39:35,794 - lib.scraper - INFO - Detected PDF URL: https://www.jca.edu.ph/wp-content/uploads/2024/09/Junior-HS-ADMISSIONS-INFORMATION.pdf
+2025-05-09 05:39:37,317 - lib.scraper - INFO - PDF downloaded to temporary file: C:\Users\Azeeeez\AppData\Local\Temp\tmpxs85jvkz.pdf
+2025-05-09 05:39:37,442 - lib.scraper - INFO - Successfully extracted text from PDF, length: 2236 characters
+2025-05-09 05:39:37,442 - lib.scraper - WARNING - Could not delete temporary PDF file C:\Users\Azeeeez\AppData\Local\Temp\tmpxs85jvkz.pdf: [WinError 32] The process cannot access the file because it is being used by another process: 'C:\\Users\\Azeeeez\\AppData\\Local\\Temp\\tmpxs85jvkz.pdf'
+2025-05-09 05:39:38,442 - lib.scraper - INFO - Extracting enrollment data from https://www.jca.edu.ph/wp-content/uploads/2024/09/S-HS-ADMISSIONS-INFORMATION.pdf using method: Request
+2025-05-09 05:39:38,442 - lib.scraper - INFO - Extracting content from URL: https://www.jca.edu.ph/wp-content/uploads/2024/09/S-HS-ADMISSIONS-INFORMATION.pdf
+2025-05-09 05:39:38,442 - lib.scraper - INFO - Detected PDF URL: https://www.jca.edu.ph/wp-content/uploads/2024/09/S-HS-ADMISSIONS-INFORMATION.pdf
+2025-05-09 05:39:40,443 - lib.scraper - INFO - PDF downloaded to temporary file: C:\Users\Azeeeez\AppData\Local\Temp\tmpypnddzy7.pdf
+2025-05-09 05:39:40,814 - lib.scraper - INFO - Successfully extracted text from PDF, length: 2490 characters
+2025-05-09 05:39:40,814 - lib.scraper - WARNING - Could not delete temporary PDF file C:\Users\Azeeeez\AppData\Local\Temp\tmpypnddzy7.pdf: [WinError 32] The process cannot access the file because it is being used by another process: 'C:\\Users\\Azeeeez\\AppData\\Local\\Temp\\tmpypnddzy7.pdf'
+2025-05-09 05:39:41,822 - lib.scraper - INFO - Extracting contact data from https://www.jca.edu.ph/contact-us/ using method: Request
+2025-05-09 05:39:41,822 - lib.scraper - INFO - Extracting content from URL: https://www.jca.edu.ph/contact-us/
+2025-05-09 05:39:41,822 - lib.scraper - INFO - Using RequestSession for URL: https://www.jca.edu.ph/contact-us/
+2025-05-09 05:39:42,465 - lib.scraper - INFO - Successfully got content from https://www.jca.edu.ph/contact-us/ (106899 bytes)
+2025-05-09 05:39:42,590 - lib.scraper - INFO - Successfully extracted and cleaned content from https://www.jca.edu.ph/contact-us/ (950 bytes)
+2025-05-09 05:39:43,583 - lib.scraper - INFO - Completed raw data extraction for Jubilee Christian Academy
+2025-05-09 05:39:43,583 - lib.scraper - INFO - Parsing data for Jubilee Christian Academy
+2025-05-09 05:39:43,598 - lib.parse - INFO - Processing content for Jubilee Christian Academy
+2025-05-09 05:39:43,599 - lib.parse - INFO - Sending request to Google Generative AI for Jubilee Christian Academy
+2025-05-09 05:39:51,215 - lib.parse - INFO - Received response from Google Generative AI, length: 5077
+2025-05-09 05:39:51,215 - lib.scraper - INFO - Completed parsing data for Jubilee Christian Academy
+2025-05-09 05:44:36,994 - lib.scraper - INFO - Processing school: Jubilee Christian Academy
+2025-05-09 05:44:36,997 - lib.scraper - INFO - Extracting content from URL: 
+2025-05-09 05:44:36,997 - lib.scraper - INFO - Using RequestSession for URL: 
+2025-05-09 05:44:37,000 - lib.scraper - WARNING - HTTP error 500 for 
+2025-05-09 05:44:37,001 - lib.scraper - INFO - Extracting enrollment data from https://www.jca.edu.ph/be-a-jubilean/admission/ using method: Request
+2025-05-09 05:44:37,002 - lib.scraper - INFO - Extracting content from URL: https://www.jca.edu.ph/be-a-jubilean/admission/
+2025-05-09 05:44:37,002 - lib.scraper - INFO - Using RequestSession for URL: https://www.jca.edu.ph/be-a-jubilean/admission/
+2025-05-09 05:44:41,201 - lib.scraper - INFO - Successfully got content from https://www.jca.edu.ph/be-a-jubilean/admission/ (97563 bytes)
+2025-05-09 05:44:41,386 - lib.scraper - INFO - Successfully extracted and cleaned content from https://www.jca.edu.ph/be-a-jubilean/admission/ (4066 bytes)
+2025-05-09 05:44:42,406 - lib.scraper - INFO - Extracting enrollment data from https://www.jca.edu.ph/wp-content/uploads/2024/09/P-Admissions-Information.pdf using method: Request
+2025-05-09 05:44:42,406 - lib.scraper - INFO - Extracting content from URL: https://www.jca.edu.ph/wp-content/uploads/2024/09/P-Admissions-Information.pdf
+2025-05-09 05:44:42,406 - lib.scraper - INFO - Detected PDF URL: https://www.jca.edu.ph/wp-content/uploads/2024/09/P-Admissions-Information.pdf
+2025-05-09 05:44:45,205 - lib.scraper - INFO - PDF downloaded to temporary file: C:\Users\Azeeeez\AppData\Local\Temp\tmpbx1dwvl9.pdf
+2025-05-09 05:44:46,641 - lib.scraper - INFO - Successfully extracted text from PDF, length: 2054 characters
+2025-05-09 05:44:46,642 - lib.scraper - WARNING - Could not delete temporary PDF file C:\Users\Azeeeez\AppData\Local\Temp\tmpbx1dwvl9.pdf: [WinError 32] The process cannot access the file because it is being used by another process: 'C:\\Users\\Azeeeez\\AppData\\Local\\Temp\\tmpbx1dwvl9.pdf'
+2025-05-09 05:44:46,642 - lib.scraper - INFO - Writing PDF content for https://www.jca.edu.ph/wp-content/uploads/2024/09/P-Admissions-Information.pdf to raw data file
+2025-05-09 05:44:47,659 - lib.scraper - INFO - Extracting enrollment data from https://www.jca.edu.ph/wp-content/uploads/2024/09/E-ADMISSIONS-INFORMATION.pdf using method: Request
+2025-05-09 05:44:47,659 - lib.scraper - INFO - Extracting content from URL: https://www.jca.edu.ph/wp-content/uploads/2024/09/E-ADMISSIONS-INFORMATION.pdf
+2025-05-09 05:44:47,659 - lib.scraper - INFO - Detected PDF URL: https://www.jca.edu.ph/wp-content/uploads/2024/09/E-ADMISSIONS-INFORMATION.pdf
+2025-05-09 05:44:50,966 - lib.scraper - INFO - PDF downloaded to temporary file: C:\Users\Azeeeez\AppData\Local\Temp\tmph8o2pw86.pdf
+2025-05-09 05:44:51,235 - lib.scraper - INFO - Successfully extracted text from PDF, length: 2252 characters
+2025-05-09 05:44:51,235 - lib.scraper - WARNING - Could not delete temporary PDF file C:\Users\Azeeeez\AppData\Local\Temp\tmph8o2pw86.pdf: [WinError 32] The process cannot access the file because it is being used by another process: 'C:\\Users\\Azeeeez\\AppData\\Local\\Temp\\tmph8o2pw86.pdf'
+2025-05-09 05:44:51,235 - lib.scraper - INFO - Writing PDF content for https://www.jca.edu.ph/wp-content/uploads/2024/09/E-ADMISSIONS-INFORMATION.pdf to raw data file
+2025-05-09 05:44:52,247 - lib.scraper - INFO - Extracting enrollment data from https://www.jca.edu.ph/wp-content/uploads/2024/09/Junior-HS-ADMISSIONS-INFORMATION.pdf using method: Request
+2025-05-09 05:44:52,247 - lib.scraper - INFO - Extracting content from URL: https://www.jca.edu.ph/wp-content/uploads/2024/09/Junior-HS-ADMISSIONS-INFORMATION.pdf
+2025-05-09 05:44:52,247 - lib.scraper - INFO - Detected PDF URL: https://www.jca.edu.ph/wp-content/uploads/2024/09/Junior-HS-ADMISSIONS-INFORMATION.pdf
+2025-05-09 05:44:53,763 - lib.scraper - INFO - PDF downloaded to temporary file: C:\Users\Azeeeez\AppData\Local\Temp\tmp8a8iqjlu.pdf
+2025-05-09 05:44:53,892 - lib.scraper - INFO - Successfully extracted text from PDF, length: 2236 characters
+2025-05-09 05:44:53,892 - lib.scraper - WARNING - Could not delete temporary PDF file C:\Users\Azeeeez\AppData\Local\Temp\tmp8a8iqjlu.pdf: [WinError 32] The process cannot access the file because it is being used by another process: 'C:\\Users\\Azeeeez\\AppData\\Local\\Temp\\tmp8a8iqjlu.pdf'
+2025-05-09 05:44:53,892 - lib.scraper - INFO - Writing PDF content for https://www.jca.edu.ph/wp-content/uploads/2024/09/Junior-HS-ADMISSIONS-INFORMATION.pdf to raw data file
+2025-05-09 05:44:54,907 - lib.scraper - INFO - Extracting enrollment data from https://www.jca.edu.ph/wp-content/uploads/2024/09/S-HS-ADMISSIONS-INFORMATION.pdf using method: Request
+2025-05-09 05:44:54,907 - lib.scraper - INFO - Extracting content from URL: https://www.jca.edu.ph/wp-content/uploads/2024/09/S-HS-ADMISSIONS-INFORMATION.pdf
+2025-05-09 05:44:54,907 - lib.scraper - INFO - Detected PDF URL: https://www.jca.edu.ph/wp-content/uploads/2024/09/S-HS-ADMISSIONS-INFORMATION.pdf
+2025-05-09 05:44:56,217 - lib.scraper - INFO - PDF downloaded to temporary file: C:\Users\Azeeeez\AppData\Local\Temp\tmp8tsw5qgx.pdf
+2025-05-09 05:44:56,559 - lib.scraper - INFO - Successfully extracted text from PDF, length: 2490 characters
+2025-05-09 05:44:56,559 - lib.scraper - WARNING - Could not delete temporary PDF file C:\Users\Azeeeez\AppData\Local\Temp\tmp8tsw5qgx.pdf: [WinError 32] The process cannot access the file because it is being used by another process: 'C:\\Users\\Azeeeez\\AppData\\Local\\Temp\\tmp8tsw5qgx.pdf'
+2025-05-09 05:44:56,559 - lib.scraper - INFO - Writing PDF content for https://www.jca.edu.ph/wp-content/uploads/2024/09/S-HS-ADMISSIONS-INFORMATION.pdf to raw data file
+2025-05-09 05:44:57,559 - lib.scraper - INFO - Extracting contact data from https://www.jca.edu.ph/contact-us/ using method: Request
+2025-05-09 05:44:57,559 - lib.scraper - INFO - Extracting content from URL: https://www.jca.edu.ph/contact-us/
+2025-05-09 05:44:57,559 - lib.scraper - INFO - Using RequestSession for URL: https://www.jca.edu.ph/contact-us/
+2025-05-09 05:44:58,591 - lib.scraper - INFO - Successfully got content from https://www.jca.edu.ph/contact-us/ (106899 bytes)
+2025-05-09 05:44:58,699 - lib.scraper - INFO - Successfully extracted and cleaned content from https://www.jca.edu.ph/contact-us/ (950 bytes)
+2025-05-09 05:44:59,704 - lib.scraper - INFO - Completed raw data extraction for Jubilee Christian Academy
+2025-05-09 05:44:59,704 - lib.scraper - INFO - Parsing data for Jubilee Christian Academy
+2025-05-09 05:44:59,731 - lib.parse - INFO - Processing content for Jubilee Christian Academy
+2025-05-09 05:44:59,731 - lib.parse - INFO - Found 4 PDF content sections in data for Jubilee Christian Academy
+2025-05-09 05:44:59,732 - lib.parse - INFO - Sending request to Google Generative AI for Jubilee Christian Academy
+2025-05-09 05:45:07,618 - lib.parse - INFO - Received response from Google Generative AI, length: 4905
+2025-05-09 05:45:07,618 - lib.parse - INFO - Successfully processed 4 PDF content sections for Jubilee Christian Academy
+2025-05-09 05:45:07,618 - lib.parse - INFO - Extracted structured data from PDFs for Jubilee Christian Academy
+2025-05-09 05:45:07,626 - lib.scraper - INFO - Completed parsing data for Jubilee Christian Academy
+2025-05-09 05:48:47,765 - lib.scraper - INFO - Processing school: International School Manila
+2025-05-09 05:48:47,769 - lib.scraper - INFO - Extracting content from URL: 
+2025-05-09 05:48:47,769 - lib.scraper - INFO - Using RequestSession for URL: 
+2025-05-09 05:48:47,771 - lib.scraper - WARNING - HTTP error 500 for 
+2025-05-09 05:48:47,772 - lib.scraper - INFO - Extracting school_fee data from https://www.ismanila.org/admissions/school-fees using method: Request
+2025-05-09 05:48:47,773 - lib.scraper - INFO - Extracting content from URL: https://www.ismanila.org/admissions/school-fees
+2025-05-09 05:48:47,773 - lib.scraper - INFO - Using RequestSession for URL: https://www.ismanila.org/admissions/school-fees
+2025-05-09 05:48:48,768 - lib.scraper - INFO - Successfully got content from https://www.ismanila.org/admissions/school-fees (98128 bytes)
+2025-05-09 05:48:49,036 - lib.scraper - INFO - Successfully extracted and cleaned content from https://www.ismanila.org/admissions/school-fees (2475 bytes)
+2025-05-09 05:48:50,043 - lib.scraper - INFO - Extracting program data from https://www.ismanila.org/elementary-school/academic-program using method: Request
+2025-05-09 05:48:50,043 - lib.scraper - INFO - Extracting content from URL: https://www.ismanila.org/elementary-school/academic-program
+2025-05-09 05:48:50,043 - lib.scraper - INFO - Using RequestSession for URL: https://www.ismanila.org/elementary-school/academic-program
+2025-05-09 05:48:50,546 - lib.scraper - INFO - Successfully got content from https://www.ismanila.org/elementary-school/academic-program (82541 bytes)
+2025-05-09 05:48:50,646 - lib.scraper - INFO - Successfully extracted and cleaned content from https://www.ismanila.org/elementary-school/academic-program (1925 bytes)
+2025-05-09 05:48:51,652 - lib.scraper - INFO - Extracting program data from https://www.ismanila.org/middle-school/academic-program using method: Request
+2025-05-09 05:48:51,652 - lib.scraper - INFO - Extracting content from URL: https://www.ismanila.org/middle-school/academic-program
+2025-05-09 05:48:51,652 - lib.scraper - INFO - Using RequestSession for URL: https://www.ismanila.org/middle-school/academic-program
+2025-05-09 05:48:52,177 - lib.scraper - INFO - Successfully got content from https://www.ismanila.org/middle-school/academic-program (82875 bytes)
+2025-05-09 05:48:52,301 - lib.scraper - INFO - Successfully extracted and cleaned content from https://www.ismanila.org/middle-school/academic-program (1924 bytes)
+2025-05-09 05:48:53,302 - lib.scraper - INFO - Extracting program data from https://www.ismanila.org/high-school/academic-program using method: Request
+2025-05-09 05:48:53,302 - lib.scraper - INFO - Extracting content from URL: https://www.ismanila.org/high-school/academic-program
+2025-05-09 05:48:53,312 - lib.scraper - INFO - Using RequestSession for URL: https://www.ismanila.org/high-school/academic-program
+2025-05-09 05:48:53,900 - lib.scraper - INFO - Successfully got content from https://www.ismanila.org/high-school/academic-program (79797 bytes)
+2025-05-09 05:48:54,040 - lib.scraper - INFO - Successfully extracted and cleaned content from https://www.ismanila.org/high-school/academic-program (2089 bytes)
+2025-05-09 05:48:55,049 - lib.scraper - INFO - Extracting enrollment data from https://www.ismanila.org/admissions/admissions-process using method: Request
+2025-05-09 05:48:55,049 - lib.scraper - INFO - Extracting content from URL: https://www.ismanila.org/admissions/admissions-process
+2025-05-09 05:48:55,049 - lib.scraper - INFO - Using RequestSession for URL: https://www.ismanila.org/admissions/admissions-process
+2025-05-09 05:48:55,609 - lib.scraper - INFO - Successfully got content from https://www.ismanila.org/admissions/admissions-process (99105 bytes)
+2025-05-09 05:48:55,831 - lib.scraper - INFO - Successfully extracted and cleaned content from https://www.ismanila.org/admissions/admissions-process (10537 bytes)
+2025-05-09 05:48:56,832 - lib.scraper - INFO - Extracting enrollment data from https://www.ismanila.org/admissions/application-file-forms-requirements using method: Request
+2025-05-09 05:48:56,832 - lib.scraper - INFO - Extracting content from URL: https://www.ismanila.org/admissions/application-file-forms-requirements
+2025-05-09 05:48:56,832 - lib.scraper - INFO - Using RequestSession for URL: https://www.ismanila.org/admissions/application-file-forms-requirements
+2025-05-09 05:48:57,359 - lib.scraper - INFO - Successfully got content from https://www.ismanila.org/admissions/application-file-forms-requirements (100310 bytes)
+2025-05-09 05:48:57,553 - lib.scraper - INFO - Successfully extracted and cleaned content from https://www.ismanila.org/admissions/application-file-forms-requirements (15979 bytes)
+2025-05-09 05:48:58,553 - lib.scraper - INFO - Extracting scholarships data from https://www.ismanila.org/admissions/scholarships using method: Request
+2025-05-09 05:48:58,553 - lib.scraper - INFO - Extracting content from URL: https://www.ismanila.org/admissions/scholarships
+2025-05-09 05:48:58,553 - lib.scraper - INFO - Using RequestSession for URL: https://www.ismanila.org/admissions/scholarships
+2025-05-09 05:48:59,114 - lib.scraper - INFO - Successfully got content from https://www.ismanila.org/admissions/scholarships (89869 bytes)
+2025-05-09 05:48:59,293 - lib.scraper - INFO - Successfully extracted and cleaned content from https://www.ismanila.org/admissions/scholarships (7486 bytes)
+2025-05-09 05:49:00,294 - lib.scraper - INFO - Extracting contact data from https://www.ismanila.org/contact-us using method: Request
+2025-05-09 05:49:00,294 - lib.scraper - INFO - Extracting content from URL: https://www.ismanila.org/contact-us
+2025-05-09 05:49:00,294 - lib.scraper - INFO - Using RequestSession for URL: https://www.ismanila.org/contact-us
+2025-05-09 05:49:00,828 - lib.scraper - INFO - Successfully got content from https://www.ismanila.org/contact-us (77602 bytes)
+2025-05-09 05:49:00,949 - lib.scraper - INFO - Successfully extracted and cleaned content from https://www.ismanila.org/contact-us (1010 bytes)
+2025-05-09 05:49:01,961 - lib.scraper - INFO - Completed raw data extraction for International School Manila
+2025-05-09 05:49:01,961 - lib.scraper - INFO - Parsing data for International School Manila
+2025-05-09 05:49:01,998 - lib.parse - INFO - Processing content for International School Manila
+2025-05-09 05:49:01,999 - lib.parse - INFO - Sending request to Google Generative AI for International School Manila
+2025-05-09 05:49:17,891 - lib.parse - INFO - Received response from Google Generative AI, length: 10046
+2025-05-09 05:49:17,907 - lib.scraper - INFO - Completed parsing data for International School Manila
+2025-05-09 05:49:17,907 - lib.scraper - INFO - Processing school: Brent International School
+2025-05-09 05:49:17,918 - lib.scraper - INFO - Extracting content from URL: 
+2025-05-09 05:49:17,918 - lib.scraper - INFO - Using RequestSession for URL: 
+2025-05-09 05:49:17,929 - lib.scraper - WARNING - HTTP error 500 for 
+2025-05-09 05:49:17,932 - lib.scraper - INFO - Extracting school_fee data from https://brent.edu.ph/wp-content/uploads/2024/02/school-fees-2024-2025.pdf using method: Request
+2025-05-09 05:49:17,937 - lib.scraper - INFO - Extracting content from URL: https://brent.edu.ph/wp-content/uploads/2024/02/school-fees-2024-2025.pdf
+2025-05-09 05:49:17,939 - lib.scraper - INFO - Detected PDF URL: https://brent.edu.ph/wp-content/uploads/2024/02/school-fees-2024-2025.pdf
+2025-05-09 05:49:18,224 - lib.scraper - INFO - PDF downloaded to temporary file: C:\Users\Azeeeez\AppData\Local\Temp\tmptmbqlu3n.pdf
+2025-05-09 05:49:18,342 - lib.scraper - WARNING - Could not delete temporary PDF file C:\Users\Azeeeez\AppData\Local\Temp\tmptmbqlu3n.pdf during error handling: [WinError 32] The process cannot access the file because it is being used by another process: 'C:\\Users\\Azeeeez\\AppData\\Local\\Temp\\tmptmbqlu3n.pdf'
+2025-05-09 05:49:18,342 - lib.scraper - ERROR - Error processing PDF https://brent.edu.ph/wp-content/uploads/2024/02/school-fees-2024-2025.pdf: Cannot read an empty file
+Traceback (most recent call last):
+  File "C:\Users\Azeeeez\Documents\GitHub Repos\School-Scraper-Leader\lib\scraper.py", line 72, in extract_content_from_url
+    pages = loader.load_and_split()
+            ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Azeeeez\Documents\GitHub Repos\School-Scraper-Leader\.venv\Lib\site-packages\langchain_core\document_loaders\base.py", line 66, in load_and_split
+    docs = self.load()
+           ^^^^^^^^^^^
+  File "C:\Users\Azeeeez\Documents\GitHub Repos\School-Scraper-Leader\.venv\Lib\site-packages\langchain_core\document_loaders\base.py", line 32, in load
+    return list(self.lazy_load())
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Azeeeez\Documents\GitHub Repos\School-Scraper-Leader\.venv\Lib\site-packages\langchain_community\document_loaders\pdf.py", line 305, in lazy_load
+    yield from self.parser.lazy_parse(blob)
+  File "C:\Users\Azeeeez\Documents\GitHub Repos\School-Scraper-Leader\.venv\Lib\site-packages\langchain_community\document_loaders\parsers\pdf.py", line 384, in lazy_parse
+    pdf_reader = pypdf.PdfReader(pdf_file_obj, password=self.password)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Azeeeez\Documents\GitHub Repos\School-Scraper-Leader\.venv\Lib\site-packages\pypdf\_reader.py", line 136, in __init__
+    self._initialize_stream(stream)
+  File "C:\Users\Azeeeez\Documents\GitHub Repos\School-Scraper-Leader\.venv\Lib\site-packages\pypdf\_reader.py", line 158, in _initialize_stream
+    self.read(stream)
+  File "C:\Users\Azeeeez\Documents\GitHub Repos\School-Scraper-Leader\.venv\Lib\site-packages\pypdf\_reader.py", line 592, in read
+    self._basic_validation(stream)
+  File "C:\Users\Azeeeez\Documents\GitHub Repos\School-Scraper-Leader\.venv\Lib\site-packages\pypdf\_reader.py", line 658, in _basic_validation
+    raise EmptyFileError("Cannot read an empty file")
+pypdf.errors.EmptyFileError: Cannot read an empty file
+2025-05-09 05:49:19,406 - lib.scraper - INFO - Extracting school_fee data from http://brent.edu.ph/wp-content/uploads/2025/02/school-fees-SY2025-2026-feb-19.pdf using method: Request
+2025-05-09 05:49:19,406 - lib.scraper - INFO - Extracting content from URL: http://brent.edu.ph/wp-content/uploads/2025/02/school-fees-SY2025-2026-feb-19.pdf
+2025-05-09 05:49:19,406 - lib.scraper - INFO - Detected PDF URL: http://brent.edu.ph/wp-content/uploads/2025/02/school-fees-SY2025-2026-feb-19.pdf
+2025-05-09 05:49:19,810 - lib.scraper - INFO - PDF downloaded to temporary file: C:\Users\Azeeeez\AppData\Local\Temp\tmp3k94zezg.pdf
+2025-05-09 05:49:19,810 - lib.scraper - WARNING - Could not delete temporary PDF file C:\Users\Azeeeez\AppData\Local\Temp\tmp3k94zezg.pdf during error handling: [WinError 32] The process cannot access the file because it is being used by another process: 'C:\\Users\\Azeeeez\\AppData\\Local\\Temp\\tmp3k94zezg.pdf'
+2025-05-09 05:49:19,827 - lib.scraper - ERROR - Error processing PDF http://brent.edu.ph/wp-content/uploads/2025/02/school-fees-SY2025-2026-feb-19.pdf: Cannot read an empty file
+Traceback (most recent call last):
+  File "C:\Users\Azeeeez\Documents\GitHub Repos\School-Scraper-Leader\lib\scraper.py", line 72, in extract_content_from_url
+    pages = loader.load_and_split()
+            ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Azeeeez\Documents\GitHub Repos\School-Scraper-Leader\.venv\Lib\site-packages\langchain_core\document_loaders\base.py", line 66, in load_and_split
+    docs = self.load()
+           ^^^^^^^^^^^
+  File "C:\Users\Azeeeez\Documents\GitHub Repos\School-Scraper-Leader\.venv\Lib\site-packages\langchain_core\document_loaders\base.py", line 32, in load
+    return list(self.lazy_load())
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Azeeeez\Documents\GitHub Repos\School-Scraper-Leader\.venv\Lib\site-packages\langchain_community\document_loaders\pdf.py", line 305, in lazy_load
+    yield from self.parser.lazy_parse(blob)
+  File "C:\Users\Azeeeez\Documents\GitHub Repos\School-Scraper-Leader\.venv\Lib\site-packages\langchain_community\document_loaders\parsers\pdf.py", line 384, in lazy_parse
+    pdf_reader = pypdf.PdfReader(pdf_file_obj, password=self.password)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Azeeeez\Documents\GitHub Repos\School-Scraper-Leader\.venv\Lib\site-packages\pypdf\_reader.py", line 136, in __init__
+    self._initialize_stream(stream)
+  File "C:\Users\Azeeeez\Documents\GitHub Repos\School-Scraper-Leader\.venv\Lib\site-packages\pypdf\_reader.py", line 158, in _initialize_stream
+    self.read(stream)
+  File "C:\Users\Azeeeez\Documents\GitHub Repos\School-Scraper-Leader\.venv\Lib\site-packages\pypdf\_reader.py", line 592, in read
+    self._basic_validation(stream)
+  File "C:\Users\Azeeeez\Documents\GitHub Repos\School-Scraper-Leader\.venv\Lib\site-packages\pypdf\_reader.py", line 658, in _basic_validation
+    raise EmptyFileError("Cannot read an empty file")
+pypdf.errors.EmptyFileError: Cannot read an empty file
+2025-05-09 05:49:20,840 - lib.scraper - INFO - Extracting program data from https://brent.edu.ph/academics/early-learning-center/ using method: Request
+2025-05-09 05:49:20,840 - lib.scraper - INFO - Extracting content from URL: https://brent.edu.ph/academics/early-learning-center/
+2025-05-09 05:49:20,840 - lib.scraper - INFO - Using RequestSession for URL: https://brent.edu.ph/academics/early-learning-center/
+2025-05-09 05:49:29,975 - lib.scraper - INFO - Successfully got content from https://brent.edu.ph/academics/early-learning-center/ (1686 bytes)
+2025-05-09 05:49:29,991 - lib.scraper - INFO - Successfully extracted and cleaned content from https://brent.edu.ph/academics/early-learning-center/ (37 bytes)
+2025-05-09 05:49:30,994 - lib.scraper - INFO - Extracting program data from https://brent.edu.ph/academics/lower-school/ using method: Request
+2025-05-09 05:49:30,994 - lib.scraper - INFO - Extracting content from URL: https://brent.edu.ph/academics/lower-school/
+2025-05-09 05:49:31,001 - lib.scraper - INFO - Using RequestSession for URL: https://brent.edu.ph/academics/lower-school/
+2025-05-09 05:49:40,093 - lib.scraper - INFO - Successfully got content from https://brent.edu.ph/academics/lower-school/ (1686 bytes)
+2025-05-09 05:49:47,135 - lib.scraper - INFO - Successfully extracted and cleaned content from https://brent.edu.ph/academics/lower-school/ (37 bytes)
+2025-05-09 05:49:48,140 - lib.scraper - INFO - Extracting program data from https://brent.edu.ph/academics/middle-school/ using method: Request
+2025-05-09 05:49:48,144 - lib.scraper - INFO - Extracting content from URL: https://brent.edu.ph/academics/middle-school/
+2025-05-09 05:49:48,146 - lib.scraper - INFO - Using RequestSession for URL: https://brent.edu.ph/academics/middle-school/
+2025-05-09 05:49:48,353 - lib.scraper - WARNING - HTTP error 500 for https://brent.edu.ph/academics/middle-school/
+2025-05-09 05:49:49,367 - lib.scraper - INFO - Extracting program data from https://brent.edu.ph/academics/high-school/ using method: Request
+2025-05-09 05:49:49,367 - lib.scraper - INFO - Extracting content from URL: https://brent.edu.ph/academics/high-school/
+2025-05-09 05:49:49,367 - lib.scraper - INFO - Using RequestSession for URL: https://brent.edu.ph/academics/high-school/
+2025-05-09 05:49:49,508 - lib.scraper - WARNING - HTTP error 500 for https://brent.edu.ph/academics/high-school/
+2025-05-09 05:49:50,502 - lib.scraper - INFO - Extracting program data from https://brent.edu.ph/academics/upper-school/ using method: Request
+2025-05-09 05:49:50,502 - lib.scraper - INFO - Extracting content from URL: https://brent.edu.ph/academics/upper-school/
+2025-05-09 05:49:50,502 - lib.scraper - INFO - Using RequestSession for URL: https://brent.edu.ph/academics/upper-school/
+2025-05-09 05:49:50,631 - lib.scraper - WARNING - HTTP error 500 for https://brent.edu.ph/academics/upper-school/
+2025-05-09 05:49:51,634 - lib.scraper - INFO - Extracting program data from https://brent.edu.ph/academics/international-baccalaureate/ using method: Request
+2025-05-09 05:49:51,635 - lib.scraper - INFO - Extracting content from URL: https://brent.edu.ph/academics/international-baccalaureate/
+2025-05-09 05:49:51,635 - lib.scraper - INFO - Using RequestSession for URL: https://brent.edu.ph/academics/international-baccalaureate/
+2025-05-09 05:49:51,769 - lib.scraper - WARNING - HTTP error 500 for https://brent.edu.ph/academics/international-baccalaureate/
+2025-05-09 05:49:52,772 - lib.scraper - INFO - Extracting program data from https://brent.edu.ph/academics/esl/ using method: Request
+2025-05-09 05:49:52,772 - lib.scraper - INFO - Extracting content from URL: https://brent.edu.ph/academics/esl/
+2025-05-09 05:49:52,772 - lib.scraper - INFO - Using RequestSession for URL: https://brent.edu.ph/academics/esl/
+2025-05-09 05:49:52,896 - lib.scraper - WARNING - HTTP error 500 for https://brent.edu.ph/academics/esl/
+2025-05-09 05:49:53,900 - lib.scraper - INFO - Extracting enrollment data from https://brent.edu.ph/admissions/application-process/ using method: Request
+2025-05-09 05:49:53,900 - lib.scraper - INFO - Extracting content from URL: https://brent.edu.ph/admissions/application-process/
+2025-05-09 05:49:53,900 - lib.scraper - INFO - Using RequestSession for URL: https://brent.edu.ph/admissions/application-process/
+2025-05-09 05:49:54,025 - lib.scraper - WARNING - HTTP error 500 for https://brent.edu.ph/admissions/application-process/
+2025-05-09 05:49:55,043 - lib.scraper - INFO - Extracting enrollment data from https://brent.edu.ph/admissions/enrollment-process/ using method: Request
+2025-05-09 05:49:55,043 - lib.scraper - INFO - Extracting content from URL: https://brent.edu.ph/admissions/enrollment-process/
+2025-05-09 05:49:55,043 - lib.scraper - INFO - Using RequestSession for URL: https://brent.edu.ph/admissions/enrollment-process/
+2025-05-09 05:49:55,164 - lib.scraper - WARNING - HTTP error 500 for https://brent.edu.ph/admissions/enrollment-process/
+2025-05-09 05:49:56,170 - lib.scraper - INFO - Extracting enrollment data from https://brent.edu.ph/admissions/admissions-criteria/ using method: Request
+2025-05-09 05:49:56,170 - lib.scraper - INFO - Extracting content from URL: https://brent.edu.ph/admissions/admissions-criteria/
+2025-05-09 05:49:56,170 - lib.scraper - INFO - Using RequestSession for URL: https://brent.edu.ph/admissions/admissions-criteria/
+2025-05-09 05:49:56,313 - lib.scraper - WARNING - HTTP error 500 for https://brent.edu.ph/admissions/admissions-criteria/
+2025-05-09 05:49:57,321 - lib.scraper - INFO - Extracting contact data from https://brent.edu.ph/about/contact-us/ using method: Request
+2025-05-09 05:49:57,321 - lib.scraper - INFO - Extracting content from URL: https://brent.edu.ph/about/contact-us/
+2025-05-09 05:49:57,321 - lib.scraper - INFO - Using RequestSession for URL: https://brent.edu.ph/about/contact-us/
+2025-05-09 05:49:57,462 - lib.scraper - WARNING - HTTP error 500 for https://brent.edu.ph/about/contact-us/
+2025-05-09 05:49:58,467 - lib.scraper - INFO - Completed raw data extraction for Brent International School
+2025-05-09 05:49:58,472 - lib.scraper - INFO - Parsing data for Brent International School
+2025-05-09 05:49:58,486 - lib.parse - INFO - Processing content for Brent International School
+2025-05-09 05:49:58,486 - lib.parse - INFO - Sending request to Google Generative AI for Brent International School
+2025-05-09 05:50:00,082 - lib.parse - INFO - Received response from Google Generative AI, length: 641
+2025-05-09 05:50:00,082 - lib.scraper - INFO - Completed parsing data for Brent International School
+2025-05-09 05:50:00,082 - lib.scraper - INFO - Processing school: British School Manila
+2025-05-09 05:50:00,082 - lib.scraper - INFO - Extracting content from URL: 
+2025-05-09 05:50:00,082 - lib.scraper - INFO - Using RequestSession for URL: 
+2025-05-09 05:50:00,082 - lib.scraper - WARNING - HTTP error 500 for 
+2025-05-09 05:50:00,082 - lib.scraper - INFO - Extracting program data from https://www.britishschoolmanila.org/academics/the-key-stages using method: Request
+2025-05-09 05:50:00,082 - lib.scraper - INFO - Extracting content from URL: https://www.britishschoolmanila.org/academics/the-key-stages
+2025-05-09 05:50:00,082 - lib.scraper - INFO - Using RequestSession for URL: https://www.britishschoolmanila.org/academics/the-key-stages
+2025-05-09 05:50:01,101 - lib.scraper - INFO - Successfully got content from https://www.britishschoolmanila.org/academics/the-key-stages (50198 bytes)
+2025-05-09 05:50:01,242 - lib.scraper - INFO - Successfully extracted and cleaned content from https://www.britishschoolmanila.org/academics/the-key-stages (6694 bytes)
+2025-05-09 05:50:02,258 - lib.scraper - INFO - Extracting enrollment data from https://www.britishschoolmanila.org/admissions/how-to-apply using method: Request
+2025-05-09 05:50:02,258 - lib.scraper - INFO - Extracting content from URL: https://www.britishschoolmanila.org/admissions/how-to-apply
+2025-05-09 05:50:02,258 - lib.scraper - INFO - Using RequestSession for URL: https://www.britishschoolmanila.org/admissions/how-to-apply
+2025-05-09 05:50:03,169 - lib.scraper - INFO - Successfully got content from https://www.britishschoolmanila.org/admissions/how-to-apply (45399 bytes)
+2025-05-09 05:50:03,322 - lib.scraper - INFO - Successfully extracted and cleaned content from https://www.britishschoolmanila.org/admissions/how-to-apply (3116 bytes)
+2025-05-09 05:50:04,342 - lib.scraper - INFO - Extracting scholarships data from https://www.britishschoolmanila.org/community/bsm-taguig-scholarship-programme using method: Request
+2025-05-09 05:50:04,342 - lib.scraper - INFO - Extracting content from URL: https://www.britishschoolmanila.org/community/bsm-taguig-scholarship-programme
+2025-05-09 05:50:04,342 - lib.scraper - INFO - Using RequestSession for URL: https://www.britishschoolmanila.org/community/bsm-taguig-scholarship-programme
+2025-05-09 05:50:08,707 - lib.scraper - INFO - Successfully got content from https://www.britishschoolmanila.org/community/bsm-taguig-scholarship-programme (42009 bytes)
+2025-05-09 05:50:08,776 - lib.scraper - INFO - Successfully extracted and cleaned content from https://www.britishschoolmanila.org/community/bsm-taguig-scholarship-programme (1298 bytes)
+2025-05-09 05:50:09,807 - lib.scraper - INFO - Extracting contact data from https://www.britishschoolmanila.org/contact using method: Request
+2025-05-09 05:50:09,807 - lib.scraper - INFO - Extracting content from URL: https://www.britishschoolmanila.org/contact
+2025-05-09 05:50:09,807 - lib.scraper - INFO - Using RequestSession for URL: https://www.britishschoolmanila.org/contact
+2025-05-09 05:50:13,243 - lib.scraper - INFO - Successfully got content from https://www.britishschoolmanila.org/contact (38473 bytes)
+2025-05-09 05:50:13,384 - lib.scraper - INFO - Successfully extracted and cleaned content from https://www.britishschoolmanila.org/contact (836 bytes)
+2025-05-09 05:50:14,386 - lib.scraper - INFO - Completed raw data extraction for British School Manila
+2025-05-09 05:50:14,386 - lib.scraper - INFO - Parsing data for British School Manila
+2025-05-09 05:50:14,438 - lib.parse - INFO - Processing content for British School Manila
+2025-05-09 05:50:14,439 - lib.parse - INFO - Sending request to Google Generative AI for British School Manila
+2025-05-09 05:50:19,868 - lib.parse - INFO - Received response from Google Generative AI, length: 3491
+2025-05-09 05:50:19,883 - lib.scraper - INFO - Completed parsing data for British School Manila
+2025-05-09 05:50:19,885 - lib.scraper - INFO - Processing school: Reedley International School
+2025-05-09 05:50:19,885 - lib.scraper - INFO - Extracting content from URL: 
+2025-05-09 05:50:19,885 - lib.scraper - INFO - Using RequestSession for URL: 
+2025-05-09 05:50:19,905 - lib.scraper - WARNING - HTTP error 500 for 
+2025-05-09 05:50:19,910 - lib.scraper - INFO - Extracting program data from https://reedleyschool.edu.ph/acad-programs/ using method: Request
+2025-05-09 05:50:19,912 - lib.scraper - INFO - Extracting content from URL: https://reedleyschool.edu.ph/acad-programs/
+2025-05-09 05:50:19,913 - lib.scraper - INFO - Using RequestSession for URL: https://reedleyschool.edu.ph/acad-programs/
+2025-05-09 05:50:22,101 - lib.scraper - INFO - Successfully got content from https://reedleyschool.edu.ph/acad-programs/ (172192 bytes)
+2025-05-09 05:50:23,101 - lib.scraper - INFO - Successfully extracted and cleaned content from https://reedleyschool.edu.ph/acad-programs/ (11541 bytes)
+2025-05-09 05:50:24,103 - lib.scraper - INFO - Extracting enrollment data from https://reedleyschool.edu.ph/apply/#procedureId using method: Request
+2025-05-09 05:50:24,103 - lib.scraper - INFO - Extracting content from URL: https://reedleyschool.edu.ph/apply/#procedureId
+2025-05-09 05:50:24,103 - lib.scraper - INFO - Using RequestSession for URL: https://reedleyschool.edu.ph/apply/#procedureId
+2025-05-09 05:50:24,245 - lib.scraper - INFO - Successfully got content from https://reedleyschool.edu.ph/apply/#procedureId (157604 bytes)
+2025-05-09 05:50:25,001 - lib.scraper - INFO - Successfully extracted and cleaned content from https://reedleyschool.edu.ph/apply/#procedureId (5886 bytes)
+2025-05-09 05:50:26,002 - lib.scraper - INFO - Extracting scholarships data from https://reedleyschool.edu.ph/faq/ using method: Request
+2025-05-09 05:50:26,002 - lib.scraper - INFO - Extracting content from URL: https://reedleyschool.edu.ph/faq/
+2025-05-09 05:50:26,002 - lib.scraper - INFO - Using RequestSession for URL: https://reedleyschool.edu.ph/faq/
+2025-05-09 05:50:26,636 - lib.scraper - INFO - Successfully got content from https://reedleyschool.edu.ph/faq/ (128864 bytes)
+2025-05-09 05:50:27,126 - lib.scraper - INFO - Successfully extracted and cleaned content from https://reedleyschool.edu.ph/faq/ (11462 bytes)
+2025-05-09 05:50:28,143 - lib.scraper - INFO - Extracting contact data from https://reedleyschool.edu.ph/contact/ using method: Request
+2025-05-09 05:50:28,146 - lib.scraper - INFO - Extracting content from URL: https://reedleyschool.edu.ph/contact/
+2025-05-09 05:50:28,149 - lib.scraper - INFO - Using RequestSession for URL: https://reedleyschool.edu.ph/contact/
+2025-05-09 05:50:28,723 - lib.scraper - INFO - Successfully got content from https://reedleyschool.edu.ph/contact/ (128342 bytes)
+2025-05-09 05:50:29,067 - lib.scraper - INFO - Successfully extracted and cleaned content from https://reedleyschool.edu.ph/contact/ (2806 bytes)
+2025-05-09 05:50:30,076 - lib.scraper - INFO - Completed raw data extraction for Reedley International School
+2025-05-09 05:50:30,076 - lib.scraper - INFO - Parsing data for Reedley International School
+2025-05-09 05:50:30,115 - lib.parse - INFO - Processing content for Reedley International School
+2025-05-09 05:50:30,116 - lib.parse - INFO - Sending request to Google Generative AI for Reedley International School
+2025-05-09 05:50:38,883 - lib.parse - INFO - Received response from Google Generative AI, length: 5626
+2025-05-09 05:50:38,893 - lib.scraper - INFO - Completed parsing data for Reedley International School
+2025-05-09 05:50:38,893 - lib.scraper - INFO - Processing school: Southville International School and Colleges
+2025-05-09 05:50:38,893 - lib.scraper - INFO - Extracting content from URL: 
+2025-05-09 05:50:38,909 - lib.scraper - INFO - Using RequestSession for URL: 
+2025-05-09 05:50:38,913 - lib.scraper - WARNING - HTTP error 500 for 
+2025-05-09 05:50:38,915 - lib.scraper - INFO - Extracting program data from https://www.southville.edu.ph/preschool/ using method: Request
+2025-05-09 05:50:38,916 - lib.scraper - INFO - Extracting content from URL: https://www.southville.edu.ph/preschool/
+2025-05-09 05:50:38,917 - lib.scraper - INFO - Using RequestSession for URL: https://www.southville.edu.ph/preschool/
+2025-05-09 05:50:39,852 - lib.scraper - INFO - Successfully got content from https://www.southville.edu.ph/preschool/ (115591 bytes)
+2025-05-09 05:50:40,797 - lib.scraper - INFO - Successfully extracted and cleaned content from https://www.southville.edu.ph/preschool/ (9245 bytes)
+2025-05-09 05:50:41,810 - lib.scraper - INFO - Extracting program data from https://www.southville.edu.ph/elementary-school-programs/ using method: Request
+2025-05-09 05:50:41,810 - lib.scraper - INFO - Extracting content from URL: https://www.southville.edu.ph/elementary-school-programs/
+2025-05-09 05:50:41,810 - lib.scraper - INFO - Using RequestSession for URL: https://www.southville.edu.ph/elementary-school-programs/
+2025-05-09 05:50:42,632 - lib.scraper - INFO - Successfully got content from https://www.southville.edu.ph/elementary-school-programs/ (111427 bytes)
+2025-05-09 05:50:43,373 - lib.scraper - INFO - Successfully extracted and cleaned content from https://www.southville.edu.ph/elementary-school-programs/ (9014 bytes)
+2025-05-09 05:50:44,377 - lib.scraper - INFO - Extracting program data from https://www.southville.edu.ph/elementary-school-programs/ using method: Request
+2025-05-09 05:50:44,377 - lib.scraper - INFO - Extracting content from URL: https://www.southville.edu.ph/elementary-school-programs/
+2025-05-09 05:50:44,377 - lib.scraper - INFO - Using RequestSession for URL: https://www.southville.edu.ph/elementary-school-programs/
+2025-05-09 05:50:45,210 - lib.scraper - INFO - Successfully got content from https://www.southville.edu.ph/elementary-school-programs/ (111427 bytes)
+2025-05-09 05:50:46,025 - lib.scraper - INFO - Successfully extracted and cleaned content from https://www.southville.edu.ph/elementary-school-programs/ (9014 bytes)
+2025-05-09 05:50:47,026 - lib.scraper - INFO - Extracting program data from https://www.southville.edu.ph/international-baccalaureate-philippines/ using method: Request
+2025-05-09 05:50:47,026 - lib.scraper - INFO - Extracting content from URL: https://www.southville.edu.ph/international-baccalaureate-philippines/
+2025-05-09 05:50:47,026 - lib.scraper - INFO - Using RequestSession for URL: https://www.southville.edu.ph/international-baccalaureate-philippines/
+2025-05-09 05:50:47,851 - lib.scraper - INFO - Successfully got content from https://www.southville.edu.ph/international-baccalaureate-philippines/ (113748 bytes)
+2025-05-09 05:50:48,420 - lib.scraper - INFO - Successfully extracted and cleaned content from https://www.southville.edu.ph/international-baccalaureate-philippines/ (10352 bytes)
+2025-05-09 05:50:49,424 - lib.scraper - INFO - Extracting program data from https://www.southville.edu.ph/college-degree-programs-philippines/ using method: Request
+2025-05-09 05:50:49,424 - lib.scraper - INFO - Extracting content from URL: https://www.southville.edu.ph/college-degree-programs-philippines/
+2025-05-09 05:50:49,424 - lib.scraper - INFO - Using RequestSession for URL: https://www.southville.edu.ph/college-degree-programs-philippines/
+2025-05-09 05:50:50,237 - lib.scraper - INFO - Successfully got content from https://www.southville.edu.ph/college-degree-programs-philippines/ (110298 bytes)
+2025-05-09 05:50:51,084 - lib.scraper - INFO - Successfully extracted and cleaned content from https://www.southville.edu.ph/college-degree-programs-philippines/ (4964 bytes)
+2025-05-09 05:50:52,086 - lib.scraper - INFO - Extracting program data from https://www.southville.edu.ph/graduate-programs/ using method: Request
+2025-05-09 05:50:52,086 - lib.scraper - INFO - Extracting content from URL: https://www.southville.edu.ph/graduate-programs/
+2025-05-09 05:50:52,086 - lib.scraper - INFO - Using RequestSession for URL: https://www.southville.edu.ph/graduate-programs/
+2025-05-09 05:50:52,907 - lib.scraper - INFO - Successfully got content from https://www.southville.edu.ph/graduate-programs/ (97996 bytes)
+2025-05-09 05:50:53,293 - lib.scraper - INFO - Successfully extracted and cleaned content from https://www.southville.edu.ph/graduate-programs/ (3748 bytes)
+2025-05-09 05:50:54,303 - lib.scraper - INFO - Extracting program data from https://www.southville.edu.ph/online-programs/ using method: Request
+2025-05-09 05:50:54,303 - lib.scraper - INFO - Extracting content from URL: https://www.southville.edu.ph/online-programs/
+2025-05-09 05:50:54,310 - lib.scraper - INFO - Using RequestSession for URL: https://www.southville.edu.ph/online-programs/
+2025-05-09 05:50:55,125 - lib.scraper - INFO - Successfully got content from https://www.southville.edu.ph/online-programs/ (112679 bytes)
+2025-05-09 05:50:56,232 - lib.scraper - INFO - Successfully extracted and cleaned content from https://www.southville.edu.ph/online-programs/ (7026 bytes)
+2025-05-09 05:50:57,242 - lib.scraper - INFO - Extracting program data from https://www.southville.edu.ph/virtual-online-school/ using method: Request
+2025-05-09 05:50:57,242 - lib.scraper - INFO - Extracting content from URL: https://www.southville.edu.ph/virtual-online-school/
+2025-05-09 05:50:57,242 - lib.scraper - INFO - Using RequestSession for URL: https://www.southville.edu.ph/virtual-online-school/
+2025-05-09 05:50:58,050 - lib.scraper - INFO - Successfully got content from https://www.southville.edu.ph/virtual-online-school/ (98224 bytes)
+2025-05-09 05:50:58,706 - lib.scraper - INFO - Successfully extracted and cleaned content from https://www.southville.edu.ph/virtual-online-school/ (4050 bytes)
+2025-05-09 05:50:59,714 - lib.scraper - INFO - Extracting enrollment data from https://www.southville.edu.ph/admissions-basic-ed-requirements/ using method: Request
+2025-05-09 05:50:59,714 - lib.scraper - INFO - Extracting content from URL: https://www.southville.edu.ph/admissions-basic-ed-requirements/
+2025-05-09 05:50:59,714 - lib.scraper - INFO - Using RequestSession for URL: https://www.southville.edu.ph/admissions-basic-ed-requirements/
+2025-05-09 05:51:00,535 - lib.scraper - INFO - Successfully got content from https://www.southville.edu.ph/admissions-basic-ed-requirements/ (98758 bytes)
+2025-05-09 05:51:01,352 - lib.scraper - INFO - Successfully extracted and cleaned content from https://www.southville.edu.ph/admissions-basic-ed-requirements/ (4518 bytes)
+2025-05-09 05:51:02,352 - lib.scraper - INFO - Extracting enrollment data from https://www.southville.edu.ph/college-admissions-requirements/ using method: Request
+2025-05-09 05:51:02,352 - lib.scraper - INFO - Extracting content from URL: https://www.southville.edu.ph/college-admissions-requirements/
+2025-05-09 05:51:02,356 - lib.scraper - INFO - Using RequestSession for URL: https://www.southville.edu.ph/college-admissions-requirements/
+2025-05-09 05:51:03,183 - lib.scraper - INFO - Successfully got content from https://www.southville.edu.ph/college-admissions-requirements/ (98532 bytes)
+2025-05-09 05:51:04,216 - lib.scraper - INFO - Successfully extracted and cleaned content from https://www.southville.edu.ph/college-admissions-requirements/ (4430 bytes)
+2025-05-09 05:51:05,210 - lib.scraper - INFO - Extracting enrollment data from https://www.southville.edu.ph/online-summer-enrollment/ using method: Request
+2025-05-09 05:51:05,211 - lib.scraper - INFO - Extracting content from URL: https://www.southville.edu.ph/online-summer-enrollment/
+2025-05-09 05:51:05,212 - lib.scraper - INFO - Using RequestSession for URL: https://www.southville.edu.ph/online-summer-enrollment/
+2025-05-09 05:51:06,059 - lib.scraper - INFO - Successfully got content from https://www.southville.edu.ph/online-summer-enrollment/ (101147 bytes)
+2025-05-09 05:51:07,043 - lib.scraper - INFO - Successfully extracted and cleaned content from https://www.southville.edu.ph/online-summer-enrollment/ (5225 bytes)
+2025-05-09 05:51:08,044 - lib.scraper - INFO - Extracting enrollment data from https://www.southville.edu.ph/online-enrollment-for-k-12-ib-new-students/ using method: Request
+2025-05-09 05:51:08,044 - lib.scraper - INFO - Extracting content from URL: https://www.southville.edu.ph/online-enrollment-for-k-12-ib-new-students/
+2025-05-09 05:51:08,044 - lib.scraper - INFO - Using RequestSession for URL: https://www.southville.edu.ph/online-enrollment-for-k-12-ib-new-students/
+2025-05-09 05:51:08,992 - lib.scraper - INFO - Successfully got content from https://www.southville.edu.ph/online-enrollment-for-k-12-ib-new-students/ (101878 bytes)
+2025-05-09 05:51:09,781 - lib.scraper - INFO - Successfully extracted and cleaned content from https://www.southville.edu.ph/online-enrollment-for-k-12-ib-new-students/ (5923 bytes)
+2025-05-09 05:51:10,796 - lib.scraper - INFO - Extracting enrollment data from https://www.southville.edu.ph/online-enrollment-for-k-12-ib-continuing-students/ using method: Request
+2025-05-09 05:51:10,796 - lib.scraper - INFO - Extracting content from URL: https://www.southville.edu.ph/online-enrollment-for-k-12-ib-continuing-students/
+2025-05-09 05:51:10,796 - lib.scraper - INFO - Using RequestSession for URL: https://www.southville.edu.ph/online-enrollment-for-k-12-ib-continuing-students/
+2025-05-09 05:51:11,626 - lib.scraper - INFO - Successfully got content from https://www.southville.edu.ph/online-enrollment-for-k-12-ib-continuing-students/ (97464 bytes)
+2025-05-09 05:51:12,342 - lib.scraper - INFO - Successfully extracted and cleaned content from https://www.southville.edu.ph/online-enrollment-for-k-12-ib-continuing-students/ (4512 bytes)
+2025-05-09 05:51:13,355 - lib.scraper - INFO - Extracting enrollment data from https://www.southville.edu.ph/online-enrollment-for-college-higher-education-new-students/ using method: Request
+2025-05-09 05:51:13,355 - lib.scraper - INFO - Extracting content from URL: https://www.southville.edu.ph/online-enrollment-for-college-higher-education-new-students/
+2025-05-09 05:51:13,355 - lib.scraper - INFO - Using RequestSession for URL: https://www.southville.edu.ph/online-enrollment-for-college-higher-education-new-students/
+2025-05-09 05:51:14,167 - lib.scraper - INFO - Successfully got content from https://www.southville.edu.ph/online-enrollment-for-college-higher-education-new-students/ (108004 bytes)
+2025-05-09 05:51:14,882 - lib.scraper - INFO - Successfully extracted and cleaned content from https://www.southville.edu.ph/online-enrollment-for-college-higher-education-new-students/ (6924 bytes)
+2025-05-09 05:51:15,884 - lib.scraper - INFO - Extracting enrollment data from https://www.southville.edu.ph/online-enrollment-for-college-higher-education-continuing-students/ using method: Request
+2025-05-09 05:51:15,884 - lib.scraper - INFO - Extracting content from URL: https://www.southville.edu.ph/online-enrollment-for-college-higher-education-continuing-students/
+2025-05-09 05:51:15,884 - lib.scraper - INFO - Using RequestSession for URL: https://www.southville.edu.ph/online-enrollment-for-college-higher-education-continuing-students/
+2025-05-09 05:51:16,694 - lib.scraper - INFO - Successfully got content from https://www.southville.edu.ph/online-enrollment-for-college-higher-education-continuing-students/ (105631 bytes)
+2025-05-09 05:51:17,228 - lib.scraper - INFO - Successfully extracted and cleaned content from https://www.southville.edu.ph/online-enrollment-for-college-higher-education-continuing-students/ (6451 bytes)
+2025-05-09 05:51:18,234 - lib.scraper - INFO - Extracting scholarships data from https://www.southville.edu.ph/college-scholarship/ using method: Request
+2025-05-09 05:51:18,234 - lib.scraper - INFO - Extracting content from URL: https://www.southville.edu.ph/college-scholarship/
+2025-05-09 05:51:18,234 - lib.scraper - INFO - Using RequestSession for URL: https://www.southville.edu.ph/college-scholarship/
+2025-05-09 05:51:19,052 - lib.scraper - INFO - Successfully got content from https://www.southville.edu.ph/college-scholarship/ (110583 bytes)
+2025-05-09 05:51:19,651 - lib.scraper - INFO - Successfully extracted and cleaned content from https://www.southville.edu.ph/college-scholarship/ (9217 bytes)
+2025-05-09 05:51:20,652 - lib.scraper - INFO - Extracting contact data from https://www.southville.edu.ph/contact-us/#contact-details using method: Request
+2025-05-09 05:51:20,652 - lib.scraper - INFO - Extracting content from URL: https://www.southville.edu.ph/contact-us/#contact-details
+2025-05-09 05:51:20,652 - lib.scraper - INFO - Using RequestSession for URL: https://www.southville.edu.ph/contact-us/#contact-details
+2025-05-09 05:51:21,476 - lib.scraper - INFO - Successfully got content from https://www.southville.edu.ph/contact-us/#contact-details (97412 bytes)
+2025-05-09 05:51:21,945 - lib.scraper - INFO - Successfully extracted and cleaned content from https://www.southville.edu.ph/contact-us/#contact-details (4588 bytes)
+2025-05-09 05:51:22,954 - lib.scraper - INFO - Completed raw data extraction for Southville International School and Colleges
+2025-05-09 05:51:22,954 - lib.scraper - INFO - Parsing data for Southville International School and Colleges
+2025-05-09 05:51:22,994 - lib.parse - INFO - Processing content for Southville International School and Colleges
+2025-05-09 05:51:22,995 - lib.parse - INFO - Sending request to Google Generative AI for Southville International School and Colleges
+2025-05-09 05:51:46,610 - lib.parse - INFO - Received response from Google Generative AI, length: 19317
+2025-05-09 05:51:46,643 - lib.scraper - INFO - Completed parsing data for Southville International School and Colleges
+2025-05-09 05:51:46,643 - lib.scraper - INFO - Processing school: Singapore School Manila
+2025-05-09 05:51:46,643 - lib.scraper - INFO - Extracting content from URL: 
+2025-05-09 05:51:46,643 - lib.scraper - INFO - Using RequestSession for URL: 
+2025-05-09 05:51:46,651 - lib.scraper - WARNING - HTTP error 500 for 
+2025-05-09 05:51:46,651 - lib.scraper - INFO - Extracting school_fee data from https://singaporeschools.ph/admission/ using method: Request
+2025-05-09 05:51:46,651 - lib.scraper - INFO - Extracting content from URL: https://singaporeschools.ph/admission/
+2025-05-09 05:51:46,651 - lib.scraper - INFO - Using RequestSession for URL: https://singaporeschools.ph/admission/
+2025-05-09 05:51:46,815 - lib.scraper - INFO - Successfully got content from https://singaporeschools.ph/admission/ (155559 bytes)
+2025-05-09 05:51:47,467 - lib.scraper - INFO - Successfully extracted and cleaned content from https://singaporeschools.ph/admission/ (3469 bytes)
+2025-05-09 05:51:48,461 - lib.scraper - INFO - Extracting program data from https://e9m.2af.myftpupload.com/admission/ using method: Request
+2025-05-09 05:51:48,461 - lib.scraper - INFO - Extracting content from URL: https://e9m.2af.myftpupload.com/admission/
+2025-05-09 05:51:48,461 - lib.scraper - INFO - Using RequestSession for URL: https://e9m.2af.myftpupload.com/admission/
+2025-05-09 05:51:49,516 - lib.scraper - INFO - Successfully got content from https://e9m.2af.myftpupload.com/admission/ (155617 bytes)
+2025-05-09 05:51:49,992 - lib.scraper - INFO - Successfully extracted and cleaned content from https://e9m.2af.myftpupload.com/admission/ (3469 bytes)
+2025-05-09 05:51:51,001 - lib.scraper - INFO - Extracting enrollment data from https://singaporeschools.ph/admission/ using method: Request
+2025-05-09 05:51:51,001 - lib.scraper - INFO - Extracting content from URL: https://singaporeschools.ph/admission/
+2025-05-09 05:51:51,001 - lib.scraper - INFO - Using RequestSession for URL: https://singaporeschools.ph/admission/
+2025-05-09 05:51:51,091 - lib.scraper - INFO - Successfully got content from https://singaporeschools.ph/admission/ (155559 bytes)
+2025-05-09 05:51:51,560 - lib.scraper - INFO - Successfully extracted and cleaned content from https://singaporeschools.ph/admission/ (3469 bytes)
+2025-05-09 05:51:52,561 - lib.scraper - INFO - Extracting contact data from https://singaporeschools.ph/contact-us/ using method: Request
+2025-05-09 05:51:52,561 - lib.scraper - INFO - Extracting content from URL: https://singaporeschools.ph/contact-us/
+2025-05-09 05:51:52,561 - lib.scraper - INFO - Using RequestSession for URL: https://singaporeschools.ph/contact-us/
+2025-05-09 05:51:52,676 - lib.scraper - INFO - Successfully got content from https://singaporeschools.ph/contact-us/ (156024 bytes)
+2025-05-09 05:51:52,875 - lib.scraper - INFO - Successfully extracted and cleaned content from https://singaporeschools.ph/contact-us/ (2384 bytes)
+2025-05-09 05:51:53,883 - lib.scraper - INFO - Completed raw data extraction for Singapore School Manila
+2025-05-09 05:51:53,883 - lib.scraper - INFO - Parsing data for Singapore School Manila
+2025-05-09 05:51:53,901 - lib.parse - INFO - Processing content for Singapore School Manila
+2025-05-09 05:51:53,902 - lib.parse - INFO - Sending request to Google Generative AI for Singapore School Manila
+2025-05-09 05:52:05,585 - lib.parse - INFO - Received response from Google Generative AI, length: 6771
+2025-05-09 05:52:05,585 - lib.scraper - INFO - Completed parsing data for Singapore School Manila
+2025-05-09 05:52:05,585 - lib.scraper - INFO - Processing school: Faith Academy
+2025-05-09 05:52:05,585 - lib.scraper - INFO - Extracting content from URL: 
+2025-05-09 05:52:05,585 - lib.scraper - INFO - Using RequestSession for URL: 
+2025-05-09 05:52:05,593 - lib.scraper - WARNING - HTTP error 500 for 
+2025-05-09 05:52:05,593 - lib.scraper - INFO - Extracting school_fee data from https://faith.edu.ph/admissions/finances/ using method: Request
+2025-05-09 05:52:05,593 - lib.scraper - INFO - Extracting content from URL: https://faith.edu.ph/admissions/finances/
+2025-05-09 05:52:05,593 - lib.scraper - INFO - Using RequestSession for URL: https://faith.edu.ph/admissions/finances/
+2025-05-09 05:52:05,790 - lib.scraper - INFO - Successfully got content from https://faith.edu.ph/admissions/finances/ (166273 bytes)
+2025-05-09 05:52:06,469 - lib.scraper - INFO - Successfully extracted and cleaned content from https://faith.edu.ph/admissions/finances/ (3153 bytes)
+2025-05-09 05:52:07,470 - lib.scraper - INFO - Extracting program data from https://faith.edu.ph/school-life/ using method: Request
+2025-05-09 05:52:07,471 - lib.scraper - INFO - Extracting content from URL: https://faith.edu.ph/school-life/
+2025-05-09 05:52:07,471 - lib.scraper - INFO - Using RequestSession for URL: https://faith.edu.ph/school-life/
+2025-05-09 05:52:07,633 - lib.scraper - INFO - Successfully got content from https://faith.edu.ph/school-life/ (157669 bytes)
+2025-05-09 05:52:08,317 - lib.scraper - INFO - Successfully extracted and cleaned content from https://faith.edu.ph/school-life/ (1832 bytes)
+2025-05-09 05:52:09,319 - lib.scraper - INFO - Extracting enrollment data from https://faith.edu.ph/admissions/apply/ using method: Request
+2025-05-09 05:52:09,319 - lib.scraper - INFO - Extracting content from URL: https://faith.edu.ph/admissions/apply/
+2025-05-09 05:52:09,319 - lib.scraper - INFO - Using RequestSession for URL: https://faith.edu.ph/admissions/apply/
+2025-05-09 05:52:09,468 - lib.scraper - INFO - Successfully got content from https://faith.edu.ph/admissions/apply/ (144649 bytes)
+2025-05-09 05:52:09,851 - lib.scraper - INFO - Successfully extracted and cleaned content from https://faith.edu.ph/admissions/apply/ (1320 bytes)
+2025-05-09 05:52:10,852 - lib.scraper - INFO - Extracting contact data from https://faith.edu.ph/contact/ using method: Request
+2025-05-09 05:52:10,852 - lib.scraper - INFO - Extracting content from URL: https://faith.edu.ph/contact/
+2025-05-09 05:52:10,852 - lib.scraper - INFO - Using RequestSession for URL: https://faith.edu.ph/contact/
+2025-05-09 05:52:10,902 - lib.scraper - INFO - Successfully got content from https://faith.edu.ph/contact/ (172501 bytes)
+2025-05-09 05:52:11,342 - lib.scraper - INFO - Successfully extracted and cleaned content from https://faith.edu.ph/contact/ (983 bytes)
+2025-05-09 05:52:12,343 - lib.scraper - INFO - Completed raw data extraction for Faith Academy
+2025-05-09 05:52:12,343 - lib.scraper - INFO - Parsing data for Faith Academy
+2025-05-09 05:52:12,352 - lib.parse - INFO - Processing content for Faith Academy
+2025-05-09 05:52:12,352 - lib.parse - INFO - Sending request to Google Generative AI for Faith Academy
+2025-05-09 05:52:19,552 - lib.parse - INFO - Received response from Google Generative AI, length: 4475
+2025-05-09 05:52:19,560 - lib.scraper - INFO - Completed parsing data for Faith Academy
+2025-05-09 05:52:19,560 - lib.scraper - INFO - Processing school: Victory Christian International School
+2025-05-09 05:52:19,568 - lib.scraper - INFO - Extracting content from URL: 
+2025-05-09 05:52:19,568 - lib.scraper - INFO - Using RequestSession for URL: 
+2025-05-09 05:52:19,568 - lib.scraper - WARNING - HTTP error 500 for 
+2025-05-09 05:52:19,568 - lib.scraper - INFO - Extracting program data from https://vcis.edu.ph/index.php/our-programs/ using method: Playwright
+2025-05-09 05:52:19,568 - lib.scraper - INFO - Extracting content from URL: https://vcis.edu.ph/index.php/our-programs/
+2025-05-09 05:52:19,568 - lib.scraper - INFO - Using RequestSession for URL: https://vcis.edu.ph/index.php/our-programs/
+2025-05-09 05:52:20,651 - lib.scraper - INFO - Successfully got content from https://vcis.edu.ph/index.php/our-programs/ (83862 bytes)
+2025-05-09 05:52:20,734 - lib.scraper - INFO - Successfully extracted and cleaned content from https://vcis.edu.ph/index.php/our-programs/ (1439 bytes)
+2025-05-09 05:52:21,736 - lib.scraper - INFO - Extracting contact data from https://vcis.edu.ph/index.php/contact-us/ using method: Playwright
+2025-05-09 05:52:21,736 - lib.scraper - INFO - Extracting content from URL: https://vcis.edu.ph/index.php/contact-us/
+2025-05-09 05:52:21,736 - lib.scraper - INFO - Using RequestSession for URL: https://vcis.edu.ph/index.php/contact-us/
+2025-05-09 05:52:22,835 - lib.scraper - INFO - Successfully got content from https://vcis.edu.ph/index.php/contact-us/ (85414 bytes)
+2025-05-09 05:52:22,951 - lib.scraper - INFO - Successfully extracted and cleaned content from https://vcis.edu.ph/index.php/contact-us/ (361 bytes)
+2025-05-09 05:52:23,952 - lib.scraper - INFO - Completed raw data extraction for Victory Christian International School
+2025-05-09 05:52:23,952 - lib.scraper - INFO - Parsing data for Victory Christian International School
+2025-05-09 05:52:23,978 - lib.parse - INFO - Processing content for Victory Christian International School
+2025-05-09 05:52:23,978 - lib.parse - INFO - Sending request to Google Generative AI for Victory Christian International School
+2025-05-09 05:52:26,928 - lib.parse - INFO - Received response from Google Generative AI, length: 1931
+2025-05-09 05:52:26,935 - lib.scraper - INFO - Completed parsing data for Victory Christian International School
+2025-05-09 05:52:26,935 - lib.scraper - INFO - Processing school: Jubilee Christian Academy
+2025-05-09 05:52:26,944 - lib.scraper - INFO - Extracting content from URL: 
+2025-05-09 05:52:26,944 - lib.scraper - INFO - Using RequestSession for URL: 
+2025-05-09 05:52:26,954 - lib.scraper - WARNING - HTTP error 500 for 
+2025-05-09 05:52:26,958 - lib.scraper - INFO - Extracting enrollment data from https://www.jca.edu.ph/be-a-jubilean/admission/ using method: Request
+2025-05-09 05:52:26,960 - lib.scraper - INFO - Extracting content from URL: https://www.jca.edu.ph/be-a-jubilean/admission/
+2025-05-09 05:52:26,965 - lib.scraper - INFO - Using RequestSession for URL: https://www.jca.edu.ph/be-a-jubilean/admission/
+2025-05-09 05:52:29,852 - lib.scraper - INFO - Successfully got content from https://www.jca.edu.ph/be-a-jubilean/admission/ (97563 bytes)
+2025-05-09 05:52:30,042 - lib.scraper - INFO - Successfully extracted and cleaned content from https://www.jca.edu.ph/be-a-jubilean/admission/ (4066 bytes)
+2025-05-09 05:52:31,044 - lib.scraper - INFO - Extracting enrollment data from https://www.jca.edu.ph/wp-content/uploads/2024/09/P-Admissions-Information.pdf using method: Request
+2025-05-09 05:52:31,044 - lib.scraper - INFO - Extracting content from URL: https://www.jca.edu.ph/wp-content/uploads/2024/09/P-Admissions-Information.pdf
+2025-05-09 05:52:31,051 - lib.scraper - INFO - Detected PDF URL: https://www.jca.edu.ph/wp-content/uploads/2024/09/P-Admissions-Information.pdf
+2025-05-09 05:52:32,876 - lib.scraper - INFO - PDF downloaded to temporary file: C:\Users\Azeeeez\AppData\Local\Temp\tmphetnefpw.pdf
+2025-05-09 05:52:34,351 - lib.scraper - INFO - Successfully extracted text from PDF, length: 2054 characters
+2025-05-09 05:52:34,351 - lib.scraper - WARNING - Could not delete temporary PDF file C:\Users\Azeeeez\AppData\Local\Temp\tmphetnefpw.pdf: [WinError 32] The process cannot access the file because it is being used by another process: 'C:\\Users\\Azeeeez\\AppData\\Local\\Temp\\tmphetnefpw.pdf'
+2025-05-09 05:52:34,351 - lib.scraper - INFO - Writing PDF content for https://www.jca.edu.ph/wp-content/uploads/2024/09/P-Admissions-Information.pdf to raw data file
+2025-05-09 05:52:35,352 - lib.scraper - INFO - Extracting enrollment data from https://www.jca.edu.ph/wp-content/uploads/2024/09/E-ADMISSIONS-INFORMATION.pdf using method: Request
+2025-05-09 05:52:35,352 - lib.scraper - INFO - Extracting content from URL: https://www.jca.edu.ph/wp-content/uploads/2024/09/E-ADMISSIONS-INFORMATION.pdf
+2025-05-09 05:52:35,352 - lib.scraper - INFO - Detected PDF URL: https://www.jca.edu.ph/wp-content/uploads/2024/09/E-ADMISSIONS-INFORMATION.pdf
+2025-05-09 05:52:36,668 - lib.scraper - INFO - PDF downloaded to temporary file: C:\Users\Azeeeez\AppData\Local\Temp\tmpg_nihrn4.pdf
+2025-05-09 05:52:36,834 - lib.scraper - INFO - Successfully extracted text from PDF, length: 2252 characters
+2025-05-09 05:52:36,834 - lib.scraper - WARNING - Could not delete temporary PDF file C:\Users\Azeeeez\AppData\Local\Temp\tmpg_nihrn4.pdf: [WinError 32] The process cannot access the file because it is being used by another process: 'C:\\Users\\Azeeeez\\AppData\\Local\\Temp\\tmpg_nihrn4.pdf'
+2025-05-09 05:52:36,834 - lib.scraper - INFO - Writing PDF content for https://www.jca.edu.ph/wp-content/uploads/2024/09/E-ADMISSIONS-INFORMATION.pdf to raw data file
+2025-05-09 05:52:37,835 - lib.scraper - INFO - Extracting enrollment data from https://www.jca.edu.ph/wp-content/uploads/2024/09/Junior-HS-ADMISSIONS-INFORMATION.pdf using method: Request
+2025-05-09 05:52:37,835 - lib.scraper - INFO - Extracting content from URL: https://www.jca.edu.ph/wp-content/uploads/2024/09/Junior-HS-ADMISSIONS-INFORMATION.pdf
+2025-05-09 05:52:37,835 - lib.scraper - INFO - Detected PDF URL: https://www.jca.edu.ph/wp-content/uploads/2024/09/Junior-HS-ADMISSIONS-INFORMATION.pdf
+2025-05-09 05:52:38,827 - lib.scraper - INFO - PDF downloaded to temporary file: C:\Users\Azeeeez\AppData\Local\Temp\tmpy6jp2y63.pdf
+2025-05-09 05:52:38,959 - lib.scraper - INFO - Successfully extracted text from PDF, length: 2236 characters
+2025-05-09 05:52:38,959 - lib.scraper - WARNING - Could not delete temporary PDF file C:\Users\Azeeeez\AppData\Local\Temp\tmpy6jp2y63.pdf: [WinError 32] The process cannot access the file because it is being used by another process: 'C:\\Users\\Azeeeez\\AppData\\Local\\Temp\\tmpy6jp2y63.pdf'
+2025-05-09 05:52:38,959 - lib.scraper - INFO - Writing PDF content for https://www.jca.edu.ph/wp-content/uploads/2024/09/Junior-HS-ADMISSIONS-INFORMATION.pdf to raw data file
+2025-05-09 05:52:39,961 - lib.scraper - INFO - Extracting enrollment data from https://www.jca.edu.ph/wp-content/uploads/2024/09/S-HS-ADMISSIONS-INFORMATION.pdf using method: Request
+2025-05-09 05:52:39,961 - lib.scraper - INFO - Extracting content from URL: https://www.jca.edu.ph/wp-content/uploads/2024/09/S-HS-ADMISSIONS-INFORMATION.pdf
+2025-05-09 05:52:39,961 - lib.scraper - INFO - Detected PDF URL: https://www.jca.edu.ph/wp-content/uploads/2024/09/S-HS-ADMISSIONS-INFORMATION.pdf
+2025-05-09 05:52:41,260 - lib.scraper - INFO - PDF downloaded to temporary file: C:\Users\Azeeeez\AppData\Local\Temp\tmpli3x4p5b.pdf
+2025-05-09 05:52:41,618 - lib.scraper - INFO - Successfully extracted text from PDF, length: 2490 characters
+2025-05-09 05:52:41,618 - lib.scraper - WARNING - Could not delete temporary PDF file C:\Users\Azeeeez\AppData\Local\Temp\tmpli3x4p5b.pdf: [WinError 32] The process cannot access the file because it is being used by another process: 'C:\\Users\\Azeeeez\\AppData\\Local\\Temp\\tmpli3x4p5b.pdf'
+2025-05-09 05:52:41,618 - lib.scraper - INFO - Writing PDF content for https://www.jca.edu.ph/wp-content/uploads/2024/09/S-HS-ADMISSIONS-INFORMATION.pdf to raw data file
+2025-05-09 05:52:42,628 - lib.scraper - INFO - Extracting contact data from https://www.jca.edu.ph/contact-us/ using method: Request
+2025-05-09 05:52:42,628 - lib.scraper - INFO - Extracting content from URL: https://www.jca.edu.ph/contact-us/
+2025-05-09 05:52:42,635 - lib.scraper - INFO - Using RequestSession for URL: https://www.jca.edu.ph/contact-us/
+2025-05-09 05:52:43,642 - lib.scraper - INFO - Successfully got content from https://www.jca.edu.ph/contact-us/ (106899 bytes)
+2025-05-09 05:52:43,759 - lib.scraper - INFO - Successfully extracted and cleaned content from https://www.jca.edu.ph/contact-us/ (950 bytes)
+2025-05-09 05:52:44,760 - lib.scraper - INFO - Completed raw data extraction for Jubilee Christian Academy
+2025-05-09 05:52:44,760 - lib.scraper - INFO - Parsing data for Jubilee Christian Academy
+2025-05-09 05:52:44,812 - lib.parse - INFO - Processing content for Jubilee Christian Academy
+2025-05-09 05:52:44,813 - lib.parse - INFO - Found 4 PDF content sections in data for Jubilee Christian Academy
+2025-05-09 05:52:44,819 - lib.parse - INFO - Sending request to Google Generative AI for Jubilee Christian Academy
+2025-05-09 05:52:52,003 - lib.parse - INFO - Received response from Google Generative AI, length: 4905
+2025-05-09 05:52:52,010 - lib.parse - INFO - Successfully processed 4 PDF content sections for Jubilee Christian Academy
+2025-05-09 05:52:52,010 - lib.parse - INFO - Extracted structured data from PDFs for Jubilee Christian Academy
+2025-05-09 05:52:52,018 - lib.scraper - INFO - Completed parsing data for Jubilee Christian Academy
