@@ -14,10 +14,8 @@ env/
 # Environment variables
 .env
 
-# Output files (keep directories, ignore files)
-output/**/*
-!output/**/
-!output/**/README.md
+/output
+
 
 # Log files
 *.log
