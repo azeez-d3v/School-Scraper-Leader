@@ -1,6 +1,6 @@
 # School Scraper
 
-An AI-powered application that automatically collects and organizes information from school websites. Perfect for parents, students, and education consultants who want to compare schools easily.
+An AI-powered application that automatically collects and organizes information from school websites.
 
 ## 🔍 What This Application Does
 
