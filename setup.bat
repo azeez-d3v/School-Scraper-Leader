@@ -10,7 +10,7 @@ if %errorlevel% equ 0 (
     echo UV is already installed.
 ) else (
     echo UV is not installed. Installing UV package manager...
-    powershell -ExecutionPolicy ByPass -c "irm https://astral.sh/uv/install.ps1 | iex"
+    powershell -ExecutionPolicy ByPass -c "[Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12; irm https://astral.sh/uv/install.ps1 | iex"
 )
 
 echo.
