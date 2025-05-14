@@ -76,12 +76,17 @@ template = (
     "You are a data extraction expert. Your task is to extract structured information from school website content.\n\n"
     "School Name: {school_name}\n\n"
     "FORMAT YOUR RESPONSE EXACTLY AS BELOW WITH CLEAR SECTION HEADERS:\n\n"
-    "Tuition Fees: [Extract all details about tuition costs, payment schedules, and fees]\n\n"
-    "Programs Offered: [Extract all academic programs, curriculum details, and grade levels]\n\n"
+    "Tuition Fees: [Extract all details about tuition costs, payment schedules, and fees]\n\n"    "Programs Offered: [Extract all academic programs, curriculum details, and grade levels]\n\n"
     "Enrollment Requirements: [Extract all admission requirements and eligibility criteria]\n\n"
     "Enrollment Process: [Extract the step-by-step application procedures]\n\n"
     "Upcoming Events: [Extract information about school events and dates]\n\n"
     "Scholarships/Discounts: [Extract details about scholarships and financial aid]\n\n"
+    "Facilities: [Extract information about school facilities including labs, libraries, sports facilities, arts centers, etc.]\n\n"
+    "Faculty and Staff: [Extract details about faculty qualifications, departments, notable members, and staff information]\n\n"
+    "Achievements and Accreditations: [Extract information about awards, recognitions, accreditations, and notable achievements]\n\n"
+    "Marketing and Branding: [Extract taglines, value propositions, and key messaging themes used by the school]\n\n"
+    "Technical Infrastructure: [Extract information about technology used, digital platforms, learning management systems]\n\n"
+    "Student Life: [Extract details about clubs, organizations, testimonials, campus activities, and partnerships]\n\n"
     "Contact Information: [Extract all contact details including address, phone, email]\n\n"
     "Notes: [Any additional relevant information]\n\n"
     "IMPORTANT INSTRUCTIONS:\n"
@@ -207,7 +212,89 @@ def parse_with_langchain(dom_content, parse_description, school_name=""):
             "        \"date\": \"[DUE DATE]\"\n"
             "      }}\n"
             "      // Additional due dates as needed\n"
+            "    ]\n"            "  }},\n"
+            "  \"facilities\": [\n"
+            "    {{\n"
+            "      \"name\": \"[FACILITY NAME]\",\n"
+            "      \"type\": \"[TYPE: lab, library, sports, arts, etc.]\",\n"
+            "      \"description\": \"[DESCRIPTION]\",\n"
+            "      \"features\": [\n"
+            "        \"[FEATURE 1]\",\n"
+            "        \"[FEATURE 2]\"\n"
+            "      ]\n"
+            "    }}\n"
+            "    // Additional facilities as needed\n"
+            "  ],\n"
+            "  \"faculty\": [\n"
+            "    {{\n"
+            "      \"department\": \"[DEPARTMENT NAME]\",\n"
+            "      \"staff_count\": \"[NUMBER OF STAFF]\",\n"
+            "      \"qualifications\": \"[GENERAL QUALIFICATIONS]\",\n"
+            "      \"notable_members\": [\n"
+            "        {{\n"
+            "          \"name\": \"[NAME]\",\n"
+            "          \"position\": \"[POSITION]\",\n"
+            "          \"bio\": \"[BRIEF BIO]\"\n"
+            "        }}\n"
+            "      ]\n"
+            "    }}\n"
+            "    // Additional faculty departments as needed\n"
+            "  ],\n"
+            "  \"achievements\": [\n"
+            "    {{\n"
+            "      \"type\": \"[TYPE: Award, Accreditation, Recognition, etc.]\",\n"
+            "      \"name\": \"[NAME OF ACHIEVEMENT]\",\n"
+            "      \"year\": \"[YEAR RECEIVED]\",\n"
+            "      \"description\": \"[DESCRIPTION]\",\n"
+            "      \"issuing_body\": \"[ORGANIZATION THAT ISSUED IT]\"\n"
+            "    }}\n"
+            "    // Additional achievements as needed\n"
+            "  ],\n"
+            "  \"marketing_content\": {{\n"
+            "    \"taglines\": [\n"
+            "      \"[TAGLINE OR SLOGAN]\"\n"
+            "    ],\n"
+            "    \"value_propositions\": [\n"
+            "      \"[VALUE PROPOSITION]\"\n"
+            "    ],\n"
+            "    \"key_messaging\": [\n"
+            "      \"[KEY MESSAGE]\"\n"
+            "    ],\n"
+            "    \"content_strategy\": \"[OVERALL CONTENT APPROACH]\"\n"
+            "  }},\n"
+            "  \"technical_data\": {{\n"
+            "    \"technology_infrastructure\": \"[DESCRIPTION OF TECH INFRASTRUCTURE]\",\n"
+            "    \"digital_platforms\": [\n"
+            "      \"[PLATFORM NAME AND PURPOSE]\"\n"
+            "    ],\n"
+            "    \"learning_management_system\": \"[LMS NAME IF ANY]\",\n"
+            "    \"tech_initiatives\": [\n"
+            "      \"[TECH INITIATIVE DESCRIPTION]\"\n"
             "    ]\n"
+            "  }},\n"
+            "  \"student_life\": {{\n"
+            "    \"clubs_organizations\": [\n"
+            "      {{\n"
+            "        \"name\": \"[CLUB/ORGANIZATION NAME]\",\n"
+            "        \"description\": \"[DESCRIPTION]\"\n"
+            "      }}\n"
+            "    ],\n"
+            "    \"testimonials\": [\n"
+            "      {{\n"
+            "        \"quote\": \"[TESTIMONIAL QUOTE]\",\n"
+            "        \"source\": \"[SOURCE: Student, Parent, Alumni, etc.]\"\n"
+            "      }}\n"
+            "    ],\n"
+            "    \"partnerships\": [\n"
+            "      {{\n"
+            "        \"partner\": \"[PARTNER NAME]\",\n"
+            "        \"nature\": \"[NATURE OF PARTNERSHIP]\"\n"
+            "      }}\n"
+            "    ],\n"
+            "    \"activities\": [\n"
+            "      \"[ACTIVITY DESCRIPTION]\"\n"
+            "    ],\n"
+            "    \"campus_life\": \"[DESCRIPTION OF CAMPUS LIFE]\"\n"
             "  }},\n"
             "  \"programs\": [\n"
             "    {{\n"
@@ -277,9 +364,14 @@ def parse_with_langchain(dom_content, parse_description, school_name=""):
             "2. If information for a section is truly not available, provide empty arrays or empty strings as appropriate\n"
             "3. Include specific details, dates, amounts, and requirements when available\n"
             "4. For tuition, separate by grade levels and include pricing details for different payment periods\n"
-            "5. For enrollment, separate requirements from required documents and provide step-by-step process\n"
-            "6. Remove any JSON comments (lines with // ) in your final output\n"
-            "7. Pay special attention to PDF content sections marked with [PDF CONTENT FROM: url] as these may contain important structured information\n\n"
+            "5. For enrollment, separate requirements from required documents and provide step-by-step process\n"            "6. Remove any JSON comments (lines with // ) in your final output\n"
+            "7. Pay special attention to PDF content sections marked with [PDF CONTENT FROM: url] as these may contain important structured information\n"
+            "8. For facilities, be as detailed as possible about each type of facility and its features\n"
+            "9. For faculty, extract information about qualifications, departments, and any notable staff members\n"
+            "10. For achievements, capture all awards, accreditations, and recognitions with dates when available\n" 
+            "11. For marketing content, focus on the key messaging, taglines, and value propositions used by the school\n"
+            "12. For technical data, include information about the school's technology infrastructure and digital platforms\n"
+            "13. For student life, include clubs, organizations, testimonials, partnerships, and campus activities\n\n"
             "Here's the content to analyze:\n\n{dom_content}"
         )
         
@@ -335,21 +427,53 @@ def extract_json_from_response(response_text):
         try:
             return json.loads(json_str)
         except json.JSONDecodeError as e:
-            logger.error(f"Failed to parse JSON: {e}")
-            return None
+            logger.error(f"Failed to parse JSON from code block: {e}")
+            logger.info("Attempting to fix JSON structure...")
+            try:
+                # Try to fix common JSON issues
+                fixed_json = json_str.replace("'", "\"")  # Replace single quotes with double quotes
+                fixed_json = re.sub(r',\s*}', '}', fixed_json)  # Remove trailing commas in objects
+                fixed_json = re.sub(r',\s*\]', ']', fixed_json)  # Remove trailing commas in arrays
+                return json.loads(fixed_json)
+            except json.JSONDecodeError:
+                logger.error("Failed to fix JSON from code block")
+                return None
     
     # If no code block, try parsing the whole text as JSON
     try:
-        # Remove any markdown or text outside of JSON
-        text = re.sub(r'^.*?({.*}).*$', r'\1', response_text, flags=re.DOTALL)
-        return json.loads(text)
-    except json.JSONDecodeError:
-        logger.error("Failed to parse response as JSON")
+        # Try to find JSON-like structure with curly braces
+        json_candidates = re.findall(r'({[^{]*})', response_text, re.DOTALL)
+        
+        # Try each candidate, starting with the largest one
+        json_candidates.sort(key=len, reverse=True)
+        
+        for json_candidate in json_candidates:
+            try:
+                # Clean up the candidate
+                cleaned = json_candidate.replace("'", "\"")  # Replace single quotes with double quotes
+                cleaned = re.sub(r',\s*}', '}', cleaned)  # Remove trailing commas in objects
+                cleaned = re.sub(r',\s*\]', ']', cleaned)  # Remove trailing commas in arrays
+                parsed = json.loads(cleaned)
+                logger.info("Found valid JSON structure outside of code block")
+                return parsed
+            except json.JSONDecodeError:
+                continue
+        
+        # If we get here, we weren't able to find a valid JSON structure
+        logger.error("No valid JSON structure found in the response")
+        return None
+    except Exception as e:
+        logger.error(f"Error while trying to extract JSON: {e}")
         return None
 
 def create_school_info_from_json(json_data, school_name):
     """Create a SchoolInfo object from parsed JSON data"""
-    from lib.models import SchoolInfo, SchoolFee, EnrollmentInfo, ContactInfo
+    from lib.models import (
+        SchoolInfo, SchoolFee, EnrollmentInfo, ContactInfo, 
+        Facility, FacultyInfo, FacultyMember, Achievement,
+        MarketingContent, TechnicalData, ClubOrganization,
+        Testimonial, Partnership, StudentLife
+    )
     
     # Create the main SchoolInfo object
     school_info = SchoolInfo(
@@ -410,6 +534,127 @@ def create_school_info_from_json(json_data, school_name):
     if "scholarships" in json_data and json_data["scholarships"]:
         school_info.scholarships = json_data["scholarships"]
     
+    # Extract facilities
+    if "facilities" in json_data and json_data["facilities"]:
+        facilities = []
+        for facility_data in json_data["facilities"]:
+            facility = Facility()
+            facility.name = facility_data.get("name", "")
+            facility.type = facility_data.get("type", "")
+            facility.description = facility_data.get("description", "")
+            facility.features = facility_data.get("features", [])
+            
+            facilities.append(facility)
+        
+        school_info.facilities = facilities
+    
+    # Extract faculty information
+    if "faculty" in json_data and json_data["faculty"]:
+        faculty_list = []
+        for dept_data in json_data["faculty"]:
+            faculty = FacultyInfo()
+            faculty.department = dept_data.get("department", "")
+            faculty.staff_count = dept_data.get("staff_count", "")
+            faculty.qualifications = dept_data.get("qualifications", "")
+            
+            # Process notable members
+            if "notable_members" in dept_data and dept_data["notable_members"]:
+                members = []
+                for member_data in dept_data["notable_members"]:
+                    member = FacultyMember()
+                    member.name = member_data.get("name", "")
+                    member.position = member_data.get("position", "")
+                    member.bio = member_data.get("bio", "")
+                    members.append(member)
+                
+                faculty.notable_members = members
+            
+            faculty_list.append(faculty)
+        
+        school_info.faculty = faculty_list
+    
+    # Extract achievements
+    if "achievements" in json_data and json_data["achievements"]:
+        achievements = []
+        for achievement_data in json_data["achievements"]:
+            achievement = Achievement()
+            achievement.type = achievement_data.get("type", "")
+            achievement.name = achievement_data.get("name", "")
+            achievement.year = achievement_data.get("year", "")
+            achievement.description = achievement_data.get("description", "")
+            achievement.issuing_body = achievement_data.get("issuing_body", "")
+            
+            achievements.append(achievement)
+        
+        school_info.achievements = achievements
+    
+    # Extract marketing content
+    if "marketing_content" in json_data and json_data["marketing_content"]:
+        marketing = MarketingContent()
+        marketing_data = json_data["marketing_content"]
+        
+        marketing.taglines = marketing_data.get("taglines", [])
+        marketing.value_propositions = marketing_data.get("value_propositions", [])
+        marketing.key_messaging = marketing_data.get("key_messaging", [])
+        marketing.content_strategy = marketing_data.get("content_strategy", "")
+        
+        school_info.marketing_content = marketing
+    
+    # Extract technical data
+    if "technical_data" in json_data and json_data["technical_data"]:
+        tech_data = TechnicalData()
+        tech_info = json_data["technical_data"]
+        
+        tech_data.technology_infrastructure = tech_info.get("technology_infrastructure", "")
+        tech_data.digital_platforms = tech_info.get("digital_platforms", [])
+        tech_data.learning_management_system = tech_info.get("learning_management_system", "")
+        tech_data.tech_initiatives = tech_info.get("tech_initiatives", [])
+        
+        school_info.technical_data = tech_data
+    
+    # Extract student life information
+    if "student_life" in json_data and json_data["student_life"]:
+        student_life = StudentLife()
+        student_life_data = json_data["student_life"]
+        
+        # Process clubs and organizations
+        if "clubs_organizations" in student_life_data and student_life_data["clubs_organizations"]:
+            clubs = []
+            for club_data in student_life_data["clubs_organizations"]:
+                club = ClubOrganization()
+                club.name = club_data.get("name", "")
+                club.description = club_data.get("description", "")
+                clubs.append(club)
+            
+            student_life.clubs_organizations = clubs
+        
+        # Process testimonials
+        if "testimonials" in student_life_data and student_life_data["testimonials"]:
+            testimonials = []
+            for testimonial_data in student_life_data["testimonials"]:
+                testimonial = Testimonial()
+                testimonial.quote = testimonial_data.get("quote", "")
+                testimonial.source = testimonial_data.get("source", "")
+                testimonials.append(testimonial)
+            
+            student_life.testimonials = testimonials
+        
+        # Process partnerships
+        if "partnerships" in student_life_data and student_life_data["partnerships"]:
+            partnerships = []
+            for partnership_data in student_life_data["partnerships"]:
+                partnership = Partnership()
+                partnership.partner = partnership_data.get("partner", "")
+                partnership.nature = partnership_data.get("nature", "")
+                partnerships.append(partnership)
+            
+            student_life.partnerships = partnerships
+        
+        student_life.activities = student_life_data.get("activities", [])
+        student_life.campus_life = student_life_data.get("campus_life", "")
+        
+        school_info.student_life = student_life
+    
     # Extract contact information
     if "contact" in json_data and json_data["contact"]:
         contact = ContactInfo()
@@ -442,7 +687,12 @@ def create_school_info_from_json(json_data, school_name):
 
 def handle_legacy_format(response_text, school_name):
     """Handle legacy text format responses"""
-    from lib.models import SchoolInfo, SchoolFee, EnrollmentInfo, ContactInfo
+    from lib.models import (
+        SchoolInfo, SchoolFee, EnrollmentInfo, ContactInfo, 
+        Facility, FacultyInfo, FacultyMember, Achievement,
+        MarketingContent, TechnicalData, ClubOrganization,
+        Testimonial, Partnership, StudentLife
+    )
     
     # Create a basic SchoolInfo object
     school_info = SchoolInfo(
@@ -458,6 +708,13 @@ def handle_legacy_format(response_text, school_name):
         "Enrollment Process:": "enrollment_process",
         "Upcoming Events:": "events",
         "Scholarships/Discounts:": "scholarships",
+        "Facilities:": "facilities",
+        "Faculty and Staff:": "faculty",
+        "Faculty Information:": "faculty", 
+        "Achievements and Accreditations:": "achievements",
+        "Marketing and Branding:": "marketing_content",
+        "Technical Infrastructure:": "technical_data",
+        "Student Life:": "student_life",
         "Contact Information:": "contact",
         "Notes:": "notes"
     }
@@ -664,6 +921,247 @@ def handle_legacy_format(response_text, school_name):
             })
             
         school_info.scholarships = scholarships
+        
+    # Process Facilities information
+    if extracted_data.get("facilities"):
+        facilities = []
+        
+        # Try to split by paragraphs or lines
+        items = extracted_data["facilities"].split('\n\n')
+        if len(items) <= 1:
+            items = extracted_data["facilities"].split('\n')
+            
+        for item in items:
+            if not item.strip():
+                continue
+                
+            # Try to extract facility name and type
+            facility = Facility()
+            lines = item.split('\n')
+            
+            if len(lines) > 0:
+                # First line is usually the name
+                facility.name = lines[0].strip()
+                facility.description = " ".join(line.strip() for line in lines[1:])
+                
+                # Try to infer facility type from the name
+                if any(keyword in facility.name.lower() for keyword in ["lab", "laboratory", "science"]):
+                    facility.type = "Laboratory"
+                elif any(keyword in facility.name.lower() for keyword in ["library", "books", "reading"]):
+                    facility.type = "Library"
+                elif any(keyword in facility.name.lower() for keyword in ["gym", "sport", "field", "court", "swimming", "pool"]):
+                    facility.type = "Sports"
+                elif any(keyword in facility.name.lower() for keyword in ["art", "music", "theater", "drama", "auditorium"]):
+                    facility.type = "Arts"
+                elif any(keyword in facility.name.lower() for keyword in ["cafeteria", "canteen", "dining"]):
+                    facility.type = "Dining"
+                else:
+                    facility.type = "Other"
+                
+                facilities.append(facility)
+        
+        school_info.facilities = facilities
+        
+    # Process Faculty information
+    if extracted_data.get("faculty"):
+        faculty_info = FacultyInfo()
+        
+        # Try to extract department and staff count information
+        dept_pattern = r'Department[s]?:\s*(.*)'
+        dept_match = re.search(dept_pattern, extracted_data["faculty"], re.IGNORECASE)
+        if dept_match:
+            faculty_info.department = dept_match.group(1).strip()
+            
+        staff_count_pattern = r'(?:Staff count|Number of staff|Faculty size):\s*(\d+)'
+        staff_match = re.search(staff_count_pattern, extracted_data["faculty"], re.IGNORECASE)
+        if staff_match:
+            faculty_info.staff_count = staff_match.group(1).strip()
+            
+        qualifications_pattern = r'Qualifications?:\s*(.*)'
+        qualifications_match = re.search(qualifications_pattern, extracted_data["faculty"], re.IGNORECASE)
+        if qualifications_match:
+            faculty_info.qualifications = qualifications_match.group(1).strip()
+            
+        # Extract notable members if they exist
+        notable_members = []
+        member_pattern = r'([A-Z][a-z]+(?:\s+[A-Z][a-z]+)+)(?:\s*[-:]\s*)([^:]+?)(?:\s*(?:Bio)?\s*[:]\s*(.+?))?(?=\n[A-Z]|\Z)'
+        member_matches = re.findall(member_pattern, extracted_data["faculty"], re.DOTALL)
+        
+        for match in member_matches:
+            member = FacultyMember()
+            member.name = match[0].strip()
+            member.position = match[1].strip() if len(match) > 1 else ""
+            member.bio = match[2].strip() if len(match) > 2 else ""
+            notable_members.append(member)
+            
+        faculty_info.notable_members = notable_members
+        
+        # Add to the school info if we have any faculty data
+        if not faculty_info.is_empty():
+            school_info.faculty = [faculty_info]  # List of departments
+    
+    # Process Achievements information
+    if extracted_data.get("achievements"):
+        achievements = []
+        
+        # Try to extract individual achievements
+        achievement_pattern = r'([^:]+?)(?:\s*\((\d{4})\))?\s*(?::\s*(.+?))?(?=\n[A-Z]|\Z)'
+        achievement_matches = re.findall(achievement_pattern, extracted_data["achievements"], re.DOTALL)
+        
+        for match in achievement_matches:
+            achievement = Achievement()
+            achievement.name = match[0].strip()
+            achievement.year = match[1].strip() if len(match) > 1 and match[1] else ""
+            achievement.description = match[2].strip() if len(match) > 2 and match[2] else ""
+            
+            # Try to infer type from the name
+            if any(keyword in achievement.name.lower() for keyword in ["accreditation", "accredited"]):
+                achievement.type = "Accreditation"
+            elif any(keyword in achievement.name.lower() for keyword in ["award", "prize", "medal"]):
+                achievement.type = "Award"
+            elif any(keyword in achievement.name.lower() for keyword in ["recognition", "recognized"]):
+                achievement.type = "Recognition"
+            else:
+                achievement.type = "Achievement"
+                
+            achievements.append(achievement)
+            
+        # If we couldn't parse specific achievements, just use lines
+        if not achievements:
+            for line in extracted_data["achievements"].split('\n'):
+                if line.strip():
+                    achievement = Achievement()
+                    achievement.name = line.strip()
+                    achievement.type = "Achievement"
+                    achievements.append(achievement)
+        
+        school_info.achievements = achievements
+        
+    # Process Marketing Content
+    if extracted_data.get("marketing_content"):
+        marketing = MarketingContent()
+        
+        # Try to extract taglines
+        tagline_pattern = r'(?:Tagline|Slogan)[s]?:\s*(.*)'
+        tagline_match = re.search(tagline_pattern, extracted_data["marketing_content"], re.IGNORECASE)
+        if tagline_match:
+            taglines = [t.strip() for t in tagline_match.group(1).split(',')]
+            marketing.taglines = taglines
+            
+        # Try to extract value propositions
+        value_pattern = r'Value Proposition[s]?:\s*(.*)'
+        value_match = re.search(value_pattern, extracted_data["marketing_content"], re.IGNORECASE)
+        if value_match:
+            values = [v.strip() for v in value_match.group(1).split(',')]
+            marketing.value_propositions = values
+            
+        # Try to extract key messaging
+        messaging_pattern = r'Key Message[s]?:\s*(.*)'
+        messaging_match = re.search(messaging_pattern, extracted_data["marketing_content"], re.IGNORECASE)
+        if messaging_match:
+            messages = [m.strip() for m in messaging_match.group(1).split(',')]
+            marketing.key_messaging = messages
+            
+        # Try to extract content strategy
+        strategy_pattern = r'(?:Content Strategy|Marketing Approach):\s*(.*)'
+        strategy_match = re.search(strategy_pattern, extracted_data["marketing_content"], re.IGNORECASE)
+        if strategy_match:
+            marketing.content_strategy = strategy_match.group(1).strip()
+            
+        # If we didn't find structured content, add lines as taglines or key messages
+        if marketing.is_empty():
+            for line in extracted_data["marketing_content"].split('\n'):
+                if line.strip():
+                    if not marketing.taglines:
+                        marketing.taglines = [line.strip()]
+                    else:
+                        if not marketing.key_messaging:
+                            marketing.key_messaging = [line.strip()]
+                        
+        # Add to school info if we have any marketing data
+        if not marketing.is_empty():
+            school_info.marketing_content = marketing
+            
+    # Process Technical Data
+    if extracted_data.get("technical_data"):
+        tech_data = TechnicalData()
+        
+        # Try to extract technology infrastructure
+        infra_pattern = r'(?:Technology Infrastructure|IT Infrastructure):\s*(.*)'
+        infra_match = re.search(infra_pattern, extracted_data["technical_data"], re.IGNORECASE)
+        if infra_match:
+            tech_data.technology_infrastructure = infra_match.group(1).strip()
+            
+        # Try to extract digital platforms
+        platforms_pattern = r'Digital Platform[s]?:\s*(.*)'
+        platforms_match = re.search(platforms_pattern, extracted_data["technical_data"], re.IGNORECASE)
+        if platforms_match:
+            platforms = [p.strip() for p in platforms_match.group(1).split(',')]
+            tech_data.digital_platforms = platforms
+            
+        # Try to extract LMS
+        lms_pattern = r'(?:Learning Management System|LMS):\s*(.*)'
+        lms_match = re.search(lms_pattern, extracted_data["technical_data"], re.IGNORECASE)
+        if lms_match:
+            tech_data.learning_management_system = lms_match.group(1).strip()
+            
+        # Try to extract tech initiatives
+        initiatives_pattern = r'(?:Technology Initiatives|Tech Initiatives):\s*(.*)'
+        initiatives_match = re.search(initiatives_pattern, extracted_data["technical_data"], re.IGNORECASE)
+        if initiatives_match:
+            initiatives = [i.strip() for i in initiatives_match.group(1).split(',')]
+            tech_data.tech_initiatives = initiatives
+            
+        # Add to school info if we have any tech data
+        if not tech_data.is_empty():
+            school_info.technical_data = tech_data
+            
+    # Process Student Life information
+    if extracted_data.get("student_life"):
+        student_life = StudentLife()
+        
+        # Try to extract clubs and organizations
+        clubs_pattern = r'Clubs(?:\s+and\s+Organizations)?:\s*(.*?)(?=\n[A-Z]|\Z)'
+        clubs_match = re.search(clubs_pattern, extracted_data["student_life"], re.IGNORECASE | re.DOTALL)
+        if clubs_match:
+            clubs_text = clubs_match.group(1).strip()
+            club_list = clubs_text.split('\n')
+            for club_text in club_list:
+                if club_text.strip():
+                    club = ClubOrganization()
+                    club.name = club_text.strip()
+                    student_life.clubs_organizations.append(club)
+                    
+        # Try to extract testimonials
+        testimonial_pattern = r'"([^"]+)"\s*[-—]\s*([^,]+)'
+        testimonial_matches = re.findall(testimonial_pattern, extracted_data["student_life"])
+        for match in testimonial_matches:
+            testimonial = Testimonial()
+            testimonial.quote = match[0].strip()
+            testimonial.source = match[1].strip()
+            student_life.testimonials.append(testimonial)
+            
+        # Try to extract partnerships
+        partnership_pattern = r'Partnership(?:s)?:\s*(.*?)(?=\n[A-Z]|\Z)'
+        partnership_match = re.search(partnership_pattern, extracted_data["student_life"], re.IGNORECASE | re.DOTALL)
+        if partnership_match:
+            partnership_text = partnership_match.group(1).strip()
+            partnership_list = partnership_text.split('\n')
+            for p_text in partnership_list:
+                if p_text.strip():
+                    partnership = Partnership()
+                    partnership.partner = p_text.strip()
+                    student_life.partnerships.append(partnership)
+                    
+        # Try to extract campus life description
+        campus_pattern = r'Campus Life:\s*(.*?)(?=\n[A-Z]|\Z)'
+        campus_match = re.search(campus_pattern, extracted_data["student_life"], re.IGNORECASE | re.DOTALL)
+        if campus_match:
+            student_life.campus_life = campus_match.group(1).strip()
+            
+        # Add to school info if we have any student life data
+        if not student_life.is_empty():
+            school_info.student_life = student_life
     
     # Process Contact information
     if extracted_data["contact"]:
@@ -742,9 +1240,34 @@ def extract_academic_year(text):
 
 def _extract_section(response_text, section_header):
     """Extract a section from the response text using the section header"""
-    pattern = rf"{re.escape(section_header)}(.*?)(?=(?:{'|'.join([re.escape(h) for h in ['Tuition Fees:', 'Programs Offered:', 'Enrollment Requirements:', 'Enrollment Process:', 'Upcoming Events:', 'Scholarships/Discounts:', 'Contact Information:', 'Notes:']])})|$)"
+    headers = [
+        'Tuition Fees:', 'Programs Offered:', 'Enrollment Requirements:', 
+        'Enrollment Process:', 'Upcoming Events:', 'Scholarships/Discounts:', 
+        'Facilities:', 'Faculty Information:', 'Faculty and Staff:', 'Achievements:', 
+        'Achievements and Accreditations:', 'Marketing Content:', 'Marketing and Branding:',
+        'Technical Data:', 'Technical Infrastructure:', 'Student Life:',
+        'Contact Information:', 'Notes:'
+    ]
+    
+    pattern = rf"{re.escape(section_header)}(.*?)(?=(?:{'|'.join([re.escape(h) for h in headers])})|$)"
     match = re.search(pattern, response_text, re.DOTALL)
     if match:
         section_text = match.group(1).strip()
         return clean_section_text(section_text) if section_text else "No information available"
+    
+    # If exact match fails, try case-insensitive
+    pattern = rf"{re.escape(section_header)}(.*?)(?=(?:{'|'.join([re.escape(h) for h in headers])})|$)"
+    match = re.search(pattern, response_text, re.DOTALL | re.IGNORECASE)
+    if match:
+        section_text = match.group(1).strip()
+        return clean_section_text(section_text) if section_text else "No information available"
+    
+    # Try partial match by removing the colon
+    section_name = section_header.rstrip(':').lower()
+    pattern = rf"{re.escape(section_name)}[:\s]+(.*?)(?=(?:{'|'.join([re.escape(h) for h in headers])})|$)"
+    match = re.search(pattern, response_text, re.DOTALL | re.IGNORECASE)
+    if match:
+        section_text = match.group(1).strip()
+        return clean_section_text(section_text) if section_text else "No information available"
+        
     return "No information available"

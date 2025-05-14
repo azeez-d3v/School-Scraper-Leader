@@ -257,13 +257,17 @@ def main():
                     if result:
                         st.header(result["name"])
                         st.markdown(f"[Visit Website]({result.get('link', '#')})")
-                        
-                        # Create information category tabs
+                          # Create information category tabs
                         info_tabs = st.tabs([
                             "Tuition Fees", 
                             "Programs", 
                             "Enrollment", 
                             "Events & Scholarships", 
+                            "Facilities",
+                            "Faculty",
+                            "Achievements",
+                            "Technical & Marketing",
+                            "Student Life",
                             "Contact & Raw Data"
                         ])
                         
@@ -437,12 +441,260 @@ def main():
                                             else:
                                                 st.markdown(f"- {scholarship}")
                                     else:
-                                        st.markdown(scholarships)
+                                        st.markdown(scholarships)                                
                                 else:
                                     st.info("No scholarship information available")
                         
-                        # Contact & Raw Data Tab
+                        # Facilities Tab
                         with info_tabs[4]:
+                            st.subheader("Facilities")
+                            if result.get("facilities") and result["facilities"] != "No information available":
+                                facilities = result["facilities"]
+                                if isinstance(facilities, list):
+                                    for facility in facilities:
+                                        if isinstance(facility, dict):
+                                            facility_name = facility.get("name", "")
+                                            facility_type = facility.get("type", "")
+                                            facility_desc = facility.get("description", "")
+                                            facility_features = facility.get("features", [])
+                                            
+                                            # Create header with name and type if available
+                                            header = facility_name
+                                            if facility_type:
+                                                header += f" ({facility_type})"
+                                            
+                                            st.markdown(f"**{header}**")
+                                            if facility_desc:
+                                                st.markdown(facility_desc)
+                                            
+                                            # List features if any
+                                            if facility_features:
+                                                st.markdown("**Features:**")
+                                                for feature in facility_features:
+                                                    st.markdown(f"- {feature}")
+                                        else:
+                                            st.markdown(f"- {facility}")
+                                else:
+                                    st.markdown(facilities)
+                            else:
+                                st.info("No facilities information available")
+                        
+                        # Faculty Tab
+                        with info_tabs[5]:
+                            st.subheader("Faculty Information")
+                            if result.get("faculty") and result["faculty"] != "No information available":
+                                faculty_list = result["faculty"]
+                                if isinstance(faculty_list, list):
+                                    for faculty in faculty_list:
+                                        if isinstance(faculty, dict):
+                                            dept = faculty.get("department", "")
+                                            staff_count = faculty.get("staff_count", "")
+                                            qualifications = faculty.get("qualifications", "")
+                                            notable_members = faculty.get("notable_members", [])
+                                            
+                                            # Department header with staff count if available
+                                            header = dept
+                                            if staff_count:
+                                                header += f" ({staff_count} staff)"
+                                            
+                                            st.markdown(f"### {header}")
+                                            if qualifications:
+                                                st.markdown(f"**Qualifications:** {qualifications}")
+                                            
+                                            # List notable faculty members if any
+                                            if notable_members:
+                                                st.markdown("**Notable Faculty Members:**")
+                                                for member in notable_members:
+                                                    if isinstance(member, dict):
+                                                        name = member.get("name", "")
+                                                        position = member.get("position", "")
+                                                        bio = member.get("bio", "")
+                                                        
+                                                        member_text = name
+                                                        if position:
+                                                            member_text += f" - {position}"
+                                                        
+                                                        st.markdown(f"**{member_text}**")
+                                                        if bio:
+                                                            st.markdown(bio)
+                                        else:
+                                            st.markdown(faculty)
+                                else:
+                                    st.markdown(faculty_list)
+                            else:
+                                st.info("No faculty information available")
+                        
+                        # Achievements Tab
+                        with info_tabs[6]:
+                            st.subheader("Achievements & Accreditations")
+                            if result.get("achievements") and result["achievements"] != "No information available":
+                                achievements = result["achievements"]
+                                if isinstance(achievements, list):
+                                    for achievement in achievements:
+                                        if isinstance(achievement, dict):
+                                            achievement_type = achievement.get("type", "")
+                                            achievement_name = achievement.get("name", "")
+                                            achievement_year = achievement.get("year", "")
+                                            achievement_desc = achievement.get("description", "")
+                                            achievement_issuer = achievement.get("issuing_body", "")
+                                            
+                                            # Create header with name and year if available
+                                            header = achievement_name
+                                            if achievement_year:
+                                                header += f" ({achievement_year})"
+                                            
+                                            st.markdown(f"**{header}**")
+                                            if achievement_type:
+                                                st.markdown(f"*Type:* {achievement_type}")
+                                            if achievement_issuer:
+                                                st.markdown(f"*Issuing Body:* {achievement_issuer}")
+                                            if achievement_desc:
+                                                st.markdown(achievement_desc)
+                                        else:
+                                            st.markdown(f"- {achievement}")
+                                else:
+                                    st.markdown(achievements)
+                            else:
+                                st.info("No achievement information available")
+                        
+                        # Technical & Marketing Tab
+                        with info_tabs[7]:
+                            col1, col2 = st.columns(2)
+                            
+                            # Technical Data column
+                            with col1:
+                                st.subheader("Technical Infrastructure")
+                                if result.get("technical_data") and result["technical_data"] != "No information available":
+                                    tech_data = result["technical_data"]
+                                    if isinstance(tech_data, dict):
+                                        tech_infra = tech_data.get("technology_infrastructure", "")
+                                        digital_platforms = tech_data.get("digital_platforms", [])
+                                        lms = tech_data.get("learning_management_system", "")
+                                        tech_initiatives = tech_data.get("tech_initiatives", [])
+                                        
+                                        if tech_infra:
+                                            st.markdown(f"**Infrastructure:** {tech_infra}")
+                                        
+                                        if lms:
+                                            st.markdown(f"**Learning Management System:** {lms}")
+                                        
+                                        if digital_platforms:
+                                            st.markdown("**Digital Platforms:**")
+                                            for platform in digital_platforms:
+                                                st.markdown(f"- {platform}")
+                                        
+                                        if tech_initiatives:
+                                            st.markdown("**Tech Initiatives:**")
+                                            for initiative in tech_initiatives:
+                                                st.markdown(f"- {initiative}")
+                                    else:
+                                        st.markdown(tech_data)
+                                else:
+                                    st.info("No technical data available")
+                            
+                            # Marketing column
+                            with col2:
+                                st.subheader("Marketing & Branding")
+                                if result.get("marketing_content") and result["marketing_content"] != "No information available":
+                                    marketing = result["marketing_content"]
+                                    if isinstance(marketing, dict):
+                                        taglines = marketing.get("taglines", [])
+                                        values = marketing.get("value_propositions", [])
+                                        key_messaging = marketing.get("key_messaging", [])
+                                        strategy = marketing.get("content_strategy", "")
+                                        
+                                        if taglines:
+                                            st.markdown("**Taglines:**")
+                                            for tagline in taglines:
+                                                st.markdown(f"- {tagline}")
+                                        
+                                        if values:
+                                            st.markdown("**Value Propositions:**")
+                                            for value in values:
+                                                st.markdown(f"- {value}")
+                                        
+                                        if key_messaging:
+                                            st.markdown("**Key Messaging:**")
+                                            for message in key_messaging:
+                                                st.markdown(f"- {message}")
+                                        
+                                        if strategy:
+                                            st.markdown(f"**Content Strategy:** {strategy}")
+                                    else:
+                                        st.markdown(marketing)
+                                else:
+                                    st.info("No marketing information available")
+                        
+                        # Student Life Tab
+                        with info_tabs[8]:
+                            st.subheader("Student Life")
+                            if result.get("student_life") and result["student_life"] != "No information available":
+                                student_life = result["student_life"]
+                                if isinstance(student_life, dict):
+                                    clubs = student_life.get("clubs_organizations", [])
+                                    testimonials = student_life.get("testimonials", [])
+                                    partnerships = student_life.get("partnerships", [])
+                                    activities = student_life.get("activities", [])
+                                    campus_life = student_life.get("campus_life", "")
+                                    
+                                    if campus_life:
+                                        st.markdown(f"**Campus Life Overview:** {campus_life}")
+                                    
+                                    # Create columns for better organization
+                                    col1, col2 = st.columns(2)
+                                    
+                                    with col1:
+                                        if clubs:
+                                            st.markdown("### Clubs & Organizations")
+                                            for club in clubs:
+                                                if isinstance(club, dict):
+                                                    club_name = club.get("name", "")
+                                                    club_desc = club.get("description", "")
+                                                    
+                                                    st.markdown(f"**{club_name}**")
+                                                    if club_desc:
+                                                        st.markdown(club_desc)
+                                                else:
+                                                    st.markdown(f"- {club}")
+                                        
+                                        if activities:
+                                            st.markdown("### Activities")
+                                            for activity in activities:
+                                                st.markdown(f"- {activity}")
+                                    
+                                    with col2:
+                                        if testimonials:
+                                            st.markdown("### Testimonials")
+                                            for testimonial in testimonials:
+                                                if isinstance(testimonial, dict):
+                                                    quote = testimonial.get("quote", "")
+                                                    source = testimonial.get("source", "")
+                                                    
+                                                    st.markdown(f"*\"{quote}\"*")
+                                                    if source:
+                                                        st.markdown(f"— {source}")
+                                                else:
+                                                    st.markdown(testimonial)
+                                        
+                                        if partnerships:
+                                            st.markdown("### Partnerships")
+                                            for partnership in partnerships:
+                                                if isinstance(partnership, dict):
+                                                    partner = partnership.get("partner", "")
+                                                    nature = partnership.get("nature", "")
+                                                    
+                                                    st.markdown(f"**{partner}**")
+                                                    if nature:
+                                                        st.markdown(f"*Nature:* {nature}")
+                                                else:
+                                                    st.markdown(f"- {partnership}")
+                                else:
+                                    st.markdown(student_life)
+                            else:
+                                st.info("No student life information available")
+                        
+                        # Contact & Raw Data Tab
+                        with info_tabs[9]:
                             col1, col2 = st.columns(2)
                             
                             # Contact info column
@@ -553,7 +805,8 @@ def main():
         
         # Comprehensive Summary Tab - This summarizes ALL schools together
         with summary_tabs[0]:
-            st.subheader("Comprehensive School Market Analysis")
+            st.subheader("Comprehensive School Market Analysis")            
+            
             st.markdown("""
             Generate a comprehensive market analysis that compares all scraped schools together.
             
@@ -561,8 +814,13 @@ def main():
             - Market overview of all schools
             - Comparative tuition analysis across different pricing tiers
             - Analysis of academic programs and curricula across schools
+            - Campus facilities comparison
+            - Faculty and staff analysis
+            - Achievements and accreditations comparison
             - Summary of admission requirements and processes
-            - Scholarship opportunities comparison
+            - Student life and extracurricular activities
+            - Technology infrastructure comparison
+            - Marketing and positioning analysis
             - Distinctive features of each school
             - Recommendations for different types of students/families
             """)
@@ -594,16 +852,22 @@ def main():
         
         # Individual School Summaries Tab
         with summary_tabs[1]:
-            st.subheader("Individual School Summaries")
+            st.subheader("Individual School Summaries")            
             st.markdown("""
             Generate an AI summary for an individual school based on its scraped data.
             
-            Each summary provides an overview of:
+            Each summary provides a comprehensive overview of:
             - School philosophy and overview
             - Academic programs and curriculum
             - Tuition fees and financial information
             - Enrollment requirements and process
-            - Unique features and offerings
+            - Campus facilities and infrastructure
+            - Faculty qualifications and notable staff
+            - Achievements, accreditations, and recognitions
+            - Marketing approach and brand positioning
+            - Technology infrastructure and digital learning
+            - Student life, clubs, and campus culture
+            - Unique features and distinctive offerings
             """)
             
             if not all_results:
@@ -854,20 +1118,26 @@ def summarize_school_data_with_ai(raw_data, school_name):
     try:
         # Initialize the AI model
         model = ChatGoogleGenerativeAI(model="gemini-1.5-flash-latest", temperature=0)
-        
-        # Create a prompt for summarizing the school data
+          # Create a prompt for summarizing the school data
         summary_prompt = ChatPromptTemplate.from_template(
             """You are an educational consultant tasked with summarizing information about {school_name}. 
-            Please provide a concise, informative summary of the school based on the following raw data.
+            Please provide a comprehensive, informative summary of the school based on the following raw data.
             
-            Focus on these key aspects:
+            Focus on these key aspects in detail:
             1. School overview and educational philosophy
-            2. Academic programs and curriculum
+            2. Academic programs and curriculum offerings
             3. Tuition fees and financial information
             4. Enrollment requirements and process
-            5. What makes this school unique or distinctive
+            5. Campus facilities and infrastructure
+            6. Faculty qualifications and notable staff
+            7. School achievements, accreditations, and recognitions
+            8. Marketing approach and brand positioning
+            9. Technology infrastructure and digital learning platforms
+            10. Student life, extracurricular activities, and campus culture
+            11. What makes this school unique or distinctive compared to other international schools
             
-            Format your response with clear sections and bullet points where appropriate.
+            Format your response with clear sections, bullet points, and tables where appropriate.
+            Make your analysis data-driven and evidence-based, citing specific information from the raw data.
             Maintain a professional, informative tone throughout.
             
             Raw data:
@@ -969,11 +1239,74 @@ def generate_combined_school_summary(all_results):
                             if len(enrollment["requirements"]) > 3:
                                 school_excerpt += "..."
                             school_excerpt += "\n"
-                    
-                    # Add scholarship info
+                      # Add scholarship info
                     scholarships = result.get("scholarships", [])
                     if isinstance(scholarships, list) and len(scholarships) > 0 and not isinstance(scholarships, str):
                         school_excerpt += "SCHOLARSHIPS: Available\n"
+                    
+                    # Add facilities information
+                    facilities = result.get("facilities", [])
+                    if isinstance(facilities, list) and len(facilities) > 0 and not isinstance(facilities, str):
+                        school_excerpt += "FACILITIES:\n"
+                        for facility in facilities[:3]:  # Limit to first 3 to save space
+                            if isinstance(facility, dict):
+                                facility_name = facility.get("name", "")
+                                facility_type = facility.get("type", "")
+                                if facility_name:
+                                    if facility_type:
+                                        school_excerpt += f"- {facility_name} ({facility_type})\n"
+                                    else:
+                                        school_excerpt += f"- {facility_name}\n"
+                    
+                    # Add faculty information
+                    faculty = result.get("faculty", [])
+                    if isinstance(faculty, list) and len(faculty) > 0 and not isinstance(faculty, str):
+                        school_excerpt += "FACULTY:\n"
+                        for dept in faculty[:2]:  # Limit to first 2 departments
+                            if isinstance(dept, dict):
+                                dept_name = dept.get("department", "")
+                                staff_count = dept.get("staff_count", "")
+                                if dept_name:
+                                    if staff_count:
+                                        school_excerpt += f"- {dept_name} ({staff_count} staff)\n"
+                                    else:
+                                        school_excerpt += f"- {dept_name}\n"
+                    
+                    # Add achievements information
+                    achievements = result.get("achievements", [])
+                    if isinstance(achievements, list) and len(achievements) > 0 and not isinstance(achievements, str):
+                        school_excerpt += "ACHIEVEMENTS:\n"
+                        for achievement in achievements[:2]:  # Limit to first 2 achievements
+                            if isinstance(achievement, dict):
+                                achievement_name = achievement.get("name", "")
+                                achievement_year = achievement.get("year", "")
+                                if achievement_name:
+                                    if achievement_year:
+                                        school_excerpt += f"- {achievement_name} ({achievement_year})\n"
+                                    else:
+                                        school_excerpt += f"- {achievement_name}\n"
+                    
+                    # Add student life information
+                    student_life = result.get("student_life", {})
+                    if isinstance(student_life, dict) and not isinstance(student_life, str):
+                        if student_life.get("campus_life") or student_life.get("clubs_organizations"):
+                            school_excerpt += "STUDENT LIFE:\n"
+                            if student_life.get("campus_life"):
+                                excerpt = student_life.get("campus_life")[:100]  # Limit length
+                                if len(student_life.get("campus_life")) > 100:
+                                    excerpt += "..."
+                                school_excerpt += f"Campus Culture: {excerpt}\n"
+                            if isinstance(student_life.get("clubs_organizations"), list) and len(student_life.get("clubs_organizations")) > 0:
+                                school_excerpt += f"Clubs: {len(student_life.get('clubs_organizations'))} organizations\n"
+                    
+                    # Add marketing content information
+                    marketing = result.get("marketing_content", {})
+                    if isinstance(marketing, dict) and not isinstance(marketing, str):
+                        if marketing.get("taglines") and isinstance(marketing.get("taglines"), list) and len(marketing.get("taglines")) > 0:
+                            school_excerpt += "MARKETING:\n"
+                            taglines = marketing.get("taglines")[:2]  # Limit to first 2 taglines
+                            for tagline in taglines:
+                                school_excerpt += f"- {tagline}\n"
                     
                     # Limit raw content to first ~1000 chars of meaningful data
                     content_start = raw_content.find("MAIN PAGE CONTENT:")
@@ -995,23 +1328,40 @@ def generate_combined_school_summary(all_results):
         # Split into chunks to respect token limits
         from lib.utils import split_dom_content
         chunks = split_dom_content(combined_data, max_length=12000)  # Chunk size suitable for gemini-1.5-flash-latest
-        
-        # Create comprehensive summary prompt
+          # Create comprehensive summary prompt
         comprehensive_prompt = ChatPromptTemplate.from_template(
             """You are an educational consultant tasked with creating a comprehensive market overview of international schools 
             based on the data provided. This data comes from multiple schools that have been scraped and analyzed.
             
-            Create an informative, well-structured summary that covers:
+            Create an informative, well-structured summary that thoroughly covers:
             
-            1. OVERVIEW: General trends and observations across all schools
-            2. TUITION AND FEES: Compare tuition ranges and fee structures
-            3. ACADEMIC PROGRAMS: Common programs and unique offerings
-            4. ADMISSIONS: Typical enrollment requirements and processes
-            5. COMPARATIVE ANALYSIS: What makes each school distinctive, their strengths, and target demographics
-            6. RECOMMENDATIONS: Which schools might be appropriate for different student needs
+            1. MARKET OVERVIEW: General trends and observations across all schools, educational approaches, and positioning
             
-            Format your response with clear section headers, bullet points, and tables where appropriate.
-            Maintain a professional, objective tone throughout.
+            2. TUITION AND FEES: Compare tuition ranges and fee structures across different schools, identifying pricing tiers and what differentiates schools in different price brackets
+            
+            3. ACADEMIC PROGRAMS: Common programs, curricula, and educational philosophies, as well as unique or specialized offerings that make certain schools stand out
+            
+            4. CAMPUS FACILITIES: Compare school infrastructure, learning spaces, laboratories, libraries, sports facilities, and other amenities
+            
+            5. FACULTY ANALYSIS: Analyze teaching staff credentials, department structures, student-teacher ratios, and notable faculty members
+            
+            6. ACHIEVEMENTS & RECOGNITION: Compare accreditations, awards, academic achievements, and recognitions across schools
+            
+            7. ADMISSIONS LANDSCAPE: Summarize typical admission requirements, processes, and relative selectivity of different schools
+            
+            8. STUDENT LIFE: Compare extracurricular offerings, clubs, activities, campus culture, and student testimonials
+            
+            9. TECHNOLOGY INFRASTRUCTURE: Analyze digital learning platforms, technology integration, and innovation across schools
+            
+            10. MARKETING APPROACHES: Compare how schools position themselves, their key messaging, value propositions, and target audience
+            
+            11. COMPARATIVE STRENGTHS: For each school, identify its distinctive features, competitive advantages, and unique selling points
+            
+            12. RECOMMENDATIONS: Provide specific recommendations for different types of students/families based on their priorities, including academic needs, budget considerations, and extracurricular interests
+            
+            Format your response with clear section headers, bullet points, tables, and comparison matrices where appropriate.
+            Maintain a professional, objective tone throughout. Base all analysis on the provided data, not general knowledge.
+            Make specific school-to-school comparisons where possible.
             
             Here is the combined data from all scraped schools:
             
@@ -1044,7 +1394,7 @@ def generate_combined_school_summary(all_results):
         
         # If we had multiple chunks, do a final integration pass
         if len(chunks) > 1:
-            try:
+            try:                
                 integration_prompt = ChatPromptTemplate.from_template(
                     """You are an educational consultant creating a final, integrated report on international schools.
                     You have processed multiple data chunks and now need to integrate the separate summaries into 
@@ -1055,8 +1405,19 @@ def generate_combined_school_summary(all_results):
                     2. Resolve any contradictions
                     3. Create a unified, well-structured report
                     4. Ensure all schools mentioned are included
-                    5. Maintain the section structure: Market Overview, Tuition Analysis, Academic Programs, 
-                       Admissions Landscape, Scholarship Opportunities, Comparative Strengths, and Recommendations
+                    5. Maintain the comprehensive section structure including:
+                       - Market Overview
+                       - Tuition Analysis
+                       - Academic Programs
+                       - Campus Facilities
+                       - Faculty Analysis
+                       - Achievements & Recognition
+                       - Admissions Landscape
+                       - Student Life
+                       - Technology Infrastructure
+                       - Marketing Approaches
+                       - Comparative Strengths
+                       - Recommendations
                     
                     Here are the separate summaries to integrate:
                     
@@ -1176,8 +1537,7 @@ def export_results_to_excel(all_results):
                             event_summary.append(event)
                     
                     school_data["Events"] = "; ".join(event_summary)
-                
-                # Extract scholarships
+                  # Extract scholarships
                 if isinstance(result.get("scholarships"), list):
                     scholarships = result.get("scholarships", [])
                     scholarship_summary = []
@@ -1191,6 +1551,96 @@ def export_results_to_excel(all_results):
                             scholarship_summary.append(scholarship)
                     
                     school_data["Scholarships"] = "; ".join(scholarship_summary)
+                
+                # Extract facilities information
+                if isinstance(result.get("facilities"), list):
+                    facilities = result.get("facilities", [])
+                    facility_summary = []
+                    for facility in facilities:
+                        if isinstance(facility, dict):
+                            facility_text = facility.get("name", "")
+                            if "type" in facility and facility["type"]:
+                                facility_text += f" ({facility.get('type', '')})"
+                            facility_summary.append(facility_text)
+                        elif isinstance(facility, str):
+                            facility_summary.append(facility)
+                    
+                    school_data["Facilities"] = "; ".join(facility_summary)
+                
+                # Extract faculty information
+                if isinstance(result.get("faculty"), list):
+                    faculty = result.get("faculty", [])
+                    faculty_summary = []
+                    for dept in faculty:
+                        if isinstance(dept, dict):
+                            dept_text = dept.get("department", "")
+                            if "staff_count" in dept and dept["staff_count"]:
+                                dept_text += f" ({dept.get('staff_count', '')} staff)"
+                            faculty_summary.append(dept_text)
+                        elif isinstance(dept, str):
+                            faculty_summary.append(dept)
+                    
+                    school_data["Faculty"] = "; ".join(faculty_summary)
+                
+                # Extract achievements information
+                if isinstance(result.get("achievements"), list):
+                    achievements = result.get("achievements", [])
+                    achievement_summary = []
+                    for achievement in achievements:
+                        if isinstance(achievement, dict):
+                            achievement_text = achievement.get("name", "")
+                            if "year" in achievement and achievement["year"]:
+                                achievement_text += f" ({achievement.get('year', '')})"
+                            achievement_summary.append(achievement_text)
+                        elif isinstance(achievement, str):
+                            achievement_summary.append(achievement)
+                    
+                    school_data["Achievements"] = "; ".join(achievement_summary)
+                
+                # Extract marketing content
+                if isinstance(result.get("marketing_content"), dict):
+                    marketing = result.get("marketing_content", {})
+                    marketing_summary = []
+                    
+                    # Taglines
+                    if "taglines" in marketing and isinstance(marketing["taglines"], list) and marketing["taglines"]:
+                        marketing_summary.append("Taglines: " + "; ".join(marketing["taglines"]))
+                    
+                    # Value propositions
+                    if "value_propositions" in marketing and isinstance(marketing["value_propositions"], list) and marketing["value_propositions"]:
+                        marketing_summary.append("Value Props: " + "; ".join(marketing["value_propositions"]))
+                    
+                    school_data["Marketing"] = " | ".join(marketing_summary)
+                
+                # Extract technical data
+                if isinstance(result.get("technical_data"), dict):
+                    tech_data = result.get("technical_data", {})
+                    tech_summary = []
+                    
+                    if "technology_infrastructure" in tech_data and tech_data["technology_infrastructure"]:
+                        tech_summary.append(tech_data["technology_infrastructure"])
+                    
+                    if "learning_management_system" in tech_data and tech_data["learning_management_system"]:
+                        tech_summary.append(f"LMS: {tech_data['learning_management_system']}")
+                    
+                    school_data["Technology"] = " | ".join(tech_summary)
+                
+                # Extract student life information
+                if isinstance(result.get("student_life"), dict):
+                    student_life = result.get("student_life", {})
+                    student_life_summary = []
+                    
+                    # Clubs and organizations
+                    if "clubs_organizations" in student_life and isinstance(student_life["clubs_organizations"], list) and student_life["clubs_organizations"]:
+                        clubs = [club.get("name", "") for club in student_life["clubs_organizations"] if isinstance(club, dict)]
+                        if clubs:
+                            student_life_summary.append("Clubs: " + "; ".join(clubs))
+                    
+                    # Campus life overview
+                    if "campus_life" in student_life and student_life["campus_life"]:
+                        student_life_summary.append(student_life["campus_life"])
+                    
+                    school_data["Student Life"] = " | ".join(student_life_summary)
                 
                 # Add notes as the last column
                 school_data["Notes"] = result.get("notes", "")

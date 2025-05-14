@@ -11,7 +11,7 @@ from langchain_community.document_loaders import PyPDFLoader
 
 from lib.school_data import SchoolData
 from lib.parse import parse_with_langchain
-from lib.utils import extract_body_content, clean_body_content
+from lib.utils import extract_body_content, clean_body_content, extract_urls
 from lib.models import SchoolInfo
 from services.session_manager import SessionManager
 
@@ -27,11 +27,63 @@ for directory in [OUTPUT_DIR, RAW_DATA_DIR, PARSED_DATA_DIR]:
     directory.mkdir(exist_ok=True)
 
 class SchoolScraper:
-    """Main class to handle scraping of school data"""
-
+    """Main class to handle scraping of school data"""   
     def __init__(self):
         self.session_manager = SessionManager()
-        self.schools_data = SchoolData.get_schools_list()
+        self.school_links = SchoolData.get_school_links()
+        # Convert links to school data format for compatibility with existing code
+        self.schools_data = self._initialize_school_data_from_links()
+        
+    def _initialize_school_data_from_links(self):
+        """
+        Initialize school data from the links provided by get_school_links()
+        Creates a basic structure for each school based on its domain.
+        """
+        schools_data = []
+        
+        for url in self.school_links:
+            # Extract domain name to use as school name
+            domain = urlparse(url).netloc
+            name = domain.replace("www.", "")
+            
+            # Create a simple name from the domain
+            # Example: www.ismanila.org -> International School Manila
+            if "ismanila" in name:
+                school_name = "International School Manila"
+            elif "britishschoolmanila" in name:
+                school_name = "British School Manila"
+            elif "reedleyschool" in name:
+                school_name = "Reedley International School"
+            elif "southville" in name:
+                school_name = "Southville International School and Colleges"
+            elif "singaporeschools" in name:
+                school_name = "Singapore School Manila"
+            elif "faith.edu" in name:
+                school_name = "Faith Academy"
+            elif "jca.edu" in name:
+                school_name = "Jubilee Christian Academy"
+            elif "vcis.edu" in name:
+                school_name = "Victory Christian International School"
+            else:
+                # If it's a new domain not in our mapping, create a generic name
+                school_name = " ".join(word.capitalize() for word in name.split('.')[0].split('-'))
+                
+            # Create the school data structure with basic info
+            school_data = {
+                "method": "Request",  # Default to using Request method
+                "name": school_name,
+                "link": url,
+                "school_fee": "",
+                "program": [],
+                "Enrollment Process and Requirements": [],
+                "Upcoming Events": [],
+                "Discounts and Scholarship": [],
+                "Contact Information ": []
+            }
+            schools_data.append(school_data)
+            logger.info(f"Initialized school data for {school_name} with URL: {url}")
+            
+        return schools_data
         
     async def extract_content_from_url(self, url: str, method: str = "Request", progress_callback=None):
         """Extract content from a URL using SessionManager"""
@@ -177,8 +229,8 @@ class SchoolScraper:
             
         except Exception as e:
             logger.error(f"Error extracting content from {url}: {str(e)}", exc_info=True)
-            return ""
-    
+            return ""  
+          
     async def process_school(self, school_data, progress_bar=None, status_text=None):
         """Process a single school's data and extract content from all URLs"""
         school_name = school_data.get("name", "Unknown School")
@@ -194,11 +246,29 @@ class SchoolScraper:
         # Prepare a raw content file for this school
         raw_file_path = RAW_DATA_DIR / f"{school_name.replace(' ', '_')}_raw.txt"
         
+        # Use the URL extractor API to get relevant links
+        if status_text:
+            status_text.text(f"Extracting URLs from {school_name} website...")
+            
+        logger.info(f"Extracting URLs from {school_link} using API")
+        all_urls = await extract_urls(school_link)
+        
+        # Organize extracted URLs by category
+        extracted_links = self._categorize_urls(all_urls, school_link, school_name)
+        
+        # Log the extracted links
+        logger.info(f"Extracted links for {school_name}: {extracted_links}")
+        
         # Collect all links to scrape
         all_links = []
         
         # School fee link(s)
-        fee_links = school_data.get("school_fee", [])
+        fee_links = extracted_links.get("school_fee", [])
+        if not fee_links and "school_fee" in school_data and school_data["school_fee"]:
+            # Fall back to hardcoded links if API didn't find any
+            fee_links = school_data.get("school_fee", [])
+            logger.info(f"Falling back to hardcoded school fee links for {school_name}")
+            
         if isinstance(fee_links, str) and fee_links:
             all_links.append(("school_fee", fee_links))
         elif isinstance(fee_links, list):
@@ -207,34 +277,69 @@ class SchoolScraper:
                     all_links.append(("school_fee", link))
         
         # Program links
-        for link in school_data.get("program", []):
+        program_links = extracted_links.get("program", [])
+        if not program_links and "program" in school_data and school_data["program"]:
+            # Fall back to hardcoded links if API didn't find any
+            program_links = school_data.get("program", [])
+            logger.info(f"Falling back to hardcoded program links for {school_name}")
+            
+        for link in program_links:
             if link:
                 all_links.append(("program", link))
         
         # Enrollment links
-        for link in school_data.get("Enrollment Process and Requirements", []):
+        enrollment_links = extracted_links.get("enrollment", [])
+        if not enrollment_links and "Enrollment Process and Requirements" in school_data and school_data["Enrollment Process and Requirements"]:
+            # Fall back to hardcoded links if API didn't find any
+            enrollment_links = school_data.get("Enrollment Process and Requirements", [])
+            logger.info(f"Falling back to hardcoded enrollment links for {school_name}")
+            
+        for link in enrollment_links:
             if link:
                 all_links.append(("enrollment", link))
         
         # Events links
-        for link in school_data.get("Upcoming Events", []):
+        event_links = extracted_links.get("events", [])
+        if not event_links and "Upcoming Events" in school_data and school_data["Upcoming Events"]:
+            # Fall back to hardcoded links if API didn't find any
+            event_links = school_data.get("Upcoming Events", [])
+            logger.info(f"Falling back to hardcoded event links for {school_name}")
+            
+        for link in event_links:
             if link:
                 all_links.append(("events", link))
         
         # Scholarship links
-        for link in school_data.get("Discounts and Scholarship", []):
+        scholarship_links = extracted_links.get("scholarships", [])
+        if not scholarship_links and "Discounts and Scholarship" in school_data and school_data["Discounts and Scholarship"]:
+            # Fall back to hardcoded links if API didn't find any
+            scholarship_links = school_data.get("Discounts and Scholarship", [])
+            logger.info(f"Falling back to hardcoded scholarship links for {school_name}")
+            
+        for link in scholarship_links:
             if link:
                 all_links.append(("scholarships", link))
         
         # Contact links
-        for link in school_data.get("Contact Information ", []):
+        contact_links = extracted_links.get("contact", [])
+        if not contact_links and "Contact Information " in school_data and school_data["Contact Information "]:
+            # Fall back to hardcoded links if API didn't find any
+            contact_links = school_data.get("Contact Information ", [])
+            logger.info(f"Falling back to hardcoded contact links for {school_name}")
+            
+        for link in contact_links:
             if link:
                 all_links.append(("contact", link))
-                
-        # Calculate total number of links for progress
+                  # Calculate total number of links for progress
         total_links = len(all_links) + 1  # +1 for main page
         progress_step = 1.0 / total_links if total_links > 0 else 1.0
         progress_value = 0.0
+        
+        # Log the final set of links that will be scraped
+        logger.info(f"Final links to scrape for {school_name}:")
+        for category, link in all_links:
+            logger.info(f"  - {category}: {link}")
+        logger.info(f"Total links to scrape: {total_links} (including main page)")
                 
         with open(raw_file_path, "w", encoding="utf-8") as f:
             # Write school main information
@@ -316,14 +421,22 @@ class SchoolScraper:
             # Read the raw data file
             with open(raw_file_path, "r", encoding="utf-8") as f:
                 raw_content = f.read()
-            
-            # Define the parsing description
+              # Define the parsing description
             parse_description = (
-                f"Extract information about {school_name} including tuition fees, "
-                "programs offered, enrollment requirements and process, upcoming events, "
-                "scholarships/discounts, and contact information. "
-                "Make sure to include specific details about tuition costs, program offerings, "
-                "and all application requirements."
+                f"Extract comprehensive information about {school_name} including: "
+                "1. Tuition fees, payment schedules, and financial details. "
+                "2. Academic programs, curriculum offerings, and educational approaches. "
+                "3. Enrollment requirements, application process, and documentation needed. "
+                "4. Upcoming events and school calendar information. "
+                "5. Scholarships, discounts, and financial aid opportunities. "
+                "6. Campus facilities, infrastructure, laboratories, libraries, sports facilities, and resources. "
+                "7. Faculty information, staff credentials, notable teachers, and organizational structure. "
+                "8. School achievements, awards, accreditations, and recognitions. "
+                "9. Marketing approach, taglines, value propositions, and key messaging. "
+                "10. Technology infrastructure, digital platforms, and learning management systems. "
+                "11. Student life details, clubs, activities, testimonials, and campus culture. "
+                "12. Contact information and communication channels. "
+                "Pay special attention to unique features, differentiators, or specialized offerings that make this school stand out."
             )
             
             # Parse the content with structured output format
@@ -373,7 +486,6 @@ class SchoolScraper:
             error_info.notes = f"Error during parsing: {str(e)}"
             
             return error_info.to_dict()
-    
     def _extract_section(self, text: str, section_header: str) -> str:
         """Helper method to extract a section from the parsed text"""
         try:
@@ -382,7 +494,8 @@ class SchoolScraper:
             headers = [
                 "Tuition Fees:", "Programs Offered:", "Enrollment Requirements:", 
                 "Enrollment Process:", "Upcoming Events:", "Scholarships/Discounts:", 
-                "Contact Information:", "Notes:"
+                "Facilities:", "Faculty Information:", "Achievements:", "Marketing Content:",
+                "Technical Data:", "Student Life:", "Contact Information:", "Notes:"
             ]
             
             # Create pattern to find the end of this section (start of next section)
@@ -423,3 +536,66 @@ class SchoolScraper:
     async def close(self):
         """Close resources"""
         pass
+    
+    def _categorize_urls(self, urls, base_url, school_name):
+        """
+        Categorize the extracted URLs into different sections of school information.
+        
+        Args:
+            urls (list): List of URLs extracted from the school website
+            base_url (str): The base URL of the school website
+            school_name (str): The name of the school
+            
+        Returns:
+            dict: A dictionary mapping categories to lists of URLs
+        """
+        # Initialize categories
+        categories = {
+            "school_fee": [],
+            "program": [],
+            "enrollment": [],
+            "events": [],
+            "scholarships": [],
+            "contact": []
+        }
+        
+        # Keywords for categorization
+        keywords = {
+            "school_fee": ["fee", "cost", "tuition", "payment", "financial", "finances"],
+            "program": ["program", "course", "curriculum", "academic", "study", "learning"],
+            "enrollment": ["enrollment", "admission", "apply", "application", "register", "how to", "requirements"],
+            "events": ["event", "calendar", "schedule", "upcoming", "news"],
+            "scholarships": ["scholarship", "grant", "financial aid", "discount", "merit", "award", "bursary"],
+            "contact": ["contact", "location", "address", "phone", "email", "inquiry", "faq"]
+        }
+        
+        logger.info(f"Categorizing {len(urls)} URLs for {school_name}")
+        
+        # Process each URL
+        for url in urls:
+            # Skip if URL is empty or None
+            if not url:
+                continue
+                
+            # Skip if URL is not from the same domain
+            if not (base_url in url or urlparse(url).netloc == urlparse(base_url).netloc):
+                continue
+                
+            # Convert to lowercase for easier matching
+            url_lower = url.lower()
+            
+            # Check each category
+            for category, keywords_list in keywords.items():
+                for keyword in keywords_list:
+                    if keyword in url_lower:
+                        categories[category].append(url)
+                        # Log the categorization
+                        logger.info(f"Categorized URL as {category}: {url}")
+                        break
+        
+        # Remove duplicates from each category
+        for category in categories:
+            categories[category] = list(set(categories[category]))
+            logger.info(f"Found {len(categories[category])} URLs for {category} category")
+        
+        return categories

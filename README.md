@@ -14,12 +14,17 @@ This application automatically:
 ## 📱 Features
 
 - **Automatic Data Collection**: Gets information from school websites with one click
-- **Comprehensive Information**: Collects details about:
-  - Tuition fees and payment options
+- **Comprehensive Information**: Collects details about:  - Tuition fees and payment options
   - Academic programs offered
   - Enrollment requirements
   - Upcoming events
   - Scholarships and discounts
+  - Campus facilities and infrastructure
+  - Faculty qualifications and staff information
+  - School achievements and accreditations
+  - Marketing approach and branding
+  - Technology infrastructure and digital platforms
+  - Student life and campus culture
   - Contact information
 - **Easy Comparison**: Compare multiple schools side-by-side
 - **AI Summaries**: Generate readable summaries of school information
@@ -65,6 +70,11 @@ After installation is complete, simply:
    - Programs
    - Enrollment
    - Events & Scholarships
+   - Facilities
+   - Faculty
+   - Achievements
+   - Technical & Marketing
+   - Student Life
    - Contact Information
 
 ### Comparing Schools
@@ -79,8 +89,10 @@ After installation is complete, simply:
 2. For a summary of a single school:
    - Select the school from the dropdown
    - Click "Summarize Data"
+   - Review the comprehensive analysis of school philosophy, programs, fees, facilities, faculty, achievements, marketing, technology, and student life
 3. For a comparison of all schools:
    - Click "Generate Market Analysis"
+   - Get a detailed market overview with comparative analysis of tuition, programs, facilities, faculty, achievements, admissions, student life, technology infrastructure, and marketing approaches across schools
 
 ### Saving or Sharing Information
 
@@ -122,6 +134,50 @@ The application organizes school information into these categories:
 - Available financial aid
 - Eligibility requirements
 - Discount amounts
+
+### Facilities
+
+- Campus infrastructure details
+- Libraries, laboratories, and learning spaces
+- Sports facilities and equipment
+- Arts centers and auditoriums
+- Special purpose facilities
+
+### Faculty and Staff
+
+- Department structure
+- Staff qualifications and credentials
+- Notable faculty members
+- Student-teacher ratios
+
+### Achievements and Accreditations
+
+- Academic awards and recognitions
+- Institutional accreditations
+- Notable achievements
+- Competition results
+
+### Marketing and Branding
+
+- School taglines and slogans
+- Value propositions
+- Key messaging themes
+- Content strategy
+
+### Technology Infrastructure
+
+- Digital learning platforms
+- Technology integration in classrooms
+- Learning management systems
+- Technology initiatives
+
+### Student Life
+
+- Clubs and organizations
+- Campus activities
+- Student testimonials
+- Partnerships and exchange programs
+- Campus culture
 
 ### Contact Information
 
