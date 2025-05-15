@@ -13,25 +13,7 @@ if %errorlevel% equ 0 (
     echo UV is already installed.
 ) else (
     echo UV is not installed. Installing UV package manager...
-    echo This may take a moment...
     powershell -ExecutionPolicy ByPass -c "irm https://astral.sh/uv/install.ps1 | iex"
-    if %errorlevel% neq 0 (
-        echo ERROR: Failed to install UV package manager.
-        echo We need either UV or Python to continue.
-        echo Checking if Python is installed as a fallback...
-        where python >nul 2>nul
-        if %errorlevel% neq 0 (
-            echo ERROR: Neither UV nor Python is installed or in PATH.
-            echo Please install UV from https://astral.sh/uv/install
-            echo Or install Python 3.10 or newer from https://www.python.org/downloads/
-            echo After installation, make sure to check "Add Python to PATH" during setup.
-            echo Then run this script again.
-            goto error
-        ) else (
-            echo Python is installed, will use it as fallback.
-            set USE_PIP=1
-        )
-    )
 )
 
 echo.
