@@ -42,3 +42,4 @@ test.py
 .python-version
 pyproject.toml
 uv.lock
+node_modules
