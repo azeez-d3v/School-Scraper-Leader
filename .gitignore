@@ -43,3 +43,4 @@ test.py
 pyproject.toml
 uv.lock
 node_modules
+run.bat
