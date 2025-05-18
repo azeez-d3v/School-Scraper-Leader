@@ -278,49 +278,141 @@ def main():
                                 if isinstance(fee_data, dict) and "academic_year" in fee_data:
                                     # Structured format
                                     st.subheader(f"Academic Year: {fee_data.get('academic_year', '')}")
-                                    
-                                    # Display tuition by level in a table if available
+                                      # Display tuition by level in a table if available
                                     if "tuition_by_level" in fee_data and fee_data["tuition_by_level"]:
                                         st.markdown("### Tuition by Grade Level")
+                                        
+                                        # Create a dataframe for better display
+                                        tuition_data = []
+                                        
                                         for level, details in fee_data["tuition_by_level"].items():
-                                            st.markdown(f"**{level}**")
                                             if isinstance(details, dict):
-                                                for key, value in details.items():
-                                                    if key != "description":
-                                                        st.markdown(f"- {key.capitalize()}: {value}")
-                                                if "description" in details:
-                                                    st.markdown(details["description"])
+                                                # Extract fee values
+                                                annual = details.get("annual")
+                                                semester1 = details.get("semester1")
+                                                semester2 = details.get("semester2")
+                                                
+                                                # Only add to table if there's at least one non-None value
+                                                if any(value is not None and value != "None" for value in [annual, semester1, semester2]):
+                                                    row = {
+                                                        "Grade Level": level,
+                                                        "Annual Fee": annual if annual not in [None, "None"] else "-",
+                                                        "Semester 1": semester1 if semester1 not in [None, "None"] else "-",
+                                                        "Semester 2": semester2 if semester2 not in [None, "None"] else "-"
+                                                    }
+                                                    tuition_data.append(row)
+                                                
+                                                # If there's a description, display it separately
+                                                if "description" in details and details["description"]:
+                                                    st.markdown(f"**{level}** - {details['description']}")
                                             else:
-                                                st.markdown(str(details))
-                                    
-                                    # Display other fees
+                                                # Handle non-dict case
+                                                if details and details not in [None, "None"]:
+                                                    st.markdown(f"**{level}**: {details}")
+                                        
+                                        # Display the table if we have data
+                                        if tuition_data:
+                                            st.dataframe(pd.DataFrame(tuition_data), use_container_width=True, hide_index=True)
+                                        else:
+                                            st.info("No specific tuition fee information available for grade levels")
+                                      # Display other fees
                                     if "other_fees" in fee_data and fee_data["other_fees"]:
                                         st.markdown("### Other Fees")
+                                        
+                                        # Create a table for other fees
+                                        other_fees_data = []
+                                        
                                         for fee in fee_data["other_fees"]:
                                             if isinstance(fee, dict):
                                                 fee_name = fee.get("name", "")
                                                 fee_amount = fee.get("amount", "")
                                                 fee_desc = fee.get("description", "")
                                                 
-                                                st.markdown(f"**{fee_name}**: {fee_amount}")
-                                                if fee_desc:
-                                                    st.markdown(fee_desc)
-                                            else:
-                                                st.markdown(str(fee))
-                                    
-                                    # Display due dates
+                                                # Only add if we have a name or amount
+                                                if fee_name or fee_amount:
+                                                    row = {
+                                                        "Fee Type": fee_name if fee_name else "-",
+                                                        "Amount": fee_amount if fee_amount else "-",
+                                                        "Description": fee_desc if fee_desc else "-"
+                                                    }
+                                                    other_fees_data.append(row)
+                                            elif fee and fee not in [None, "None"]:
+                                                # Handle string case
+                                                other_fees_data.append({
+                                                    "Fee Type": fee,
+                                                    "Amount": "-",
+                                                    "Description": "-"
+                                                })
+                                        
+                                        # Display as a table if we have data
+                                        if other_fees_data:
+                                            st.dataframe(pd.DataFrame(other_fees_data), use_container_width=True, hide_index=True)
+                                        else:
+                                            st.info("No specific other fees information available")
+                                      # Display due dates
                                     if "due_dates" in fee_data and fee_data["due_dates"]:
                                         st.markdown("### Payment Due Dates")
+                                        
+                                        # Create a table for due dates
+                                        due_dates_data = []
+                                        
                                         for date_info in fee_data["due_dates"]:
                                             if isinstance(date_info, dict):
                                                 period = date_info.get("period", "")
-                                                date = date_info.get("date", "")
-                                                st.markdown(f"**{period}**: {date}")
-                                            else:
-                                                st.markdown(str(date_info))
-                                else:
-                                    # Legacy format
-                                    st.markdown(str(fee_data))
+                                                due_date = date_info.get("date", "")
+                                                
+                                                # Only add if there's a period or date
+                                                if period or due_date:
+                                                    due_dates_data.append({
+                                                        "Payment Period": period if period else "-",
+                                                        "Due Date": due_date if due_date else "-"
+                                                    })
+                                            elif date_info and date_info not in [None, "None"]:
+                                                # Handle string case
+                                                due_dates_data.append({
+                                                    "Payment Information": str(date_info),
+                                                    "Due Date": "-"
+                                                })
+                                        
+                                        # Display as a table if we have data
+                                        if due_dates_data:
+                                            st.dataframe(pd.DataFrame(due_dates_data), use_container_width=True, hide_index=True)
+                                        else:
+                                            st.info("No specific payment due dates information available")                                
+                                    else:
+                                        # Handle other formats of fee data
+                                        st.subheader("Tuition Fee Information")
+                                    
+                                    # If it's just a dictionary with tuition_by_level
+                                    if isinstance(fee_data, dict) and "tuition_by_level" in fee_data:
+                                        # Create a dataframe for better display
+                                        tuition_data = []
+                                        
+                                        for level, details in fee_data["tuition_by_level"].items():
+                                            if isinstance(details, dict):
+                                                # Extract fee values
+                                                annual = details.get("annual")
+                                                semester1 = details.get("semester1")
+                                                semester2 = details.get("semester2")
+                                                
+                                                # Only add to table if there's at least one non-None value
+                                                if any(value is not None and value != "None" for value in [annual, semester1, semester2]):
+                                                    row = {
+                                                        "Grade Level": level,
+                                                        "Annual Fee": annual if annual not in [None, "None"] else "-",
+                                                        "Semester 1": semester1 if semester1 not in [None, "None"] else "-",
+                                                        "Semester 2": semester2 if semester2 not in [None, "None"] else "-"
+                                                    }
+                                                    tuition_data.append(row)
+                                        
+                                        # Display the table if we have data
+                                        if tuition_data:
+                                            st.dataframe(pd.DataFrame(tuition_data), use_container_width=True, hide_index=True)
+                                        else:
+                                            st.info("No specific tuition fee information available")
+                                    else:
+                                        # For any other format, display as formatted JSON
+                                        st.json(fee_data)
                             else:
                                 st.info("No tuition fee information available for this school")
                         
