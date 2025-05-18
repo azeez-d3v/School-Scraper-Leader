@@ -356,47 +356,58 @@ class SchoolScraper:
             f.write("MAIN PAGE CONTENT:\n")
             f.write(main_content)
             f.write("\n\n" + "=" * 20 + "PAGE" + "=" * 20 + "\n\n")
-            
-            # Update progress
+              # Update progress
             progress_value += progress_step
             if progress_bar:
                 progress_bar.progress(progress_value)
             
-            # Process each link
-            for category, link in all_links:
-                try:
-                    if status_text:
-                        status_text.text(f"Fetching {category} data from {link}")
-                        
-                    logger.info(f"Extracting {category} data from {link} using method: {method}")
+            # Process all links in parallel
+            if status_text:
+                status_text.text(f"Fetching data from {len(all_links)} links for {school_name} in parallel...")
+                
+            logger.info(f"Processing {len(all_links)} links for {school_name} in parallel")
+            
+            # Set a reasonable concurrency limit to avoid overwhelming the server
+            # Adjust this value based on server capacity and rate limiting considerations
+            concurrency_limit = 5
+            
+            # Process links in batches to control concurrency
+            results = []
+            for i in range(0, len(all_links), concurrency_limit):
+                batch = all_links[i:i + concurrency_limit]
+                batch_tasks = [self._process_single_link(link_info, method, f, status_text) for link_info in batch]
+                batch_results = await asyncio.gather(*batch_tasks)
+                results.extend(batch_results)
+                
+                # Add a small delay between batches
+                if i + concurrency_limit < len(all_links):
+                    await asyncio.sleep(2)
+            
+            # Write all results to the file
+            for result in results:
+                if result["success"]:
+                    category = result["category"]
+                    link = result["link"]
+                    content = result["content"]
                     
-                    # Pass the school's method to ensure correct scraping technique is used
-                    content = await self.extract_content_from_url(link, method)
-                    
-                    if content:
-                        # Write content to the raw data file, including PDF content
-                        f.write(f"{category.upper()} PAGE CONTENT ({link}):\n")
-                        # Check if this is PDF content and ensure it's written correctly
-                        if content.startswith("[PDF CONTENT FROM:"):
-                            # Ensure PDF content is correctly written as is
-                            logger.info(f"Writing PDF content for {link} to raw data file")
-                            f.write(content)
-                        else:
-                            f.write(content)
-                        f.write("\n\n" + "=" * 20 + "PAGE" + "=" * 20 + "\n\n")
-                    
-                    # Update progress
-                    progress_value += progress_step
-                    if progress_bar:
-                        progress_bar.progress(min(progress_value, 1.0))
-                    
-                    # Add a small delay to avoid overloading servers
-                    await asyncio.sleep(1)
-                    
-                except Exception as e:
-                    logger.error(f"Error processing {category} link {link} for {school_name}: {e}")
+                    # Write content to the raw data file, including PDF content
+                    f.write(f"{category.upper()} PAGE CONTENT ({link}):\n")
+                    # Check if this is PDF content and ensure it's written correctly
+                    if content.startswith("[PDF CONTENT FROM:"):
+                        # Ensure PDF content is correctly written as is
+                        logger.info(f"Writing PDF content for {link} to raw data file")
+                        f.write(content)
+                    else:
+                        f.write(content)
+                    f.write("\n\n" + "=" * 20 + "PAGE" + "=" * 20 + "\n\n")
+                else:
                     # Write error information to the raw data file for troubleshooting
-                    f.write(f"ERROR processing {category} link {link}: {str(e)}\n\n")
+                    f.write(f"ERROR processing {result['category']} link {result['link']}: {result.get('error', 'Unknown error')}\n\n")
+                
+                # Update progress
+                progress_value += progress_step
+                if progress_bar:
+                    progress_bar.progress(min(progress_value, 1.0))
         
         logger.info(f"Completed raw data extraction for {school_name}")
         if status_text:
@@ -599,3 +610,50 @@ class SchoolScraper:
             logger.info(f"Found {len(categories[category])} URLs for {category} category")
         
         return categories
+    
+    async def _process_single_link(self, link_info, method, file_handle, status_text=None):
+        """Process a single link and return the content and progress update
+        
+        Args:
+            link_info: Tuple of (category, link)
+            method: Scraping method to use
+            file_handle: File handle to write to (don't write directly, return content)
+            status_text: Streamlit status text object
+            
+        Returns:
+            Dictionary with content, category, link and success status
+        """
+        category, link = link_info
+        
+        try:
+            if status_text:
+                status_text.text(f"Fetching {category} data from {link}")
+                
+            logger.info(f"Extracting {category} data from {link} using method: {method}")
+            
+            # Pass the school's method to ensure correct scraping technique is used
+            content = await self.extract_content_from_url(link, method)
+            
+            if content:
+                return {
+                    "success": True,
+                    "category": category,
+                    "link": link,
+                    "content": content
+                }
+            else:
+                return {
+                    "success": False,
+                    "category": category,
+                    "link": link,
+                    "error": "No content extracted"
+                }
+                
+        except Exception as e:
+            logger.error(f"Error processing {category} link {link}: {e}")
+            return {
+                "success": False,
+                "category": category,
+                "link": link,
+                "error": str(e)
+            }
